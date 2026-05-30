@@ -1,12 +1,12 @@
 # DuoSync Protocol — VA-Dashboard
 
-This repo coordinates real-time collaboration between Kamyar and Amin on VA-Dashboard.
+This repo coordinates real-time collaboration between Kamyar, Amin, and Shahab on VA-Dashboard.
 
 ## Quick reference
-- Main project: `D:/projects/VA-Dashboard` (Kamyar) / wherever Amin clones it
-- Coord repo: `C:/PROJECTS/VA-Dashboard-coord` (Kamyar) / `C:/PROJECTS/VA-Dashboard-coord` (Amin)
-- Lock files: `kamyar.lock.json`, `amin.lock.json`
-- Inboxes: `inbox_kamyar.md`, `inbox_amin.md`
+- Main project: `D:/projects/VA-Dashboard` (Kamyar) / `D:/Projects/va-dashboard2` (Shahab) / wherever Amin clones it
+- Coord repo: `C:/PROJECTS/VA-Dashboard-coord` (Kamyar/Amin default) / `D:/Projects/VA-Dashboard-coord` (Shahab — set via `DUOSYNC_COORD` env in his `.claude/settings.local.json`)
+- Lock files: `kamyar.lock.json`, `amin.lock.json`, `shahab.lock.json`
+- Inboxes: `inbox_kamyar.md`, `inbox_amin.md`, `inbox_shahab.md`
 
 ## Rules
 1. Never edit a file that appears in the other person's lock file
