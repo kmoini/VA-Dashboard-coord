@@ -1,6 +1,8 @@
 {
   "owner": "Shahab",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-05-30T00:00:00Z"
+  "status": "active",
+  "locked_files": [
+    "d:/Projects/SnapDance/.claude/hooks/duosync-prelock.sh"
+  ],
+  "updated_at": "2026-05-30T18:42:25Z"
 }
