@@ -1,6 +1,8 @@
 {
   "owner": "Amin",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-05-27T00:00:00Z"
+  "status": "active",
+  "locked_files": [
+    "C:/Users/Amin/.claude/projects/e--Projects-va-dashboard2/memory/duosync-setup.md"
+  ],
+  "updated_at": "2026-06-01T15:34:24Z"
 }
