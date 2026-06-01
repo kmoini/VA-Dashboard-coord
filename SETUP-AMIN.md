@@ -150,21 +150,21 @@ REL=$(FILE_PATH="$FILE_PATH" PROJECT_ROOT="$PROJECT_ROOT" python3 -c "
 import os
 fp = os.environ.get('FILE_PATH', '').replace('\\\\', '/')
 root = os.environ.get('PROJECT_ROOT', '').replace('\\\\', '/')
+if not root or not fp:
+    print('')
+    raise SystemExit(0)
 try:
-    rel = os.path.relpath(fp, root) if root else fp
-    rel = rel.replace('\\\\', '/')
+    rel = os.path.relpath(os.path.abspath(fp), root).replace('\\\\', '/')
     if rel.startswith('..') or os.path.isabs(rel):
-        raise ValueError
-except Exception:
-    base = os.path.basename(root.rstrip('/')) if root else ''
-    if base:
-        needle = ('/' + base + '/').lower()
-        i = fp.lower().rfind(needle)
-        rel = fp[i + len(needle):] if i >= 0 else fp
+        print('')
     else:
-        rel = fp
-print(rel)
-" 2>/dev/null || echo "$FILE_PATH")
+        print(rel)
+except Exception:
+    print('')
+" 2>/dev/null || echo "")
+
+# Skip if the file isn't inside this project (e.g. Claude memory writes)
+[ -z "$REL" ] && exit 0
 
 BLOCKER=""
 for OTHER in "${ALL_OWNERS[@]}"; do
