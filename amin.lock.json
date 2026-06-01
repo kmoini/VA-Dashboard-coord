@@ -1,8 +1,6 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "routes/web.php"
-  ],
-  "updated_at": "2026-06-01T22:10:41Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-06-01T22:11:26Z"
 }
