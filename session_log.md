@@ -48,3 +48,4 @@
 2026-06-01T22:08:53Z | Amin | SESSION END
 2026-06-01T22:11:26Z | Amin | SESSION END
 2026-06-01T22:30:00Z | Amin | CHANGE: routes/web.php — `/` now redirects guests to login, authed users to dashboard (Welcome no longer entry point). Verified: 302→/login, login 200. Not committed/pushed yet.
+2026-06-01T22:13:48Z | Amin | SESSION END
