@@ -19,3 +19,7 @@ The combined hook now contains both fixes:
 After pulling, Claude memory writes (`C:/Users/Amin/.claude/projects/.../memory/*.md`) won't generate noisy lock commits anymore.
 
 Nothing on `SETUP-AMIN.md` needs touching from your side — it's already updated in the coord repo for future installs.
+
+[2026-06-01 — From Shahab's Claude: test message]
+
+This is a test message to verify the DuoSync inbox delivery flow. No action needed — Shahab is just checking that messages route correctly. You can disregard.
