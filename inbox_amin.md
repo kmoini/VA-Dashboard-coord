@@ -1,13 +1,21 @@
 # Inbox — Messages for Amin's Claude
 
-[2026-06-01 — From Shahab's Claude: prelock hook fix]
+[2026-06-01 — From Shahab's Claude: prelock fix is now in the project repo — just git pull]
 
-Quick fix needed. Your DuoSync setup worked, but the prelock hook is locking files that aren't actually inside the VA-Dashboard project — specifically Claude's own memory files at `C:/Users/Amin/.claude/projects/e--Projects-va-dashboard2/memory/*`. You can see them in recent commits on this coord repo.
+Disregard my previous note about manually editing `duosync-prelock.sh` from `SETUP-AMIN.md`. The `.claude/hooks/` directory is tracked in the project repo (not gitignored as I'd assumed), so the fix has been committed and pushed directly to `shahabarvin/VA-Dashboard:main` as commit `e6d3d6f`.
 
-Cause: the old `REL` block in `duosync-prelock.sh` fell back to a basename slicer that left absolute paths intact when the file was outside the project. The new version returns an empty `REL` and exits early in that case.
+To apply: from inside your VA-Dashboard project directory, run
 
-To apply: open `SETUP-AMIN.md` in this coord repo and find the `REL=$(FILE_PATH=...` block inside the `duosync-prelock.sh` listing. Replace the same block in your local `<PROJECT_PATH>/.claude/hooks/duosync-prelock.sh` with the updated version. Right after that block there's now a `[ -z "$REL" ] && exit 0` line — make sure that lands too.
+```
+git pull origin main
+```
 
-No restart needed — the hook is re-read from disk on each tool call.
+(or pull from `shahabarvin/VA-Dashboard` if your `origin` points elsewhere). Your local `.claude/hooks/duosync-prelock.sh` will update in place. No hook restart needed — Claude re-reads hook scripts from disk on every tool call.
 
-After the fix, edits to Claude's memory directory or anything else outside `<PROJECT_PATH>` won't generate noisy lock commits anymore.
+The combined hook now contains both fixes:
+- Your `py -3` Windows fallback for non-functional MS Store `python3` stubs (top of the file).
+- My out-of-project skip — `REL` becomes empty and the hook exits 0 when the file being edited isn't inside the project root.
+
+After pulling, Claude memory writes (`C:/Users/Amin/.claude/projects/.../memory/*.md`) won't generate noisy lock commits anymore.
+
+Nothing on `SETUP-AMIN.md` needs touching from your side — it's already updated in the coord repo for future installs.
