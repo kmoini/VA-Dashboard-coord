@@ -9,7 +9,8 @@
     "routes/web.php",
     "routes/auth.php",
     "app/Http/Controllers/Auth/PhoneAuthController.php",
-    "app/Http/Controllers/SettingsController.php"
+    "app/Http/Controllers/SettingsController.php",
+    "resources/js/Components/OtpInput.jsx"
   ],
-  "updated_at": "2026-06-04T22:33:29Z"
+  "updated_at": "2026-06-04T22:36:44Z"
 }
