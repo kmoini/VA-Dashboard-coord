@@ -4,7 +4,8 @@
   "locked_files": [
     "app/Services/SmsOtpService.php",
     "_dupcheck.php",
-    "database/migrations/2026_06_04_000002_make_users_phone_unique.php"
+    "database/migrations/2026_06_04_000002_make_users_phone_unique.php",
+    "app/Http/Controllers/Settings/SettingsPhoneController.php"
   ],
-  "updated_at": "2026-06-04T22:26:55Z"
+  "updated_at": "2026-06-04T22:28:59Z"
 }
