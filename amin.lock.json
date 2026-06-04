@@ -14,7 +14,8 @@
     "app/Http/Controllers/SettingsController.php",
     "resources/js/Components/TeamMemberRow.jsx",
     "resources/js/Pages/Settings/Index.jsx",
-    "app/Http/Middleware/EnsureMinRoleLevel.php"
+    "app/Http/Middleware/EnsureMinRoleLevel.php",
+    "bootstrap/app.php"
   ],
-  "updated_at": "2026-06-04T18:26:56Z"
+  "updated_at": "2026-06-04T18:27:16Z"
 }
