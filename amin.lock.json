@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "config/services.php",
-    "app/Services/SmsOtpService.php"
+    "app/Services/SmsOtpService.php",
+    ".env.example"
   ],
-  "updated_at": "2026-06-04T23:25:32Z"
+  "updated_at": "2026-06-04T23:31:14Z"
 }
