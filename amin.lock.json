@@ -15,7 +15,8 @@
     "resources/js/Components/TeamMemberRow.jsx",
     "resources/js/Pages/Settings/Index.jsx",
     "app/Http/Middleware/EnsureMinRoleLevel.php",
-    "bootstrap/app.php"
+    "bootstrap/app.php",
+    "resources/js/Pages/Errors/403.jsx"
   ],
-  "updated_at": "2026-06-04T18:27:55Z"
+  "updated_at": "2026-06-04T18:28:54Z"
 }
