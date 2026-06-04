@@ -4,7 +4,8 @@
   "locked_files": [
     "database/migrations/2026_06_04_000001_rename_roles_for_rbac.php",
     "_check_roles.php",
-    "app/Models/Role.php"
+    "app/Models/Role.php",
+    "app/Models/User.php"
   ],
-  "updated_at": "2026-06-04T18:11:10Z"
+  "updated_at": "2026-06-04T18:11:46Z"
 }
