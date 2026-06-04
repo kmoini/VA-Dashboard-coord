@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "app/Services/SmsOtpService.php",
-    "_dupcheck.php"
+    "_dupcheck.php",
+    "database/migrations/2026_06_04_000002_make_users_phone_unique.php"
   ],
-  "updated_at": "2026-06-04T22:25:52Z"
+  "updated_at": "2026-06-04T22:26:55Z"
 }
