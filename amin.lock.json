@@ -12,7 +12,8 @@
     "database/seeders/DatabaseSeeder.php",
     "app/Http/Controllers/PeriodLockController.php",
     "app/Http/Controllers/SettingsController.php",
-    "resources/js/Components/TeamMemberRow.jsx"
+    "resources/js/Components/TeamMemberRow.jsx",
+    "resources/js/Pages/Settings/Index.jsx"
   ],
-  "updated_at": "2026-06-04T18:23:11Z"
+  "updated_at": "2026-06-04T18:23:54Z"
 }
