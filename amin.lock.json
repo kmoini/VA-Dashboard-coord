@@ -17,7 +17,8 @@
     "app/Http/Middleware/EnsureMinRoleLevel.php",
     "bootstrap/app.php",
     "resources/js/Pages/Errors/403.jsx",
-    "routes/web.php"
+    "routes/web.php",
+    "app/Http/Middleware/HandleInertiaRequests.php"
   ],
-  "updated_at": "2026-06-04T18:31:49Z"
+  "updated_at": "2026-06-04T18:32:45Z"
 }
