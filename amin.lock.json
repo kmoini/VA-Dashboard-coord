@@ -2,7 +2,8 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "resources/js/Pages/Settings/Index.jsx"
+    "resources/js/Pages/Settings/Index.jsx",
+    "resources/js/Components/PhoneLoginModal.jsx"
   ],
-  "updated_at": "2026-06-04T22:46:14Z"
+  "updated_at": "2026-06-04T22:47:25Z"
 }
