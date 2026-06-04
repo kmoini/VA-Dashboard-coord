@@ -89,3 +89,4 @@
 2026-06-04T18:45:00Z | Amin | DONE: RBAC Phase 1+2 complete & verified. Roles renamed (admin→super_admin L4, approver→admin L3, editor→accountant L2, viewer L1). Page-access matrix enforced via EnsureMinRoleLevel middleware (role.min): Billing=L4(super only), Payroll/Integration/Settings=L3(admin+); dynamic sidebar hides unreachable links; styled 403 page added. Fixed pre-existing PeriodLock unlock bug. All 12 role×page checks pass; build clean. Phase 3 (accountant→client scoping via client_user pivot) deferred. 17 files. Pushing to project repo + deploying. Next: phone-entry feature.
 2026-06-04T19:12:06Z | Amin | SESSION END
 2026-06-04T22:44:38Z | Amin | SESSION END
+2026-06-04T23:00:30Z | Amin | SESSION END
