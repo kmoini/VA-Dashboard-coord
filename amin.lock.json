@@ -2,7 +2,8 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "config/services.php"
+    "config/services.php",
+    "app/Services/SmsOtpService.php"
   ],
-  "updated_at": "2026-06-04T23:24:14Z"
+  "updated_at": "2026-06-04T23:24:48Z"
 }
