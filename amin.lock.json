@@ -6,7 +6,8 @@
     "_check_roles.php",
     "app/Models/Role.php",
     "app/Models/User.php",
-    "app/Http/Controllers/Auth/PhoneAuthController.php"
+    "app/Http/Controllers/Auth/PhoneAuthController.php",
+    "app/Http/Controllers/Auth/RegisteredUserController.php"
   ],
-  "updated_at": "2026-06-04T18:16:10Z"
+  "updated_at": "2026-06-04T18:16:45Z"
 }
