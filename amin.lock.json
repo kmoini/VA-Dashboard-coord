@@ -18,7 +18,8 @@
     "bootstrap/app.php",
     "resources/js/Pages/Errors/403.jsx",
     "routes/web.php",
-    "app/Http/Middleware/HandleInertiaRequests.php"
+    "app/Http/Middleware/HandleInertiaRequests.php",
+    "resources/js/Layouts/Components/Sidebar.jsx"
   ],
-  "updated_at": "2026-06-04T18:32:45Z"
+  "updated_at": "2026-06-04T18:33:32Z"
 }
