@@ -1,6 +1,8 @@
 {
   "owner": "Amin",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-06-04T14:54:03Z"
+  "status": "active",
+  "locked_files": [
+    "_fix2fa.php"
+  ],
+  "updated_at": "2026-06-04T16:18:34Z"
 }
