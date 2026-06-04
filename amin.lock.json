@@ -1,6 +1,8 @@
 {
   "owner": "Amin",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-06-04T22:44:38Z"
+  "status": "active",
+  "locked_files": [
+    "resources/js/Pages/Settings/Index.jsx"
+  ],
+  "updated_at": "2026-06-04T22:45:06Z"
 }
