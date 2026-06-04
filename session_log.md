@@ -84,3 +84,4 @@
 2026-06-04T14:54:03Z | Amin | SESSION END
 2026-06-04T16:20:04Z | Amin | SESSION END
 2026-06-04T17:32:37Z | Amin | SESSION END
+2026-06-04T18:00:00Z | Amin | WORK START: RBAC Phase 1+2 — rename roles (admin→Super Admin L4, approver→Admin L3, editor→Accountant L2, viewer unchanged) + page-access matrix (route middleware + dynamic sidebar + 403 page). Touching: roles migration, Role/User models, multiple controllers (Billing/Settings/PeriodLock/PhoneAuth), Sidebar.jsx, routes/web.php. Phase 3 (per-client scoping via client_user pivot) deferred. Heads-up Shahab/Kamyar: avoid role/auth/settings/sidebar files.
