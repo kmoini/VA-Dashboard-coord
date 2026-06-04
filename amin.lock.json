@@ -1,18 +1,6 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Services/SmsOtpService.php",
-    "_dupcheck.php",
-    "database/migrations/2026_06_04_000002_make_users_phone_unique.php",
-    "app/Http/Controllers/Settings/SettingsPhoneController.php",
-    "routes/web.php",
-    "routes/auth.php",
-    "app/Http/Controllers/Auth/PhoneAuthController.php",
-    "app/Http/Controllers/SettingsController.php",
-    "resources/js/Components/OtpInput.jsx",
-    "resources/js/Components/PhoneEnrollModal.jsx",
-    "resources/js/Pages/Settings/Index.jsx"
-  ],
-  "updated_at": "2026-06-04T22:44:16Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-06-04T22:44:38Z"
 }
