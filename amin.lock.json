@@ -11,7 +11,8 @@
     "app/Http/Controllers/Auth/PhoneAuthController.php",
     "app/Http/Controllers/SettingsController.php",
     "resources/js/Components/OtpInput.jsx",
-    "resources/js/Components/PhoneEnrollModal.jsx"
+    "resources/js/Components/PhoneEnrollModal.jsx",
+    "resources/js/Pages/Settings/Index.jsx"
   ],
-  "updated_at": "2026-06-04T22:38:11Z"
+  "updated_at": "2026-06-04T22:39:31Z"
 }
