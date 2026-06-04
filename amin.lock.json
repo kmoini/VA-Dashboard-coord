@@ -13,7 +13,8 @@
     "app/Http/Controllers/PeriodLockController.php",
     "app/Http/Controllers/SettingsController.php",
     "resources/js/Components/TeamMemberRow.jsx",
-    "resources/js/Pages/Settings/Index.jsx"
+    "resources/js/Pages/Settings/Index.jsx",
+    "app/Http/Middleware/EnsureMinRoleLevel.php"
   ],
-  "updated_at": "2026-06-04T18:23:54Z"
+  "updated_at": "2026-06-04T18:26:56Z"
 }
