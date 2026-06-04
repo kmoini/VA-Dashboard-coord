@@ -16,7 +16,8 @@
     "resources/js/Pages/Settings/Index.jsx",
     "app/Http/Middleware/EnsureMinRoleLevel.php",
     "bootstrap/app.php",
-    "resources/js/Pages/Errors/403.jsx"
+    "resources/js/Pages/Errors/403.jsx",
+    "routes/web.php"
   ],
-  "updated_at": "2026-06-04T18:28:54Z"
+  "updated_at": "2026-06-04T18:30:00Z"
 }
