@@ -6,7 +6,8 @@
     "_dupcheck.php",
     "database/migrations/2026_06_04_000002_make_users_phone_unique.php",
     "app/Http/Controllers/Settings/SettingsPhoneController.php",
-    "routes/web.php"
+    "routes/web.php",
+    "routes/auth.php"
   ],
-  "updated_at": "2026-06-04T22:29:52Z"
+  "updated_at": "2026-06-04T22:30:45Z"
 }
