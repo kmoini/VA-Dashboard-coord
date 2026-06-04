@@ -1,26 +1,6 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "database/migrations/2026_06_04_000001_rename_roles_for_rbac.php",
-    "_check_roles.php",
-    "app/Models/Role.php",
-    "app/Models/User.php",
-    "app/Http/Controllers/Auth/PhoneAuthController.php",
-    "app/Http/Controllers/Auth/RegisteredUserController.php",
-    "app/Http/Controllers/Auth/SocialAuthController.php",
-    "database/seeders/DatabaseSeeder.php",
-    "app/Http/Controllers/PeriodLockController.php",
-    "app/Http/Controllers/SettingsController.php",
-    "resources/js/Components/TeamMemberRow.jsx",
-    "resources/js/Pages/Settings/Index.jsx",
-    "app/Http/Middleware/EnsureMinRoleLevel.php",
-    "bootstrap/app.php",
-    "resources/js/Pages/Errors/403.jsx",
-    "routes/web.php",
-    "app/Http/Middleware/HandleInertiaRequests.php",
-    "resources/js/Layouts/Components/Sidebar.jsx",
-    "_verify_rbac.php"
-  ],
-  "updated_at": "2026-06-04T18:50:06Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-06-04T18:54:04Z"
 }
