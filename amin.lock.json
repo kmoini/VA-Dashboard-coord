@@ -19,7 +19,8 @@
     "resources/js/Pages/Errors/403.jsx",
     "routes/web.php",
     "app/Http/Middleware/HandleInertiaRequests.php",
-    "resources/js/Layouts/Components/Sidebar.jsx"
+    "resources/js/Layouts/Components/Sidebar.jsx",
+    "_verify_rbac.php"
   ],
-  "updated_at": "2026-06-04T18:35:37Z"
+  "updated_at": "2026-06-04T18:47:37Z"
 }
