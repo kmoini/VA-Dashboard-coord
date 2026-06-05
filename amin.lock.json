@@ -1,8 +1,6 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    ".git/COMMIT_EDITMSG_TMP"
-  ],
-  "updated_at": "2026-06-05T22:28:35Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-06-05T22:32:20Z"
 }
