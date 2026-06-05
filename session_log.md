@@ -93,3 +93,4 @@
 2026-06-04T19:45:00Z | Amin | DONE: Phone-entry feature complete & verified. (1) Firm contact phone added to Firm Identity & Contact. (2) Phone sign-in enrollment in Settings>Security, Super-Admin(firm owner) only, OTP-verified, reusing login code UI. (3) Login by phone now accepts only existing active Super Admins; unknown/non-owner/inactive rejected; phone self-registration removed. New: SmsOtpService, Settings\SettingsPhoneController, users.phone unique migration, OtpInput + PhoneEnrollModal components. Verified: build clean, OTP round-trip + gating all pass. Tagging checkpoint-002, pushing + deploying. NOTE prod needs manual migrate --force && npm run build (new migration + frontend).
 2026-06-04T23:07:30Z | Amin | SESSION END
 2026-06-05T00:10:51Z | Amin | SESSION END
+2026-06-05T14:17:58Z | Amin | SESSION START
