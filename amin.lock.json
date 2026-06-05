@@ -1,9 +1,6 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "resources/js/Pages/Auth/PhoneLogin.jsx",
-    "resources/js/Components/PhoneLoginModal.jsx"
-  ],
-  "updated_at": "2026-06-05T21:09:49Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-06-05T21:10:15Z"
 }
