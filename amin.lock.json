@@ -5,7 +5,8 @@
     "config/m2m.php",
     "app/Services/M2M/M2MKeyManager.php",
     "app/Services/M2M/ServiceTokenMinter.php",
-    "app/Console/Commands/M2mGenerateKeys.php"
+    "app/Console/Commands/M2mGenerateKeys.php",
+    "app/Http/Controllers/WellKnown/JwksController.php"
   ],
-  "updated_at": "2026-06-05T14:33:04Z"
+  "updated_at": "2026-06-05T14:33:33Z"
 }
