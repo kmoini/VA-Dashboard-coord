@@ -1,6 +1,8 @@
 {
   "owner": "Amin",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-06-05T17:11:22Z"
+  "status": "active",
+  "locked_files": [
+    "resources/js/utils/initials.js"
+  ],
+  "updated_at": "2026-06-05T18:00:20Z"
 }
