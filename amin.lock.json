@@ -1,9 +1,6 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "routes/web.php",
-    "tests/Unit/M2M/ServiceTokenMinterTest.php"
-  ],
-  "updated_at": "2026-06-05T14:37:45Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-06-05T14:57:09Z"
 }
