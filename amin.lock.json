@@ -1,14 +1,6 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "resources/js/utils/initials.js",
-    "resources/js/Layouts/Components/TopNavigation.jsx",
-    "resources/js/Layouts/Components/Sidebar.jsx",
-    "resources/js/Layouts/AuthenticatedLayout.jsx",
-    "resources/js/Components/EditMemberModal.jsx",
-    "resources/js/Components/TeamMemberRow.jsx",
-    "resources/js/Pages/Settings/Index.jsx"
-  ],
-  "updated_at": "2026-06-05T18:03:27Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-06-05T18:04:35Z"
 }
