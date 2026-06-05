@@ -1,6 +1,8 @@
 {
   "owner": "Amin",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-06-05T14:29:59Z"
+  "status": "active",
+  "locked_files": [
+    "config/m2m.php"
+  ],
+  "updated_at": "2026-06-05T14:31:15Z"
 }
