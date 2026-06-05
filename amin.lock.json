@@ -1,8 +1,6 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "resources/js/app.jsx"
-  ],
-  "updated_at": "2026-06-05T21:15:42Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-06-05T21:15:57Z"
 }
