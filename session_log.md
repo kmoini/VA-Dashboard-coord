@@ -109,3 +109,4 @@
 2026-06-05T14:45:00Z | Amin | CHECK: Reviewed in-progress M2M auth work (ADR-0001) + getInitials refactor sitting uncommitted in dashboard working tree. New: WellKnown/JwksController, Services/M2M, config/m2m.php, M2mGenerateKeys command, utils/initials.js, tests/Unit/M2M. Modified: AppServiceProvider, Sidebar, TopNavigation, AuthenticatedLayout, EditMemberModal, TeamMemberRow, Settings/Index, routes/web.php (adds public /.well-known/jwks.json). Results: PHP lint clean, vite build clean (exit 0), app /=302 /login=200, JWKS endpoint=200. NOTE: unit tests cannot run — project has no phpunit.xml.dist (pre-existing). Work still uncommitted.
 2026-06-05T19:16:12Z | Amin | SESSION END
 2026-06-05T19:24:59Z | Amin | SESSION END
+2026-06-05T19:39:02Z | Amin | SESSION END

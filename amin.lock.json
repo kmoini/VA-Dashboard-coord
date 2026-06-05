@@ -1,8 +1,6 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "CLAUDE.md"
-  ],
-  "updated_at": "2026-06-05T19:38:34Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-06-05T19:39:02Z"
 }
