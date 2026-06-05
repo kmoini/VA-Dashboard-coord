@@ -2,7 +2,8 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "config/m2m.php"
+    "config/m2m.php",
+    "app/Services/M2M/M2MKeyManager.php"
   ],
-  "updated_at": "2026-06-05T14:31:15Z"
+  "updated_at": "2026-06-05T14:31:51Z"
 }
