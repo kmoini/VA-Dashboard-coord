@@ -5,7 +5,8 @@
     "resources/js/utils/initials.js",
     "resources/js/Layouts/Components/TopNavigation.jsx",
     "resources/js/Layouts/Components/Sidebar.jsx",
-    "resources/js/Layouts/AuthenticatedLayout.jsx"
+    "resources/js/Layouts/AuthenticatedLayout.jsx",
+    "resources/js/Components/EditMemberModal.jsx"
   ],
-  "updated_at": "2026-06-05T18:02:11Z"
+  "updated_at": "2026-06-05T18:02:28Z"
 }
