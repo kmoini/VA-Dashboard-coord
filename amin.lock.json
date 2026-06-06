@@ -1,8 +1,6 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Console/Commands/M2mMintTestToken.php"
-  ],
-  "updated_at": "2026-06-06T16:06:10Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-06-06T16:19:33Z"
 }
