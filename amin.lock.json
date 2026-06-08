@@ -1,6 +1,8 @@
 {
   "owner": "Amin",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-06-08T16:02:28Z"
+  "status": "active",
+  "locked_files": [
+    "storage/app/m2m/prod_public_check.pem"
+  ],
+  "updated_at": "2026-06-08T16:07:52Z"
 }
