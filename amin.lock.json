@@ -8,7 +8,8 @@
     "routes/web.php",
     "resources/views/invoices/pdf.blade.php",
     "resources/js/Pages/Invoices/Index.jsx",
-    "resources/js/Pages/Invoices/Show.jsx"
+    "resources/js/Pages/Invoices/Show.jsx",
+    "resources/js/Layouts/Components/Sidebar.jsx"
   ],
-  "updated_at": "2026-06-09T19:45:09Z"
+  "updated_at": "2026-06-09T19:47:40Z"
 }
