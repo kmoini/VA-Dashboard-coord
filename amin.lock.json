@@ -9,7 +9,8 @@
     "app/Http/Controllers/ChatController.php",
     "routes/web.php",
     "resources/js/Layouts/Components/Sidebar.jsx",
-    "resources/js/Pages/Chat/Index.jsx"
+    "resources/js/Pages/Chat/Index.jsx",
+    "resources/js/Pages/Chat/Show.jsx"
   ],
-  "updated_at": "2026-06-09T21:18:35Z"
+  "updated_at": "2026-06-09T21:20:00Z"
 }
