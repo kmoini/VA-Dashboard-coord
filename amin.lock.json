@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "database/migrations/2026_06_09_000001_add_mobile_link_to_clients_table.php",
-    "app/Models/Client.php"
+    "app/Models/Client.php",
+    "app/Services/Mobile/MobileRelationshipService.php"
   ],
-  "updated_at": "2026-06-09T16:56:57Z"
+  "updated_at": "2026-06-09T16:59:25Z"
 }
