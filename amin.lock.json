@@ -1,6 +1,8 @@
 {
   "owner": "Amin",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-06-09T15:39:21Z"
+  "status": "active",
+  "locked_files": [
+    ".gitignore"
+  ],
+  "updated_at": "2026-06-09T15:49:19Z"
 }
