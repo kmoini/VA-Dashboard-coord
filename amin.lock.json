@@ -4,7 +4,8 @@
   "locked_files": [
     ".gitignore",
     "app/Services/Mobile/MobileApiClient.php",
-    "config/mobile.php"
+    "config/mobile.php",
+    "app/Services/Mobile/MobileDirectoryService.php"
   ],
-  "updated_at": "2026-06-09T15:58:43Z"
+  "updated_at": "2026-06-09T15:59:43Z"
 }
