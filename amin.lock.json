@@ -6,7 +6,8 @@
     "app/Models/Invoice.php",
     "app/Services/InvoiceService.php",
     "routes/web.php",
-    "resources/views/invoices/pdf.blade.php"
+    "resources/views/invoices/pdf.blade.php",
+    "resources/js/Pages/Invoices/Index.jsx"
   ],
-  "updated_at": "2026-06-09T19:41:20Z"
+  "updated_at": "2026-06-09T19:43:29Z"
 }
