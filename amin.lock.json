@@ -1,18 +1,6 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "docs/invoicing.md",
-    "database/migrations/2026_06_09_000003_create_client_messages_table.php",
-    "app/Models/ClientMessage.php",
-    "app/Services/ChatService.php",
-    "app/Http/Controllers/ChatController.php",
-    "routes/web.php",
-    "resources/js/Layouts/Components/Sidebar.jsx",
-    "resources/js/Pages/Chat/Index.jsx",
-    "resources/js/Pages/Chat/Show.jsx",
-    "tests/Feature/Chat/ChatServiceTest.php",
-    "docs/chat.md"
-  ],
-  "updated_at": "2026-06-09T21:31:11Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-06-09T21:33:35Z"
 }
