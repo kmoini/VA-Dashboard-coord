@@ -10,7 +10,8 @@
     "routes/web.php",
     "resources/js/Layouts/Components/Sidebar.jsx",
     "resources/js/Pages/Chat/Index.jsx",
-    "resources/js/Pages/Chat/Show.jsx"
+    "resources/js/Pages/Chat/Show.jsx",
+    "tests/Feature/Chat/ChatServiceTest.php"
   ],
-  "updated_at": "2026-06-09T21:20:00Z"
+  "updated_at": "2026-06-09T21:21:31Z"
 }
