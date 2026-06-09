@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "database/migrations/2026_06_08_120001_add_mobile_accountant_id_to_accountant_accounts.php",
-    "database/migrations/2026_06_08_120002_create_mobile_sync_cursors_table.php"
+    "database/migrations/2026_06_08_120002_create_mobile_sync_cursors_table.php",
+    "database/migrations/2026_06_08_120003_create_mobile_revisions_table.php"
   ],
-  "updated_at": "2026-06-09T14:57:50Z"
+  "updated_at": "2026-06-09T14:58:33Z"
 }
