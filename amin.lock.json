@@ -7,7 +7,8 @@
     "database/migrations/2026_06_08_120003_create_mobile_revisions_table.php",
     "database/migrations/2026_06_08_120004_create_mobile_records_table.php",
     "config/mobile.php",
-    "app/Services/Mobile/MobileEntities.php"
+    "app/Services/Mobile/MobileEntities.php",
+    "app/Models/MobileSyncCursor.php"
   ],
-  "updated_at": "2026-06-09T15:01:26Z"
+  "updated_at": "2026-06-09T15:02:40Z"
 }
