@@ -1,6 +1,8 @@
 {
   "owner": "Amin",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-06-09T20:06:44Z"
+  "status": "active",
+  "locked_files": [
+    "docs/invoicing.md"
+  ],
+  "updated_at": "2026-06-09T20:42:32Z"
 }
