@@ -1,14 +1,6 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    ".gitignore",
-    "app/Services/Mobile/MobileApiClient.php",
-    "config/mobile.php",
-    "app/Services/Mobile/MobileDirectoryService.php",
-    "app/Console/Commands/SyncMobileDirectory.php",
-    "tests/Feature/Mobile/MobileApiClientWriteTest.php",
-    "tests/Feature/Mobile/MobileDirectoryServiceTest.php"
-  ],
-  "updated_at": "2026-06-09T16:03:05Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-06-09T16:07:59Z"
 }
