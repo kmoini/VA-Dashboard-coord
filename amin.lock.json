@@ -4,7 +4,8 @@
   "locked_files": [
     "database/migrations/2026_06_09_000001_add_mobile_link_to_clients_table.php",
     "app/Models/Client.php",
-    "app/Services/Mobile/MobileRelationshipService.php"
+    "app/Services/Mobile/MobileRelationshipService.php",
+    "app/Jobs/PollMobileChangesJob.php"
   ],
-  "updated_at": "2026-06-09T16:59:25Z"
+  "updated_at": "2026-06-09T17:01:00Z"
 }
