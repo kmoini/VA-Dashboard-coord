@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     ".gitignore",
-    "app/Services/Mobile/MobileApiClient.php"
+    "app/Services/Mobile/MobileApiClient.php",
+    "config/mobile.php"
   ],
-  "updated_at": "2026-06-09T15:57:40Z"
+  "updated_at": "2026-06-09T15:58:43Z"
 }
