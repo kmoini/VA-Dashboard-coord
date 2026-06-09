@@ -18,7 +18,8 @@
     "app/Console/Commands/PollMobileChanges.php",
     "routes/console.php",
     "app/Models/AccountantAccount.php",
-    "tests/TestCase.php"
+    "tests/TestCase.php",
+    "phpunit.xml"
   ],
-  "updated_at": "2026-06-09T15:17:41Z"
+  "updated_at": "2026-06-09T15:18:30Z"
 }
