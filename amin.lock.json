@@ -10,7 +10,8 @@
     "resources/js/Pages/Invoices/Index.jsx",
     "resources/js/Pages/Invoices/Show.jsx",
     "resources/js/Layouts/Components/Sidebar.jsx",
-    "tests/Feature/Invoices/InvoiceServiceTest.php"
+    "tests/Feature/Invoices/InvoiceServiceTest.php",
+    "phpunit.xml"
   ],
-  "updated_at": "2026-06-09T19:50:52Z"
+  "updated_at": "2026-06-09T19:55:24Z"
 }
