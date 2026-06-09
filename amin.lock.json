@@ -5,7 +5,8 @@
     "config/mobile.php",
     "app/Services/Mobile/MobileApiClient.php",
     "tests/Feature/Mobile/MobileApiClientWriteTest.php",
-    "app/Services/Mobile/MobileRelationshipService.php"
+    "app/Services/Mobile/MobileRelationshipService.php",
+    ".env"
   ],
-  "updated_at": "2026-06-09T18:23:05Z"
+  "updated_at": "2026-06-09T18:39:06Z"
 }
