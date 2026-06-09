@@ -1,17 +1,6 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "database/migrations/2026_06_09_000002_create_invoices_table.php",
-    "app/Models/Invoice.php",
-    "app/Services/InvoiceService.php",
-    "routes/web.php",
-    "resources/views/invoices/pdf.blade.php",
-    "resources/js/Pages/Invoices/Index.jsx",
-    "resources/js/Pages/Invoices/Show.jsx",
-    "resources/js/Layouts/Components/Sidebar.jsx",
-    "tests/Feature/Invoices/InvoiceServiceTest.php",
-    "phpunit.xml"
-  ],
-  "updated_at": "2026-06-09T19:55:24Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-06-09T20:06:44Z"
 }
