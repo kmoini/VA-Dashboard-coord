@@ -4,7 +4,8 @@
   "locked_files": [
     "database/migrations/2026_06_09_000002_create_invoices_table.php",
     "app/Models/Invoice.php",
-    "app/Services/InvoiceService.php"
+    "app/Services/InvoiceService.php",
+    "routes/web.php"
   ],
-  "updated_at": "2026-06-09T19:28:19Z"
+  "updated_at": "2026-06-09T19:36:23Z"
 }
