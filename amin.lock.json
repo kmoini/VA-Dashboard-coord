@@ -11,7 +11,8 @@
     "routes/web.php",
     "resources/js/Pages/AccountantInbox/Index.jsx",
     "resources/js/Layouts/Components/Sidebar.jsx",
-    "app/Console/Commands/DemoMobileInbox.php"
+    "app/Console/Commands/DemoMobileInbox.php",
+    "tests/Feature/Mobile/MobileRelationshipServiceTest.php"
   ],
-  "updated_at": "2026-06-09T17:15:05Z"
+  "updated_at": "2026-06-09T17:16:27Z"
 }
