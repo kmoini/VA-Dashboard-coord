@@ -23,5 +23,5 @@
     "tests/Feature/Mobile/ChangesIngestorTest.php",
     "tests/Feature/Mobile/PollMobileChangesJobTest.php"
   ],
-  "updated_at": "2026-06-09T15:23:11Z"
+  "updated_at": "2026-06-09T15:30:32Z"
 }
