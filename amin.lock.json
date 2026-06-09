@@ -13,7 +13,8 @@
     "app/Models/MobileRecord.php",
     "app/Services/Mobile/MobileApiException.php",
     "app/Services/Mobile/MobileApiClient.php",
-    "app/Services/Mobile/ChangesIngestor.php"
+    "app/Services/Mobile/ChangesIngestor.php",
+    "app/Jobs/PollMobileChangesJob.php"
   ],
-  "updated_at": "2026-06-09T15:07:51Z"
+  "updated_at": "2026-06-09T15:09:25Z"
 }
