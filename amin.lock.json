@@ -8,7 +8,8 @@
     "app/Services/ChatService.php",
     "app/Http/Controllers/ChatController.php",
     "routes/web.php",
-    "resources/js/Layouts/Components/Sidebar.jsx"
+    "resources/js/Layouts/Components/Sidebar.jsx",
+    "resources/js/Pages/Chat/Index.jsx"
   ],
-  "updated_at": "2026-06-09T21:16:53Z"
+  "updated_at": "2026-06-09T21:18:35Z"
 }
