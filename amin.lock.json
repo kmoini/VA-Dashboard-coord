@@ -7,5 +7,5 @@
     "tests/Feature/Mobile/MobileApiClientWriteTest.php",
     "app/Services/Mobile/MobileRelationshipService.php"
   ],
-  "updated_at": "2026-06-09T18:22:09Z"
+  "updated_at": "2026-06-09T18:23:05Z"
 }
