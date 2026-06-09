@@ -2,7 +2,8 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "database/migrations/2026_06_09_000002_create_invoices_table.php"
+    "database/migrations/2026_06_09_000002_create_invoices_table.php",
+    "app/Models/Invoice.php"
   ],
-  "updated_at": "2026-06-09T19:24:58Z"
+  "updated_at": "2026-06-09T19:26:05Z"
 }
