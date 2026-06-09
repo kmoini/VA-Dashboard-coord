@@ -4,7 +4,8 @@
   "locked_files": [
     "docs/invoicing.md",
     "database/migrations/2026_06_09_000003_create_client_messages_table.php",
-    "app/Models/ClientMessage.php"
+    "app/Models/ClientMessage.php",
+    "app/Services/ChatService.php"
   ],
-  "updated_at": "2026-06-09T21:10:50Z"
+  "updated_at": "2026-06-09T21:12:02Z"
 }
