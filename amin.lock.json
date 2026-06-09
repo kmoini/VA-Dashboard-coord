@@ -4,7 +4,8 @@
   "locked_files": [
     "config/mobile.php",
     "app/Services/Mobile/MobileApiClient.php",
-    "tests/Feature/Mobile/MobileApiClientWriteTest.php"
+    "tests/Feature/Mobile/MobileApiClientWriteTest.php",
+    "app/Services/Mobile/MobileRelationshipService.php"
   ],
-  "updated_at": "2026-06-09T18:16:54Z"
+  "updated_at": "2026-06-09T18:22:09Z"
 }
