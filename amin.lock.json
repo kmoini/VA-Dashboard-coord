@@ -7,7 +7,8 @@
     "app/Services/Mobile/MobileRelationshipService.php",
     "app/Jobs/PollMobileChangesJob.php",
     "app/Http/Middleware/HandleInertiaRequests.php",
-    "app/Http/Controllers/AccountantInboxController.php"
+    "app/Http/Controllers/AccountantInboxController.php",
+    "routes/web.php"
   ],
-  "updated_at": "2026-06-09T17:07:09Z"
+  "updated_at": "2026-06-09T17:08:35Z"
 }
