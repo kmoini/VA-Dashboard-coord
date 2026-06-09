@@ -19,7 +19,8 @@
     "routes/console.php",
     "app/Models/AccountantAccount.php",
     "tests/TestCase.php",
-    "phpunit.xml"
+    "phpunit.xml",
+    "tests/Feature/Mobile/ChangesIngestorTest.php"
   ],
-  "updated_at": "2026-06-09T15:20:49Z"
+  "updated_at": "2026-06-09T15:21:59Z"
 }
