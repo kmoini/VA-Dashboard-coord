@@ -16,7 +16,8 @@
     "app/Services/Mobile/ChangesIngestor.php",
     "app/Jobs/PollMobileChangesJob.php",
     "app/Console/Commands/PollMobileChanges.php",
-    "routes/console.php"
+    "routes/console.php",
+    "app/Models/AccountantAccount.php"
   ],
-  "updated_at": "2026-06-09T15:12:07Z"
+  "updated_at": "2026-06-09T15:14:05Z"
 }
