@@ -1,6 +1,8 @@
 {
   "owner": "Amin",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-06-09T14:44:59Z"
+  "status": "active",
+  "locked_files": [
+    "database/migrations/2026_06_08_120001_add_mobile_accountant_id_to_accountant_accounts.php"
+  ],
+  "updated_at": "2026-06-09T14:57:04Z"
 }
