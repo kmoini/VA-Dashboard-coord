@@ -6,7 +6,8 @@
     "app/Services/Mobile/MobileApiClient.php",
     "config/mobile.php",
     "app/Services/Mobile/MobileDirectoryService.php",
-    "app/Console/Commands/SyncMobileDirectory.php"
+    "app/Console/Commands/SyncMobileDirectory.php",
+    "tests/Feature/Mobile/MobileApiClientWriteTest.php"
   ],
-  "updated_at": "2026-06-09T16:01:04Z"
+  "updated_at": "2026-06-09T16:02:06Z"
 }
