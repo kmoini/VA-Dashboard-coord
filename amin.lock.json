@@ -1,6 +1,8 @@
 {
   "owner": "Amin",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-06-09T23:09:28Z"
+  "status": "active",
+  "locked_files": [
+    "database/migrations/2026_06_09_000004_make_fiscal_year_end_nullable_on_clients_table.php"
+  ],
+  "updated_at": "2026-06-09T23:22:31Z"
 }
