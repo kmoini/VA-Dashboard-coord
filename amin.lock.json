@@ -10,7 +10,8 @@
     "app/Services/Mobile/MobileEntities.php",
     "app/Models/MobileSyncCursor.php",
     "app/Models/MobileRevision.php",
-    "app/Models/MobileRecord.php"
+    "app/Models/MobileRecord.php",
+    "app/Services/Mobile/MobileApiException.php"
   ],
-  "updated_at": "2026-06-09T15:04:28Z"
+  "updated_at": "2026-06-09T15:05:19Z"
 }
