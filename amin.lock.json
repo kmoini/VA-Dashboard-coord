@@ -12,7 +12,8 @@
     "resources/js/Pages/AccountantInbox/Index.jsx",
     "resources/js/Layouts/Components/Sidebar.jsx",
     "app/Console/Commands/DemoMobileInbox.php",
-    "tests/Feature/Mobile/MobileRelationshipServiceTest.php"
+    "tests/Feature/Mobile/MobileRelationshipServiceTest.php",
+    "app/Console/Commands/ReconcileMobileClients.php"
   ],
-  "updated_at": "2026-06-09T17:20:20Z"
+  "updated_at": "2026-06-09T17:26:33Z"
 }
