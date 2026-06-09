@@ -6,7 +6,8 @@
     "database/migrations/2026_06_09_000003_create_client_messages_table.php",
     "app/Models/ClientMessage.php",
     "app/Services/ChatService.php",
-    "app/Http/Controllers/ChatController.php"
+    "app/Http/Controllers/ChatController.php",
+    "routes/web.php"
   ],
-  "updated_at": "2026-06-09T21:13:22Z"
+  "updated_at": "2026-06-09T21:14:34Z"
 }
