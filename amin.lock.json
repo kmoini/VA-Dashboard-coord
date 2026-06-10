@@ -1,13 +1,6 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Services/InvoiceService.php",
-    "app/Http/Controllers/InvoicesController.php",
-    "routes/web.php",
-    "resources/js/Pages/Invoices/Index.jsx",
-    "resources/js/Pages/Invoices/Show.jsx",
-    "tests/Feature/Invoices/InvoiceServiceTest.php"
-  ],
-  "updated_at": "2026-06-10T03:18:40Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-06-10T03:22:40Z"
 }
