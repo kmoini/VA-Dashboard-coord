@@ -6,7 +6,8 @@
     "database/migrations/2026_06_10_000003_add_tax_rate_to_invoices_table.php",
     "config/tax_rates.php",
     "app/Services/TaxRateResolver.php",
-    "app/Models/Client.php"
+    "app/Models/Client.php",
+    "app/Models/Invoice.php"
   ],
-  "updated_at": "2026-06-10T16:29:01Z"
+  "updated_at": "2026-06-10T16:29:16Z"
 }
