@@ -5,7 +5,8 @@
     "database/migrations/2026_06_09_000005_add_edit_retract_to_client_messages.php",
     "app/Models/ClientMessage.php",
     "app/Services/ChatService.php",
-    "app/Http/Controllers/ChatController.php"
+    "app/Http/Controllers/ChatController.php",
+    "routes/web.php"
   ],
-  "updated_at": "2026-06-10T00:56:14Z"
+  "updated_at": "2026-06-10T00:56:44Z"
 }
