@@ -1,6 +1,8 @@
 {
   "owner": "Amin",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-06-10T15:47:19Z"
+  "status": "active",
+  "locked_files": [
+    "database/migrations/2026_06_10_000002_add_company_and_tax_to_clients_table.php"
+  ],
+  "updated_at": "2026-06-10T16:27:13Z"
 }
