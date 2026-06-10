@@ -1,6 +1,8 @@
 {
   "owner": "Amin",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-06-10T19:39:30Z"
+  "status": "active",
+  "locked_files": [
+    "config/session.php"
+  ],
+  "updated_at": "2026-06-10T20:00:42Z"
 }
