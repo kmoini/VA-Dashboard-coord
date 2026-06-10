@@ -4,7 +4,8 @@
   "locked_files": [
     "database/migrations/2026_06_10_000002_add_company_and_tax_to_clients_table.php",
     "database/migrations/2026_06_10_000003_add_tax_rate_to_invoices_table.php",
-    "config/tax_rates.php"
+    "config/tax_rates.php",
+    "app/Services/TaxRateResolver.php"
   ],
-  "updated_at": "2026-06-10T16:28:21Z"
+  "updated_at": "2026-06-10T16:28:42Z"
 }
