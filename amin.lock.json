@@ -2,7 +2,8 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "resources/js/Pages/AccountantInbox/Index.jsx"
+    "resources/js/Pages/AccountantInbox/Index.jsx",
+    "resources/js/Pages/Invoices/Index.jsx"
   ],
-  "updated_at": "2026-06-10T02:32:23Z"
+  "updated_at": "2026-06-10T02:34:44Z"
 }
