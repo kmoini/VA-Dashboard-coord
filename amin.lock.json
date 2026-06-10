@@ -1,14 +1,6 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "tailwind.config.js",
-    "resources/css/app.css",
-    "resources/js/Pages/Chat/Studio/MessagesChatStudio.tsx",
-    "app/Http/Controllers/ChatController.php",
-    "routes/web.php",
-    "resources/js/Pages/Chat/MessagesStudio.jsx",
-    "resources/js/Layouts/Components/Sidebar.jsx"
-  ],
-  "updated_at": "2026-06-10T00:22:12Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-06-10T00:23:16Z"
 }
