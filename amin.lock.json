@@ -6,7 +6,8 @@
     "app/Models/Client.php",
     "app/Http/Controllers/ClientsController.php",
     "resources/js/Pages/Clients/Index.jsx",
-    "resources/js/Pages/Clients/Create.jsx"
+    "resources/js/Pages/Clients/Create.jsx",
+    "resources/js/Pages/Clients/Show.jsx"
   ],
-  "updated_at": "2026-06-10T14:46:20Z"
+  "updated_at": "2026-06-10T14:48:39Z"
 }
