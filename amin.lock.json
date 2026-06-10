@@ -5,8 +5,9 @@
     "app/Services/Mobile/MobileEntities.php",
     "app/Services/Mobile/MobileMessageProjector.php",
     "app/Jobs/PollMobileChangesJob.php",
-    "app/Console/Commands/ProjectMobileMessages.php"
+    "app/Console/Commands/ProjectMobileMessages.php",
+    "tests/Feature/Mobile/MobileMessageProjectorTest.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-10T22:03:38Z"
+  "updated_at": "2026-06-10T22:04:30Z"
 }
