@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "tailwind.config.js",
-    "resources/css/app.css"
+    "resources/css/app.css",
+    "resources/js/Pages/Chat/Studio/MessagesChatStudio.tsx"
   ],
-  "updated_at": "2026-06-10T00:16:36Z"
+  "updated_at": "2026-06-10T00:19:32Z"
 }
