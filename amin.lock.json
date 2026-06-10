@@ -17,7 +17,8 @@
     "resources/js/Pages/Invoices/Index.jsx",
     "resources/views/invoices/pdf.blade.php",
     "resources/js/Pages/Invoices/Show.jsx",
-    "tests/Unit/Services/TaxRateResolverTest.php"
+    "tests/Unit/Services/TaxRateResolverTest.php",
+    "tests/Feature/Invoices/InvoiceServiceTest.php"
   ],
-  "updated_at": "2026-06-10T16:42:52Z"
+  "updated_at": "2026-06-10T16:43:20Z"
 }
