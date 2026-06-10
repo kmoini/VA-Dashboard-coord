@@ -6,7 +6,8 @@
     "app/Models/ClientMessage.php",
     "app/Services/ChatService.php",
     "app/Http/Controllers/ChatController.php",
-    "routes/web.php"
+    "routes/web.php",
+    "resources/js/Pages/Chat/Studio/MessagesChatStudio.tsx"
   ],
-  "updated_at": "2026-06-10T00:56:44Z"
+  "updated_at": "2026-06-10T01:00:12Z"
 }
