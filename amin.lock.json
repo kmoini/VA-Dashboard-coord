@@ -14,7 +14,8 @@
     "resources/js/constants/geo.js",
     "resources/js/Pages/Clients/Create.jsx",
     "resources/js/Pages/Clients/Show.jsx",
-    "resources/js/Pages/Invoices/Index.jsx"
+    "resources/js/Pages/Invoices/Index.jsx",
+    "resources/views/invoices/pdf.blade.php"
   ],
-  "updated_at": "2026-06-10T16:40:33Z"
+  "updated_at": "2026-06-10T16:40:56Z"
 }
