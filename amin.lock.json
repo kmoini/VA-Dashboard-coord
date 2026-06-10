@@ -9,7 +9,8 @@
     "routes/web.php",
     "resources/js/Pages/Chat/Studio/MessagesChatStudio.tsx",
     "resources/js/Pages/Chat/MessagesStudio.jsx",
-    "tests/Feature/Chat/ChatEditRetractTest.php"
+    "tests/Feature/Chat/ChatEditRetractTest.php",
+    "docs/messages-studio.md"
   ],
-  "updated_at": "2026-06-10T01:02:25Z"
+  "updated_at": "2026-06-10T01:08:17Z"
 }
