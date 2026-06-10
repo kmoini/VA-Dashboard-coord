@@ -10,7 +10,8 @@
     "app/Models/Invoice.php",
     "app/Http/Controllers/ClientsController.php",
     "app/Services/InvoiceService.php",
-    "app/Http/Controllers/InvoicesController.php"
+    "app/Http/Controllers/InvoicesController.php",
+    "resources/js/constants/geo.js"
   ],
-  "updated_at": "2026-06-10T16:34:09Z"
+  "updated_at": "2026-06-10T16:34:55Z"
 }
