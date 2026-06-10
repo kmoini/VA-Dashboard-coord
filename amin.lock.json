@@ -1,10 +1,6 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "config/session.php",
-    ".env.example",
-    ".env"
-  ],
-  "updated_at": "2026-06-10T20:02:42Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-06-10T20:03:36Z"
 }
