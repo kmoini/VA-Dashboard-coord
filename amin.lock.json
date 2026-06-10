@@ -1,13 +1,6 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "database/migrations/2026_06_10_000001_add_address_to_clients_table.php",
-    "app/Models/Client.php",
-    "app/Http/Controllers/ClientsController.php",
-    "resources/js/Pages/Clients/Index.jsx",
-    "resources/js/Pages/Clients/Create.jsx",
-    "resources/js/Pages/Clients/Show.jsx"
-  ],
-  "updated_at": "2026-06-10T14:50:29Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-06-10T14:52:26Z"
 }
