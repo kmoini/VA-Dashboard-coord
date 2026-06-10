@@ -1,16 +1,6 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "database/migrations/2026_06_09_000005_add_edit_retract_to_client_messages.php",
-    "app/Models/ClientMessage.php",
-    "app/Services/ChatService.php",
-    "app/Http/Controllers/ChatController.php",
-    "routes/web.php",
-    "resources/js/Pages/Chat/Studio/MessagesChatStudio.tsx",
-    "resources/js/Pages/Chat/MessagesStudio.jsx",
-    "tests/Feature/Chat/ChatEditRetractTest.php",
-    "docs/messages-studio.md"
-  ],
-  "updated_at": "2026-06-10T01:14:39Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-06-10T01:15:41Z"
 }
