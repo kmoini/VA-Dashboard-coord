@@ -1,6 +1,8 @@
 {
   "owner": "Amin",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-06-10T14:17:07Z"
+  "status": "active",
+  "locked_files": [
+    "database/migrations/2026_06_10_000001_add_address_to_clients_table.php"
+  ],
+  "updated_at": "2026-06-10T14:41:03Z"
 }
