@@ -1,6 +1,8 @@
 {
   "owner": "Amin",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-06-10T01:23:22Z"
+  "status": "active",
+  "locked_files": [
+    "resources/js/Pages/Chat/Studio/MessagesChatStudio.tsx"
+  ],
+  "updated_at": "2026-06-10T01:37:06Z"
 }
