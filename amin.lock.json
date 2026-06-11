@@ -1,7 +1,9 @@
 {
   "owner": "Amin",
-  "status": "idle",
-  "locked_files": [],
+  "status": "active",
+  "locked_files": [
+    "database/migrations/2026_06_11_000002_add_mobile_link_to_attachments_table.php"
+  ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-11T16:23:14Z"
+  "updated_at": "2026-06-11T16:32:34Z"
 }
