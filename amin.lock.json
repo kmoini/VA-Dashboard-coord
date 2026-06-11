@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "app/Services/Mobile/MobileTransactionProjector.php"
+    "app/Services/Mobile/MobileTransactionProjector.php",
+    "tests/Feature/Mobile/MobileTransactionProjectorTest.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-11T00:49:37Z"
+  "updated_at": "2026-06-11T00:49:54Z"
 }
