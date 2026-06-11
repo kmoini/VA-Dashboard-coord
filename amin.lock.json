@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "config/filesystems.php"
+    "config/filesystems.php",
+    "app/Models/Attachment.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-11T22:41:27Z"
+  "updated_at": "2026-06-11T22:43:35Z"
 }
