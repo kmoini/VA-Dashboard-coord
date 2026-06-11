@@ -4,7 +4,8 @@
   "locked_files": [
     "database/migrations/2026_06_11_000002_create_accountant_referral_codes_table.php",
     "database/migrations/2026_06_11_000003_create_referral_sign_ups_table.php",
-    "database/migrations/2026_06_11_000004_create_promo_codes_table.php"
+    "database/migrations/2026_06_11_000004_create_promo_codes_table.php",
+    "database/migrations/2026_06_11_000005_add_referral_trial_columns_to_accountant_accounts.php"
   ],
-  "updated_at": "2026-06-11T20:55:34Z"
+  "updated_at": "2026-06-11T20:55:49Z"
 }
