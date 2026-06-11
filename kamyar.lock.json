@@ -12,7 +12,8 @@
     "app/Models/ReferralSignUp.php",
     "app/Models/PromoCode.php",
     "app/Services/ReferralCodeService.php",
-    "app/Services/TrialService.php"
+    "app/Services/TrialService.php",
+    "app/Http/Controllers/Auth/RegisteredUserController.php"
   ],
-  "updated_at": "2026-06-11T20:58:28Z"
+  "updated_at": "2026-06-11T20:58:44Z"
 }
