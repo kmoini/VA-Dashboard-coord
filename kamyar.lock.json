@@ -1,6 +1,8 @@
 {
   "owner": "Kamyar",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-06-11T20:45:08Z"
+  "status": "active",
+  "locked_files": [
+    "database/migrations/2026_06_11_000002_create_accountant_referral_codes_table.php"
+  ],
+  "updated_at": "2026-06-11T20:54:58Z"
 }
