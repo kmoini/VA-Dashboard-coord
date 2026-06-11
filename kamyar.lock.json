@@ -1,27 +1,6 @@
 {
   "owner": "Kamyar",
-  "status": "active",
-  "locked_files": [
-    "database/migrations/2026_06_11_000002_create_accountant_referral_codes_table.php",
-    "database/migrations/2026_06_11_000003_create_referral_sign_ups_table.php",
-    "database/migrations/2026_06_11_000004_create_promo_codes_table.php",
-    "database/migrations/2026_06_11_000005_add_referral_trial_columns_to_accountant_accounts.php",
-    "database/migrations/2026_06_11_000006_add_assigned_accountant_to_clients.php",
-    "database/migrations/2026_06_11_000007_add_transaction_id_to_client_messages.php",
-    "app/Models/AccountantReferralCode.php",
-    "app/Models/ReferralSignUp.php",
-    "app/Models/PromoCode.php",
-    "app/Services/ReferralCodeService.php",
-    "app/Services/TrialService.php",
-    "app/Http/Controllers/Auth/RegisteredUserController.php",
-    "app/Http/Controllers/AccountantReferralController.php",
-    "routes/web.php",
-    "app/Policies/ClientPolicy.php",
-    "app/Models/Client.php",
-    "app/Http/Controllers/ClientsController.php",
-    "resources/js/Pages/Referral/Index.jsx",
-    "resources/js/Pages/Admin/Referrals.jsx",
-    "app/Models/AccountantAccount.php"
-  ],
-  "updated_at": "2026-06-11T21:06:36Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-06-11T21:07:16Z"
 }
