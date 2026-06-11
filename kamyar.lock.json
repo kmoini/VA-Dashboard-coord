@@ -19,7 +19,8 @@
     "app/Policies/ClientPolicy.php",
     "app/Models/Client.php",
     "app/Http/Controllers/ClientsController.php",
-    "resources/js/Pages/Referral/Index.jsx"
+    "resources/js/Pages/Referral/Index.jsx",
+    "resources/js/Pages/Admin/Referrals.jsx"
   ],
-  "updated_at": "2026-06-11T21:04:17Z"
+  "updated_at": "2026-06-11T21:05:25Z"
 }
