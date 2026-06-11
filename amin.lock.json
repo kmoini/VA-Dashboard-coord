@@ -9,8 +9,9 @@
     "app/Http/Controllers/DocumentsController.php",
     "app/Http/Controllers/AttachmentPreviewController.php",
     "routes/web.php",
-    "tests/Feature/Mobile/MobileAttachmentProjectorTest.php"
+    "tests/Feature/Mobile/MobileAttachmentProjectorTest.php",
+    "docs/attachment-sync.md"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-11T23:14:01Z"
+  "updated_at": "2026-06-11T23:19:50Z"
 }
