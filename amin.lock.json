@@ -7,8 +7,9 @@
     "app/Services/Mobile/MobileAttachmentProjector.php",
     "app/Http/Controllers/AttachmentController.php",
     "app/Http/Controllers/DocumentsController.php",
-    "app/Http/Controllers/AttachmentPreviewController.php"
+    "app/Http/Controllers/AttachmentPreviewController.php",
+    "routes/web.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-11T23:09:02Z"
+  "updated_at": "2026-06-11T23:12:22Z"
 }
