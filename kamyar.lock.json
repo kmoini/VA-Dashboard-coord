@@ -9,7 +9,8 @@
     "database/migrations/2026_06_11_000006_add_assigned_accountant_to_clients.php",
     "database/migrations/2026_06_11_000007_add_transaction_id_to_client_messages.php",
     "app/Models/AccountantReferralCode.php",
-    "app/Models/ReferralSignUp.php"
+    "app/Models/ReferralSignUp.php",
+    "app/Models/PromoCode.php"
   ],
-  "updated_at": "2026-06-11T20:57:03Z"
+  "updated_at": "2026-06-11T20:57:21Z"
 }
