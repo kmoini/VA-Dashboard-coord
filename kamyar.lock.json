@@ -7,7 +7,8 @@
     "database/migrations/2026_06_11_000004_create_promo_codes_table.php",
     "database/migrations/2026_06_11_000005_add_referral_trial_columns_to_accountant_accounts.php",
     "database/migrations/2026_06_11_000006_add_assigned_accountant_to_clients.php",
-    "database/migrations/2026_06_11_000007_add_transaction_id_to_client_messages.php"
+    "database/migrations/2026_06_11_000007_add_transaction_id_to_client_messages.php",
+    "app/Models/AccountantReferralCode.php"
   ],
-  "updated_at": "2026-06-11T20:56:30Z"
+  "updated_at": "2026-06-11T20:56:47Z"
 }
