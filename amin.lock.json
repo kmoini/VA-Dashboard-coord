@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "database/migrations/2026_06_11_000001_add_mobile_link_to_transactions_table.php"
+    "database/migrations/2026_06_11_000001_add_mobile_link_to_transactions_table.php",
+    "app/Models/Transaction.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-11T00:22:45Z"
+  "updated_at": "2026-06-11T00:23:02Z"
 }
