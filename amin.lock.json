@@ -1,15 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "database/migrations/2026_06_11_000002_add_mobile_link_to_attachments_table.php",
-    "app/Models/Attachment.php",
-    "app/Services/Mobile/MobileAttachmentProjector.php",
-    "app/Jobs/PollMobileChangesJob.php",
-    "app/Console/Commands/ProjectMobileAttachments.php",
-    "tests/Feature/Mobile/MobileAttachmentProjectorTest.php",
-    "docs/attachment-sync.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-11T16:40:43Z"
+  "updated_at": "2026-06-11T16:49:09Z"
 }
