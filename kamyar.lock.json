@@ -17,7 +17,8 @@
     "app/Http/Controllers/AccountantReferralController.php",
     "routes/web.php",
     "app/Policies/ClientPolicy.php",
-    "app/Models/Client.php"
+    "app/Models/Client.php",
+    "app/Http/Controllers/ClientsController.php"
   ],
-  "updated_at": "2026-06-11T21:02:19Z"
+  "updated_at": "2026-06-11T21:02:45Z"
 }
