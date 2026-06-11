@@ -1,17 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "config/filesystems.php",
-    "app/Models/Attachment.php",
-    "app/Services/Mobile/MobileAttachmentProjector.php",
-    "app/Http/Controllers/AttachmentController.php",
-    "app/Http/Controllers/DocumentsController.php",
-    "app/Http/Controllers/AttachmentPreviewController.php",
-    "routes/web.php",
-    "tests/Feature/Mobile/MobileAttachmentProjectorTest.php",
-    "docs/attachment-sync.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-11T23:21:55Z"
+  "updated_at": "2026-06-11T23:38:58Z"
 }
