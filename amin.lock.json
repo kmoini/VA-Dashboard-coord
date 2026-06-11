@@ -7,8 +7,9 @@
     "app/Services/Mobile/MobileTransactionProjector.php",
     "app/Jobs/PollMobileChangesJob.php",
     "app/Console/Commands/ProjectMobileTransactions.php",
-    "tests/Feature/Mobile/MobileTransactionProjectorTest.php"
+    "tests/Feature/Mobile/MobileTransactionProjectorTest.php",
+    "docs/transaction-sync.md"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-11T00:25:30Z"
+  "updated_at": "2026-06-11T00:29:39Z"
 }
