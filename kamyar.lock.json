@@ -18,7 +18,8 @@
     "routes/web.php",
     "app/Policies/ClientPolicy.php",
     "app/Models/Client.php",
-    "app/Http/Controllers/ClientsController.php"
+    "app/Http/Controllers/ClientsController.php",
+    "resources/js/Pages/Referral/Index.jsx"
   ],
-  "updated_at": "2026-06-11T21:03:10Z"
+  "updated_at": "2026-06-11T21:04:17Z"
 }
