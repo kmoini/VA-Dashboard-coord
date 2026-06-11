@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "config/filesystems.php",
-    "app/Models/Attachment.php"
+    "app/Models/Attachment.php",
+    "app/Services/Mobile/MobileAttachmentProjector.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-11T22:47:35Z"
+  "updated_at": "2026-06-11T22:53:40Z"
 }
