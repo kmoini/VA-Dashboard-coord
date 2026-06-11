@@ -1,15 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "database/migrations/2026_06_11_000001_add_mobile_link_to_transactions_table.php",
-    "app/Models/Transaction.php",
-    "app/Services/Mobile/MobileTransactionProjector.php",
-    "app/Jobs/PollMobileChangesJob.php",
-    "app/Console/Commands/ProjectMobileTransactions.php",
-    "tests/Feature/Mobile/MobileTransactionProjectorTest.php",
-    "docs/transaction-sync.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-11T00:29:39Z"
+  "updated_at": "2026-06-11T00:39:04Z"
 }
