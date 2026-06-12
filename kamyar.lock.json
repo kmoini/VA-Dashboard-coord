@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "app/Models/ClientMessage.php",
-    "tests/Feature/Chat/TransactionScopedMessageTest.php"
+    "tests/Feature/Chat/TransactionScopedMessageTest.php",
+    "tests/Feature/Auth/RegistrationWithCodeTest.php"
   ],
-  "updated_at": "2026-06-12T14:02:48Z"
+  "updated_at": "2026-06-12T14:03:07Z"
 }
