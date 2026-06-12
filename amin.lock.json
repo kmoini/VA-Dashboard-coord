@@ -7,8 +7,9 @@
     "resources/js/Pages/ClientDashboard/Index.jsx",
     "resources/js/Pages/ClientPortal/Records.jsx",
     "resources/js/Pages/ClientPortal/Upload.jsx",
-    "resources/js/Pages/ClientPortal/Documents.jsx"
+    "resources/js/Pages/ClientPortal/Documents.jsx",
+    "app/Http/Controllers/ClientPortalController.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-12T18:47:20Z"
+  "updated_at": "2026-06-12T18:48:26Z"
 }
