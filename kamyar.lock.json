@@ -1,6 +1,8 @@
 {
   "owner": "Kamyar",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-06-12T13:41:56Z"
+  "status": "active",
+  "locked_files": [
+    "tests/Feature/Referral/ReferralCodeServiceTest.php"
+  ],
+  "updated_at": "2026-06-12T13:47:47Z"
 }
