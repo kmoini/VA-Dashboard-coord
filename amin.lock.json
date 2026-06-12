@@ -13,8 +13,9 @@
     "resources/js/Pages/ClientPortal/Messages.jsx",
     "resources/js/Pages/ClientPortal/Invoices.jsx",
     "resources/js/Pages/ClientPortal/Inbox.jsx",
-    "resources/js/Pages/ClientPortal/Billing.jsx"
+    "resources/js/Pages/ClientPortal/Billing.jsx",
+    "resources/js/Pages/ClientPortal/Settings.jsx"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-12T18:51:25Z"
+  "updated_at": "2026-06-12T18:51:50Z"
 }
