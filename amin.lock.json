@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Http/Middleware/ResolveTenant.php",
     "resources/js/Layouts/Components/Sidebar.jsx",
-    "resources/js/Layouts/AuthenticatedLayout.jsx"
+    "resources/js/Layouts/AuthenticatedLayout.jsx",
+    "app/Http/Controllers/TransactionsController.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-12T20:05:17Z"
+  "updated_at": "2026-06-12T20:05:35Z"
 }
