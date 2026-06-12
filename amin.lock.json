@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "app/Http/Middleware/ResolveTenant.php"
+    "app/Http/Middleware/ResolveTenant.php",
+    "resources/js/Layouts/Components/Sidebar.jsx"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-12T20:03:45Z"
+  "updated_at": "2026-06-12T20:04:19Z"
 }
