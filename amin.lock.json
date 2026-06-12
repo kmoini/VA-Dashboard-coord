@@ -1,15 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Http/Middleware/ResolveTenant.php",
-    "resources/js/Layouts/Components/Sidebar.jsx",
-    "resources/js/Layouts/AuthenticatedLayout.jsx",
-    "app/Http/Controllers/TransactionsController.php",
-    "app/Http/Controllers/DocumentsController.php",
-    "app/Http/Controllers/DashboardController.php",
-    "app/Http/Controllers/SettingsController.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-12T20:08:13Z"
+  "updated_at": "2026-06-12T20:11:03Z"
 }
