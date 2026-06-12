@@ -4,7 +4,8 @@
   "locked_files": [
     "app/Models/ClientMessage.php",
     "tests/Feature/Chat/TransactionScopedMessageTest.php",
-    "tests/Feature/Auth/RegistrationWithCodeTest.php"
+    "tests/Feature/Auth/RegistrationWithCodeTest.php",
+    "tests/Feature/Clients/ClientAssignmentTest.php"
   ],
-  "updated_at": "2026-06-12T14:03:07Z"
+  "updated_at": "2026-06-12T14:03:40Z"
 }
