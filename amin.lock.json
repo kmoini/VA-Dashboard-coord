@@ -6,8 +6,9 @@
     "resources/js/Layouts/AuthenticatedLayout.jsx",
     "resources/js/Pages/ClientDashboard/Index.jsx",
     "resources/js/Pages/ClientPortal/Records.jsx",
-    "resources/js/Pages/ClientPortal/Upload.jsx"
+    "resources/js/Pages/ClientPortal/Upload.jsx",
+    "resources/js/Pages/ClientPortal/Documents.jsx"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-12T18:46:32Z"
+  "updated_at": "2026-06-12T18:46:52Z"
 }
