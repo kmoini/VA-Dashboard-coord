@@ -2,7 +2,8 @@
   "owner": "Kamyar",
   "status": "active",
   "locked_files": [
-    "app/Models/ClientMessage.php"
+    "app/Models/ClientMessage.php",
+    "tests/Feature/Chat/TransactionScopedMessageTest.php"
   ],
-  "updated_at": "2026-06-12T14:02:31Z"
+  "updated_at": "2026-06-12T14:02:48Z"
 }
