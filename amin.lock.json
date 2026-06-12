@@ -7,8 +7,9 @@
     "app/Models/Transaction.php",
     "app/Http/Middleware/EnsureClientPortal.php",
     "bootstrap/app.php",
-    "app/Http/Middleware/ResolveTenant.php"
+    "app/Http/Middleware/ResolveTenant.php",
+    "app/Http/Controllers/ClientPortalController.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-12T17:13:05Z"
+  "updated_at": "2026-06-12T17:15:29Z"
 }
