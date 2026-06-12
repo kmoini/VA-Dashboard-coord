@@ -6,7 +6,8 @@
     "tests/Feature/Referral/TrialServiceTest.php",
     "tests/Feature/Referral/PromoCodeTest.php",
     "tests/Feature/Clients/ClientAssignmentTest.php",
-    "tests/Feature/Chat/TransactionScopedMessageTest.php"
+    "tests/Feature/Chat/TransactionScopedMessageTest.php",
+    "tests/Feature/Auth/RegistrationWithCodeTest.php"
   ],
-  "updated_at": "2026-06-12T13:50:44Z"
+  "updated_at": "2026-06-12T13:51:42Z"
 }
