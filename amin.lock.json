@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "app/Http/Controllers/ClientPortalController.php"
+    "app/Http/Controllers/ClientPortalController.php",
+    "resources/js/Pages/ClientPortal/Records.jsx"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-12T19:32:44Z"
+  "updated_at": "2026-06-12T19:33:03Z"
 }
