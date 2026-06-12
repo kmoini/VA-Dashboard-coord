@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Http/Controllers/ClientPortalController.php",
-    "routes/web.php"
+    "routes/web.php",
+    "resources/js/Pages/ClientPortal/CreateTransaction.jsx"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-12T21:09:59Z"
+  "updated_at": "2026-06-12T21:12:03Z"
 }
