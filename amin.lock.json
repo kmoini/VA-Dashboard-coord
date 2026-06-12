@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "app/Http/Middleware/ResolveTenant.php"
+    "app/Http/Middleware/ResolveTenant.php",
+    "resources/js/Pages/ClientPortal/Billing.jsx"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-12T22:37:10Z"
+  "updated_at": "2026-06-12T22:40:34Z"
 }
