@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "database/migrations/2026_06_12_000001_create_transaction_notes_table.php",
-    "app/Models/TransactionNote.php"
+    "app/Models/TransactionNote.php",
+    "app/Models/Transaction.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-12T17:10:13Z"
+  "updated_at": "2026-06-12T17:10:48Z"
 }
