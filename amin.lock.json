@@ -5,8 +5,9 @@
     "database/migrations/2026_06_12_000002_add_is_personal_to_accountant_accounts.php",
     "app/Services/PersonalWorkspaceService.php",
     "app/Models/AccountantAccount.php",
-    "app/Http/Controllers/Auth/RegisteredUserController.php"
+    "app/Http/Controllers/Auth/RegisteredUserController.php",
+    "resources/js/Pages/Auth/Register.jsx"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-12T22:00:24Z"
+  "updated_at": "2026-06-12T22:02:47Z"
 }
