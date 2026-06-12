@@ -4,8 +4,9 @@
   "locked_files": [
     "database/migrations/2026_06_12_000002_add_is_personal_to_accountant_accounts.php",
     "app/Services/PersonalWorkspaceService.php",
-    "app/Models/AccountantAccount.php"
+    "app/Models/AccountantAccount.php",
+    "app/Http/Controllers/Auth/RegisteredUserController.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-12T21:58:53Z"
+  "updated_at": "2026-06-12T22:00:24Z"
 }
