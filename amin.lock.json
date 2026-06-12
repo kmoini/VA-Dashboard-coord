@@ -13,8 +13,9 @@
     "resources/js/Layouts/Components/ClientSidebar.jsx",
     "resources/js/Layouts/ClientLayout.jsx",
     "resources/js/Pages/ClientDashboard/Index.jsx",
-    "resources/js/Pages/ClientPortal/Upload.jsx"
+    "resources/js/Pages/ClientPortal/Upload.jsx",
+    "resources/js/Components/PaginatorNav.jsx"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-12T17:22:59Z"
+  "updated_at": "2026-06-12T17:23:21Z"
 }
