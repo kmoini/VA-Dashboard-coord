@@ -1,13 +1,6 @@
 {
   "owner": "Kamyar",
-  "status": "active",
-  "locked_files": [
-    "tests/Feature/Referral/ReferralCodeServiceTest.php",
-    "tests/Feature/Referral/TrialServiceTest.php",
-    "tests/Feature/Referral/PromoCodeTest.php",
-    "tests/Feature/Clients/ClientAssignmentTest.php",
-    "tests/Feature/Chat/TransactionScopedMessageTest.php",
-    "tests/Feature/Auth/RegistrationWithCodeTest.php"
-  ],
-  "updated_at": "2026-06-12T13:51:42Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-06-12T13:52:11Z"
 }
