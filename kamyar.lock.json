@@ -2,7 +2,8 @@
   "owner": "Kamyar",
   "status": "active",
   "locked_files": [
-    "tests/Feature/Auth/RegistrationWithCodeTest.php"
+    "tests/Feature/Auth/RegistrationWithCodeTest.php",
+    "CLAUDE.md"
   ],
-  "updated_at": "2026-06-12T14:34:17Z"
+  "updated_at": "2026-06-12T14:35:24Z"
 }
