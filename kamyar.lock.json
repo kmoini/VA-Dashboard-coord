@@ -4,7 +4,8 @@
   "locked_files": [
     "tests/Feature/Referral/ReferralCodeServiceTest.php",
     "tests/Feature/Referral/TrialServiceTest.php",
-    "tests/Feature/Referral/PromoCodeTest.php"
+    "tests/Feature/Referral/PromoCodeTest.php",
+    "tests/Feature/Clients/ClientAssignmentTest.php"
   ],
-  "updated_at": "2026-06-12T13:49:09Z"
+  "updated_at": "2026-06-12T13:50:02Z"
 }
