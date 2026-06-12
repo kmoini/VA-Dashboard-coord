@@ -1,7 +1,9 @@
 {
   "owner": "Amin",
-  "status": "idle",
-  "locked_files": [],
+  "status": "active",
+  "locked_files": [
+    "resources/js/Pages/ClientPortal/Settings.jsx"
+  ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-12T20:28:27Z"
+  "updated_at": "2026-06-12T20:41:25Z"
 }
