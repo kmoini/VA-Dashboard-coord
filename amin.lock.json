@@ -1,13 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Http/Controllers/ClientPortalController.php",
-    "resources/js/Pages/ClientPortal/Records.jsx",
-    "app/Http/Controllers/ClientDashboardController.php",
-    "resources/js/Pages/ClientDashboard/Index.jsx",
-    "resources/js/Pages/ClientPortal/Settings.jsx"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-12T19:42:53Z"
+  "updated_at": "2026-06-12T19:44:55Z"
 }
