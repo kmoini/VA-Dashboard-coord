@@ -12,8 +12,9 @@
     "routes/web.php",
     "resources/js/Layouts/Components/ClientSidebar.jsx",
     "resources/js/Layouts/ClientLayout.jsx",
-    "resources/js/Pages/ClientDashboard/Index.jsx"
+    "resources/js/Pages/ClientDashboard/Index.jsx",
+    "resources/js/Pages/ClientPortal/Upload.jsx"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-12T17:21:21Z"
+  "updated_at": "2026-06-12T17:22:59Z"
 }
