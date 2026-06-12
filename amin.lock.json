@@ -4,8 +4,9 @@
   "locked_files": [
     "resources/js/Layouts/Components/Sidebar.jsx",
     "resources/js/Layouts/AuthenticatedLayout.jsx",
-    "resources/js/Pages/ClientDashboard/Index.jsx"
+    "resources/js/Pages/ClientDashboard/Index.jsx",
+    "resources/js/Pages/ClientPortal/Records.jsx"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-12T18:45:01Z"
+  "updated_at": "2026-06-12T18:45:24Z"
 }
