@@ -2,7 +2,8 @@
   "owner": "Kamyar",
   "status": "active",
   "locked_files": [
-    "tests/Feature/Referral/ReferralCodeServiceTest.php"
+    "tests/Feature/Referral/ReferralCodeServiceTest.php",
+    "tests/Feature/Referral/TrialServiceTest.php"
   ],
-  "updated_at": "2026-06-12T13:47:47Z"
+  "updated_at": "2026-06-12T13:48:31Z"
 }
