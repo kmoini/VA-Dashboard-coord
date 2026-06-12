@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "resources/js/Layouts/Components/Sidebar.jsx"
+    "resources/js/Layouts/Components/Sidebar.jsx",
+    "resources/js/Layouts/AuthenticatedLayout.jsx"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-12T18:41:01Z"
+  "updated_at": "2026-06-12T18:41:27Z"
 }
