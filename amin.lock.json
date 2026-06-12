@@ -5,8 +5,9 @@
     "database/migrations/2026_06_12_000001_create_transaction_notes_table.php",
     "app/Models/TransactionNote.php",
     "app/Models/Transaction.php",
-    "app/Http/Middleware/EnsureClientPortal.php"
+    "app/Http/Middleware/EnsureClientPortal.php",
+    "bootstrap/app.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-12T17:11:41Z"
+  "updated_at": "2026-06-12T17:12:02Z"
 }
