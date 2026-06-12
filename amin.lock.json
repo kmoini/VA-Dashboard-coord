@@ -5,8 +5,9 @@
     "app/Http/Middleware/ResolveTenant.php",
     "resources/js/Layouts/Components/Sidebar.jsx",
     "resources/js/Layouts/AuthenticatedLayout.jsx",
-    "app/Http/Controllers/TransactionsController.php"
+    "app/Http/Controllers/TransactionsController.php",
+    "app/Http/Controllers/DocumentsController.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-12T20:05:50Z"
+  "updated_at": "2026-06-12T20:06:12Z"
 }
