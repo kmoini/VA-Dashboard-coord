@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "database/migrations/2026_06_12_000002_add_is_personal_to_accountant_accounts.php"
+    "database/migrations/2026_06_12_000002_add_is_personal_to_accountant_accounts.php",
+    "app/Services/PersonalWorkspaceService.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-12T21:54:21Z"
+  "updated_at": "2026-06-12T21:55:57Z"
 }
