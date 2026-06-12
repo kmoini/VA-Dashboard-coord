@@ -1,25 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "database/migrations/2026_06_12_000001_create_transaction_notes_table.php",
-    "app/Models/TransactionNote.php",
-    "app/Models/Transaction.php",
-    "app/Http/Middleware/EnsureClientPortal.php",
-    "bootstrap/app.php",
-    "app/Http/Middleware/ResolveTenant.php",
-    "app/Http/Controllers/ClientPortalController.php",
-    "routes/web.php",
-    "resources/js/Layouts/Components/ClientSidebar.jsx",
-    "resources/js/Layouts/ClientLayout.jsx",
-    "resources/js/Pages/ClientDashboard/Index.jsx",
-    "resources/js/Pages/ClientPortal/Upload.jsx",
-    "resources/js/Components/PaginatorNav.jsx",
-    "resources/js/Pages/ClientPortal/Documents.jsx",
-    "resources/js/Pages/ClientPortal/Records.jsx",
-    "CLAUDE.md",
-    "docs/client-portal.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-12T17:28:54Z"
+  "updated_at": "2026-06-12T17:44:29Z"
 }
