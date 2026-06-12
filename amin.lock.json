@@ -10,8 +10,9 @@
     "resources/js/Pages/ClientPortal/Documents.jsx",
     "app/Http/Controllers/ClientPortalController.php",
     "routes/web.php",
-    "resources/js/Pages/ClientPortal/Messages.jsx"
+    "resources/js/Pages/ClientPortal/Messages.jsx",
+    "resources/js/Pages/ClientPortal/Invoices.jsx"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-12T18:50:14Z"
+  "updated_at": "2026-06-12T18:50:39Z"
 }
