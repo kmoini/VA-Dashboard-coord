@@ -10,8 +10,9 @@
     "app/Http/Middleware/ResolveTenant.php",
     "app/Http/Controllers/ClientPortalController.php",
     "routes/web.php",
-    "resources/js/Layouts/Components/ClientSidebar.jsx"
+    "resources/js/Layouts/Components/ClientSidebar.jsx",
+    "resources/js/Layouts/ClientLayout.jsx"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-12T17:19:31Z"
+  "updated_at": "2026-06-12T17:20:09Z"
 }
