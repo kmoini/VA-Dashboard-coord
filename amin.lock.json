@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "resources/js/Layouts/Components/Sidebar.jsx",
-    "resources/js/Layouts/AuthenticatedLayout.jsx"
+    "resources/js/Layouts/AuthenticatedLayout.jsx",
+    "resources/js/Pages/ClientDashboard/Index.jsx"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-12T18:43:11Z"
+  "updated_at": "2026-06-12T18:43:58Z"
 }
