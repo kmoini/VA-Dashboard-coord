@@ -16,8 +16,9 @@
     "resources/js/Pages/ClientPortal/Upload.jsx",
     "resources/js/Components/PaginatorNav.jsx",
     "resources/js/Pages/ClientPortal/Documents.jsx",
-    "resources/js/Pages/ClientPortal/Records.jsx"
+    "resources/js/Pages/ClientPortal/Records.jsx",
+    "CLAUDE.md"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-12T17:26:10Z"
+  "updated_at": "2026-06-12T17:27:38Z"
 }
