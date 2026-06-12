@@ -1,21 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "resources/js/Layouts/Components/Sidebar.jsx",
-    "resources/js/Layouts/AuthenticatedLayout.jsx",
-    "resources/js/Pages/ClientDashboard/Index.jsx",
-    "resources/js/Pages/ClientPortal/Records.jsx",
-    "resources/js/Pages/ClientPortal/Upload.jsx",
-    "resources/js/Pages/ClientPortal/Documents.jsx",
-    "app/Http/Controllers/ClientPortalController.php",
-    "routes/web.php",
-    "resources/js/Pages/ClientPortal/Messages.jsx",
-    "resources/js/Pages/ClientPortal/Invoices.jsx",
-    "resources/js/Pages/ClientPortal/Inbox.jsx",
-    "resources/js/Pages/ClientPortal/Billing.jsx",
-    "resources/js/Pages/ClientPortal/Settings.jsx"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-12T18:51:50Z"
+  "updated_at": "2026-06-12T19:06:24Z"
 }
