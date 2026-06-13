@@ -6,8 +6,9 @@
     "tests/Feature/Mobile/MobileAttachmentProjectorTest.php",
     "docs/attachment-sync.md",
     "database/migrations/2026_06_13_000001_backfill_email_verified_at.php",
-    "app/Models/User.php"
+    "app/Models/User.php",
+    "app/Services/PersonalWorkspaceService.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-13T21:36:40Z"
+  "updated_at": "2026-06-13T21:36:57Z"
 }
