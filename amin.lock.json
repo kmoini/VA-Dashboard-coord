@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Models/Attachment.php",
     "app/Http/Controllers/DocumentsController.php",
-    "app/Http/Controllers/ClientPortalController.php"
+    "app/Http/Controllers/ClientPortalController.php",
+    "s3test.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-13T18:55:25Z"
+  "updated_at": "2026-06-13T18:55:53Z"
 }
