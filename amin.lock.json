@@ -1,13 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Models/Attachment.php",
-    "app/Http/Controllers/DocumentsController.php",
-    "app/Http/Controllers/ClientPortalController.php",
-    "s3test.php",
-    "docs/attachment-sync.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-13T18:57:58Z"
+  "updated_at": "2026-06-13T19:00:31Z"
 }
