@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Services/Mobile/MobileEntities.php",
     "app/Services/Mobile/SubscriptionProjector.php",
-    "app/Jobs/PollMobileChangesJob.php"
+    "app/Jobs/PollMobileChangesJob.php",
+    "app/Console/Commands/ProjectMobileSubscriptions.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-13T23:25:28Z"
+  "updated_at": "2026-06-13T23:26:42Z"
 }
