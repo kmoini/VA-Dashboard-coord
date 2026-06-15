@@ -7,8 +7,9 @@
     "app/Services/Mobile/MobileApiClient.php",
     "app/Services/Mobile/MobileDirectoryService.php",
     "app/Http/Controllers/ClientPortalController.php",
-    "routes/web.php"
+    "routes/web.php",
+    "resources/js/Pages/ClientPortal/Billing.jsx"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-15T14:35:08Z"
+  "updated_at": "2026-06-15T14:35:58Z"
 }
