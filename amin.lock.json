@@ -1,16 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "config/m2m.php",
-    "config/mobile.php",
-    "app/Services/Mobile/MobileApiClient.php",
-    "app/Services/Mobile/MobileDirectoryService.php",
-    "app/Http/Controllers/ClientPortalController.php",
-    "routes/web.php",
-    "resources/js/Pages/ClientPortal/Billing.jsx",
-    "app/Http/Controllers/Temp/FileCheckController.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-15T14:48:45Z"
+  "updated_at": "2026-06-15T14:48:53Z"
 }
