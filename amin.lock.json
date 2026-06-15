@@ -9,8 +9,9 @@
     "app/Http/Controllers/ChatController.php",
     "app/Services/InvoiceService.php",
     "app/Services/Mobile/MobileMessageProjector.php",
-    "tests/Feature/Chat/ChatServiceTest.php"
+    "tests/Feature/Chat/ChatServiceTest.php",
+    "resources/js/Pages/Chat/Studio/MessagesChatStudio.tsx"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-15T21:11:59Z"
+  "updated_at": "2026-06-15T21:20:56Z"
 }
