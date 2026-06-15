@@ -1,7 +1,9 @@
 {
   "owner": "Amin",
-  "status": "idle",
-  "locked_files": [],
+  "status": "active",
+  "locked_files": [
+    "routes/web.php"
+  ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-15T14:48:53Z"
+  "updated_at": "2026-06-15T14:49:02Z"
 }
