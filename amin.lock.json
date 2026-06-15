@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Services/ChatService.php",
     "app/Http/Controllers/ChatController.php",
-    "resources/js/Pages/Chat/Studio/MessagesChatStudio.tsx"
+    "resources/js/Pages/Chat/Studio/MessagesChatStudio.tsx",
+    "tests/Feature/Chat/ChatServiceTest.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-15T22:29:23Z"
+  "updated_at": "2026-06-15T22:30:43Z"
 }
