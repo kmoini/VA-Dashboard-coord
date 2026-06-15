@@ -6,8 +6,9 @@
     "app/Providers/AppServiceProvider.php",
     "app/Models/ClientMessage.php",
     "app/Services/ChatService.php",
-    "app/Http/Controllers/ChatController.php"
+    "app/Http/Controllers/ChatController.php",
+    "app/Services/InvoiceService.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-15T20:47:24Z"
+  "updated_at": "2026-06-15T20:49:19Z"
 }
