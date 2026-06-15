@@ -1,11 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Services/Mobile/MobileTransactionProjector.php",
-    "tests/Feature/Mobile/MobileTransactionProjectorTest.php",
-    "database/migrations/2026_06_13_000001_backfill_email_verified_at.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-15T19:27:01Z"
+  "updated_at": "2026-06-15T19:29:15Z"
 }
