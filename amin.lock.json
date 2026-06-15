@@ -4,8 +4,9 @@
   "locked_files": [
     "config/m2m.php",
     "config/mobile.php",
-    "app/Services/Mobile/MobileApiClient.php"
+    "app/Services/Mobile/MobileApiClient.php",
+    "app/Services/Mobile/MobileDirectoryService.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-15T14:32:34Z"
+  "updated_at": "2026-06-15T14:33:21Z"
 }
