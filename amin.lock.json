@@ -1,14 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Services/ChatService.php",
-    "app/Http/Controllers/ChatController.php",
-    "resources/js/Pages/Chat/Studio/MessagesChatStudio.tsx",
-    "tests/Feature/Chat/ChatServiceTest.php",
-    "tests/Feature/Invoices/InvoiceServiceTest.php",
-    "app/Services/InvoiceService.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-15T22:40:04Z"
+  "updated_at": "2026-06-15T23:54:16Z"
 }
