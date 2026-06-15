@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "database/migrations/2026_06_15_000001_make_client_messages_body_nullable.php",
-    "app/Providers/AppServiceProvider.php"
+    "app/Providers/AppServiceProvider.php",
+    "app/Models/ClientMessage.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-15T20:34:03Z"
+  "updated_at": "2026-06-15T20:35:07Z"
 }
