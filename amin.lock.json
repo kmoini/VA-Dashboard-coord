@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "database/migrations/2026_06_15_000001_make_client_messages_body_nullable.php"
+    "database/migrations/2026_06_15_000001_make_client_messages_body_nullable.php",
+    "app/Providers/AppServiceProvider.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-15T20:33:03Z"
+  "updated_at": "2026-06-15T20:34:03Z"
 }
