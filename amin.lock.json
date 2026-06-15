@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "config/m2m.php"
+    "config/m2m.php",
+    "config/mobile.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-15T14:31:01Z"
+  "updated_at": "2026-06-15T14:31:31Z"
 }
