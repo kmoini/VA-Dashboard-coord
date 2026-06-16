@@ -5,8 +5,9 @@
     "app/Http/Controllers/DocumentsController.php",
     "app/Http/Controllers/ScanUploadController.php",
     "app/Services/EmailIngestionService.php",
-    "app/Http/Controllers/AttachmentController.php"
+    "app/Http/Controllers/AttachmentController.php",
+    "app/Http/Controllers/ClientPortalController.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-16T20:25:40Z"
+  "updated_at": "2026-06-16T20:26:27Z"
 }
