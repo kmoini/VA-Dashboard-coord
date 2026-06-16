@@ -7,8 +7,9 @@
     "config/mobile.php",
     "app/Services/Mobile/MobileMessageProjector.php",
     "tests/Feature/Chat/ChatServiceTest.php",
-    "app/Http/Controllers/AttachmentPreviewController.php"
+    "app/Http/Controllers/AttachmentPreviewController.php",
+    "resources/js/Pages/Chat/Studio/MessagesChatStudio.tsx"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-16T00:46:38Z"
+  "updated_at": "2026-06-16T00:48:49Z"
 }
