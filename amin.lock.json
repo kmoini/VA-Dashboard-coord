@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "app/Jobs/ExtractDocumentTransactionsJob.php"
+    "app/Jobs/ExtractDocumentTransactionsJob.php",
+    "app/Http/Controllers/DocumentsController.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-16T22:10:38Z"
+  "updated_at": "2026-06-16T22:12:21Z"
 }
