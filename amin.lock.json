@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Jobs/ExtractDocumentTransactionsJob.php",
-    "app/Http/Controllers/DocumentsController.php"
+    "app/Http/Controllers/DocumentsController.php",
+    "resources/js/Pages/Documents/Index.jsx"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-16T22:15:00Z"
+  "updated_at": "2026-06-16T22:30:01Z"
 }
