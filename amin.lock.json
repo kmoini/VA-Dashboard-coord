@@ -1,9 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "vite.config.js"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-16T14:37:56Z"
+  "updated_at": "2026-06-16T14:41:09Z"
 }
