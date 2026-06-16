@@ -1,7 +1,9 @@
 {
   "owner": "Amin",
-  "status": "idle",
-  "locked_files": [],
+  "status": "active",
+  "locked_files": [
+    "app/Http/Controllers/DocumentsController.php"
+  ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-16T18:21:42Z"
+  "updated_at": "2026-06-16T18:33:02Z"
 }
