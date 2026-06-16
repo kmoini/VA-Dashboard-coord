@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Http/Controllers/DocumentsController.php",
-    "app/Http/Controllers/ScanUploadController.php"
+    "app/Http/Controllers/ScanUploadController.php",
+    "app/Services/EmailIngestionService.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-16T20:19:29Z"
+  "updated_at": "2026-06-16T20:21:52Z"
 }
