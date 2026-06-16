@@ -1,9 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    ".git/TAG_MSG_034.txt"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-16T03:02:35Z"
+  "updated_at": "2026-06-16T03:05:28Z"
 }
