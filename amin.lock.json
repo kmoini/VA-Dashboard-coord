@@ -1,14 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Http/Controllers/DocumentsController.php",
-    "app/Http/Controllers/ScanUploadController.php",
-    "app/Services/EmailIngestionService.php",
-    "app/Http/Controllers/AttachmentController.php",
-    "app/Http/Controllers/ClientPortalController.php",
-    "app/Http/Controllers/GoogleDriveController.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-16T20:29:08Z"
+  "updated_at": "2026-06-16T20:34:47Z"
 }
