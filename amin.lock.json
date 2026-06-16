@@ -6,8 +6,9 @@
     "app/Services/ChatService.php",
     "config/mobile.php",
     "app/Services/Mobile/MobileMessageProjector.php",
-    "tests/Feature/Chat/ChatServiceTest.php"
+    "tests/Feature/Chat/ChatServiceTest.php",
+    "app/Http/Controllers/AttachmentPreviewController.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-16T00:40:17Z"
+  "updated_at": "2026-06-16T00:43:33Z"
 }
