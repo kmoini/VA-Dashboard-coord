@@ -1,12 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Jobs/ExtractDocumentTransactionsJob.php",
-    "app/Http/Controllers/DocumentsController.php",
-    "resources/js/Pages/Documents/Index.jsx",
-    "docs/document-ai-extraction.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-16T22:51:10Z"
+  "updated_at": "2026-06-16T23:00:19Z"
 }
