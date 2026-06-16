@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    ".gitignore"
+    ".gitignore",
+    "docs/checkpoint-035-ledger-edit-fixes.md"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-16T15:36:36Z"
+  "updated_at": "2026-06-16T15:38:43Z"
 }
