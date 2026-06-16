@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     ".env",
-    "config/services.php"
+    "config/services.php",
+    ".env.example"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-16T21:26:09Z"
+  "updated_at": "2026-06-16T21:28:39Z"
 }
