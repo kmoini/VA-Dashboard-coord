@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "resources/js/Pages/Documents/Index.jsx"
+    "resources/js/Pages/Documents/Index.jsx",
+    "app/Http/Controllers/DocumentsController.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-16T23:14:21Z"
+  "updated_at": "2026-06-16T23:15:39Z"
 }
