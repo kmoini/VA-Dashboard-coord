@@ -5,5 +5,5 @@
     "app/Console/Commands/MobileAttachmentDoctor.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-16T03:23:38Z"
+  "updated_at": "2026-06-16T03:24:10Z"
 }
