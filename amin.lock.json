@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "_chatdiag.php"
+    "_chatdiag.php",
+    "app/Services/ChatService.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-16T00:35:01Z"
+  "updated_at": "2026-06-16T00:38:26Z"
 }
