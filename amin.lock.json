@@ -7,8 +7,9 @@
     ".env.example",
     "app/Services/Gemini/GeminiClient.php",
     "app/Services/Gemini/DocumentAiExtractor.php",
-    "app/Services/Gemini/TransactionDraftValidator.php"
+    "app/Services/Gemini/TransactionDraftValidator.php",
+    "app/Services/Gemini/DocumentAiIngestService.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-16T21:47:37Z"
+  "updated_at": "2026-06-16T21:49:02Z"
 }
