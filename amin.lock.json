@@ -1,16 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "config/services.php",
-    "app/Services/Pdf/PdfPageSplitter.php",
-    "app/Services/Gemini/DocumentAiIngestService.php",
-    "app/Jobs/ExtractDocumentTransactionsJob.php",
-    "app/Http/Controllers/DocumentsController.php",
-    "resources/js/lib/pdfPageRender.js",
-    "resources/js/Pages/Documents/Index.jsx",
-    "docs/document-ai-extraction.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-17T20:02:38Z"
+  "updated_at": "2026-06-17T20:04:59Z"
 }
