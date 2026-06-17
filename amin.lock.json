@@ -1,12 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "resources/js/Pages/Documents/Index.jsx",
-    "app/Http/Controllers/DocumentsController.php",
-    "app/Services/Gemini/DocumentAiExtractor.php",
-    "docs/document-ai-extraction.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-17T03:00:08Z"
+  "updated_at": "2026-06-17T03:14:28Z"
 }
