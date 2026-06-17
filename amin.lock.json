@@ -4,8 +4,9 @@
   "locked_files": [
     "config/services.php",
     "app/Services/Pdf/PdfPageSplitter.php",
-    "app/Services/Gemini/DocumentAiIngestService.php"
+    "app/Services/Gemini/DocumentAiIngestService.php",
+    "app/Jobs/ExtractDocumentTransactionsJob.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-17T19:07:04Z"
+  "updated_at": "2026-06-17T19:07:29Z"
 }
