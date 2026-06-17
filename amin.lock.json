@@ -6,8 +6,9 @@
     "app/Services/Pdf/PdfPageSplitter.php",
     "app/Services/Gemini/DocumentAiIngestService.php",
     "app/Jobs/ExtractDocumentTransactionsJob.php",
-    "app/Http/Controllers/DocumentsController.php"
+    "app/Http/Controllers/DocumentsController.php",
+    "resources/js/lib/pdfPageRender.js"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-17T19:09:03Z"
+  "updated_at": "2026-06-17T19:10:21Z"
 }
