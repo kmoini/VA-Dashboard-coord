@@ -4,8 +4,9 @@
   "locked_files": [
     "resources/js/Pages/Documents/Index.jsx",
     "app/Http/Controllers/DocumentsController.php",
-    "app/Services/Gemini/DocumentAiExtractor.php"
+    "app/Services/Gemini/DocumentAiExtractor.php",
+    "docs/document-ai-extraction.md"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-17T02:57:51Z"
+  "updated_at": "2026-06-17T02:59:00Z"
 }
