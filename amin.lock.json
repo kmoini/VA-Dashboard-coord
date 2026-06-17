@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "app/Services/Gemini/DocumentAiDispatcher.php"
+    "app/Services/Gemini/DocumentAiDispatcher.php",
+    "app/Http/Controllers/ScanUploadController.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-17T20:52:24Z"
+  "updated_at": "2026-06-17T20:52:51Z"
 }
