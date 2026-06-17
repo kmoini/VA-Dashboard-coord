@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Services/Gemini/DocumentAiIngestService.php",
-    "app/Http/Controllers/AttachmentController.php"
+    "app/Http/Controllers/AttachmentController.php",
+    "app/Http/Controllers/TransactionsController.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-17T17:51:09Z"
+  "updated_at": "2026-06-17T17:53:50Z"
 }
