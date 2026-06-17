@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Services/Gemini/DocumentAiDispatcher.php",
-    "app/Http/Controllers/ScanUploadController.php"
+    "app/Http/Controllers/ScanUploadController.php",
+    "app/Http/Controllers/GoogleDriveController.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-17T20:55:28Z"
+  "updated_at": "2026-06-17T20:56:03Z"
 }
