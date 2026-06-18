@@ -1,6 +1,8 @@
 {
   "owner": "Kamyar",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-06-18T19:52:36Z"
+  "status": "active",
+  "locked_files": [
+    "tests/Feature/Intelligence/FirmKnowledgeTest.php"
+  ],
+  "updated_at": "2026-06-18T19:52:40Z"
 }
