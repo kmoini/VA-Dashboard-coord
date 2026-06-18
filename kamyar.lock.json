@@ -2,7 +2,8 @@
   "owner": "Kamyar",
   "status": "active",
   "locked_files": [
-    "app/Http/Controllers/BusinessController.php"
+    "app/Http/Controllers/BusinessController.php",
+    "routes/web.php"
   ],
-  "updated_at": "2026-06-18T19:46:23Z"
+  "updated_at": "2026-06-18T19:46:47Z"
 }
