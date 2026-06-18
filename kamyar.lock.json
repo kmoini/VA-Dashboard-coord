@@ -1,6 +1,8 @@
 {
   "owner": "Kamyar",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-06-12T14:41:50Z"
+  "status": "active",
+  "locked_files": [
+    "app/Http/Controllers/BusinessController.php"
+  ],
+  "updated_at": "2026-06-18T19:46:23Z"
 }
