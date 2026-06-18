@@ -1,7 +1,9 @@
 {
   "owner": "Amin",
-  "status": "idle",
-  "locked_files": [],
+  "status": "active",
+  "locked_files": [
+    "app/Http/Controllers/ChatMediaController.php"
+  ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-17T22:19:42Z"
+  "updated_at": "2026-06-18T00:43:07Z"
 }
