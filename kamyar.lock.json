@@ -1,11 +1,6 @@
 {
   "owner": "Kamyar",
-  "status": "active",
-  "locked_files": [
-    "tests/Feature/Intelligence/FirmKnowledgeTest.php",
-    "tests/Feature/MultiEntity/IntercoMatchingTest.php",
-    "app/Services/IntercoMatchingService.php",
-    "resources/js/Pages/Reconciliation/Index.jsx"
-  ],
-  "updated_at": "2026-06-18T20:58:32Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-06-18T20:59:30Z"
 }
