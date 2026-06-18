@@ -3,8 +3,10 @@
   "status": "active",
   "locked_files": [
     "app/Http/Controllers/ChatMediaController.php",
-    "routes/web.php"
+    "routes/web.php",
+    ".env",
+    "app/Services/Mobile/MobileApiClient.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-18T00:51:23Z"
+  "updated_at": "2026-06-18T00:56:06Z"
 }
