@@ -4,7 +4,8 @@
   "locked_files": [
     "app/Http/Controllers/BusinessController.php",
     "routes/web.php",
-    "tests/Feature/Intelligence/FirmKnowledgeTest.php"
+    "tests/Feature/Intelligence/FirmKnowledgeTest.php",
+    "tests/Feature/MultiEntity/RelatedEntityTest.php"
   ],
-  "updated_at": "2026-06-18T19:47:59Z"
+  "updated_at": "2026-06-18T19:48:24Z"
 }
