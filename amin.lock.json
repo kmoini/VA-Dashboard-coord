@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "app/Http/Controllers/ChatMediaController.php"
+    "app/Http/Controllers/ChatMediaController.php",
+    "routes/web.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-18T00:43:07Z"
+  "updated_at": "2026-06-18T00:51:23Z"
 }
