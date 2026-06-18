@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Services/ChatService.php",
-    "tests/Feature/Chat/ChatServiceTest.php"
+    "tests/Feature/Chat/ChatServiceTest.php",
+    ".env"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-18T01:29:35Z"
+  "updated_at": "2026-06-18T01:45:51Z"
 }
