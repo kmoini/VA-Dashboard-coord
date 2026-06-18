@@ -2,7 +2,8 @@
   "owner": "Kamyar",
   "status": "active",
   "locked_files": [
-    "app/Services/IntercoMatchingService.php"
+    "app/Services/IntercoMatchingService.php",
+    "tests/Feature/MultiEntity/IntercoMatchingTest.php"
   ],
-  "updated_at": "2026-06-18T22:13:19Z"
+  "updated_at": "2026-06-18T22:13:45Z"
 }
