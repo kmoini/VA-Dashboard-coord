@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "tests/Feature/Intelligence/FirmKnowledgeTest.php",
-    "tests/Feature/MultiEntity/IntercoMatchingTest.php"
+    "tests/Feature/MultiEntity/IntercoMatchingTest.php",
+    "app/Services/IntercoMatchingService.php"
   ],
-  "updated_at": "2026-06-18T19:53:19Z"
+  "updated_at": "2026-06-18T20:56:29Z"
 }
