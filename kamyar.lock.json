@@ -9,7 +9,8 @@
     "app/Services/AiAssistantService.php",
     "routes/console.php",
     "routes/web.php",
-    "app/Http/Controllers/IntelligenceController.php"
+    "app/Http/Controllers/IntelligenceController.php",
+    "resources/js/Pages/Intelligence/Index.jsx"
   ],
-  "updated_at": "2026-06-19T20:40:34Z"
+  "updated_at": "2026-06-19T20:41:39Z"
 }
