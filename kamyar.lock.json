@@ -1,9 +1,6 @@
 {
   "owner": "Kamyar",
-  "status": "active",
-  "locked_files": [
-    "CLAUDE.md",
-    "va-dashboard-master-plan.md"
-  ],
-  "updated_at": "2026-06-19T21:30:02Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-06-19T21:30:08Z"
 }
