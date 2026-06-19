@@ -13,7 +13,8 @@
     "resources/js/Pages/Intelligence/Index.jsx",
     "tests/Feature/Intelligence/VoiceIntelligenceTest.php",
     "tests/Feature/Intelligence/CompanyIntelligenceTest.php",
-    "tests/Feature/Intelligence/IntelligenceCycleTest.php"
+    "tests/Feature/Intelligence/IntelligenceCycleTest.php",
+    "resources/js/Pages/Intelligence/Digest.jsx"
   ],
-  "updated_at": "2026-06-19T20:44:24Z"
+  "updated_at": "2026-06-19T20:44:58Z"
 }
