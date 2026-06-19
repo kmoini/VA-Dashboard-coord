@@ -2,7 +2,8 @@
   "owner": "Kamyar",
   "status": "active",
   "locked_files": [
-    "app/Services/VoiceIntelligenceService.php"
+    "app/Services/VoiceIntelligenceService.php",
+    "app/Services/CompanyIntelligenceService.php"
   ],
-  "updated_at": "2026-06-19T20:35:50Z"
+  "updated_at": "2026-06-19T20:36:56Z"
 }
