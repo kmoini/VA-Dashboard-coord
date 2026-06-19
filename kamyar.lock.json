@@ -1,20 +1,6 @@
 {
   "owner": "Kamyar",
-  "status": "active",
-  "locked_files": [
-    "app/Services/VoiceIntelligenceService.php",
-    "app/Services/CompanyIntelligenceService.php",
-    "app/Services/CustomerProfileService.php",
-    "app/Console/Commands/RunIntelligenceCycle.php",
-    "app/Services/AiAssistantService.php",
-    "routes/console.php",
-    "routes/web.php",
-    "app/Http/Controllers/IntelligenceController.php",
-    "resources/js/Pages/Intelligence/Index.jsx",
-    "tests/Feature/Intelligence/VoiceIntelligenceTest.php",
-    "tests/Feature/Intelligence/CompanyIntelligenceTest.php",
-    "tests/Feature/Intelligence/IntelligenceCycleTest.php",
-    "resources/js/Pages/Intelligence/Digest.jsx"
-  ],
-  "updated_at": "2026-06-19T20:48:12Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-06-19T21:10:33Z"
 }
