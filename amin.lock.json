@@ -7,8 +7,9 @@
     "app/Models/Transaction.php",
     "app/Services/Gemini/VoiceCommandInterpreter.php",
     "app/Http/Controllers/VoiceEditController.php",
-    "routes/web.php"
+    "routes/web.php",
+    "resources/js/Components/VoiceAiEdit.jsx"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-19T17:39:55Z"
+  "updated_at": "2026-06-19T17:42:12Z"
 }
