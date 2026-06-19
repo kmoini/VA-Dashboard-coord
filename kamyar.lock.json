@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "app/Services/IntercoMatchingService.php",
-    "tests/Feature/MultiEntity/IntercoMatchingTest.php"
+    "tests/Feature/MultiEntity/IntercoMatchingTest.php",
+    "docs/database-schema.md"
   ],
-  "updated_at": "2026-06-19T01:17:45Z"
+  "updated_at": "2026-06-19T01:20:13Z"
 }
