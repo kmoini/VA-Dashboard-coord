@@ -1,12 +1,6 @@
 {
   "owner": "Kamyar",
-  "status": "active",
-  "locked_files": [
-    "app/Services/IntercoMatchingService.php",
-    "tests/Feature/MultiEntity/IntercoMatchingTest.php",
-    "docs/database-schema.md",
-    "va-dashboard-master-plan.md",
-    "CLAUDE.md"
-  ],
-  "updated_at": "2026-06-19T01:22:24Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-06-19T01:23:10Z"
 }
