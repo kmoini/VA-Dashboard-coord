@@ -9,8 +9,9 @@
     "app/Http/Controllers/VoiceEditController.php",
     "routes/web.php",
     "resources/js/Components/VoiceAiEdit.jsx",
-    "resources/js/Pages/Transactions/Index.jsx"
+    "resources/js/Pages/Transactions/Index.jsx",
+    "app/Http/Controllers/TransactionsController.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-19T17:44:30Z"
+  "updated_at": "2026-06-19T17:44:49Z"
 }
