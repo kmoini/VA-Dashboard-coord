@@ -1,6 +1,13 @@
 {
   "owner": "Kamyar",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-06-19T14:07:24Z"
+  "status": "active",
+  "locked_files": [
+    "app/Console/Commands/FlarumSeedTags.php",
+    "app/Services/FlarumSsoService.php",
+    "app/Http/Controllers/CommunityController.php",
+    "resources/js/Pages/Community/Index.jsx",
+    "config/cors.php",
+    "CLAUDE.md"
+  ],
+  "updated_at": "2026-06-19T20:02:03Z"
 }
