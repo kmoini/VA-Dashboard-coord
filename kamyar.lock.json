@@ -5,7 +5,8 @@
     "app/Console/Commands/FlarumSeedTags.php",
     "app/Services/FlarumSsoService.php",
     "app/Http/Controllers/CommunityController.php",
-    "resources/js/Pages/Community/Index.jsx"
+    "resources/js/Pages/Community/Index.jsx",
+    "config/cors.php"
   ],
-  "updated_at": "2026-06-19T20:00:30Z"
+  "updated_at": "2026-06-19T20:00:56Z"
 }
