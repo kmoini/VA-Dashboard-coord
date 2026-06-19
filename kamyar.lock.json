@@ -1,6 +1,8 @@
 {
   "owner": "Kamyar",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-06-19T01:23:10Z"
+  "status": "active",
+  "locked_files": [
+    "app/Services/FlarumSsoService.php"
+  ],
+  "updated_at": "2026-06-19T01:28:43Z"
 }
