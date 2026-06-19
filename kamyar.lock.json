@@ -4,7 +4,8 @@
   "locked_files": [
     "app/Services/VoiceIntelligenceService.php",
     "app/Services/CompanyIntelligenceService.php",
-    "app/Services/CustomerProfileService.php"
+    "app/Services/CustomerProfileService.php",
+    "app/Console/Commands/RunIntelligenceCycle.php"
   ],
-  "updated_at": "2026-06-19T20:37:34Z"
+  "updated_at": "2026-06-19T20:38:18Z"
 }
