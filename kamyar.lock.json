@@ -6,7 +6,8 @@
     "app/Services/CompanyIntelligenceService.php",
     "app/Services/CustomerProfileService.php",
     "app/Console/Commands/RunIntelligenceCycle.php",
-    "app/Services/AiAssistantService.php"
+    "app/Services/AiAssistantService.php",
+    "routes/console.php"
   ],
-  "updated_at": "2026-06-19T20:39:19Z"
+  "updated_at": "2026-06-19T20:39:42Z"
 }
