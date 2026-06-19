@@ -1,7 +1,9 @@
 {
   "owner": "Amin",
-  "status": "idle",
-  "locked_files": [],
+  "status": "active",
+  "locked_files": [
+    "docs/record-keeping-ai-voice-edit.md"
+  ],
   "task": "Record Keeping redesign Phase 2 \u00e2\u20ac\u201d intake drawer (BatchUploadModal presentation=drawer) + oversize cards",
-  "updated_at": "2026-06-19T20:27:34Z"
+  "updated_at": "2026-06-19T20:54:07Z"
 }
