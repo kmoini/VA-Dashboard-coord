@@ -12,7 +12,8 @@
     "app/Http/Controllers/IntelligenceController.php",
     "resources/js/Pages/Intelligence/Index.jsx",
     "tests/Feature/Intelligence/VoiceIntelligenceTest.php",
-    "tests/Feature/Intelligence/CompanyIntelligenceTest.php"
+    "tests/Feature/Intelligence/CompanyIntelligenceTest.php",
+    "tests/Feature/Intelligence/IntelligenceCycleTest.php"
   ],
-  "updated_at": "2026-06-19T20:43:46Z"
+  "updated_at": "2026-06-19T20:44:24Z"
 }
