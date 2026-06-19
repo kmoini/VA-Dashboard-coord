@@ -4,8 +4,9 @@
   "locked_files": [
     "resources/js/Components/TransactionsTable.jsx",
     "resources/js/Pages/Transactions/Index.jsx",
-    "app/Services/TransactionService.php"
+    "app/Services/TransactionService.php",
+    "docs/record-keeping-ai-voice-edit.md"
   ],
   "task": "Record Keeping redesign Phase 3 \u00e2\u20ac\u201d smart attachment chip/hover + Has-Attachment/Has-Voice/File-Type filters + Browse-all-documents link",
-  "updated_at": "2026-06-19T21:55:24Z"
+  "updated_at": "2026-06-19T22:18:11Z"
 }
