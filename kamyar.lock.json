@@ -10,7 +10,8 @@
     "routes/console.php",
     "routes/web.php",
     "app/Http/Controllers/IntelligenceController.php",
-    "resources/js/Pages/Intelligence/Index.jsx"
+    "resources/js/Pages/Intelligence/Index.jsx",
+    "tests/Feature/Intelligence/VoiceIntelligenceTest.php"
   ],
-  "updated_at": "2026-06-19T20:41:39Z"
+  "updated_at": "2026-06-19T20:42:45Z"
 }
