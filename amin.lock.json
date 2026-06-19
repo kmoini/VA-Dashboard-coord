@@ -1,7 +1,14 @@
 {
   "owner": "Amin",
-  "status": "idle",
-  "locked_files": [],
-  "task": "Record Keeping redesign Phase 3 \u00e2\u20ac\u201d smart attachment chip/hover + Has-Attachment/Has-Voice/File-Type filters + Browse-all-documents link",
-  "updated_at": "2026-06-19T22:30:54Z"
+  "status": "active",
+  "locked_files": [
+    "app/Http/Controllers/VoiceEditController.php",
+    "app/Services/Gemini/VoiceCommandInterpreter.php",
+    "routes/web.php",
+    "resources/js/Components/VoiceAiEdit.jsx",
+    "resources/js/Components/AiReviewCard.jsx",
+    "resources/js/Pages/Transactions/Index.jsx"
+  ],
+  "task": "Record Keeping redesign Phase 3b \u00e2\u20ac\u201d Re-read with AI (Mode C): reread endpoint + shared AiReviewCard",
+  "updated_at": "2026-06-19T22:52:05Z"
 }
