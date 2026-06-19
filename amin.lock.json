@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "resources/js/Components/BatchUploadModal.jsx",
-    "resources/js/Pages/Transactions/Index.jsx"
+    "resources/js/Pages/Transactions/Index.jsx",
+    "docs/record-keeping-ai-voice-edit.md"
   ],
   "task": "Record Keeping redesign Phase 2 \u00e2\u20ac\u201d intake drawer (BatchUploadModal presentation=drawer) + oversize cards",
-  "updated_at": "2026-06-19T20:21:06Z"
+  "updated_at": "2026-06-19T20:25:12Z"
 }
