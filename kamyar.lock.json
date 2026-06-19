@@ -1,6 +1,8 @@
 {
   "owner": "Kamyar",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-06-19T19:56:08Z"
+  "status": "active",
+  "locked_files": [
+    "app/Console/Commands/FlarumSeedTags.php"
+  ],
+  "updated_at": "2026-06-19T19:59:04Z"
 }
