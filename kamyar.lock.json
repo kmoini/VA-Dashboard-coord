@@ -1,10 +1,6 @@
 {
   "owner": "Kamyar",
-  "status": "active",
-  "locked_files": [
-    "app/Services/FlarumSsoService.php",
-    "app/Http/Controllers/CommunityController.php",
-    "resources/js/Pages/Community/Index.jsx"
-  ],
-  "updated_at": "2026-06-19T01:30:16Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-06-19T01:41:43Z"
 }
