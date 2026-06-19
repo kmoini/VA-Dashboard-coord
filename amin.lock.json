@@ -5,8 +5,9 @@
     "docs/record-keeping-ai-voice-edit.md",
     "database/migrations/2026_06_19_000001_add_voice_edit_fields_to_transactions_table.php",
     "app/Models/Transaction.php",
-    "app/Services/Gemini/VoiceCommandInterpreter.php"
+    "app/Services/Gemini/VoiceCommandInterpreter.php",
+    "app/Http/Controllers/VoiceEditController.php"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-19T17:37:52Z"
+  "updated_at": "2026-06-19T17:39:41Z"
 }
