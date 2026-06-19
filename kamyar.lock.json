@@ -5,7 +5,8 @@
     "app/Services/VoiceIntelligenceService.php",
     "app/Services/CompanyIntelligenceService.php",
     "app/Services/CustomerProfileService.php",
-    "app/Console/Commands/RunIntelligenceCycle.php"
+    "app/Console/Commands/RunIntelligenceCycle.php",
+    "app/Services/AiAssistantService.php"
   ],
-  "updated_at": "2026-06-19T20:38:18Z"
+  "updated_at": "2026-06-19T20:38:37Z"
 }
