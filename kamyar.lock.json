@@ -4,7 +4,8 @@
   "locked_files": [
     "app/Console/Commands/FlarumSeedTags.php",
     "app/Services/FlarumSsoService.php",
-    "app/Http/Controllers/CommunityController.php"
+    "app/Http/Controllers/CommunityController.php",
+    "resources/js/Pages/Community/Index.jsx"
   ],
-  "updated_at": "2026-06-19T19:59:58Z"
+  "updated_at": "2026-06-19T20:00:30Z"
 }
