@@ -8,5 +8,5 @@
     "app/Console/Commands/RunIntelligenceCycle.php",
     "app/Services/AiAssistantService.php"
   ],
-  "updated_at": "2026-06-19T20:38:37Z"
+  "updated_at": "2026-06-19T20:39:02Z"
 }
