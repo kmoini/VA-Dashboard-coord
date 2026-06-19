@@ -5,7 +5,8 @@
     "app/Services/IntercoMatchingService.php",
     "tests/Feature/MultiEntity/IntercoMatchingTest.php",
     "docs/database-schema.md",
-    "va-dashboard-master-plan.md"
+    "va-dashboard-master-plan.md",
+    "CLAUDE.md"
   ],
-  "updated_at": "2026-06-19T01:21:13Z"
+  "updated_at": "2026-06-19T01:21:56Z"
 }
