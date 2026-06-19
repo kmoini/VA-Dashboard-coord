@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "app/Services/VoiceIntelligenceService.php",
-    "app/Services/CompanyIntelligenceService.php"
+    "app/Services/CompanyIntelligenceService.php",
+    "app/Services/CustomerProfileService.php"
   ],
-  "updated_at": "2026-06-19T20:36:56Z"
+  "updated_at": "2026-06-19T20:37:34Z"
 }
