@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "resources/js/Components/BatchUploadModal.jsx"
+    "resources/js/Components/BatchUploadModal.jsx",
+    "resources/js/Pages/Documents/Index.jsx"
   ],
   "task": "checkpoint-019 shipped (session lifetime fix)",
-  "updated_at": "2026-06-19T18:33:48Z"
+  "updated_at": "2026-06-19T18:43:27Z"
 }
