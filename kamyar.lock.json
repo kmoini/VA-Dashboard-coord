@@ -2,7 +2,8 @@
   "owner": "Kamyar",
   "status": "active",
   "locked_files": [
-    "app/Http/Controllers/CommunityController.php"
+    "app/Http/Controllers/CommunityController.php",
+    "resources/js/Pages/Community/Index.jsx"
   ],
-  "updated_at": "2026-06-19T02:03:09Z"
+  "updated_at": "2026-06-19T02:03:40Z"
 }
