@@ -1,7 +1,16 @@
 {
   "owner": "Amin",
-  "status": "idle",
-  "locked_files": [],
-  "task": "Record Keeping redesign Phase 3 complete (core @ checkpoint-060, Mode C @ checkpoint-061)",
-  "updated_at": "2026-06-20T14:48:08Z"
+  "status": "active",
+  "locked_files": [
+    "app/Services/Gemini/VoiceCommandInterpreter.php",
+    "app/Http/Controllers/VoiceEditController.php",
+    "routes/web.php",
+    "resources/js/Components/VoiceSearchButton.jsx",
+    "resources/js/Components/VoiceAiEdit.jsx",
+    "resources/js/Components/AiReviewCard.jsx",
+    "resources/js/Components/TransactionsTable.jsx",
+    "resources/js/Pages/Transactions/Index.jsx"
+  ],
+  "task": "Record Keeping redesign Phase 4 \u00e2\u20ac\u201d voice search + a11y pass + RTL-safe new components",
+  "updated_at": "2026-06-20T14:52:49Z"
 }
