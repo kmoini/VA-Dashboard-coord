@@ -2,7 +2,8 @@
   "owner": "Kamyar",
   "status": "active",
   "locked_files": [
-    "resources/js/Pages/Dashboard/Index.jsx"
+    "resources/js/Pages/Dashboard/Index.jsx",
+    "va-dashboard-master-plan.md"
   ],
-  "updated_at": "2026-06-20T03:23:24Z"
+  "updated_at": "2026-06-20T03:23:45Z"
 }
