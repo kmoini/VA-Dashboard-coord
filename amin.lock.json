@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "storage/app/_pw/ledger-mockup.html"
+    "resources/js/Components/TransactionsTable.jsx",
+    "resources/js/Pages/Transactions/Index.jsx"
   ],
-  "task": "Record Keeping redesign COMPLETE (Phases 1-4 @ checkpoints 057,059,060,061,062). Not yet deployed.",
-  "updated_at": "2026-06-20T16:04:44Z"
+  "task": "Record Keeping list redesign \u00e2\u20ac\u201d QuickBooks-style compact register (Category col, status pills, source chips, density toggle, optional-columns toggle, bulk approve)",
+  "updated_at": "2026-06-20T16:24:58Z"
 }
