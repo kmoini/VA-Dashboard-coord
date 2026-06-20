@@ -1,7 +1,9 @@
 {
   "owner": "Amin",
-  "status": "idle",
-  "locked_files": [],
+  "status": "active",
+  "locked_files": [
+    "resources/js/Components/TransactionsTable.jsx"
+  ],
   "task": "Record Keeping list redesign \u00e2\u20ac\u201d QuickBooks-style compact register (Category col, status pills, source chips, density toggle, optional-columns toggle, bulk approve)",
-  "updated_at": "2026-06-20T16:33:05Z"
+  "updated_at": "2026-06-20T17:01:24Z"
 }
