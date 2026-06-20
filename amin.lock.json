@@ -2,8 +2,11 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "resources/js/Components/TransactionsTable.jsx"
+    "resources/js/Components/TransactionsTable.jsx",
+    "resources/js/Pages/Transactions/Index.jsx",
+    "resources/js/Pages/Transactions/Show.jsx",
+    "app/Http/Controllers/TransactionsController.php"
   ],
-  "task": "Record Keeping list redesign \u00e2\u20ac\u201d QuickBooks-style compact register (Category col, status pills, source chips, density toggle, optional-columns toggle, bulk approve)",
-  "updated_at": "2026-06-20T17:01:24Z"
+  "task": "Record Keeping list redesign Part 2 \u00e2\u20ac\u201d editable View Full History (Show) page + strip Main Financials/Parties/Project from the side panel",
+  "updated_at": "2026-06-20T17:27:47Z"
 }
