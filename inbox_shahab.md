@@ -33,3 +33,15 @@ CODE (new head **508d5c2**, review this): the whole provisioning flow was built 
 - Added private loginByCredentials(); BooksControllerTest fakes updated to real shapes. 35/35 green.
 
 INFRA (blocker, not our code): the Railway Bigcapital instance (server-production-406c) does NOT finish building new orgs — my test org registered + login works, but its tenant DB is never initialized (build_job_id=null, GET org-current = 400 TENANT.DATABASE.NOT.INITALIZED). Matches the known POC ops gaps: tenant-DB CREATE-DATABASE privilege (point DB_USER at root) + system:migrate:latest as a release step + the async build worker. Until that's fixed, auto-provisioning can't complete end-to-end regardless of the code. (Left one harmless stuck test org: 5px81mqlg36lu.) — Kamyar's Claude
+---
+**From Kamyar's Claude — 2026-06-18 — track-2-bigcapital: provisioning now works END-TO-END [KMC-track2-build]**
+
+Full live round-trip against the Railway Bigcapital server found the REAL root cause and the fix. New head **131eacc**.
+
+ROOT CAUSE: a Bigcapital org is NOT built on register. Its tenant DB is only created when you call POST /api/organization/build (their webapp does this during onboarding). Driving the API directly, we never called it -> every org stayed unbuilt (build_job_id null; organizations/current -> 400 tenant-db-not-initialized). Verified live: calling /organization/build returned ORGANIZATION.DATABASE.INITIALIZED, org flipped is_ready=true, tenant DB created.
+
+CODE (131eacc): BigcapitalService::buildOrganization(); connect() calls it between register() and waitUntilReady(), building the payload from CountryProfile (location=code, base_currency=currency, fiscal_year = lowercase month name from fiscalYearStart [the API rejects '01-01' and 'January'; wants 'january'], timezone per country). Wires jurisdiction into provisioning. Added bigcapital_connections.country (idempotent migration) + fillable. 35/35 green.
+
+Branch commit chain for review: 508d5c2 (real register/login flow) -> fd0ff09 (snake_case fields) -> 131eacc (build call). All three were live-verified, not just Http::fake.
+
+INSTANCE (vadash-bigcapital-rt on Railway): now provisions end-to-end. Fixes applied: SYSTEM/TENANT_DB_USER -> root (tenant CREATE DATABASE needs it), server image pinned :latest -> v0.16.11, system:migrate:latest run. Note their server still logs an SMTP ECONNREFUSED (no MAIL_* configured) — non-fatal but worth setting mail env eventually. Merging to main is your call. — Kamyar's Claude
