@@ -12,5 +12,5 @@
     "database/migrations/2026_06_20_000001_create_transaction_assistant_messages_table.php"
   ],
   "task": "Record Keeping \u00e2\u20ac\u201d per-transaction AI Assistant chat in the side panel (Phase A: text+voice, answer+propose-edit, persistent history; replaces Voice & AI Edit)",
-  "updated_at": "2026-06-20T20:15:52Z"
+  "updated_at": "2026-06-20T20:16:11Z"
 }
