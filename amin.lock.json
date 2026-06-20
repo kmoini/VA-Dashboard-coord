@@ -9,8 +9,9 @@
     "routes/web.php",
     "resources/js/Components/AiAssistantChat.jsx",
     "resources/js/Pages/Transactions/Index.jsx",
-    "database/migrations/2026_06_20_000001_create_transaction_assistant_messages_table.php"
+    "database/migrations/2026_06_20_000001_create_transaction_assistant_messages_table.php",
+    "resources/js/Components/TransactionAssistantChat.jsx"
   ],
   "task": "Record Keeping \u00e2\u20ac\u201d per-transaction AI Assistant chat in the side panel (Phase A: text+voice, answer+propose-edit, persistent history; replaces Voice & AI Edit)",
-  "updated_at": "2026-06-20T20:18:19Z"
+  "updated_at": "2026-06-20T20:22:54Z"
 }
