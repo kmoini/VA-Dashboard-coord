@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Http/Controllers/TransactionAssistantController.php",
     "routes/web.php",
-    "resources/js/Components/TransactionAssistantChat.jsx"
+    "resources/js/Components/TransactionAssistantChat.jsx",
+    "docs/record-keeping-ai-assistant.md"
   ],
   "task": "Record Keeping \u00e2\u20ac\u201d per-transaction AI Assistant chat in the side panel (Phase A: text+voice, answer+propose-edit, persistent history; replaces Voice & AI Edit)",
-  "updated_at": "2026-06-20T20:54:44Z"
+  "updated_at": "2026-06-20T20:59:06Z"
 }
