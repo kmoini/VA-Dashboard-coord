@@ -5,5 +5,5 @@
     "app/Http/Controllers/TransactionAssistantController.php"
   ],
   "task": "Record Keeping \u00e2\u20ac\u201d per-transaction AI Assistant chat in the side panel (Phase A: text+voice, answer+propose-edit, persistent history; replaces Voice & AI Edit)",
-  "updated_at": "2026-06-20T22:38:31Z"
+  "updated_at": "2026-06-20T22:39:09Z"
 }
