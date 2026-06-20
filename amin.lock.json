@@ -7,8 +7,9 @@
     "routes/web.php",
     "resources/js/Components/VoiceAiEdit.jsx",
     "resources/js/Components/AiReviewCard.jsx",
-    "resources/js/Pages/Transactions/Index.jsx"
+    "resources/js/Pages/Transactions/Index.jsx",
+    "docs/record-keeping-ai-voice-edit.md"
   ],
   "task": "Record Keeping redesign Phase 3b \u00e2\u20ac\u201d Re-read with AI (Mode C): reread endpoint + shared AiReviewCard",
-  "updated_at": "2026-06-20T00:15:13Z"
+  "updated_at": "2026-06-20T00:48:52Z"
 }
