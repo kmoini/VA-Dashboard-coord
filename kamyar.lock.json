@@ -2,7 +2,9 @@
   "owner": "Kamyar",
   "status": "active",
   "locked_files": [
-    "app/Observers/TransactionObserver.php"
+    "app/Observers/TransactionObserver.php",
+    "CLAUDE.md",
+    "app/Http/Controllers/IntelligenceController.php"
   ],
-  "updated_at": "2026-06-20T03:18:10Z"
+  "updated_at": "2026-06-20T03:18:50Z"
 }
