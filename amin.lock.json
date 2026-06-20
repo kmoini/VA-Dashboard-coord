@@ -1,7 +1,9 @@
 {
   "owner": "Amin",
-  "status": "idle",
-  "locked_files": [],
+  "status": "active",
+  "locked_files": [
+    "app/Http/Controllers/TransactionAssistantController.php"
+  ],
   "task": "Record Keeping \u00e2\u20ac\u201d per-transaction AI Assistant chat in the side panel (Phase A: text+voice, answer+propose-edit, persistent history; replaces Voice & AI Edit)",
-  "updated_at": "2026-06-20T22:09:22Z"
+  "updated_at": "2026-06-20T22:36:44Z"
 }
