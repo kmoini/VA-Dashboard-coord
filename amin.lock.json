@@ -1,17 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Services/Gemini/VoiceCommandInterpreter.php",
-    "app/Http/Controllers/VoiceEditController.php",
-    "routes/web.php",
-    "resources/js/Components/VoiceSearchButton.jsx",
-    "resources/js/Components/VoiceAiEdit.jsx",
-    "resources/js/Components/AiReviewCard.jsx",
-    "resources/js/Components/TransactionsTable.jsx",
-    "resources/js/Pages/Transactions/Index.jsx",
-    "docs/record-keeping-ai-voice-edit.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Record Keeping redesign Phase 4 \u00e2\u20ac\u201d voice search + a11y pass + RTL-safe new components",
-  "updated_at": "2026-06-20T15:45:12Z"
+  "updated_at": "2026-06-20T15:49:24Z"
 }
