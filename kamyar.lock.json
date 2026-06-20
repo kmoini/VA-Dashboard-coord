@@ -1,12 +1,6 @@
 {
   "owner": "Kamyar",
-  "status": "active",
-  "locked_files": [
-    "CLAUDE.md",
-    "routes/web.php",
-    "app/Http/Controllers/DashboardController.php",
-    "va-dashboard-master-plan.md",
-    "resources/js/Pages/Dashboard/Index.jsx"
-  ],
-  "updated_at": "2026-06-20T03:22:58Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-06-20T03:23:03Z"
 }
