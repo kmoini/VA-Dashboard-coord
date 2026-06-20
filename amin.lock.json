@@ -1,7 +1,9 @@
 {
   "owner": "Amin",
-  "status": "idle",
-  "locked_files": [],
+  "status": "active",
+  "locked_files": [
+    "storage/app/_pw/ledger-mockup.html"
+  ],
   "task": "Record Keeping redesign COMPLETE (Phases 1-4 @ checkpoints 057,059,060,061,062). Not yet deployed.",
-  "updated_at": "2026-06-20T15:56:07Z"
+  "updated_at": "2026-06-20T16:04:44Z"
 }
