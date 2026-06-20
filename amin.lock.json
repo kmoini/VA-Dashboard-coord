@@ -1,15 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Http/Controllers/VoiceEditController.php",
-    "app/Services/Gemini/VoiceCommandInterpreter.php",
-    "routes/web.php",
-    "resources/js/Components/VoiceAiEdit.jsx",
-    "resources/js/Components/AiReviewCard.jsx",
-    "resources/js/Pages/Transactions/Index.jsx",
-    "docs/record-keeping-ai-voice-edit.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Record Keeping redesign Phase 3b \u00e2\u20ac\u201d Re-read with AI (Mode C): reread endpoint + shared AiReviewCard",
-  "updated_at": "2026-06-20T00:49:15Z"
+  "updated_at": "2026-06-20T00:49:53Z"
 }
