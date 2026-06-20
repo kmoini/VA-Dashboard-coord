@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Services/TransactionService.php",
-    "resources/js/Components/TransactionsTable.jsx"
+    "resources/js/Components/TransactionsTable.jsx",
+    "resources/js/Pages/Transactions/Index.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-06-20T23:42:46Z"
+  "updated_at": "2026-06-20T23:43:59Z"
 }
