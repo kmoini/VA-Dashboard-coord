@@ -4,7 +4,8 @@
   "locked_files": [
     "CLAUDE.md",
     "routes/web.php",
-    "app/Http/Controllers/DashboardController.php"
+    "app/Http/Controllers/DashboardController.php",
+    "va-dashboard-master-plan.md"
   ],
-  "updated_at": "2026-06-20T03:20:41Z"
+  "updated_at": "2026-06-20T03:20:50Z"
 }
