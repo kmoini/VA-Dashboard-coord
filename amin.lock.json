@@ -1,7 +1,9 @@
 {
   "owner": "Amin",
-  "status": "idle",
-  "locked_files": [],
+  "status": "active",
+  "locked_files": [
+    "resources/js/Pages/Transactions/Index.jsx"
+  ],
   "task": "Record Keeping list redesign Part 2 \u00e2\u20ac\u201d editable View Full History (Show) page + strip Main Financials/Parties/Project from the side panel",
-  "updated_at": "2026-06-20T17:55:29Z"
+  "updated_at": "2026-06-20T18:11:11Z"
 }
