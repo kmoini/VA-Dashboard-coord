@@ -10,8 +10,9 @@
     "app/Services/AiInsightsService.php",
     "resources/js/Components/TransactionDraftCard.jsx",
     "app/Services/AiAssistantService.php",
-    "docs/global-ai-assistant-agent.md"
+    "docs/global-ai-assistant-agent.md",
+    "app/Http/Controllers/AiAssistantController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-06-21T23:00:13Z"
+  "updated_at": "2026-06-21T23:04:42Z"
 }
