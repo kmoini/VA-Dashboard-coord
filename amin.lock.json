@@ -7,8 +7,9 @@
     "app/Services/TransactionExportService.php",
     "app/Services/ClientExportService.php",
     "app/Http/Controllers/ApprovalQueueController.php",
-    "app/Services/AiInsightsService.php"
+    "app/Services/AiInsightsService.php",
+    "resources/js/Components/TransactionDraftCard.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-06-21T22:51:00Z"
+  "updated_at": "2026-06-21T22:51:31Z"
 }
