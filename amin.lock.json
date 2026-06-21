@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "database/migrations/2026_06_21_000001_make_effective_date_nullable_on_transactions_table.php",
-    "app/Http/Controllers/TransactionsController.php"
+    "app/Http/Controllers/TransactionsController.php",
+    "app/Services/TransactionExportService.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-06-21T22:48:42Z"
+  "updated_at": "2026-06-21T22:49:22Z"
 }
