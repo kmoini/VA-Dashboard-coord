@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Services/AiAssistantService.php",
-    "resources/js/Components/AiAssistantChat.jsx"
+    "resources/js/Components/AiAssistantChat.jsx",
+    "storage/app/_navcheck.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-06-21T20:08:41Z"
+  "updated_at": "2026-06-21T20:15:00Z"
 }
