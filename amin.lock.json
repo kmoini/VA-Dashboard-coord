@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "app/Http/Controllers/ClientPortalController.php"
+    "app/Http/Controllers/ClientPortalController.php",
+    "resources/js/Components/AiAssistantChat.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-06-22T23:24:29Z"
+  "updated_at": "2026-06-22T23:27:21Z"
 }
