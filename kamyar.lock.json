@@ -2,7 +2,8 @@
   "owner": "Kamyar",
   "status": "active",
   "locked_files": [
-    "resources/js/Pages/Booking/Index.jsx"
+    "resources/js/Pages/Booking/Index.jsx",
+    "routes/web.php"
   ],
-  "updated_at": "2026-06-22T14:51:28Z"
+  "updated_at": "2026-06-22T14:51:59Z"
 }
