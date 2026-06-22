@@ -1,12 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Http/Controllers/AiAssistantController.php",
-    "routes/web.php",
-    "app/Services/AiAssistantService.php",
-    "resources/js/Components/AiAssistantChat.jsx"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-06-22T18:04:38Z"
+  "updated_at": "2026-06-22T18:08:22Z"
 }
