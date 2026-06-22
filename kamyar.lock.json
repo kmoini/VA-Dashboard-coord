@@ -1,6 +1,8 @@
 {
   "owner": "Kamyar",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-06-22T17:11:08Z"
+  "status": "active",
+  "locked_files": [
+    "database/migrations/2026_06_22_000001_create_mobile_push_tokens_table.php"
+  ],
+  "updated_at": "2026-06-22T17:25:32Z"
 }
