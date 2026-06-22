@@ -5,7 +5,8 @@
     "database/migrations/2026_06_22_000001_create_mobile_push_tokens_table.php",
     "app/Models/MobilePushToken.php",
     "app/Http/Controllers/MobilePushTokenController.php",
-    "config/mobile.php"
+    "config/mobile.php",
+    "routes/web.php"
   ],
-  "updated_at": "2026-06-22T17:26:54Z"
+  "updated_at": "2026-06-22T17:27:17Z"
 }
