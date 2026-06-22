@@ -4,7 +4,8 @@
   "locked_files": [
     "database/migrations/2026_06_22_000001_create_mobile_push_tokens_table.php",
     "app/Models/MobilePushToken.php",
-    "app/Http/Controllers/MobilePushTokenController.php"
+    "app/Http/Controllers/MobilePushTokenController.php",
+    "config/mobile.php"
   ],
-  "updated_at": "2026-06-22T17:26:23Z"
+  "updated_at": "2026-06-22T17:26:54Z"
 }
