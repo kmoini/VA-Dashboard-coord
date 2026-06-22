@@ -8,7 +8,8 @@
     "app/Services/AiTransactionCategorizer.php",
     "app/Services/SmartImportService.php",
     "app/Http/Controllers/BooksController.php",
-    "routes/web.php"
+    "routes/web.php",
+    "resources/js/Pages/Books/Index.jsx"
   ],
-  "updated_at": "2026-06-22T15:21:58Z"
+  "updated_at": "2026-06-22T15:23:43Z"
 }
