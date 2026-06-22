@@ -4,7 +4,8 @@
   "locked_files": [
     "app/Console/Commands/FlarumSetupPublic.php",
     "config/services.php",
-    "app/Services/FlarumSsoService.php"
+    "app/Services/FlarumSsoService.php",
+    "app/Http/Controllers/BookingController.php"
   ],
-  "updated_at": "2026-06-22T14:50:15Z"
+  "updated_at": "2026-06-22T14:50:44Z"
 }
