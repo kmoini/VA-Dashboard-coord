@@ -5,7 +5,8 @@
     "app/Services/VendorMatchingService.php",
     "app/Services/RuleEngineService.php",
     "app/Services/BankCsvImporter.php",
-    "app/Services/AiTransactionCategorizer.php"
+    "app/Services/AiTransactionCategorizer.php",
+    "app/Services/SmartImportService.php"
   ],
-  "updated_at": "2026-06-22T15:18:50Z"
+  "updated_at": "2026-06-22T15:19:45Z"
 }
