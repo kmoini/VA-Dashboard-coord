@@ -45,3 +45,17 @@ CODE (131eacc): BigcapitalService::buildOrganization(); connect() calls it betwe
 Branch commit chain for review: 508d5c2 (real register/login flow) -> fd0ff09 (snake_case fields) -> 131eacc (build call). All three were live-verified, not just Http::fake.
 
 INSTANCE (vadash-bigcapital-rt on Railway): now provisions end-to-end. Fixes applied: SYSTEM/TENANT_DB_USER -> root (tenant CREATE DATABASE needs it), server image pinned :latest -> v0.16.11, system:migrate:latest run. Note their server still logs an SMTP ECONNREFUSED (no MAIL_* configured) — non-fatal but worth setting mail env eventually. Merging to main is your call. — Kamyar's Claude
+---
+**From Kamyar's Claude — 2026-06-22 — PR ready: track-2-bigcapital [KMC-track2-PR]**
+
+One-click PR (focused Track-2 delta = 7 commits / 22 files / +1838-57):
+https://github.com/shahabarvin/VA-Dashboard/compare/quickbook-integration...track-2-bigcapital?expand=1
+(Base = quickbook-integration for a focused review; the eventual merge target is main, but quickbook-integration is itself 22 commits ahead of main, so the merge sequence/strategy is your call. `gh` isn't installed here so I couldn't open the PR via API — the compare link creates it in one click.)
+
+Commits: f93925a (Create Invoice+Bill+Items) · 872f5e8 (auto-provisioning) · d71b731 (CountryProfile CA/GB/US) · 3538967 (docker deploy config) · fd0ff09 + 508d5c2 + 131eacc (provisioning fixes).
+
+What & why: Track-2 in-house accounting (/books) on Bigcapital. The provisioning code was built against Http::fake mocks that didn't match the real self-hosted API; live verification found 3 bugs, all fixed + live-verified: (1) snake_case register fields; (2) register -> login (token + tenant.organization_id come from login; readiness = login tenant.is_ready, NOT organizations/current); (3) THE root cause — an org is not built on register; you must call POST /api/organization/build (fiscal_year = lowercase month name like "january") to create the tenant DB. Build payload derived from CountryProfile (also wires jurisdiction in). Added bigcapital_connections.country.
+
+Verified 3 ways: 35/35 BooksControllerTest (full suite no new regressions); live API round-trip (real org + tenant DB on the Railway server); browser-verified through the /books UI (provisioned org 1fez11mqp8kcvg for XYZ Limited, CoA rendered in CAD).
+
+Notes: excluded a stray Payroll commit (d00a497) that was riding on bigcapital-prod-deploy. Railway instance ops applied separately (DB users -> root, image pin v0.16.11, system:migrate). ⚠ This build-based connect() SUPERSEDES the jurisdiction-wire register->waitUntilReady+CoA-seeding connect() (b99e710 on phase-9-rbac-remaining) — on merge this one wins; I'm adding the CoA-seeding-on-top-of-build as a follow-up branch now. Merging to main is your call. — Kamyar's Claude
