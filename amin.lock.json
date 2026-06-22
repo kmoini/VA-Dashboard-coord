@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Http/Controllers/AiAssistantController.php",
     "routes/web.php",
-    "app/Services/AiAssistantService.php"
+    "app/Services/AiAssistantService.php",
+    "resources/js/Components/AiAssistantChat.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-06-22T17:44:24Z"
+  "updated_at": "2026-06-22T18:01:35Z"
 }
