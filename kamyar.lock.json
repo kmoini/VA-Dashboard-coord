@@ -1,16 +1,6 @@
 {
   "owner": "Kamyar",
-  "status": "active",
-  "locked_files": [
-    "app/Services/VendorMatchingService.php",
-    "app/Services/RuleEngineService.php",
-    "app/Services/BankCsvImporter.php",
-    "app/Services/AiTransactionCategorizer.php",
-    "app/Services/SmartImportService.php",
-    "app/Http/Controllers/BooksController.php",
-    "routes/web.php",
-    "resources/js/Pages/Books/Index.jsx",
-    "tests/Feature/Bigcapital/SmartImportTest.php"
-  ],
-  "updated_at": "2026-06-22T16:03:00Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-06-22T16:06:16Z"
 }
