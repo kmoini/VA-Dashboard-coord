@@ -2,7 +2,8 @@
   "owner": "Kamyar",
   "status": "active",
   "locked_files": [
-    "app/Services/VendorMatchingService.php"
+    "app/Services/VendorMatchingService.php",
+    "app/Services/RuleEngineService.php"
   ],
-  "updated_at": "2026-06-22T15:17:05Z"
+  "updated_at": "2026-06-22T15:17:33Z"
 }
