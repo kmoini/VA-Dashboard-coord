@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "app/Console/Commands/FlarumSetupPublic.php",
-    "config/services.php"
+    "config/services.php",
+    "app/Services/FlarumSsoService.php"
   ],
-  "updated_at": "2026-06-22T14:49:21Z"
+  "updated_at": "2026-06-22T14:49:55Z"
 }
