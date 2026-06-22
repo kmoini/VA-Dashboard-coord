@@ -1,6 +1,8 @@
 {
   "owner": "Kamyar",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-06-22T15:09:23Z"
+  "status": "active",
+  "locked_files": [
+    "app/Services/VendorMatchingService.php"
+  ],
+  "updated_at": "2026-06-22T15:17:05Z"
 }
