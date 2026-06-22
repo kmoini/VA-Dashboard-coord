@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "app/Accounting/Enums/AccountType.php",
-    "app/Accounting/Providers/QuickBooksProvider.php"
+    "app/Accounting/Providers/QuickBooksProvider.php",
+    "tests/Feature/QuickBooks/QuickBooksProviderTest.php"
   ],
-  "updated_at": "2026-06-22T14:58:37Z"
+  "updated_at": "2026-06-22T14:59:43Z"
 }
