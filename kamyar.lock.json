@@ -2,7 +2,8 @@
   "owner": "Kamyar",
   "status": "active",
   "locked_files": [
-    "database/migrations/2026_06_22_000001_create_mobile_push_tokens_table.php"
+    "database/migrations/2026_06_22_000001_create_mobile_push_tokens_table.php",
+    "app/Models/MobilePushToken.php"
   ],
-  "updated_at": "2026-06-22T17:25:32Z"
+  "updated_at": "2026-06-22T17:25:54Z"
 }
