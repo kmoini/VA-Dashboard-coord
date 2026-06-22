@@ -1,6 +1,8 @@
 {
   "owner": "Kamyar",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-06-22T14:37:52Z"
+  "status": "active",
+  "locked_files": [
+    "app/Console/Commands/FlarumSetupPublic.php"
+  ],
+  "updated_at": "2026-06-22T14:47:48Z"
 }
