@@ -1,6 +1,8 @@
 {
   "owner": "Kamyar",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-06-22T14:54:10Z"
+  "status": "active",
+  "locked_files": [
+    "app/Accounting/Enums/AccountType.php"
+  ],
+  "updated_at": "2026-06-22T14:57:53Z"
 }
