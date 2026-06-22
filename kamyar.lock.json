@@ -1,11 +1,6 @@
 {
   "owner": "Kamyar",
-  "status": "active",
-  "locked_files": [
-    "app/Console/Commands/FlarumSetupPublic.php",
-    "config/services.php",
-    "app/Services/FlarumSsoService.php",
-    "app/Http/Controllers/BookingController.php"
-  ],
-  "updated_at": "2026-06-22T14:50:44Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-06-22T14:51:18Z"
 }
