@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "app/Services/VendorMatchingService.php",
-    "app/Services/RuleEngineService.php"
+    "app/Services/RuleEngineService.php",
+    "app/Services/BankCsvImporter.php"
   ],
-  "updated_at": "2026-06-22T15:17:33Z"
+  "updated_at": "2026-06-22T15:18:12Z"
 }
