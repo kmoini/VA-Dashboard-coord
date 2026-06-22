@@ -2,7 +2,8 @@
   "owner": "Kamyar",
   "status": "active",
   "locked_files": [
-    "app/Accounting/Enums/AccountType.php"
+    "app/Accounting/Enums/AccountType.php",
+    "app/Accounting/Providers/QuickBooksProvider.php"
   ],
-  "updated_at": "2026-06-22T14:57:53Z"
+  "updated_at": "2026-06-22T14:58:37Z"
 }
