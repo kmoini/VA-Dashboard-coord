@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "resources/js/lib/csrf.js",
-    "resources/js/Components/AiAssistantChat.jsx"
+    "resources/js/Components/AiAssistantChat.jsx",
+    "resources/js/Components/TransactionDraftCard.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-06-23T16:03:24Z"
+  "updated_at": "2026-06-23T16:04:43Z"
 }
