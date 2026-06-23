@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "docs/DEPLOYMENT.md"
+    "docs/DEPLOYMENT.md",
+    "CLAUDE.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-06-23T18:55:03Z"
+  "updated_at": "2026-06-23T18:55:51Z"
 }
