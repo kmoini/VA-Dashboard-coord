@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "resources/js/lib/csrf.js"
+    "resources/js/lib/csrf.js",
+    "resources/js/Components/AiAssistantChat.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-06-23T15:57:06Z"
+  "updated_at": "2026-06-23T15:58:24Z"
 }
