@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "resources/js/Components/VoiceSearchButton.jsx"
+    "resources/js/Components/VoiceSearchButton.jsx",
+    "app/Http/Controllers/VoiceEditController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-06-23T23:58:32Z"
+  "updated_at": "2026-06-23T23:59:42Z"
 }
