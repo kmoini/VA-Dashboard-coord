@@ -1,13 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Http/Controllers/TransactionAssistantController.php",
-    "resources/js/Pages/Transactions/Index.jsx",
-    "app/Http/Controllers/Temp/S3WriteTestController.php",
-    "routes/web.php",
-    "app/Http/Controllers/VoiceEditController.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-06-23T19:43:05Z"
+  "updated_at": "2026-06-23T19:43:38Z"
 }
