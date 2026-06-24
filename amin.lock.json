@@ -1,11 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "resources/js/lib/fileType.js",
-    "resources/js/Pages/Transactions/Index.jsx",
-    "resources/js/Components/ReceiptViewer.jsx"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-06-24T00:45:07Z"
+  "updated_at": "2026-06-24T00:58:12Z"
 }
