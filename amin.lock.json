@@ -5,8 +5,9 @@
     ".gitignore",
     "routes/console.php",
     "bootstrap/app.php",
-    "app/Models/AccountantAccount.php"
+    "app/Models/AccountantAccount.php",
+    "app/Http/Controllers/ClientDashboardController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-06-24T20:03:06Z"
+  "updated_at": "2026-06-24T20:05:07Z"
 }
