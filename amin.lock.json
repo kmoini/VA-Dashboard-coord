@@ -7,8 +7,9 @@
     "bootstrap/app.php",
     "app/Models/AccountantAccount.php",
     "app/Http/Controllers/ClientDashboardController.php",
-    "config/services.php"
+    "config/services.php",
+    "app/Http/Middleware/ResolveTenant.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-06-24T20:07:05Z"
+  "updated_at": "2026-06-24T20:10:46Z"
 }
