@@ -1,14 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "resources/js/Components/VoiceSearchButton.jsx",
-    "app/Http/Controllers/VoiceEditController.php",
-    "resources/js/Components/RecordSearchBox.jsx",
-    "resources/js/Pages/Transactions/Index.jsx",
-    "database/migrations/2026_06_23_000001_enable_pg_trgm_for_fuzzy_search.php",
-    "app/Services/TransactionService.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-06-24T00:04:24Z"
+  "updated_at": "2026-06-24T00:12:32Z"
 }
