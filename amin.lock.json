@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Http/Controllers/ChatController.php",
-    "resources/js/Pages/Chat/MessagesStudio.jsx"
+    "resources/js/Pages/Chat/MessagesStudio.jsx",
+    "resources/js/Pages/Chat/Studio/MessagesChatStudio.tsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-06-25T20:27:20Z"
+  "updated_at": "2026-06-25T20:27:37Z"
 }
