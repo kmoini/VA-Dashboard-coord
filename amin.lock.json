@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "resources/js/Layouts/Components/Sidebar.jsx"
+    "resources/js/Layouts/Components/Sidebar.jsx",
+    "resources/js/Pages/ClientPortal/Inbox.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-06-26T16:14:19Z"
+  "updated_at": "2026-06-26T16:14:36Z"
 }
