@@ -6,8 +6,9 @@
     "app/Http/Controllers/SettingsController.php",
     "resources/js/Pages/Settings/Index.jsx",
     "docs/DEPLOYMENT.md",
-    ".env.example"
+    ".env.example",
+    "docs/adr-0009-invite-client-to-app.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-06-26T22:22:32Z"
+  "updated_at": "2026-06-26T22:23:04Z"
 }
