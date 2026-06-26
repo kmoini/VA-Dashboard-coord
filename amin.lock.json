@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "config/mobile.php",
-    "app/Services/Mobile/MobileTransactionProjector.php"
+    "app/Services/Mobile/MobileTransactionProjector.php",
+    "docs/DEPLOYMENT.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-06-26T21:37:48Z"
+  "updated_at": "2026-06-26T21:39:40Z"
 }
