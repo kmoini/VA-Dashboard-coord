@@ -5,8 +5,9 @@
     "config/mobile.php",
     "app/Services/Mobile/MobileTransactionProjector.php",
     "docs/DEPLOYMENT.md",
-    ".env.example"
+    ".env.example",
+    "docs/mobile-poll-queue-fix.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-06-26T21:40:07Z"
+  "updated_at": "2026-06-26T21:40:38Z"
 }
