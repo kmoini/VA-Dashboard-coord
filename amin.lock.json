@@ -1,13 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "config/mobile.php",
-    "app/Services/Mobile/MobileTransactionProjector.php",
-    "docs/DEPLOYMENT.md",
-    ".env.example",
-    "docs/mobile-poll-queue-fix.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-06-26T21:40:38Z"
+  "updated_at": "2026-06-26T21:45:37Z"
 }
