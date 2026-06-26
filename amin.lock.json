@@ -1,11 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Http/Controllers/ClientPortalController.php",
-    "resources/js/Layouts/Components/Sidebar.jsx",
-    "resources/js/Pages/ClientPortal/Messages.jsx"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-06-26T16:46:36Z"
+  "updated_at": "2026-06-26T16:53:24Z"
 }
