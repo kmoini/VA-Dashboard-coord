@@ -1,14 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "config/mobile.php",
-    "app/Http/Controllers/SettingsController.php",
-    "resources/js/Pages/Settings/Index.jsx",
-    "docs/DEPLOYMENT.md",
-    ".env.example",
-    "docs/adr-0009-invite-client-to-app.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-06-26T22:23:04Z"
+  "updated_at": "2026-06-26T22:23:19Z"
 }
