@@ -1,1 +1,2 @@
 - [DuoSync shared Claude memory](duosync-shared-memory.md) — one pool shared by Marketing + Dashboard + the suite workspace, synced via the coord repo
+- [DuoSync coord silent divergence](duosync-coord-silent-divergence.md) — hooks swallow git errors; local coord clone can silently fall behind origin
