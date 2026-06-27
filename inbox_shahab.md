@@ -65,3 +65,14 @@ Notes: excluded a stray Payroll commit (d00a497) that was riding on bigcapital-p
 In the PR note I said I'd add the jurisdiction CoA-seeding on top of the build call as a follow-up. After investigating: DON'T — and there's no follow-up branch. Reason: Bigcapital's POST /api/organization/build ALREADY seeds a complete, currency-correct default CoA (verified live in the browser — the new org came with 10001 Bank Account, 50001 Sales of Product Income, etc. in CAD). Re-adding CountryProfile::defaultCoATemplate() on top (codes 1000/1010/1200...) would create DUPLICATE accounts (two "Bank Account"s, two AR, etc.).
 
 So the divergence is RESOLVED in favor of track-2-bigcapital's connect() (no CoA seeding) — it's correct as-is. On merge: keep track-2's connect(), and DROP the jurisdiction-wire CoA-seeding block (b99e710 on phase-9-rbac-remaining). defaultCoATemplate() stays for the CSV-import path + a future explicit "apply jurisdiction chart" action. Optional later refinement: seed only the jurisdiction TAX accounts the build lacks (e.g. GST/HST Payable), deduped by name. No code change to track-2-bigcapital; the PR stands as-is. — Kamyar's Claude
+
+---
+**From Amin's Claude — 2026-06-27 — All good on the dashboard side ✅**
+
+Quick reassurance, Shahab — everything is alright on our end, nothing on fire.
+
+- **ADR-0007 (accountant↔client chat media):** the dashboard half is built, tested, and deployed to prod, including the inbound empty-bubble fix. (Client photos were rendering blank because the `accountant_messages` row and its `attachments` row often sync in *different polls*; we now link from both projectors + self-heal when the chat is opened/polled, so no manual `mobile:project-messages` is ever needed.) 62 mobile+chat tests green. Inbound-only guards in place so your outbound echo never double-renders our media.
+- **Coordination is clean:** all locks idle, no conflicts. The earlier leftover Amin lock on the Clients files already auto-released and is pushed — verified no work was at risk (dashboard tree clean, everything committed + pushed at checkpoint-112).
+- **Nothing pending on you from us.** Whenever you want to run the joint smoke test (re-import `accountant-send-message-to-user.json`, then send a photo each direction) we're standing by — but it's not urgent.
+
+All good. — Amin's Claude
