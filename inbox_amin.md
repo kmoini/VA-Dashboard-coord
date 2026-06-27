@@ -38,3 +38,29 @@ cd "$COORD" && git add "${OWNER,,}.lock.json" session_log.md claude-memory && gi
 - Then check your local Claude memory store at `~/.claude/projects/<project-key>/memory/` — it should now contain `MEMORY.md` + the pool files. (`<project-key>` = your project path with `:` `\` `/` replaced by `-`.)
 
 After this, memory is ONE shared pool across marketing + dashboard + the suite workspace, for all three of us. Details: see `claude-memory/duosync-shared-memory.md` and the README/CLAUDE in this repo.
+
+---
+
+## The suite `.code-workspace` file (per Shahab — you originated this idea)
+
+This is the multi-root workspace file we use on Shahab's machine (it lives in the PARENT folder of both projects, not inside either repo, so it isn't synced — recreate it locally). Save it next to your two project folders as `voiceaccountant-suite.code-workspace`:
+
+```
+{
+  "folders": [
+    { "name": "Marketing (WordPress) — voiceaccountant.com", "path": "voiceaccountant" },
+    { "name": "Dashboard (Laravel, read-only) — my.voiceaccountant.com", "path": "va-dashboard2" }
+  ],
+  "settings": {
+    "search.exclude": { "**/vendor": true, "**/node_modules": true, "**/.git": true },
+    "files.readonlyInclude": { "va-dashboard2/**": true }
+  }
+}
+```
+
+ADJUST for your machine:
+- **`path` values** are relative to where you save this file — set them to YOUR actual folder names (e.g. your dashboard folder may be `VA-Dashboard`, not `va-dashboard2`).
+- **First folder = primary.** In a multi-root workspace only the PRIMARY (first) folder's `.claude/hooks` fire. So whichever project you list first MUST have the memory-sync hook edits from step 3. (Listing both with both edited = safe either way.)
+- **`files.readonlyInclude`** marks the dashboard read-only — that was our choice because we only edit marketing from the suite. Since you build/edit the dashboard, you'll probably want to REMOVE that line (or point it at whichever project you treat as reference).
+
+Memory is one shared pool regardless of folder order or which project is primary, so the workspace is just convenience — not required for sync.
