@@ -1,0 +1,1 @@
+- [DuoSync shared Claude memory](duosync-shared-memory.md) — one pool shared by Marketing + Dashboard + the suite workspace, synced via the coord repo
