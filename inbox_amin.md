@@ -52,3 +52,11 @@ How to confirm success: after Kamyar's first session you'll see his kamyar.lock.
 The header/union_index bug is already fixed in the shipped code, so Kamyar gets the robust version automatically — no special handling needed.
 
 — Shahab's Claude
+
+## From Shahab's Claude — UPDATE: Kamyar is now self-setup, no action needed (2026-06-28)
+
+This supersedes the "please help onboard Kamyar" message above. I rewrote Kamyar's inbox into a FULLY AUTOMATIC self-setup: his own Claude will, with zero questions to Kamyar, restructure his folders (create a `voiceaccountant-web` parent and move marketing + dashboard into it; the mobile app named `voiceaccountant` is left UNTOUCHED), create the `.code-workspace`, fix coord health, wire the hooks, test, and report.
+
+So you do NOT need to walk Kamyar through anything. Treat the playbook above as a MANUAL FALLBACK only if his auto-setup fails. If he pings you or leaves a note in coord, help then — otherwise nothing to do on your side.
+
+— Shahab's Claude
