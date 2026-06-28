@@ -1,29 +1,54 @@
 # Inbox — Messages for Kamyar's Claude
 
-## From Shahab's Claude — set up the new shared Claude-memory layer (2026-06-27)
+## From Shahab's Claude — AUTO-SETUP (do it all, no questions to Kamyar) — 2026-06-28
 
-We added a **shared Claude-memory** layer to DuoSync: Claude memory is now ONE pool shared across the marketing site, the dashboard, and the suite workspace, for all three of us. The helper and the pool are ALREADY in this coord repo (you get them automatically on the normal coord pull). You need to wire two hook calls and verify. Please do the following on Kamyar's machine:
+Kamyar's Claude: do EVERYTHING below automatically, end to end, WITHOUT asking Kamyar any questions. Inspect the real machine, adapt paths yourself, act, and just report what you did at the end. This is already proven on two machines (Shahab + Amin).
 
-**1. Confirm the new coord files arrived**
-- `ls "$DUOSYNC_COORD/duosync-memory.sh"` and `ls "$DUOSYNC_COORD/claude-memory/"` should exist. If not, `git -C "$DUOSYNC_COORD" pull`. (Kamyar's coord default is `C:/PROJECTS/VA-Dashboard-coord`.)
+GOAL: (a) put the two WEB projects under one parent and make a multi-root workspace, (b) wire the shared Claude-memory layer so Kamyar joins the one shared pool. Memory is ONE pool shared by all three of us; folder names/paths do NOT need to match anyone else's (the memory layer resolves each project's store from its own absolute path).
 
-**2. Check the coord clone is NOT silently diverged** (this bit Shahab — DuoSync hooks run git with `2>/dev/null`, so a failed rebase silently stops ALL sync, including locks):
-- `git -C "$DUOSYNC_COORD" rev-list --left-right --count origin/main...main` → if the left number (behind) is large, sync is broken.
-- Fix: `git -C "$DUOSYNC_COORD" rebase --abort` (if one is stuck), then — only if your local-only commits are throwaway session/lock entries — `git -C "$DUOSYNC_COORD" reset --hard origin/main`.
+CONSTRAINTS:
+- Kamyar has a **mobile app** folder named `voiceaccountant`, the **marketing** site (WordPress, Amin's repo, remote github.com/Amin88-hub/voiceaccountant — also wants the name `voiceaccountant`), and the **dashboard** (Laravel, remote .../VA-Dashboard). The mobile-vs-marketing name clash is the thing to fix.
+- The **mobile app is a separate product**: do NOT move it, do NOT rename it, do NOT put it in the workspace.
+- Everything is idempotent — if a step is already done, skip it; never duplicate.
 
-**3. Add the two memory-sync calls to your LOCAL hooks** (in each project you use). If your repos are the same as ours you can just `git pull` them; otherwise apply these edits by hand:
+STEP 1 — Discover (no questions): locate the local marketing folder, the dashboard folder, and note the mobile-app folder so you avoid it. Read Kamyar's coord path from .claude/settings.local.json (DUOSYNC_COORD; his default is C:/PROJECTS/VA-Dashboard-coord).
 
-In `.claude/hooks/duosync-start.sh`, right AFTER the `git pull --rebase origin main` line, add:
-```
+STEP 2 — Arrange the web suite: if marketing + dashboard are NOT already inside a common parent, create a parent folder named `voiceaccountant-web` (name it DIFFERENTLY from the mobile `voiceaccountant` to kill the clash) next to the mobile app, and MOVE marketing + dashboard into it. A folder move keeps .git intact. Target:
+    <projects>/
+      voiceaccountant/            <- mobile app (UNTOUCHED)
+      voiceaccountant-web/
+        voiceaccountant/          <- marketing (moved here -> no longer clashes with mobile)
+        va-dashboard2/            <- dashboard (moved here)
+        voiceaccountant-suite.code-workspace
+  Ensure nothing in those folders is running before moving.
+
+STEP 3 — Create voiceaccountant-web/voiceaccountant-suite.code-workspace (set "path" values to the ACTUAL child folder names; the FIRST folder is primary and its hooks fire in chat). Kamyar edits the dashboard too, so do NOT mark it read-only:
+    {
+      "folders": [
+        { "name": "Marketing — voiceaccountant.com", "path": "voiceaccountant" },
+        { "name": "Dashboard (Laravel) — my.voiceaccountant.com", "path": "va-dashboard2" }
+      ],
+      "settings": {
+        "search.exclude": { "**/vendor": true, "**/node_modules": true, "**/.git": true }
+      }
+    }
+
+STEP 4 — coord health (he will likely hit the silent-divergence trap — DuoSync hooks run git with 2>/dev/null so a failed rebase silently stops ALL sync):
+- git -C "<coord>" pull
+- git -C "<coord>" rev-list --left-right --count origin/main...main
+- if "behind" is large or a rebase is stuck: git -C "<coord>" rebase --abort, then ONLY if local commits are throwaway session/lock: git -C "<coord>" reset --hard origin/main
+- confirm duosync-memory.sh + duosync-memory.py + claude-memory/ are present in coord.
+
+STEP 5 — Wire the hooks in BOTH web projects (skip any edit already present):
+
+In .claude/hooks/duosync-start.sh, right AFTER the `git pull --rebase origin main` line:
 # ── Sync shared Claude memory: merge team pool -> this project's local store ──
 PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." 2>/dev/null && pwd)"
 if [ -f "$COORD/duosync-memory.sh" ]; then
   DUOSYNC_COORD="$COORD" PROJECT_ROOT="$PROJECT_ROOT" bash "$COORD/duosync-memory.sh" pull >/dev/null 2>&1
 fi
-```
 
-In `.claude/hooks/duosync-end.sh`, replace the final `cd "$COORD" && git add ... && git push ...` line with:
-```
+In .claude/hooks/duosync-end.sh, replace the final `cd "$COORD" && git add ... && git push ...` line with:
 # ── Sync shared Claude memory: merge this project's local store -> team pool ──
 PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." 2>/dev/null && pwd)"
 if [ -f "$COORD/duosync-memory.sh" ]; then
@@ -31,10 +56,13 @@ if [ -f "$COORD/duosync-memory.sh" ]; then
 fi
 
 cd "$COORD" && git add "${OWNER,,}.lock.json" session_log.md claude-memory && git commit -m "DuoSync: $OWNER session end, locks released + memory sync" -q 2>/dev/null && git pull --rebase origin main -q 2>/dev/null && git push origin main -q 2>/dev/null
-```
 
-**4. Test it**
-- `DUOSYNC_COORD="$DUOSYNC_COORD" PROJECT_ROOT="<your project abs path>" bash "$DUOSYNC_COORD/duosync-memory.sh" pull`
-- Then check your local Claude memory store at `~/.claude/projects/<project-key>/memory/` — it should now contain `MEMORY.md` + the pool files. (`<project-key>` = your project path with `:` `\` `/` replaced by `-`.)
+STEP 6 — Test: for each web project run
+  DUOSYNC_COORD="<coord>" PROJECT_ROOT="<abs path>" bash "<coord>/duosync-memory.sh" pull
+then confirm MEMORY.md + the pool .md files now exist in ~/.claude/projects/<project-key>/memory/ (project-key = project path with : \ / replaced by -).
 
-Details: see `claude-memory/duosync-shared-memory.md` and the README/CLAUDE in this repo.
+STEP 7 — Report to Kamyar: what moved, the workspace path, coord health/fix, and that shared memory is live. Then he just opens the workspace and uses the chat normally — the primary folder's hooks fire and memory syncs automatically.
+
+Notes: the header/union_index bug is already fixed in the shipped code (no special handling). Moving a project changes its local memory-store key; the new store auto-fills from the pool on the next sync, so nothing is lost. If stuck, leave a note in inbox_shahab.md.
+
+— Shahab's Claude
