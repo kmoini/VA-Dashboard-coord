@@ -1,8 +1,6 @@
 {
   "owner": "Kamyar",
-  "status": "active",
-  "locked_files": [
-    "docs/bugs.md"
-  ],
-  "updated_at": "2026-06-29T22:09:51Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-06-29T22:10:20Z"
 }
