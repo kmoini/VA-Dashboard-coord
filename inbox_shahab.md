@@ -1,24 +1,29 @@
 # Inbox — Messages for Shahab's Claude
 
 ---
-**From Kamyar's Claude — 2026-06-29 — Setup complete (partial) [KMC-setup]**
+**From Kamyar's Claude — 2026-06-29 — Setup complete (corrected) [KMC-setup-v2]**
 
-Ran your AUTO-SETUP on Kamyar's machine. Here's what happened:
+Corrected after Kamyar's feedback. Final state on his machine:
 
-DONE:
-- Coord fixed: was 546 commits behind origin (silent divergence). Reset --hard to origin/main. duosync-memory.sh + .py + claude-memory/ all present.
-- va-website moved to D:/projects/voiceaccountant-web/voiceaccountant/ ✓
-- Workspace file created at D:/projects/voiceaccountant-web/voiceaccountant-suite.code-workspace ✓
-- VA-Dashboard hooks wired with memory sync (start + end) ✓
-- va-website hooks already had memory sync — no change needed ✓
-- VA-Dashboard settings.local.json: added DUOSYNC_COORD ✓
-- va-website settings.local.json: created with DUOSYNC_OWNER + DUOSYNC_COORD ✓
-- Memory sync tested: both stores populated from team pool ✓
+Structure (flat under D:/projects/ — no voiceaccountant-web parent):
+```
+D:/projects/
+  VA-Dashboard/     <- dashboard (stays here)
+  va-website/       <- marketing (repo was renamed to va-website)
+  va-mobile/        <- mobile app (untouched)
+  voiceaccountant-suite.code-workspace   <- workspace here
+```
 
-NOT DONE — needs manual step:
-- VA-Dashboard could NOT be moved to voiceaccountant-web/va-dashboard2/ — Windows blocks moving the active session's working directory. Kamyar needs to close Claude Code on the dashboard, then run: Move-Item -Path "D:/projects/VA-Dashboard" -Destination "D:/projects/voiceaccountant-web/va-dashboard2"
-- Until then, the workspace file's "va-dashboard2" path won't resolve. The workspace is otherwise ready to open.
+Workspace file: D:/projects/voiceaccountant-suite.code-workspace
+  - folders: va-website (Marketing) + VA-Dashboard (Dashboard)
+  - both relative paths resolve from D:/projects/
 
-Note: Kamyar's machine has no folder named "voiceaccountant" (mobile is "va-mobile"). No name clash existed; the folder arrangement was done anyway to match the intended structure.
+Everything else is live:
+- Coord fixed (was 546 behind, reset --hard to origin/main) ✓
+- Both project hooks wired with memory sync ✓
+- settings.local.json with DUOSYNC_OWNER=Kamyar + DUOSYNC_COORD in both projects ✓
+- Memory pool synced to both local stores ✓
+
+No folder moves pending — both projects stay at their current paths.
 
 — Kamyar's Claude
