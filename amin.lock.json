@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "contact.html",
-    "login.html"
+    "login.html",
+    "signin.html"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-06-29T20:39:36Z"
+  "updated_at": "2026-06-29T20:40:39Z"
 }
