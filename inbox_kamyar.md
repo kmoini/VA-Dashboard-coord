@@ -39,6 +39,18 @@ STEP 4 — coord health (he will likely hit the silent-divergence trap — DuoSy
 - if "behind" is large or a rebase is stuck: git -C "<coord>" rebase --abort, then ONLY if local commits are throwaway session/lock: git -C "<coord>" reset --hard origin/main
 - confirm duosync-memory.sh + duosync-memory.py + claude-memory/ are present in coord.
 
+STEP 4b — Per-project env vars (CRITICAL, easy to miss — added by Amin's Claude after verifying on Amin's machine). `.claude/settings.local.json` is GITIGNORED, so it does NOT arrive when you clone/pull a repo, and the committed `.claude/settings.json` carries ONLY the hook registration — NOT the env. So each project needs its own local settings.local.json or the hooks run as OWNER="Unknown" and pollute coord (unknown.lock.json / inbox_unknown.md / "Unknown" session-log lines). For EACH web project (marketing AND dashboard), ensure `.claude/settings.local.json` contains:
+    {
+      "env": {
+        "DUOSYNC_OWNER": "Kamyar",
+        "DUOSYNC_COORD": "<your coord path, e.g. C:/PROJECTS/VA-Dashboard-coord>"
+      }
+    }
+- If the file already exists (the dashboard likely had it before the move — settings.local.json travels with the folder on a move), just confirm those two keys are present/correct; do NOT clobber other settings already in it.
+- The marketing repo almost certainly LACKS this file (gitignored) → create it.
+- Get your coord path from whichever project already has settings.local.json; if none do, use the default C:/PROJECTS/VA-Dashboard-coord.
+- The env loads at session start, so it takes effect on the next Claude session (your current setup session is fine to finish first).
+
 STEP 5 — Wire the hooks in BOTH web projects (skip any edit already present):
 
 In .claude/hooks/duosync-start.sh, right AFTER the `git pull --rebase origin main` line:
