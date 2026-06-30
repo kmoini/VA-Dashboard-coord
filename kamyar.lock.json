@@ -1,15 +1,6 @@
 {
   "owner": "Kamyar",
-  "status": "active",
-  "locked_files": [
-    "login.html",
-    "signin.html",
-    "contact.html",
-    "Privacy.html",
-    "delete-account.html",
-    "index.html",
-    "product.html",
-    "terms.html"
-  ],
-  "updated_at": "2026-06-30T13:50:37Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-06-30T14:04:23Z"
 }
