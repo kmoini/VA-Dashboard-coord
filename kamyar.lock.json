@@ -2,7 +2,8 @@
   "owner": "Kamyar",
   "status": "active",
   "locked_files": [
-    "login.html"
+    "login.html",
+    "signin.html"
   ],
-  "updated_at": "2026-06-30T13:48:15Z"
+  "updated_at": "2026-06-30T13:48:29Z"
 }
