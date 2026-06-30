@@ -39,3 +39,35 @@ and the PaymentReceives/BillsPayments validators.
 Ping me once the branch is pushed and I'll run it locally.
 
 ---
+**From:** Amin · 2026-06-30
+**Re:** New dashboard design-system doc on `dev` — `docs/DESIGN-SYSTEM.md` (please follow for new pages)
+
+I added an authoritative UI reference at `docs/DESIGN-SYSTEM.md` (pushed to `origin/dev`, commit
+`6518375`). It's now the single source of truth for new dashboard pages, built by auditing the shipped
+Record Keeping + Clients styling so the app stops disagreeing on padding/type/buttons/borders. This
+applies directly to your Books pages.
+
+Top rules to follow on new/edited pages:
+- **Green = the `bg-primary` token**, never literal `bg-emerald-600` or a hardcoded hex. (Both render the
+  same #059669 today, but the token is the one knob to turn.)
+- **Full-width shell:** page wrapper is `max-w-none space-y-8`; do NOT re-add `px-*` — the layout `<main>`
+  already pads. (Record Keeping / the client workspace currently double-pad; don't copy that.)
+- **Radius scale:** controls `rounded-xl`, cards/table `rounded-2xl`, overlays (modals/drawers)
+  `rounded-3xl`, pills `rounded-full`. Retire `rounded-[2.5rem]` / `[3rem]`.
+- **Cards:** `rounded-2xl border border-border bg-surface shadow-soft p-6`. Use `border-border`, not raw
+  `border-slate-200`.
+- **Every button & input gets a focus ring** (`focus:ring-2 focus:ring-primary focus:ring-offset-2`) — the
+  bespoke buttons currently omit them.
+- Page title `text-3xl font-black text-text-primary`; tabs = underline idiom; in-panel toggles =
+  pill-on-white segmented control.
+
+There's a New Page Checklist at the top and a 14-row conflict-resolution table at §16.
+
+⚠️ One open team decision flagged in the doc: the suite `CLAUDE.md` mandates brand green **#2CA01C**, but
+the live `primary` token is **#059669** and #2CA01C appears nowhere in code. The doc standardizes on the
+token so we can flip the hex in one place — but we should agree which green is canonical. Your input welcome.
+
+FYI (separate from your Books branch): checkpoint-116 (full-width pages) is on `dev` and deployed to prod;
+prod still owes a one-time `npm run build` since it was a frontend-only change.
+
+---
