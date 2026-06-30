@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "index.html"
+    "index.html",
+    "contact.html"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-06-30T14:46:13Z"
+  "updated_at": "2026-06-30T14:46:35Z"
 }
