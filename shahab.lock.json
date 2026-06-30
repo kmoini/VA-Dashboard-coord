@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "product.html",
-    "Privacy.html"
+    "Privacy.html",
+    "delete-account.html"
   ],
-  "updated_at": "2026-06-30T00:44:08Z"
+  "updated_at": "2026-06-30T00:44:19Z"
 }
