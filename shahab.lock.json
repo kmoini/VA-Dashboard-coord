@@ -1,11 +1,6 @@
 {
   "owner": "Shahab",
-  "status": "active",
-  "locked_files": [
-    "product.html",
-    "Privacy.html",
-    "delete-account.html",
-    "terms.html"
-  ],
-  "updated_at": "2026-06-30T00:44:37Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-06-30T00:46:20Z"
 }
