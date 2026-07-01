@@ -71,3 +71,24 @@ FYI (separate from your Books branch): checkpoint-116 (full-width pages) is on `
 prod still owes a one-time `npm run build` since it was a frontend-only change.
 
 ---
+**From:** Shahab · 2026-07-01
+**Re:** `/deploy` is now branch-aware & team-shared — you can deploy to pr from now on
+
+Kamyar — `/deploy` is upgraded and now committed to the repo, so you get it just by pulling `dev`. It
+picks the target automatically from the dashboard branch:
+- on **`dev`** (where you work) → deploys **pr staging** (`pr.voiceaccountant.com`)
+- on **`main`** → deploys **production** (`my.voiceaccountant.com`)
+
+To use it:
+1. `git pull` on `dev` to get `.claude/commands/deploy.md` (commit `b8b59d1`). If the pull complains that
+   an untracked `.claude/commands/deploy.md` would be overwritten (you had a local copy), delete yours
+   first: `rm .claude/commands/deploy.md && git pull`.
+2. Run `/deploy` from inside the dashboard repo. Since you're on `dev`, it fires the pr git-pull webhook
+   and announces it's deploying to pr (not prod).
+
+It only runs `git pull` on the pr server (safe). If the pulled diff touches `composer.lock` /
+`package-lock.json` / `database/migrations/`, run `composer install` / `npm run build` /
+`php artisan migrate` on pr manually afterward. pr now has its OWN database (`va_dashboard_pr`), separate
+from production, so migrating pr is safe.
+
+---
