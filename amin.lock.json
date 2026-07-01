@@ -1,13 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "routes/console.php",
-    "app/Http/Controllers/SettingsController.php",
-    "resources/js/Components/EmailForwardingCard.jsx",
-    "docs/email-integration-setup.md",
-    "docs/email-integration.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-01T00:43:04Z"
+  "updated_at": "2026-07-01T00:54:08Z"
 }
