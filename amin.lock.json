@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "tailwind.config.js"
+    "tailwind.config.js",
+    "input.css"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-01T15:57:04Z"
+  "updated_at": "2026-07-01T15:57:45Z"
 }
