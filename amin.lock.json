@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "resources/js/Pages/Dashboard.jsx"
+    "resources/js/Pages/Dashboard.jsx",
+    "resources/js/Pages/Profile/Edit.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-01T18:24:08Z"
+  "updated_at": "2026-07-01T18:24:24Z"
 }
