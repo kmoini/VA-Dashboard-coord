@@ -1,12 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "docs/NAV-PERFORMANCE.md",
-    "docs/DESIGN-SYSTEM.md",
-    "docs/DEPLOYMENT.md",
-    "docs/README.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-01T18:53:10Z"
+  "updated_at": "2026-07-01T18:57:44Z"
 }
