@@ -1,6 +1,8 @@
 {
   "owner": "Kamyar",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-07-01T15:52:32Z"
+  "status": "active",
+  "locked_files": [
+    "resources/js/Pages/Dashboard.jsx"
+  ],
+  "updated_at": "2026-07-01T15:55:36Z"
 }
