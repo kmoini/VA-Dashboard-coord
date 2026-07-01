@@ -1,0 +1,5 @@
+# DuoSync: auto-combine concurrent appends instead of conflicting, so a coord
+# `git pull --rebase` never wedges on parallel session-log / memory-index edits.
+# The 'union' merge driver keeps BOTH sides' lines on conflict (no markers).
+session_log.md merge=union
+claude-memory/MEMORY.md merge=union
