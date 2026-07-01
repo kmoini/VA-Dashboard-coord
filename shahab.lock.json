@@ -1,6 +1,8 @@
 {
   "owner": "Shahab",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-07-01T04:25:47Z"
+  "status": "active",
+  "locked_files": [
+    ".claude/hooks/duosync-start.sh"
+  ],
+  "updated_at": "2026-07-01T04:33:11Z"
 }
