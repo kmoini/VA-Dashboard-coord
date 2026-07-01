@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "robots.txt",
-    "llms.txt"
+    "llms.txt",
+    "index.html"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-01T15:01:40Z"
+  "updated_at": "2026-07-01T15:06:23Z"
 }
