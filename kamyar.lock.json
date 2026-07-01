@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "tests/Feature/Bigcapital/BigcapitalProviderTest.php",
-    "tests/Feature/Bigcapital/BooksControllerTest.php"
+    "tests/Feature/Bigcapital/BooksControllerTest.php",
+    "resources/js/Pages/Books/Index.jsx"
   ],
-  "updated_at": "2026-07-01T22:18:37Z"
+  "updated_at": "2026-07-01T22:22:40Z"
 }
