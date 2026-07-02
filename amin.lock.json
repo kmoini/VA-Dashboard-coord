@@ -21,8 +21,9 @@
     "app/Http/Controllers/TransactionsController.php",
     "resources/js/Components/BatchUploadModal.jsx",
     "resources/js/Pages/Transactions/Index.jsx",
-    "resources/js/Components/TransactionsTable.jsx"
+    "resources/js/Components/TransactionsTable.jsx",
+    "docs/batch-upload-ai-improvements.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-02T19:34:59Z"
+  "updated_at": "2026-07-02T20:05:03Z"
 }
