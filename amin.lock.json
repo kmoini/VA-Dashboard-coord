@@ -11,8 +11,9 @@
     "app/Services/Gemini/ClientAiContext.php",
     "app/Services/Gemini/DocumentAiExtractor.php",
     "app/Services/Gemini/TransactionDraftValidator.php",
-    "app/Services/Gemini/DocumentAiIngestService.php"
+    "app/Services/Gemini/DocumentAiIngestService.php",
+    "app/Jobs/ExtractDocumentTransactionsJob.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-02T19:15:01Z"
+  "updated_at": "2026-07-02T19:15:51Z"
 }
