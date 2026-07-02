@@ -4,7 +4,8 @@
   "locked_files": [
     "app/Services/BigcapitalService.php",
     "app/Accounting/Providers/BigcapitalProvider.php",
-    "app/Http/Controllers/BooksController.php"
+    "app/Http/Controllers/BooksController.php",
+    "routes/web.php"
   ],
-  "updated_at": "2026-07-02T23:20:00Z"
+  "updated_at": "2026-07-02T23:20:28Z"
 }
