@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Services/Gemini/DocumentAiExtractor.php",
-    "app/Services/Gemini/DocumentAiIngestService.php"
+    "app/Services/Gemini/DocumentAiIngestService.php",
+    "app/Console/Commands/DocumentAiRequeue.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-02T22:08:45Z"
+  "updated_at": "2026-07-02T22:09:54Z"
 }
