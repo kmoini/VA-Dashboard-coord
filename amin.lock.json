@@ -5,8 +5,9 @@
     "database/migrations/2026_07_02_000001_add_ai_extract_status_to_attachments.php",
     "database/migrations/2026_07_02_000002_add_payment_method_and_document_type_to_transactions.php",
     "app/Models/Attachment.php",
-    "app/Models/Transaction.php"
+    "app/Models/Transaction.php",
+    "app/Services/Gemini/GeminiClient.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-02T19:09:32Z"
+  "updated_at": "2026-07-02T19:10:19Z"
 }
