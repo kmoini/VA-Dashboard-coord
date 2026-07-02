@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "docs/batch-upload-ai-improvements.md"
+    "docs/batch-upload-ai-improvements.md",
+    "docs/document-ai-extraction.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-02T21:16:43Z"
+  "updated_at": "2026-07-02T21:16:50Z"
 }
