@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "app/Services/BigcapitalService.php",
-    "app/Accounting/Providers/BigcapitalProvider.php"
+    "app/Accounting/Providers/BigcapitalProvider.php",
+    "app/Http/Controllers/BooksController.php"
   ],
-  "updated_at": "2026-07-02T23:19:19Z"
+  "updated_at": "2026-07-02T23:20:00Z"
 }
