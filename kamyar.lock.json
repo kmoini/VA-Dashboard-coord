@@ -6,7 +6,8 @@
     "app/Accounting/Providers/BigcapitalProvider.php",
     "app/Http/Controllers/BooksController.php",
     "routes/web.php",
-    "tests/Feature/Bigcapital/BigcapitalProviderTest.php"
+    "tests/Feature/Bigcapital/BigcapitalProviderTest.php",
+    "tests/Feature/Bigcapital/BooksControllerTest.php"
   ],
-  "updated_at": "2026-07-02T23:22:07Z"
+  "updated_at": "2026-07-02T23:23:00Z"
 }
