@@ -1,10 +1,6 @@
 {
   "owner": "Kamyar",
-  "status": "active",
-  "locked_files": [
-    "app/Accounting/Providers/BigcapitalProvider.php",
-    "tests/Feature/Bigcapital/BigcapitalProviderTest.php",
-    "docs/bugs.md"
-  ],
-  "updated_at": "2026-07-03T20:40:58Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-07-03T21:03:40Z"
 }
