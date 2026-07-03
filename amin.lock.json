@@ -5,8 +5,9 @@
     "app/Services/Pdf/PdfPageSplitter.php",
     "app/Services/Gemini/GeminiClient.php",
     "config/services.php",
-    "app/Services/Gemini/DocumentAiExtractor.php"
+    "app/Services/Gemini/DocumentAiExtractor.php",
+    "app/Jobs/PollDocumentAiBatchesJob.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-03T15:18:01Z"
+  "updated_at": "2026-07-03T15:18:45Z"
 }
