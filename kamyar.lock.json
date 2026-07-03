@@ -1,9 +1,6 @@
 {
   "owner": "Kamyar",
-  "status": "active",
-  "locked_files": [
-    "resources/js/Pages/Books/Index.jsx",
-    "app/Http/Controllers/BooksController.php"
-  ],
-  "updated_at": "2026-07-03T16:32:03Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-07-03T16:33:46Z"
 }
