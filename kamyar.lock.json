@@ -2,7 +2,8 @@
   "owner": "Kamyar",
   "status": "active",
   "locked_files": [
-    "app/Http/Controllers/BooksController.php"
+    "app/Http/Controllers/BooksController.php",
+    "docs/bugs.md"
   ],
-  "updated_at": "2026-07-03T21:32:27Z"
+  "updated_at": "2026-07-03T21:33:53Z"
 }
