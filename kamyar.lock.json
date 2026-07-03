@@ -2,7 +2,8 @@
   "owner": "Kamyar",
   "status": "active",
   "locked_files": [
-    "app/Accounting/DTOs/ItemDTO.php"
+    "app/Accounting/DTOs/ItemDTO.php",
+    "app/Accounting/Providers/BigcapitalProvider.php"
   ],
-  "updated_at": "2026-07-03T16:34:41Z"
+  "updated_at": "2026-07-03T16:35:02Z"
 }
