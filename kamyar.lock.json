@@ -6,7 +6,8 @@
     "tests/Feature/Bigcapital/BigcapitalProviderTest.php",
     "app/Http/Controllers/BooksController.php",
     "resources/js/Pages/Books/Index.jsx",
-    "tests/Feature/Bigcapital/BooksControllerTest.php"
+    "tests/Feature/Bigcapital/BooksControllerTest.php",
+    "docs/bugs.md"
   ],
-  "updated_at": "2026-07-03T17:16:41Z"
+  "updated_at": "2026-07-03T17:18:13Z"
 }
