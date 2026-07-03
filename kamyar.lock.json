@@ -1,6 +1,8 @@
 {
   "owner": "Kamyar",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-07-03T15:56:59Z"
+  "status": "active",
+  "locked_files": [
+    "resources/js/Pages/Books/Index.jsx"
+  ],
+  "updated_at": "2026-07-03T16:21:14Z"
 }
