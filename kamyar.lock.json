@@ -4,7 +4,8 @@
   "locked_files": [
     "app/Accounting/Providers/BigcapitalProvider.php",
     "tests/Feature/Bigcapital/BigcapitalProviderTest.php",
-    "app/Http/Controllers/BooksController.php"
+    "app/Http/Controllers/BooksController.php",
+    "docs/bugs.md"
   ],
-  "updated_at": "2026-07-03T20:10:45Z"
+  "updated_at": "2026-07-03T20:11:56Z"
 }
