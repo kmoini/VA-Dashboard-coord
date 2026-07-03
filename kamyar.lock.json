@@ -4,7 +4,8 @@
   "locked_files": [
     "app/Accounting/Providers/BigcapitalProvider.php",
     "app/Http/Controllers/BooksController.php",
-    "resources/js/Pages/Books/Index.jsx"
+    "resources/js/Pages/Books/Index.jsx",
+    "tests/Feature/Bigcapital/BigcapitalProviderTest.php"
   ],
-  "updated_at": "2026-07-03T15:52:06Z"
+  "updated_at": "2026-07-03T15:52:33Z"
 }
