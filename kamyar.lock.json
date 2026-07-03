@@ -1,6 +1,8 @@
 {
   "owner": "Kamyar",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-07-03T21:43:01Z"
+  "status": "active",
+  "locked_files": [
+    ".claude/hooks/duosync-end.sh"
+  ],
+  "updated_at": "2026-07-03T21:47:00Z"
 }
