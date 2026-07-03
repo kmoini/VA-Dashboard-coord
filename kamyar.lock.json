@@ -2,7 +2,8 @@
   "owner": "Kamyar",
   "status": "active",
   "locked_files": [
-    ".claude/hooks/duosync-end.sh"
+    ".claude/hooks/duosync-end.sh",
+    "resources/js/Pages/Books/Index.jsx"
   ],
-  "updated_at": "2026-07-03T21:51:43Z"
+  "updated_at": "2026-07-03T21:52:19Z"
 }
