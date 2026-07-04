@@ -1,17 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Http/Controllers/ClientsController.php",
-    "app/Models/Client.php",
-    "app/Console/Commands/FxBackfill.php",
-    "resources/js/constants/currencies.js",
-    "resources/js/Pages/Settings/Index.jsx",
-    "resources/js/Components/TransactionsTable.jsx",
-    "resources/js/Pages/Transactions/Index.jsx",
-    "resources/js/Pages/Clients/Show.jsx",
-    "docs/multi-currency.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-04T17:50:34Z"
+  "updated_at": "2026-07-04T17:51:46Z"
 }
