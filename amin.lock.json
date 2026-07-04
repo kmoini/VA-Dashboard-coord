@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Http/Controllers/ClientsController.php",
     "app/Models/Client.php",
-    "app/Console/Commands/FxBackfill.php"
+    "app/Console/Commands/FxBackfill.php",
+    "resources/js/constants/currencies.js"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-04T17:21:24Z"
+  "updated_at": "2026-07-04T17:22:14Z"
 }
