@@ -16,7 +16,8 @@
     "app/Http/Controllers/BooksMigrationController.php",
     "routes/web.php",
     "app/Http/Controllers/BooksController.php",
-    "database/migrations/2026_07_06_000007_add_bank_reconciliation_to_activity_logs.php"
+    "database/migrations/2026_07_06_000007_add_bank_reconciliation_to_activity_logs.php",
+    "resources/js/Pages/Books/Index.jsx"
   ],
-  "updated_at": "2026-07-06T19:59:24Z"
+  "updated_at": "2026-07-06T20:01:40Z"
 }
