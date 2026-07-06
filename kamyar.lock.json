@@ -8,7 +8,8 @@
     "app/Services/CsvCustomerImporter.php",
     "app/Services/CsvVendorImporter.php",
     "app/Services/CsvItemImporter.php",
-    "app/Services/CsvInvoiceImporter.php"
+    "app/Services/CsvInvoiceImporter.php",
+    "app/Services/CsvBillImporter.php"
   ],
-  "updated_at": "2026-07-06T19:44:17Z"
+  "updated_at": "2026-07-06T19:44:32Z"
 }
