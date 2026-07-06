@@ -5,7 +5,8 @@
     "app/Accounting/Providers/QuickBooksProvider.php",
     "app/Services/CsvAccountImporter.php",
     "app/Services/CsvJournalImporter.php",
-    "app/Services/CsvCustomerImporter.php"
+    "app/Services/CsvCustomerImporter.php",
+    "app/Services/CsvVendorImporter.php"
   ],
-  "updated_at": "2026-07-06T19:43:17Z"
+  "updated_at": "2026-07-06T19:43:32Z"
 }
