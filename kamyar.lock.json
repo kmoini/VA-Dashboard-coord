@@ -2,7 +2,8 @@
   "owner": "Kamyar",
   "status": "active",
   "locked_files": [
-    "tests/Feature/Bigcapital/BankReconciliationTest.php"
+    "tests/Feature/Bigcapital/BankReconciliationTest.php",
+    "docs/books-migration.md"
   ],
-  "updated_at": "2026-07-06T20:09:03Z"
+  "updated_at": "2026-07-06T20:09:30Z"
 }
