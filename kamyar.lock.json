@@ -4,7 +4,8 @@
   "locked_files": [
     "app/Accounting/Providers/QuickBooksProvider.php",
     "app/Services/CsvAccountImporter.php",
-    "app/Services/CsvJournalImporter.php"
+    "app/Services/CsvJournalImporter.php",
+    "app/Services/CsvCustomerImporter.php"
   ],
-  "updated_at": "2026-07-06T19:42:43Z"
+  "updated_at": "2026-07-06T19:43:17Z"
 }
