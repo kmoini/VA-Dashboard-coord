@@ -14,7 +14,8 @@
     "app/Jobs/MigrateAccountingDataJob.php",
     "app/Http/Controllers/BankReconciliationController.php",
     "app/Http/Controllers/BooksMigrationController.php",
-    "routes/web.php"
+    "routes/web.php",
+    "app/Http/Controllers/BooksController.php"
   ],
-  "updated_at": "2026-07-06T19:57:34Z"
+  "updated_at": "2026-07-06T19:57:48Z"
 }
