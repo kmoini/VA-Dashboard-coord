@@ -11,7 +11,8 @@
     "app/Services/CsvInvoiceImporter.php",
     "app/Services/CsvBillImporter.php",
     "app/Services/CsvPaymentImporter.php",
-    "app/Services/CsvBillPaymentImporter.php"
+    "app/Services/CsvBillPaymentImporter.php",
+    "app/Services/AccountingMigrationCsvTemplates.php"
   ],
-  "updated_at": "2026-07-06T19:44:59Z"
+  "updated_at": "2026-07-06T19:45:41Z"
 }
