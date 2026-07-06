@@ -10,7 +10,8 @@
     "app/Services/AccountingMigration/AccountingMigrationEngine.php",
     "app/Accounting/Providers/BigcapitalProvider.php",
     "app/Models/BankReconciliation.php",
-    "app/Models/BankReconciliationClearedItem.php"
+    "app/Models/BankReconciliationClearedItem.php",
+    "app/Jobs/MigrateAccountingDataJob.php"
   ],
-  "updated_at": "2026-07-06T19:55:19Z"
+  "updated_at": "2026-07-06T19:55:31Z"
 }
