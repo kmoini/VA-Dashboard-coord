@@ -11,7 +11,8 @@
     "app/Accounting/Providers/BigcapitalProvider.php",
     "app/Models/BankReconciliation.php",
     "app/Models/BankReconciliationClearedItem.php",
-    "app/Jobs/MigrateAccountingDataJob.php"
+    "app/Jobs/MigrateAccountingDataJob.php",
+    "app/Http/Controllers/BankReconciliationController.php"
   ],
-  "updated_at": "2026-07-06T19:55:31Z"
+  "updated_at": "2026-07-06T19:56:45Z"
 }
