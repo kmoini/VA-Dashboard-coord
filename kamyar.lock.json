@@ -18,5 +18,5 @@
     "app/Http/Controllers/BooksController.php",
     "database/migrations/2026_07_06_000007_add_bank_reconciliation_to_activity_logs.php"
   ],
-  "updated_at": "2026-07-06T19:58:21Z"
+  "updated_at": "2026-07-06T19:59:01Z"
 }
