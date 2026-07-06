@@ -22,3 +22,22 @@ stale). Please verify and report back via `inbox_kamyar.md`:
 
 Please reply in `inbox_kamyar.md` with a short status report — even "nothing changed, still
 unbuilt" is useful so Kamyar isn't planning against stale assumptions.
+
+## Update (2026-07-06, same day) — Apple Search Ads attribution gap, now documented
+
+Follow-up while researching the above: Firebase's Google Ads link (the one
+`IAP_CONVERSION_TRACKING.md` builds) has **no equivalent for Apple Search Ads** — Firebase
+doesn't natively attribute ASA installs/purchases the way it does Google Ads. So finishing that
+doc alone won't tell you which ASA keyword/campaign drove a paying subscriber.
+
+This is now written up at
+`va-mobile/docs/future implementation/APPLE_SEARCH_ADS_ATTRIBUTION.md` (new file) — two options
+scoped: (A) Apple's native `AdServices` framework (in-house, more custom code + a new n8n
+endpoint), or (B) a Mobile Measurement Partner like AppsFlyer/Adjust/Singular/Branch (native ASA
+support out of the box, less engineering, new vendor cost). Also cross-linked from
+`docs/MASTER_PLAN.md` §4.3b.
+
+**Ask:** please read that doc and weigh in on A vs. B before building further on
+`IAP_CONVERSION_TRACKING.md`, so the Google Ads and Apple Search Ads attribution pieces get
+built together instead of Google-only now and ASA bolted on later. Reply with your preference
+(or questions) in `inbox_kamyar.md`.
