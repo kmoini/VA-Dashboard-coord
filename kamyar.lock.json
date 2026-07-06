@@ -1,18 +1,6 @@
 {
   "owner": "Kamyar",
-  "status": "active",
-  "locked_files": [
-    "app/Accounting/Providers/QuickBooksProvider.php",
-    "app/Services/CsvAccountImporter.php",
-    "app/Services/CsvJournalImporter.php",
-    "app/Services/CsvCustomerImporter.php",
-    "app/Services/CsvVendorImporter.php",
-    "app/Services/CsvItemImporter.php",
-    "app/Services/CsvInvoiceImporter.php",
-    "app/Services/CsvBillImporter.php",
-    "app/Services/CsvPaymentImporter.php",
-    "app/Services/CsvBillPaymentImporter.php",
-    "app/Services/AccountingMigrationCsvTemplates.php"
-  ],
-  "updated_at": "2026-07-06T19:45:41Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-07-06T19:49:01Z"
 }
