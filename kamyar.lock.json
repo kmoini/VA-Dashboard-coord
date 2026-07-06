@@ -1,6 +1,8 @@
 {
   "owner": "Kamyar",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-07-06T19:49:01Z"
+  "status": "active",
+  "locked_files": [
+    "app/Services/AccountingMigration/MigrationSource.php"
+  ],
+  "updated_at": "2026-07-06T19:49:08Z"
 }
