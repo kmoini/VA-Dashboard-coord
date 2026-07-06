@@ -1,24 +1,6 @@
 {
   "owner": "Kamyar",
-  "status": "active",
-  "locked_files": [
-    "app/Accounting/Providers/QuickBooksProvider.php",
-    "app/Services/AccountingMigration/DesktopCsvSource.php",
-    "database/migrations/2026_07_06_000005_create_bank_reconciliations_table.php",
-    "database/migrations/2026_07_06_000006_create_bank_reconciliation_cleared_items_table.php",
-    "app/Accounting/Contracts/AccountingProvider.php",
-    "app/Services/AccountingMigration/AccountingMigrationEngine.php",
-    "app/Accounting/Providers/BigcapitalProvider.php",
-    "app/Models/BankReconciliation.php",
-    "app/Models/BankReconciliationClearedItem.php",
-    "app/Jobs/MigrateAccountingDataJob.php",
-    "app/Http/Controllers/BankReconciliationController.php",
-    "app/Http/Controllers/BooksMigrationController.php",
-    "routes/web.php",
-    "app/Http/Controllers/BooksController.php",
-    "database/migrations/2026_07_06_000007_add_bank_reconciliation_to_activity_logs.php",
-    "resources/js/Pages/Books/Index.jsx",
-    "tests/Feature/Bigcapital/BankReconciliationTest.php"
-  ],
-  "updated_at": "2026-07-06T20:08:43Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-07-06T20:08:44Z"
 }
