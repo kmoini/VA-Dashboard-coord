@@ -1,9 +1,6 @@
 {
   "owner": "Kamyar",
-  "status": "active",
-  "locked_files": [
-    "app/Accounting/DTOs/InvoiceDTO.php",
-    "app/Accounting/DTOs/BillDTO.php"
-  ],
-  "updated_at": "2026-07-06T19:40:13Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-07-06T19:40:25Z"
 }
