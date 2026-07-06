@@ -7,7 +7,8 @@
     "database/migrations/2026_07_06_000005_create_bank_reconciliations_table.php",
     "database/migrations/2026_07_06_000006_create_bank_reconciliation_cleared_items_table.php",
     "app/Accounting/Contracts/AccountingProvider.php",
-    "app/Services/AccountingMigration/AccountingMigrationEngine.php"
+    "app/Services/AccountingMigration/AccountingMigrationEngine.php",
+    "app/Accounting/Providers/BigcapitalProvider.php"
   ],
-  "updated_at": "2026-07-06T19:53:43Z"
+  "updated_at": "2026-07-06T19:53:57Z"
 }
