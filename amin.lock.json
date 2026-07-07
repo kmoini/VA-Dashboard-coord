@@ -1,13 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Services/Documents/TesseractOcr.php",
-    "config/services.php",
-    "app/Services/Gemini/GeminiClient.php",
-    "app/Services/Gemini/DocumentAiExtractor.php",
-    "docs/AI-COST-OPTIMIZATION.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-07T15:20:19Z"
+  "updated_at": "2026-07-07T15:20:39Z"
 }
