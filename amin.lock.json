@@ -1,17 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "config/services.php",
-    "app/Services/Gemini/GeminiAdminNotifier.php",
-    "app/Services/Gemini/GeminiKeyPool.php",
-    "app/Services/Gemini/GeminiClient.php",
-    "app/Console/Commands/GeminiTier.php",
-    "resources/js/lib/pdfPageRender.js",
-    "resources/js/Components/BatchUploadModal.jsx",
-    "app/Services/Gemini/DocumentAiIngestService.php",
-    "docs/AI-COST-OPTIMIZATION.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-07T17:04:53Z"
+  "updated_at": "2026-07-07T17:16:54Z"
 }
