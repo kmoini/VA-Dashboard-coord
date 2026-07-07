@@ -7,8 +7,9 @@
     "app/Services/Gemini/GeminiKeyPool.php",
     "app/Services/Gemini/GeminiClient.php",
     "app/Console/Commands/GeminiTier.php",
-    "resources/js/lib/pdfPageRender.js"
+    "resources/js/lib/pdfPageRender.js",
+    "resources/js/Components/BatchUploadModal.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-07T16:41:05Z"
+  "updated_at": "2026-07-07T16:41:32Z"
 }
