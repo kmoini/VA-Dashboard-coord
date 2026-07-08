@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "database/migrations/2026_07_08_000001_add_merged_into_id_to_transactions.php",
-    "app/Support/VendorMatch.php"
+    "app/Support/VendorMatch.php",
+    "app/Services/Gemini/DocumentAiIngestService.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-08T18:38:32Z"
+  "updated_at": "2026-07-08T18:39:06Z"
 }
