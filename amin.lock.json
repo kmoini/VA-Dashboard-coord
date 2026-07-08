@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Services/Gemini/DocumentAiIngestService.php",
-    "scratch_dedup_verify.php"
+    "scratch_dedup_verify.php",
+    "scratch_race_worker.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-08T18:05:55Z"
+  "updated_at": "2026-07-08T18:07:50Z"
 }
