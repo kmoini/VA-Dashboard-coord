@@ -11,8 +11,9 @@
     "app/Http/Controllers/TransactionsController.php",
     "routes/web.php",
     "scratch_merge_verify.php",
-    "resources/js/Components/TransactionsTable.jsx"
+    "resources/js/Components/TransactionsTable.jsx",
+    "scratch_guard_verify.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-08T19:46:13Z"
+  "updated_at": "2026-07-08T19:51:21Z"
 }
