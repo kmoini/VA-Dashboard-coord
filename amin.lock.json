@@ -7,8 +7,9 @@
     "app/Services/Gemini/DocumentAiIngestService.php",
     "app/Models/Transaction.php",
     "app/Services/DuplicateTransactionDetector.php",
-    "app/Services/TransactionService.php"
+    "app/Services/TransactionService.php",
+    "app/Http/Controllers/TransactionsController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-08T18:44:46Z"
+  "updated_at": "2026-07-08T18:45:56Z"
 }
