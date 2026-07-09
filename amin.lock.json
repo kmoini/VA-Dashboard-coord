@@ -10,8 +10,9 @@
     "tests/Unit/Services/NoHardCodedAiModelTest.php",
     "database/migrations/2026_07_09_000004_add_latency_to_ai_usage_daily.php",
     "app/Models/AiUsageDaily.php",
-    "app/Console/Commands/AiUsageRollup.php"
+    "app/Console/Commands/AiUsageRollup.php",
+    "app/Http/Controllers/Api/AdminAiUsageController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-09T20:11:43Z"
+  "updated_at": "2026-07-09T20:12:10Z"
 }
