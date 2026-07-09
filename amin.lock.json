@@ -33,8 +33,9 @@
     "app/Services/Email/InboundEmailService.php",
     "app/Console/Commands/AiUsageRollup.php",
     "app/Console/Commands/AiUsagePrune.php",
-    "app/Console/Commands/AiUsageSeedFake.php"
+    "app/Console/Commands/AiUsageSeedFake.php",
+    "routes/console.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-09T16:16:35Z"
+  "updated_at": "2026-07-09T16:17:07Z"
 }
