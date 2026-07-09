@@ -13,8 +13,9 @@
     "app/Services/Ai/AiUsage.php",
     "app/Services/Ai/AiCostCalculator.php",
     "app/Services/Ai/AiUsageRecorder.php",
-    "app/Providers/AppServiceProvider.php"
+    "app/Providers/AppServiceProvider.php",
+    "config/services.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-09T15:54:06Z"
+  "updated_at": "2026-07-09T15:54:36Z"
 }
