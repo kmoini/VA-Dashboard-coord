@@ -29,8 +29,9 @@
     "app/Services/AiAssistantService.php",
     "app/Services/Gemini/TransactionAssistant.php",
     "app/Jobs/ExtractDocumentTransactionsJob.php",
-    "app/Jobs/PollDocumentAiBatchesJob.php"
+    "app/Jobs/PollDocumentAiBatchesJob.php",
+    "app/Services/Email/InboundEmailService.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-09T16:07:54Z"
+  "updated_at": "2026-07-09T16:08:36Z"
 }
