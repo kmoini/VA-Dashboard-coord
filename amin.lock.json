@@ -41,8 +41,9 @@
     "routes/api.php",
     "bootstrap/app.php",
     "index 3.html",
-    "docs/ai-usage-monitoring.md"
+    "docs/ai-usage-monitoring.md",
+    "docs/ai-usage-monitoring-test-guide.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-09T17:31:36Z"
+  "updated_at": "2026-07-09T17:32:46Z"
 }
