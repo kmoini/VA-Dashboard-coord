@@ -13,8 +13,9 @@
     "app/Console/Commands/AiUsageRollup.php",
     "app/Http/Controllers/Api/AdminAiUsageController.php",
     "index 3.html",
-    "app/Console/Commands/AiCompareProviders.php"
+    "app/Console/Commands/AiCompareProviders.php",
+    "docs/ai-usage-monitoring.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-09T21:30:19Z"
+  "updated_at": "2026-07-09T21:41:22Z"
 }
