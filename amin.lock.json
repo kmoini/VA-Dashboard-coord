@@ -19,8 +19,9 @@
     "app/Services/AiAccountClassifier.php",
     "app/Services/AiTransactionCategorizer.php",
     "app/Services/VendorExtractionService.php",
-    "app/Services/VoiceIntelligenceService.php"
+    "app/Services/VoiceIntelligenceService.php",
+    "app/Services/Gemini/DocumentAiExtractor.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-09T15:57:53Z"
+  "updated_at": "2026-07-09T15:58:25Z"
 }
