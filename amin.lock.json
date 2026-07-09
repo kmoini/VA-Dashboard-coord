@@ -7,8 +7,9 @@
     "app/Services/AiTransactionCategorizer.php",
     "app/Services/AiAccountClassifier.php",
     "app/Services/VendorExtractionService.php",
-    "tests/Unit/Services/NoHardCodedAiModelTest.php"
+    "tests/Unit/Services/NoHardCodedAiModelTest.php",
+    "database/migrations/2026_07_09_000004_add_latency_to_ai_usage_daily.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-09T20:07:15Z"
+  "updated_at": "2026-07-09T20:10:37Z"
 }
