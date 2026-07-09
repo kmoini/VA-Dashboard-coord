@@ -4,8 +4,9 @@
   "locked_files": [
     ".env.example",
     "app/Http/Controllers/Api/AdminAiUsageController.php",
-    "index 3.html"
+    "index 3.html",
+    "docs/ai-usage-monitoring.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-09T23:10:49Z"
+  "updated_at": "2026-07-09T23:14:02Z"
 }
