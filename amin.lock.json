@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Services/VoiceIntelligenceService.php",
-    "tests/Unit/Services/NoHardCodedAiModelTest.php"
+    "tests/Unit/Services/NoHardCodedAiModelTest.php",
+    "app/Services/Ai/AiUsage.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-09T23:47:45Z"
+  "updated_at": "2026-07-09T23:48:37Z"
 }
