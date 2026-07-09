@@ -22,8 +22,9 @@
     "app/Services/VoiceIntelligenceService.php",
     "app/Services/Gemini/DocumentAiExtractor.php",
     "app/Services/Gemini/VoiceCommandInterpreter.php",
-    "app/Http/Controllers/AiAssistantController.php"
+    "app/Http/Controllers/AiAssistantController.php",
+    "app/Http/Controllers/TransactionAssistantController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-09T16:01:37Z"
+  "updated_at": "2026-07-09T16:01:58Z"
 }
