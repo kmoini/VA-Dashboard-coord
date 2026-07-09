@@ -9,8 +9,9 @@
     "app/Models/AiPrice.php",
     "app/Models/AiUsageEvent.php",
     "app/Models/AiUsageDaily.php",
-    "app/Services/Ai/AiUsageContext.php"
+    "app/Services/Ai/AiUsageContext.php",
+    "app/Services/Ai/AiUsage.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-09T15:51:34Z"
+  "updated_at": "2026-07-09T15:52:06Z"
 }
