@@ -6,8 +6,9 @@
     "database/migrations/2026_07_09_000002_create_ai_usage_events_table.php",
     "database/migrations/2026_07_09_000003_create_ai_usage_daily_table.php",
     "app/Services/Ai/AiFeature.php",
-    "app/Models/AiPrice.php"
+    "app/Models/AiPrice.php",
+    "app/Models/AiUsageEvent.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-09T15:50:34Z"
+  "updated_at": "2026-07-09T15:50:53Z"
 }
