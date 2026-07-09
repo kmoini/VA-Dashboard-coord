@@ -1,9 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "database/migrations/2026_07_08_000002_add_transaction_merged_action_to_activity_logs.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-08T21:55:41Z"
+  "updated_at": "2026-07-09T14:21:58Z"
 }
