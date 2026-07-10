@@ -7,8 +7,9 @@
     "tests/Feature/Community/CommunityControllerTest.php",
     "config/services.php",
     ".env.example",
-    "app/Services/VoiceIntelligenceService.php"
+    "app/Services/VoiceIntelligenceService.php",
+    "app/Services/Gemini/VoiceCommandInterpreter.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-10T01:54:21Z"
+  "updated_at": "2026-07-10T02:22:45Z"
 }
