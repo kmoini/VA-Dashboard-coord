@@ -6,8 +6,9 @@
     "tests/Unit/Services/NoHardCodedAiModelTest.php",
     "app/Services/Ai/AiUsage.php",
     "app/Services/Ai/Concerns/CallsAiForJson.php",
-    ".env.example"
+    ".env.example",
+    "docs/ai-usage-monitoring.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-09T23:58:09Z"
+  "updated_at": "2026-07-10T00:00:59Z"
 }
