@@ -1,11 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Services/Ai/AudioTranscriber.php",
-    "app/Services/Ai/AiFeature.php",
-    "app/Http/Controllers/CommunityController.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-10T01:30:30Z"
+  "updated_at": "2026-07-10T01:32:29Z"
 }
