@@ -1,21 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "database/migrations/2026_07_10_000001_create_gemini_call_logs_table.php",
-    "app/Casts/GzipText.php",
-    "app/Models/GeminiCallLog.php",
-    "config/services.php",
-    "app/Services/Ai/AiUsageRecorder.php",
-    "app/Services/Gemini/GeminiClient.php",
-    "app/Console/Commands/GeminiCallLogPrune.php",
-    "app/Http/Controllers/Settings/MailDiagnosticsController.php",
-    "routes/console.php",
-    "app/Http/Controllers/Api/AdminAiUsageController.php",
-    "routes/web.php",
-    "resources/js/Pages/Settings/Index.jsx",
-    "routes/api.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-10T17:58:18Z"
+  "updated_at": "2026-07-10T18:04:12Z"
 }
