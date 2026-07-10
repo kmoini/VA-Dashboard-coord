@@ -6,8 +6,9 @@
     "app/Http/Controllers/MobileVoiceIntakeController.php",
     "tests/Feature/Community/CommunityControllerTest.php",
     "config/services.php",
-    ".env.example"
+    ".env.example",
+    "app/Services/VoiceIntelligenceService.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-10T01:52:39Z"
+  "updated_at": "2026-07-10T01:54:21Z"
 }
