@@ -1,10 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "index 3.html",
-    "docs/gemini-call-logs.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-10T21:33:32Z"
+  "updated_at": "2026-07-10T21:35:25Z"
 }
