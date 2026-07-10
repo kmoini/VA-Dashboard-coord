@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Http/Controllers/CommunityController.php",
-    "app/Http/Controllers/MobileVoiceIntakeController.php"
+    "app/Http/Controllers/MobileVoiceIntakeController.php",
+    "tests/Feature/Community/CommunityControllerTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-10T01:39:50Z"
+  "updated_at": "2026-07-10T01:46:35Z"
 }
