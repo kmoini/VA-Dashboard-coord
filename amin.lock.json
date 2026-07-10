@@ -8,8 +8,9 @@
     "config/services.php",
     ".env.example",
     "app/Services/VoiceIntelligenceService.php",
-    "app/Services/Gemini/VoiceCommandInterpreter.php"
+    "app/Services/Gemini/VoiceCommandInterpreter.php",
+    "app/Services/Ai/AudioTranscriber.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-10T02:24:16Z"
+  "updated_at": "2026-07-10T02:30:33Z"
 }
