@@ -1,8 +1,6 @@
 {
   "owner": "Kamyar",
-  "status": "active",
-  "locked_files": [
-    "app/Http/Controllers/BooksController.php"
-  ],
-  "updated_at": "2026-07-10T18:28:40Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-07-10T18:29:18Z"
 }
