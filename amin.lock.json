@@ -6,8 +6,9 @@
     "app/Casts/GzipText.php",
     "app/Models/GeminiCallLog.php",
     "config/services.php",
-    "app/Services/Ai/AiUsageRecorder.php"
+    "app/Services/Ai/AiUsageRecorder.php",
+    "app/Services/Gemini/GeminiClient.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-10T17:55:16Z"
+  "updated_at": "2026-07-10T17:55:29Z"
 }
