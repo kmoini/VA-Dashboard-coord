@@ -87,6 +87,112 @@ chooser, user can override (device/paste + Drive). (4) fixed pre-existing
 duplicate `flarum`/`whisper` blocks in config/services.php (later block was
 silently dropping flarum.verified_accountant_group_id).
 
+**Resilience round (2026-07-03, after Amin's 50-file test "nothing appears"):**
+diagnosis from log+DB: (a) drafts WERE being created but for yesterday's client-2
+backlog — today's 50 files (client 1, XYZ Limited) sat behind ~350 old jobs in a
+406-deep database queue; (b) this Windows box gets intermittent cURL 28 timeouts
+to Gemini (the known local stall gotcha) and the old budgets (120s × 4 attempts
+× single-call + 2-step fallback) let ONE bad file grind a worker for 16.5 min;
+(c) 352 zombie queued/processing rows made the "AI is reading N documents"
+banner lie; (d) "The system cannot find the path specified" console noise =
+PdfPageSplitter running `where pdftoppm 2>/dev/null` on cmd.exe (fixed: 2>NUL +
+memo). Fixes: GEMINI_TIMEOUT default 120→75s, retries 4→3 attempts, extractor
+SKIPS the two-step fallback on connection-class errors (fails fast → failed +
+reason + Retry; helper isConnectionError), zombie sweeper piggybacked on
+document-ai:poll-batches (processing>2h, queued>24h → failed w/ message),
+document-ai:requeue now also accepts queued/processing (recovery after
+queue:clear), and the modal success view shows "Booked to client: X" (files
+"disappear" when the ClientSwitcher pin ≠ the client picked in the modal —
+user confusion, not a bug). Durable gotchas: database queue is FIFO so an old
+backlog starves new uploads (multiple workers and/or queue:clear+requeue);
+Record Keeping/Documents are client-scoped — check the client filter before
+declaring uploads lost.
+
+**Speed round 2 (2026-07-03 later):** 50-file batch took ~50 min on ONE worker
+because of the cURL-28 stalls. Root-cause fix shipped: **GEMINI_FORCE_IPV4
+(default on)** — the "cURL error 28 … 0 bytes received" stall to
+googleapis.com is curl trying a blackholed IPv6 route first; all Gemini HTTP
+now goes through GeminiClient::http() with CURLOPT_IPRESOLVE_V4. Also:
+upload timeout now SCALES with file size (min 60s, 20s/MB, cap
+GEMINI_UPLOAD_TIMEOUT) so a 300KB receipt can't burn 300s on a stall, and
+GEMINI_TIMEOUT default → 60s. Durable gotchas: IPv6 blackhole = first suspect
+for Gemini stalls on Windows dev boxes; "AI is reading N" count can tick UP
+briefly when a failed file re-enters processing via retry (not a bug). Also:
+`php artisan queue:clear` + document-ai:requeue recovery was exercised for
+real (user wiped a 406-job backlog; requeue --status=queued --client=N
+restored the 50 stranded files). Ledger got an "AI drafts" quick chip
+(pending+source=ai) — testers had no manual way to reach the AI filter.
+
+**Speed round 3 (2026-07-03 evening):** IPv4 forcing did NOT kill the cURL-28
+stalls (still ~20% of calls, 4 workers, 50 files/35 min → 40 done, 7 failed
+visible w/ Retry). Added two more transport hardenings in GeminiClient::http():
+**HTTP/1.1 forced by default** (GEMINI_HTTP_1_1 — 0-byte stalls through
+VPN/DPI middleboxes are often silent HTTP/2 stream resets) and **GEMINI_PROXY**
+(route only Gemini traffic through a dedicated stable tunnel, e.g.
+socks5h://127.0.0.1:1080). Verdict recorded for Amin: the residual stalls are
+the dev box's network route to googleapis.com, not code — real speed test
+belongs on the pr/prod Linux box; locally use GEMINI_PROXY if a stable tunnel
+exists. Local test artifacts were wiped on request (125 doc-hub drafts + 698
+uploaded docs soft-deleted; mobile/chat/email attachments untouched;
+cleanup criteria: source=ai + metadata.ai_pipeline=document-hub, and
+attachments mobile_id NULL + uploaded_by_source in web_dashboard/scanner/
+google_drive + created_at >= 2026-07-02).
+
+**Persistent failures panel (2026-07-03, Amin's request — modal list dies on
+OK):** `/documents/ai-status` client-summary now returns `failed_files` (last
+24h, ≤50, name+reason); Record Keeping renders a rose panel under the live
+banner with per-file Retry + Retry all + hide-until-reload, fed by the same
+poller. HTTP/1.1 forcing verified effective in practice: 50-file run went
+46 extracted / 1 cURL-28 fail (from ~20% fail rate before).
+
+**Ledger pagination was INVISIBLE (fixed 2026-07-03):** TransactionsTable read
+`transactions.meta` but the controller passes a raw Laravel paginator, which
+serialises FLAT (last_page/from/to/total at top level, no meta wrapper) → the
+footer's `meta.last_page > 1` was never true → no page buttons ever rendered
+and rows past page 1 (20/page) were unreachable. Fixed by normalising in the
+component (`meta = transactions.meta ?? transactions`), covering every page
+that renders the table. Related UX answered: ClientSwitcher badge = client's
+PENDING count; bulk-select intentionally selects current page only. Also fixed
+same day: Document Hub PDF preview embedded the RAW serve URL in an iframe →
+download managers (IDM) intercepted it (auto-download + blank frame); now uses
+the same base64→blob path as other viewers, and the preview fetch uses
+serve_url (appending preview=1 to a signed S3 URL invalidated the signature).
+Counterparty column: computed direction-aware summary (expense→"to vendor",
+revenue→"from customer") — do NOT show alongside raw Vendor/Customer columns
+(removed from the Parties preset).
+
+**Self-healing retry for transport stalls (2026-07-03 last round):** Amin kept
+seeing cURL-28s. ExtractDocumentTransactionsJob now distinguishes error class
+in its catch via new `GeminiClient::isTransportError()` (shared with the
+extractor's fallback-skip): TRANSPORT errors rethrow and retry on
+`$backoff=[180,900]` (3 tries: now, +3 min, +15 min — flaky routes recover in
+minutes) with maxExceptions=3; NON-transport errors (API 4xx, bad file) mark
+failed IMMEDIATELY and return without burning retries. Files only reach the
+red failed panel after ~18 min of self-healing attempts. Verdict stands: the
+stalls are this dev box's route to googleapis.com; prod won't have them.
+
+**checkpoint-120 (2026-07-04 night, prod incident):** file stuck "processing
+forever with EMPTY error" on prod = the worker's pcntl alarm KILLED the job
+mid-Gemini-call because the job $timeout (300s) was smaller than the HTTP
+budget inside it (upload cap 300s + 3 attempts × GEMINI_TIMEOUT); a pcntl
+kill runs NO catch/failed(), and Laravel double-inserts failed_jobs (uuid
+unique violation). Fix: generate() = ONE retry (budget ≤ 2×timeout+2s), job
+$timeout 300→540, requeue command falls back to first user id for
+uploader-less rows. DURABLE RULE: any queue job wrapping HTTP calls must keep
+total HTTP budget < job $timeout. Prod runs GEMINI_TIMEOUT=150 in .env (slow
+tail >60s observed); prod ALSO gets intermittent cURL-28/slow Gemini windows
+(not just the dev box). Prod worker daemon = `queue:work database
+--queue=mobile-sync,default`.
+
+**Portal bulk delete (2026-07-06, BUILT NOT COMMITTED):** client-portal users
+can now soft-delete their own transactions like accountants —
+TransactionPolicy::delete switched to the clientOwns() self-manage pattern
+(own client + lock rules; forceDelete stays false) and can.delete in
+TransactionsController@index returns true for portal users. Backend-only (the
+shared TransactionsTable Delete button lights up via can.delete). Portal
+ledger = the REAL /recordkeeping page (pinned session); legacy /client/records
+stays read-only.
+
 **How to apply / status:** local `php artisan migrate` + `npm run build` DONE;
 smoke test green (context/validator/prompt/schema/markAiExtract). Amin tests per
 the doc's manual guide, then checkpoint. PROD owes: migrate --force, npm install
