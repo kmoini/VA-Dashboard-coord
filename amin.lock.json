@@ -10,8 +10,9 @@
     "app/Console/Commands/ReconcileInboundEmails.php",
     "routes/console.php",
     "resources/js/Components/EmailForwardingCard.jsx",
-    "app/Http/Controllers/SettingsController.php"
+    "app/Http/Controllers/SettingsController.php",
+    "docs/email-integration-setup.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-11T01:19:25Z"
+  "updated_at": "2026-07-11T01:25:09Z"
 }
