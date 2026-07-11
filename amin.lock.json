@@ -7,8 +7,9 @@
     "app/Services/Email/InboundEmailService.php",
     "routes/web.php",
     "bootstrap/app.php",
-    "app/Console/Commands/ReconcileInboundEmails.php"
+    "app/Console/Commands/ReconcileInboundEmails.php",
+    "routes/console.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-11T01:15:43Z"
+  "updated_at": "2026-07-11T01:15:58Z"
 }
