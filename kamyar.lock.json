@@ -1,6 +1,8 @@
 {
   "owner": "Kamyar",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-07-13T12:43:33Z"
+  "status": "active",
+  "locked_files": [
+    "Claude.md"
+  ],
+  "updated_at": "2026-07-13T12:52:55Z"
 }
