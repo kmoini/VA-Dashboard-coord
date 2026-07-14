@@ -5,8 +5,9 @@
     "resources/js/Pages/Transactions/Index.jsx",
     "resources/js/Pages/Transactions/Create.jsx",
     "resources/js/Pages/ClientPortal/Messages.jsx",
-    "resources/js/Components/TransactionAssistantChat.jsx"
+    "resources/js/Components/TransactionAssistantChat.jsx",
+    "resources/js/Components/AiAssistantChat.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-14T22:45:18Z"
+  "updated_at": "2026-07-14T22:45:59Z"
 }
