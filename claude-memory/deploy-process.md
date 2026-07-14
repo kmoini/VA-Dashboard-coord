@@ -1,13 +1,15 @@
 ---
 name: deploy-process
-description: Production deploy via n8n webhook only runs git pull — migrations and npm build are NOT automatic.
+description: Production deploy via n8n webhook runs git pull + npm build (observed 2026-07-13) — migrations AND Laravel cache clears are NOT automatic; new routes 405 until optimize:clear.
 metadata: 
   node_type: memory
   type: project
   originSessionId: 8f1fb65a-2016-4baf-8cf0-2fd6e4578a77
 ---
 
-The deploy (the `/deploy` skill / n8n webhook on n8n.homeleaderrealty.com) **only runs `git pull`** on the server. It does **NOT** run `php artisan migrate` or `npm run build`.
+The deploy (the `/deploy` skill / n8n webhook on n8n.homeleaderrealty.com) runs **`git pull` + (as observed on the 2026-07-13 checkpoint-139 production deploy) `npm run build`** on the server. It does **NOT** run `php artisan migrate` and does **NOT clear any Laravel cache**.
+
+**⚠️ Route-cache 405 gotcha (bit us 2026-07-13, checkpoint-139):** prod keeps a cached route table (`route:cache`/`optimize`), and the webhook never clears it — so **any deploy that adds/renames routes is not live until `php artisan optimize:clear` (then optionally `optimize`) runs on the server**. Symptom: the new endpoint errors in the UI; confirmed without SSH by unauthenticated curl probes — a NEW `POST` route answers **405** (URI falls through to an old cached pattern) while a pre-existing `POST` route answers **419** (CSRF). Use that 405-vs-419 probe to tell "stale route cache" from a real bug. Also remind `queue:restart` — long-running workers keep pre-deploy code in memory (new Job classes / changed services misbehave until restarted).
 
 **Branch-aware + team-shared (2026-06-30):** `/deploy` reads the dashboard branch (`git -C ../va-dashboard2 branch --show-current`, falls back to the current repo's branch) and picks the target: `dev` → **pr staging** (`pr.voiceaccountant.com`, webhook `…/9b2e4f71…`), anything else (e.g. `main`) → **production** (`my.voiceaccountant.com`, webhook `…/f4c8d7a9…`). Announces the target in one line before firing. Both webhooks are git-pull-only. The command file `.claude/commands/deploy.md` is now **git-tracked** (committed `b8b59d1` on `dev`) via a `.gitignore` exception (`!/.claude/commands/deploy.md`, while other `.claude/commands/*` stay ignored) so the team gets it by pull. Team flow: **Kamyar works on `dev`** → pulls it now, `/deploy` → pr. **Amin works on `main`** → gets it when he merges `dev`→`main`, `/deploy` → production. Run `/deploy` from inside the dashboard repo so branch detection is correct. ⚠️ Repo is PRIVATE so the n8n Basic-Auth creds in the file are team-only, but still worth moving to a gitignored secrets file / rotating. If a teammate's `git pull` complains that untracked `.claude/commands/deploy.md` would be overwritten, they delete their local copy then pull. See [[pr-staging-box]].
 

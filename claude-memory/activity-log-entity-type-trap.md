@@ -22,6 +22,17 @@ Confirmed twice:
   showed "the email may already be in use" on *any* email. Fixed in checkpoint-124 by
   using `'ReferralToken'`, the already-allowed value matching the logged `entity_id`.
 
+**Sibling constraint — `chk_activity_logs_user_or_ai`** (same roll-back family): requires
+`(user_id NOT NULL AND action_source NOT IN ('ai_worker','stripe_webhook'))` OR
+`(user_id NULL AND action_source IN ('ai_worker','stripe_webhook'))`. Any background/no-auth
+write (mobile sync, email intake, queue jobs) has `user_id=null`, so it MUST set
+`action_source='ai_worker'` or the whole INSERT rolls back. 2026-07-10: `TransactionObserver::created`
+only tagged `ai_worker` when `source==='ai'`; mobile-synced txns (`source='client'`, no auth)
+fell through to `web_dashboard`+null user → constraint violation → `Transaction::create` rolled
+back → mobile transactions silently never reached Record Keeping. Fixed (commit 7dd4014) by
+`($tx->source==='ai' || !auth()->check()) ? 'ai_worker' : null` — mirroring the `updated()` hook.
+When creating a Transaction in ANY no-auth path, expect this. Related: [[mobile-poll-queue-fix]].
+
 **Why:** dev runs sqlite, and every one of these migrations early-returns on sqlite
 (`if (DB::getDriverName() === 'sqlite') return;`). CHECK constraints therefore do not
 exist locally, so this class of bug is invisible until it hits prod Postgres.
