@@ -1,12 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "product.html",
-    "contact.html",
-    "sitemap.xml",
-    "llms.txt"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-15T20:47:30Z"
+  "updated_at": "2026-07-16T01:58:49Z"
 }
