@@ -1,13 +1,20 @@
 ---
 name: document-hub-folders
-description: "Document Hub redesign (2026-07-13) — real folders + AI auto-filing + Explorer UI; BUILT on dev, migrated+built locally, NOT deployed, awaiting Amin's test. Read before touching /documents, DocumentFolder, attachment folder_id, or doc classification."
+description: "Document Hub redesign (2026-07-13) — real folders + AI auto-filing + Trash/30d-purge + New-badge/date-filter/Undo + nested folders (cp139-141), DEPLOYED to prod. Read before touching /documents, DocumentFolder, attachment folder_id, or doc classification."
 metadata: 
   node_type: memory
   type: project
   originSessionId: 31b05655-8274-4aa9-937b-318a8d62e752
 ---
 
-Document Hub redesign built 2026-07-13, all smoke checks green. **DEPLOYED as checkpoint-139 (commit b592961, Amin-approved)** — prod webhook pulled AND ran vite build. Post-deploy incident: bulk move failed on prod ("Could not move the file(s)") → diagnosed via unauthenticated curl probes as **stale route cache** (new POST routes answered 405, old upload route 419); fix = `php artisan optimize:clear` + `migrate --force` + `queue:restart` on the server (full story in [[deploy-process]] and the repo doc). Docs commit 9f444d5 records the deployment history. ⚠️ checkpoint-139 was a PARTIAL stage: the uncommitted Resend dual-driver email work (ResendInboundWebhookController, ResendInboundClient, InboundEmailService, SettingsController, bootstrap/app.php, EmailForwardingCard + email hunks of routes/web.php & routes/console.php) was deliberately left OUT via hunk-level staging (`git apply --cached`) and still sits uncommitted in the working tree — it needs its own checkpoint. Full doc + manual test guide: `va-dashboard2/docs/document-hub-folders.md`.
+Document Hub redesign built 2026-07-13, all smoke checks green. **DEPLOYED as checkpoint-139 (commit b592961, Amin-approved)** — prod webhook pulled AND ran vite build. Post-deploy incident: bulk move failed on prod → diagnosed via unauthenticated curl probes as **stale route cache** (new POST routes 405, old route 419); fix = `optimize:clear` + `migrate --force` + `queue:restart` (full story in [[deploy-process]] and the repo doc).
+
+**Same-day follow-ups (other session, all pushed; 419 probe on /documents/move-undo confirms LIVE on prod with fresh route cache):**
+- **checkpoint-140** (5923099): "New" badge (per-browser localStorage, Amin's choice over a DB table), upload-date filter (server-side date_from/date_to on created_at), **move Undo** (10s toast; move returns `previous[]`; POST /documents/move-undo restores folder_id AND folder_assigned_by so AI-filed stays 'ai' not sticky-'user'). Doc: `docs/document-hub-new-badge-date-filter-undo.md`.
+- **checkpoint-141** (482c948): **nested folders, max depth 3** (`parent_id` self-FK migration; system folders stay top-level/immutable; subfolders allowed INSIDE system folders; rail badge = subtree count but folder view lists direct files + subfolder strip; duplicate names now per-sibling-group; **deleting a folder with children is BLOCKED 422**; AI still classifies only the 10 top-level slugs — subfolder refinement is manual). Doc: `docs/document-hub-nested-folders.md`.
+- checkpoint-139's partial-stage debt is CLOSED: commit **e07478d ("Document Redesign" — MISLABELED, it's the Resend dual-driver email work)** committed everything cp139 left out.
+
+Master doc + deployment history + manual test guides: `va-dashboard2/docs/document-hub-folders.md` (cross-links the follow-up docs).
 
 Shape:
 - `document_folders` table: 10 SYSTEM folders (firm_id NULL, slug, seeded **inside the migration**, no seeder step) + user folders (firm_id set; client_id set = client-workspace folder). **Unsorted is virtual = attachments.folder_id NULL** (old files intentionally un-backfilled → all start Unsorted; that was Amin's explicit choice).
