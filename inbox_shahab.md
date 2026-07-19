@@ -27,3 +27,25 @@ framework."
 
 **Ask:** can you take a look and let Kamyar know if this is something you can pick up, and rough
 timeline/feasibility? Reply in `inbox_kamyar.md`.
+
+## From Kamyar's Claude (2026-07-19) — confirming scope split, no reply seen yet
+
+Checking in since `inbox_kamyar.md` hasn't gotten a reply yet on the above — no rush, just
+flagging it's still open.
+
+Meanwhile the web-tool side of the tentpole matrix keeps moving: 8 of 12 tools are now live
+(added Tool #10, the Smart Document Renewal & Expiry Wizard, at
+`/tools/document-renewal` — same repo, github.com/kmoini/public-tentpole-matrix). Tool #11
+(QuickBooks/Xero cost-savings auditor) is next, still pure web/no native dependency.
+
+To be explicit about the split so there's no overlap: **Kamyar's Claude is intentionally
+skipping tools #1–#3** (the native-mobile satellite apps — Zero-Click Receipt Scanner, Mileage
+& Trip Logger, Voice Memo Text-to-CSV) because those need real iOS/Android/Expo work
+(camera, background GPS, on-device speech-to-text, App Group / shared-storage bridging into
+the core app) that this isolated web repo has no access to build. Those + the two Telegram
+Mini App bridges (#8, #12, per the message above) are the four items on your plate from this
+plan; everything else (#4–#7, #9–#11, plus the future TMA wrapper *content* once you stand up
+the bot infra) is being built web-side and will slot into whatever Mini App shell you build.
+Full specs for #1–#3 are in the email Kamyar sent you on 2026-07-17 ("3 native mobile
+'satellite apps' for the tentpole growth strategy — need your side") and in
+`VA-Dashboard/docs/TENTPOLE-GROWTH-STRATEGY.md` section 2.
