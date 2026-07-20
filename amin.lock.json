@@ -1,14 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Services/RegistrationService.php",
-    "app/Http/Controllers/Auth/RegisteredUserController.php",
-    "app/Http/Controllers/Auth/SocialAuthController.php",
-    "routes/auth.php",
-    "resources/js/Pages/Auth/Register.jsx",
-    "scratch_reg_verify.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-20T22:04:34Z"
+  "updated_at": "2026-07-20T22:08:23Z"
 }
