@@ -5,8 +5,9 @@
     "resources/js/Components/Modal.jsx",
     "resources/js/Components/BatchUploadModal.jsx",
     "resources/js/Components/TransactionsTable.jsx",
-    "resources/js/Components/PhoneLoginModal.jsx"
+    "resources/js/Components/PhoneLoginModal.jsx",
+    "resources/js/Pages/PeriodLock/Index.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-20T17:42:27Z"
+  "updated_at": "2026-07-20T17:42:33Z"
 }
