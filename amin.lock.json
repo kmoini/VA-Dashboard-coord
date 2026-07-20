@@ -1,18 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "resources/js/Components/Modal.jsx",
-    "resources/js/Components/BatchUploadModal.jsx",
-    "resources/js/Components/TransactionsTable.jsx",
-    "resources/js/Components/PhoneLoginModal.jsx",
-    "resources/js/Pages/PeriodLock/Index.jsx",
-    "resources/js/Pages/Transactions/Index.jsx",
-    "resources/js/Pages/Transactions/Create.jsx",
-    "resources/js/Pages/ClientPortal/Records.jsx",
-    "resources/js/Pages/Books/Index.jsx",
-    "resources/js/Pages/Documents/Index.jsx"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-20T17:44:24Z"
+  "updated_at": "2026-07-20T18:09:04Z"
 }
