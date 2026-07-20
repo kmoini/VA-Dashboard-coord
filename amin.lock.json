@@ -4,8 +4,9 @@
   "locked_files": [
     "resources/js/Components/Modal.jsx",
     "resources/js/Components/BatchUploadModal.jsx",
-    "resources/js/Components/TransactionsTable.jsx"
+    "resources/js/Components/TransactionsTable.jsx",
+    "resources/js/Components/PhoneLoginModal.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-20T17:42:20Z"
+  "updated_at": "2026-07-20T17:42:27Z"
 }
