@@ -9,8 +9,9 @@
     "resources/js/Pages/PeriodLock/Index.jsx",
     "resources/js/Pages/Transactions/Index.jsx",
     "resources/js/Pages/Transactions/Create.jsx",
-    "resources/js/Pages/ClientPortal/Records.jsx"
+    "resources/js/Pages/ClientPortal/Records.jsx",
+    "resources/js/Pages/Books/Index.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-20T17:42:53Z"
+  "updated_at": "2026-07-20T17:43:00Z"
 }
