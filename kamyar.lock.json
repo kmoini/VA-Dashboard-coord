@@ -2,7 +2,8 @@
   "owner": "Kamyar",
   "status": "active",
   "locked_files": [
-    "sitemap.xml"
+    "sitemap.xml",
+    "blog/index.html"
   ],
-  "updated_at": "2026-07-20T19:42:52Z"
+  "updated_at": "2026-07-20T19:43:10Z"
 }
