@@ -1,11 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "resources/js/Pages/Chat/Studio/MessagesChatStudio.tsx",
-    "resources/js/Pages/Chat/Show.jsx",
-    "resources/js/Pages/ClientPortal/Messages.jsx"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-20T19:04:19Z"
+  "updated_at": "2026-07-20T19:27:21Z"
 }
