@@ -49,3 +49,45 @@ the bot infra) is being built web-side and will slot into whatever Mini App shel
 Full specs for #1–#3 are in the email Kamyar sent you on 2026-07-17 ("3 native mobile
 'satellite apps' for the tentpole growth strategy — need your side") and in
 `VA-Dashboard/docs/TENTPOLE-GROWTH-STRATEGY.md` section 2.
+
+## From Kamyar's Claude (2026-07-21) — pr.voiceaccountant.com is fully unresolvable (DNS record missing)
+
+Kamyar hit `https://pr.voiceaccountant.com/dashboard` in the browser just now and got
+`ERR_NAME_NOT_RESOLVED`. I dug into it myself:
+
+- `nslookup pr.voiceaccountant.com` → **NXDOMAIN** ("Non-existent domain"). Not a cert issue,
+  not a routing issue, not the app — there is no DNS record for the `pr` subdomain at all
+  right now.
+- For comparison, `www.voiceaccountant.com` and the apex both resolve fine, to Cloudflare:
+  A `172.64.80.1`, AAAA `2606:4700:130:436c:6f75:6466:6c61:7265`.
+
+Per memory, `pr.voiceaccountant.com` is the dev-branch staging box for VA-Dashboard, same
+cPanel server as prod, own DB `va_dashboard_pr` — it was working before, so this looks like a
+DNS record that got dropped or never migrated (maybe during a zone change), not a fresh setup
+gap.
+
+**Ask:** can you add the DNS record back in whatever provider manages the `voiceaccountant.com`
+zone (looks like Cloudflare based on the resolved IPs)? Simplest fix is a CNAME
+`pr → www.voiceaccountant.com` so it always tracks the same target; alternatively A
+`172.64.80.1` + AAAA `2606:4700:130:436c:6f75:6466:6c61:7265` if `pr` needs its own proxied
+entry. Once the record's in, the cPanel vhost/subdomain and DB should still be there from
+before — this is just the DNS layer. Reply in `inbox_kamyar.md` once it's back up, or if you
+find the vhost itself is also gone.
+
+**Self-contained Claude prompt for you to paste into your own session:**
+
+> `pr.voiceaccountant.com` (VA-Dashboard's dev-branch staging box) is returning
+> `ERR_NAME_NOT_RESOLVED` in the browser. I confirmed with `nslookup pr.voiceaccountant.com`
+> that it's NXDOMAIN — no DNS record exists for that subdomain at all, while
+> `www.voiceaccountant.com` and the apex both resolve fine (A `172.64.80.1`, AAAA
+> `2606:4700:130:436c:6f75:6466:6c61:7265`), which looks Cloudflare-proxied. This was a
+> working staging environment before (same cPanel server as prod, dedicated DB
+> `va_dashboard_pr`), so the DNS record likely got dropped rather than never existing.
+>
+> Please: (1) find whatever account/dashboard manages DNS for `voiceaccountant.com` (check
+> Cloudflare first given the resolved IPs), (2) add a record for `pr` — a CNAME to
+> `www.voiceaccountant.com` is simplest, or matching A/AAAA records if it needs its own
+> proxied entry, (3) once DNS propagates, verify `https://pr.voiceaccountant.com/dashboard`
+> loads and confirm the cPanel vhost + `va_dashboard_pr` database are both still intact (this
+> DNS gap may be the *only* thing broken, or the vhost itself may also need to be recreated —
+> check both), (4) report back what you found and fixed.
