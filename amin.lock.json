@@ -1,11 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Services/Gemini/DocumentAiExtractor.php",
-    "app/Jobs/ExtractDocumentTransactionsJob.php",
-    "docs/ai-extraction-manual-retry-cancel.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-21T20:21:23Z"
+  "updated_at": "2026-07-21T20:22:54Z"
 }
