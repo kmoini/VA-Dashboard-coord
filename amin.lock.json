@@ -8,5 +8,5 @@
     "app/Console/Commands/AiPricesSync.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-21T19:55:18Z"
+  "updated_at": "2026-07-21T19:55:50Z"
 }
