@@ -1,12 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Services/Gemini/DocumentAiExtractor.php",
-    "tests/Unit/Services/PaddleOcrClientTest.php",
-    ".env.example",
-    "docs/PADDLE-OCR-INTEGRATION.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-21T02:52:59Z"
+  "updated_at": "2026-07-21T03:03:15Z"
 }
