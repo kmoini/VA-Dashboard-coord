@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "config/services.php"
+    "config/services.php",
+    "app/Services/Documents/PaddleOcrClient.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-21T01:56:47Z"
+  "updated_at": "2026-07-21T02:00:49Z"
 }
