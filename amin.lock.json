@@ -1,12 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "config/services.php",
-    "app/Services/Gemini/DocumentAiExtractor.php",
-    ".env.example",
-    "app/Console/Commands/AiPricesSync.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-21T19:56:21Z"
+  "updated_at": "2026-07-21T20:10:45Z"
 }
