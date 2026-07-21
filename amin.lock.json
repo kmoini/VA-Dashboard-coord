@@ -4,8 +4,9 @@
   "locked_files": [
     "config/services.php",
     "app/Services/Gemini/DocumentAiExtractor.php",
-    ".env.example"
+    ".env.example",
+    "app/Console/Commands/AiPricesSync.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-21T19:49:14Z"
+  "updated_at": "2026-07-21T19:55:18Z"
 }
