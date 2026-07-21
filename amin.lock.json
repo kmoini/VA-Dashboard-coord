@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Services/Gemini/DocumentAiExtractor.php",
-    "app/Jobs/ExtractDocumentTransactionsJob.php"
+    "app/Jobs/ExtractDocumentTransactionsJob.php",
+    "docs/ai-extraction-manual-retry-cancel.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-21T20:19:14Z"
+  "updated_at": "2026-07-21T20:21:23Z"
 }
