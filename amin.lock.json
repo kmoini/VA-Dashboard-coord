@@ -7,8 +7,9 @@
     "app/Providers/TelescopeServiceProvider.php",
     "routes/web.php",
     "app/Http/Controllers/AdminMonitoringController.php",
-    "app/Console/Commands/PlatformAdmin.php"
+    "app/Console/Commands/PlatformAdmin.php",
+    "database/migrations/2026_07_22_210002_add_impersonation_actions_to_activity_logs.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-22T22:07:28Z"
+  "updated_at": "2026-07-22T22:10:21Z"
 }
