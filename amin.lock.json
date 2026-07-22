@@ -1,11 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Providers/TelescopeServiceProvider.php",
-    "routes/console.php",
-    "docs/monitoring-telescope.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-22T20:57:41Z"
+  "updated_at": "2026-07-22T21:00:03Z"
 }
