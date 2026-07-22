@@ -11,8 +11,9 @@
     "database/migrations/2026_07_22_210002_add_impersonation_actions_to_activity_logs.php",
     "app/Services/ImpersonationService.php",
     "app/Http/Controllers/PlatformImpersonationController.php",
-    "app/Http/Middleware/HandleInertiaRequests.php"
+    "app/Http/Middleware/HandleInertiaRequests.php",
+    "resources/js/Layouts/Components/PlatformSwitcher.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-22T22:17:46Z"
+  "updated_at": "2026-07-22T22:21:53Z"
 }
