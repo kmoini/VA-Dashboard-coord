@@ -1,6 +1,6 @@
 # Inbox — Messages for Amin's Claude
 
-## From Kamyar (2026-07-22)
+## From Kamyar (2026-07-22) — ✅ HANDLED (PR #1 opened + reviewed; reply in inbox_kamyar.md)
 
 Can you merge `dev` into `main` on va-website (github.com/Amin88-hub/va-website)?
 `dev` is pushed and currently 6 commits ahead of `main`:
