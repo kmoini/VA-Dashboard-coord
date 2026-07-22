@@ -5,6 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: eaa51cfc-6d53-487f-b1cb-02b3d152a689
+  modified: 2026-07-21T23:41:45.983Z
 ---
 
 Built 2026-06-16 (Phase 1), shipped as **checkpoint-042** (`213d754`, DEPLOYED via
@@ -34,11 +35,14 @@ transaction** for review in Record Keeping. Fully documented in
 - **Review** = existing ledger: drafts are pending + carry the 🤖 Source badge
   ([[checkpoint-rule]] checkpoint-039); filter Status=Pending + Source=AI.
 
-**PHASE-2 FOLLOW-UPS (not done):** (1) Economy mode currently just DEFERS ~1 min
-on the default queue — real 50%-cheaper Gemini *batch-API* pricing is unbuilt.
-(2) Scanner (`/documents/scan-upload`) + Google Drive (`/google-drive/import`)
-sources aren't AI-wired (separate endpoints, both not-yet-operational); only
-device/paste/drag-drop carry the flag.
+**PHASE-2 STATUS (updated 2026-07-21):** (1) Economy mode is now the REAL
+Gemini Batch API (~50% cheaper): `GeminiClient::submitBatch/getBatch`,
+`SubmitDocumentBatchJob`, `DocumentAiBatch` model, `document-ai:poll-batches`
+scheduled every 5 min. (2) Scanner + Google Drive ARE AI-wired via the shared
+`DocumentAiDispatcher`. (3) **Economy is the DEFAULT mode** (2026-07-21, per
+Amin): modal `aiMode` starts `'economy'`; server side, anything that isn't an
+explicit `mode=instant` resolves to economy (`DocumentAiDispatcher::mode()` +
+`DocumentsController@upload`). Instant is an explicit opt-in in the picker.
 
 **Prod owes:** add `GEMINI_API_KEY` to prod `.env` + `config:clear`, `npm run
 build`, and a running queue worker (already runs for PollMobileChangesJob).

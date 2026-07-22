@@ -5,6 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 450de5d9-ae01-4f79-89e6-572e5d8cbbf6
+  modified: 2026-07-21T20:22:01.515Z
 ---
 
 Tester feedback round (2026-07-02) on the dashboard's Batch Upload + AI extraction,
@@ -192,6 +193,26 @@ TransactionsController@index returns true for portal users. Backend-only (the
 shared TransactionsTable Delete button lights up via can.delete). Portal
 ledger = the REAL /recordkeeping page (pinned session); legacy /client/records
 stays read-only.
+
+**No-auto-retry round (2026-07-21, Amin's request, BUILT NOT COMMITTED):**
+extraction failures no longer self-heal in the background — ExtractDocumentTransactionsJob
+marks failed IMMEDIATELY on any error (maxExceptions 3→1, backoff removed; retryUntil
+stays for throttle releases). UI Retry button now CONDITIONAL: only AI-side errors
+(Gemini API / network patterns via new Attachment::aiExtractRetryable(), `retryable`
+flag in /documents/ai-status) — local-file errors get no Retry. New Cancel button +
+`POST /documents/{id}/cancel-extraction` + status AI_EXTRACT_CANCELLED (no migration;
+markAiExtract now a conditional UPDATE so a cancelled file can't be resurrected by a
+late job verdict; queued job bails on cancelled). Round 2 same day
+("no loops ever", after prod call-log showed per-page 400/paid/400 clusters repeating):
+(a) prod 400 storm = STALE WORKER running pre-cp-154 code (thinkingBudget:0 bug) —
+schema verified fine on pinned gemini-3.1-flash-lite via live local probe;
+(b) extractor now SKIPS two-step fallback on deterministic `Gemini API error (HTTP 4xx)`
+(fallback's JSON step 400s identically — only the transcribe call billed);
+(c) job re-entry with status still `processing` (= prior attempt pcntl-killed, the only
+auto-re-entry left via retryUntil) marks failed("interrupted", retryable) instead of
+re-calling Gemini → extraction exactly-once per queue attempt. Doc:
+docs/ai-extraction-manual-retry-cancel.md. Prod owes deploy + optimize:clear (new route) +
+queue:restart (else stale workers keep 400ing/auto-retrying).
 
 **How to apply / status:** local `php artisan migrate` + `npm run build` DONE;
 smoke test green (context/validator/prompt/schema/markAiExtract). Amin tests per

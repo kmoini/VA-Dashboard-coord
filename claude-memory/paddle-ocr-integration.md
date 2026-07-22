@@ -14,7 +14,7 @@ Gemini path instead of the expensive multimodal image call. The image never reac
 Gemini. Stacks with the repetition-loop cap ([[gemini-repetition-loop-cost]]) and
 [[ai-cost-optimization]].
 
-**Built, gated OFF (`OCR_ENABLED=false`), NOT yet deployed. cp-142 pending.**
+**Built, gated OFF (`OCR_ENABLED=false`). ✅ cp-153 DEPLOYED to prod 2026-07-21 (inert until OCR_TOKEN+OCR_ENABLED set).**
 
 - Service contract: `ocr.voiceaccountant.com` `/openapi.yaml` — async submit `POST /api/ocr`
   (multipart file + `key`,`model`,`enhance`) → poll `GET /api/ocr/{process_id}`. 200=cached,
