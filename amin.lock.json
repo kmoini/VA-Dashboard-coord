@@ -4,8 +4,9 @@
   "locked_files": [
     "database/migrations/2026_07_22_210000_fix_super_admin_scope_to_firm.php",
     "database/migrations/2026_07_22_210001_add_platform_monitoring_impersonate_permissions.php",
-    "app/Providers/TelescopeServiceProvider.php"
+    "app/Providers/TelescopeServiceProvider.php",
+    "routes/web.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-22T21:59:13Z"
+  "updated_at": "2026-07-22T21:59:38Z"
 }
