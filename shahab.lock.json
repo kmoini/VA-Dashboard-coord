@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "tests/Feature/Admin/AiInstructionsTest.php",
-    "docs/ai-instructions-admin.md"
+    "docs/ai-instructions-admin.md",
+    "app/Services/Gemini/DocumentAiExtractor.php"
   ],
-  "updated_at": "2026-07-24T22:30:36Z"
+  "updated_at": "2026-07-24T22:32:53Z"
 }
