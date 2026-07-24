@@ -7,7 +7,8 @@
     "app/Services/Gemini/DocumentAiExtractor.php",
     "app/Services/AiAssistantService.php",
     "app/Services/Gemini/TransactionAssistant.php",
-    "app/Services/Gemini/VoiceCommandInterpreter.php"
+    "app/Services/Gemini/VoiceCommandInterpreter.php",
+    "app/Services/AiTransactionCategorizer.php"
   ],
-  "updated_at": "2026-07-24T22:35:50Z"
+  "updated_at": "2026-07-24T22:36:11Z"
 }
