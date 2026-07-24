@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "resources/js/Pages/Transactions/Show.jsx"
+    "resources/js/Pages/Transactions/Show.jsx",
+    "docs/client-registry-multi-company.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-24T04:15:18Z"
+  "updated_at": "2026-07-24T04:25:21Z"
 }
