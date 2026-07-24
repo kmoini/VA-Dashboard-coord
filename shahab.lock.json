@@ -1,19 +1,6 @@
 {
   "owner": "Shahab",
-  "status": "active",
-  "locked_files": [
-    "tests/Feature/Admin/AiInstructionsTest.php",
-    "docs/ai-instructions-admin.md",
-    "app/Services/Gemini/DocumentAiExtractor.php",
-    "app/Services/AiAssistantService.php",
-    "app/Services/Gemini/TransactionAssistant.php",
-    "app/Services/Gemini/VoiceCommandInterpreter.php",
-    "app/Services/AiTransactionCategorizer.php",
-    "app/Services/AiAccountClassifier.php",
-    "app/Services/VoiceIntelligenceService.php",
-    "app/Services/VendorExtractionService.php",
-    "app/Http/Middleware/HandleInertiaRequests.php",
-    "routes/web.php"
-  ],
-  "updated_at": "2026-07-24T22:37:16Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-07-24T22:39:08Z"
 }
