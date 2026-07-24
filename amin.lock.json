@@ -1,7 +1,9 @@
 {
   "owner": "Amin",
-  "status": "idle",
-  "locked_files": [],
+  "status": "active",
+  "locked_files": [
+    "docs/client-registry-multi-company.md"
+  ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-24T05:19:45Z"
+  "updated_at": "2026-07-24T05:30:07Z"
 }
