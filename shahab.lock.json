@@ -5,7 +5,8 @@
     "tests/Feature/Admin/AiInstructionsTest.php",
     "docs/ai-instructions-admin.md",
     "app/Services/Gemini/DocumentAiExtractor.php",
-    "app/Services/AiAssistantService.php"
+    "app/Services/AiAssistantService.php",
+    "app/Services/Gemini/TransactionAssistant.php"
   ],
-  "updated_at": "2026-07-24T22:35:01Z"
+  "updated_at": "2026-07-24T22:35:43Z"
 }
