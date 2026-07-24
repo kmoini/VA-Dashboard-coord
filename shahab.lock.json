@@ -9,7 +9,8 @@
     "app/Services/Gemini/TransactionAssistant.php",
     "app/Services/Gemini/VoiceCommandInterpreter.php",
     "app/Services/AiTransactionCategorizer.php",
-    "app/Services/AiAccountClassifier.php"
+    "app/Services/AiAccountClassifier.php",
+    "app/Services/VoiceIntelligenceService.php"
   ],
-  "updated_at": "2026-07-24T22:36:18Z"
+  "updated_at": "2026-07-24T22:36:24Z"
 }
