@@ -12,7 +12,8 @@
     "app/Services/AiAccountClassifier.php",
     "app/Services/VoiceIntelligenceService.php",
     "app/Services/VendorExtractionService.php",
-    "app/Http/Middleware/HandleInertiaRequests.php"
+    "app/Http/Middleware/HandleInertiaRequests.php",
+    "routes/web.php"
   ],
-  "updated_at": "2026-07-24T22:37:08Z"
+  "updated_at": "2026-07-24T22:37:16Z"
 }
