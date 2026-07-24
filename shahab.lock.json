@@ -1,6 +1,8 @@
 {
   "owner": "Shahab",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-07-24T22:42:03Z"
+  "status": "active",
+  "locked_files": [
+    "docs/ai-instructions-admin.md"
+  ],
+  "updated_at": "2026-07-24T23:35:54Z"
 }
