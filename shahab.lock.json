@@ -6,7 +6,8 @@
     "docs/ai-instructions-admin.md",
     "app/Services/Gemini/DocumentAiExtractor.php",
     "app/Services/AiAssistantService.php",
-    "app/Services/Gemini/TransactionAssistant.php"
+    "app/Services/Gemini/TransactionAssistant.php",
+    "app/Services/Gemini/VoiceCommandInterpreter.php"
   ],
-  "updated_at": "2026-07-24T22:35:43Z"
+  "updated_at": "2026-07-24T22:35:50Z"
 }
