@@ -1,6 +1,8 @@
 {
   "owner": "Shahab",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-07-24T21:44:14Z"
+  "status": "active",
+  "locked_files": [
+    "tests/Feature/Admin/AiInstructionsTest.php"
+  ],
+  "updated_at": "2026-07-24T22:25:50Z"
 }
