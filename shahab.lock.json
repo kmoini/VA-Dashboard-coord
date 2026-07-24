@@ -2,7 +2,8 @@
   "owner": "Shahab",
   "status": "active",
   "locked_files": [
-    "docs/ai-instructions-admin.md"
+    "docs/ai-instructions-admin.md",
+    "tests/Feature/Admin/AiInstructionsTest.php"
   ],
-  "updated_at": "2026-07-24T23:35:54Z"
+  "updated_at": "2026-07-24T23:36:14Z"
 }
