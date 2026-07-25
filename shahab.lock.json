@@ -14,7 +14,8 @@
     "resources/ai-prompts/vendor-extraction.extract.txt",
     "resources/ai-prompts/vendor-extraction.rule-from-instruction.txt",
     "app/Services/VoiceIntelligenceService.php",
-    "app/Services/AiAccountClassifier.php"
+    "app/Services/AiAccountClassifier.php",
+    "app/Services/AiTransactionCategorizer.php"
   ],
-  "updated_at": "2026-07-25T19:43:03Z"
+  "updated_at": "2026-07-25T19:43:10Z"
 }
