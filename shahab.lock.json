@@ -1,6 +1,8 @@
 {
   "owner": "Shahab",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-07-25T23:21:41Z"
+  "status": "active",
+  "locked_files": [
+    "resources/ai-prompts/document-extraction.context.owner.txt"
+  ],
+  "updated_at": "2026-07-25T23:55:32Z"
 }
