@@ -21,7 +21,8 @@
     "app/Services/AiPrompts/AiPromptCatalog.php",
     "resources/ai-prompts/document-classify.folder.txt",
     "app/Services/Documents/DocumentClassifier.php",
-    "tests/Feature/Admin/AiInstructionsTest.php"
+    "tests/Feature/Admin/AiInstructionsTest.php",
+    "docs/ai-instructions-admin.md"
   ],
-  "updated_at": "2026-07-25T19:54:05Z"
+  "updated_at": "2026-07-25T19:57:08Z"
 }
