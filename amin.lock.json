@@ -4,8 +4,9 @@
   "locked_files": [
     "resources/js/Pages/Referral/Accept.jsx",
     "resources/js/Pages/ClientPortal/Settings.jsx",
-    "resources/js/Pages/Clients/Show.jsx"
+    "resources/js/Pages/Clients/Show.jsx",
+    "app/Models/DocumentFolder.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-25T01:06:27Z"
+  "updated_at": "2026-07-25T01:48:50Z"
 }
