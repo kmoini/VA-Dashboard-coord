@@ -19,5 +19,5 @@
     "app/Services/VendorExtractionService.php",
     "app/Services/Gemini/DocumentAiExtractor.php"
   ],
-  "updated_at": "2026-07-25T19:44:00Z"
+  "updated_at": "2026-07-25T19:45:27Z"
 }
