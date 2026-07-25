@@ -8,7 +8,8 @@
     "resources/ai-prompts/document-extraction.batch.txt",
     "app/Services/AiPrompts/AiPromptRegistry.php",
     "database/migrations/2026_07_25_100000_publish_refined_extraction_prompts.php",
-    "app/Console/Commands/AiPromptsExport.php"
+    "app/Console/Commands/AiPromptsExport.php",
+    "app/Http/Controllers/Admin/AiInstructionsController.php"
   ],
-  "updated_at": "2026-07-25T23:58:16Z"
+  "updated_at": "2026-07-25T23:58:41Z"
 }
