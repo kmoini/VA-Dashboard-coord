@@ -9,7 +9,8 @@
     "app/Services/AiPrompts/AiPromptRegistry.php",
     "database/migrations/2026_07_25_100000_publish_refined_extraction_prompts.php",
     "app/Console/Commands/AiPromptsExport.php",
-    "app/Http/Controllers/Admin/AiInstructionsController.php"
+    "app/Http/Controllers/Admin/AiInstructionsController.php",
+    "resources/js/Pages/Admin/AiInstructions/Edit.jsx"
   ],
-  "updated_at": "2026-07-25T23:58:52Z"
+  "updated_at": "2026-07-25T23:59:03Z"
 }
