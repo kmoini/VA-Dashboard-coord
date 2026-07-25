@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Http/Controllers/AttachmentPreviewController.php",
-    "app/Http/Controllers/ChatController.php"
+    "app/Http/Controllers/ChatController.php",
+    "app/Policies/ClientPolicy.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-25T00:26:11Z"
+  "updated_at": "2026-07-25T00:27:05Z"
 }
