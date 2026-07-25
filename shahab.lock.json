@@ -2,7 +2,8 @@
   "owner": "Shahab",
   "status": "active",
   "locked_files": [
-    "resources/ai-prompts/document-extraction.context.owner.txt"
+    "resources/ai-prompts/document-extraction.context.owner.txt",
+    "resources/ai-prompts/document-extraction.context.companies.txt"
   ],
-  "updated_at": "2026-07-25T23:55:43Z"
+  "updated_at": "2026-07-25T23:55:54Z"
 }
