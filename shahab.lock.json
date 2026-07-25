@@ -23,5 +23,5 @@
     "app/Services/Documents/DocumentClassifier.php",
     "tests/Feature/Admin/AiInstructionsTest.php"
   ],
-  "updated_at": "2026-07-25T19:53:54Z"
+  "updated_at": "2026-07-25T19:54:05Z"
 }
