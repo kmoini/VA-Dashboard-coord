@@ -12,7 +12,8 @@
     "resources/ai-prompts/account-classifier.classify.txt",
     "resources/ai-prompts/transaction-categorizer.categorize.txt",
     "resources/ai-prompts/vendor-extraction.extract.txt",
-    "resources/ai-prompts/vendor-extraction.rule-from-instruction.txt"
+    "resources/ai-prompts/vendor-extraction.rule-from-instruction.txt",
+    "app/Services/VoiceIntelligenceService.php"
   ],
-  "updated_at": "2026-07-25T19:42:37Z"
+  "updated_at": "2026-07-25T19:42:56Z"
 }
