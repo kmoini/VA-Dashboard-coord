@@ -9,7 +9,8 @@
     "resources/ai-prompts/document-extraction.context.bank-accounts.txt",
     "resources/ai-prompts/document-extraction.context.counterparties.txt",
     "resources/ai-prompts/voice-intelligence.extract-facts.txt",
-    "resources/ai-prompts/account-classifier.classify.txt"
+    "resources/ai-prompts/account-classifier.classify.txt",
+    "resources/ai-prompts/transaction-categorizer.categorize.txt"
   ],
-  "updated_at": "2026-07-25T19:42:12Z"
+  "updated_at": "2026-07-25T19:42:22Z"
 }
