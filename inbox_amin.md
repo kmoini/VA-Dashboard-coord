@@ -17,3 +17,12 @@ allow-list, so no drift risk) + npm run build.
 NEW RULE (test-enforced): never add an AI prompt as a PHP heredoc — catalog
 entry in AiPromptCatalog + resources/ai-prompts/{key}.txt + render via
 AiPromptRegistry. See docs/ai-instructions-admin.md.
+
+UPDATE (same day): main is now 03ceb82. PROD BUG FOUND while migrating prod:
+the Books branch merged out-of-order, so 2026_07_13 (DocumentFolder) redefined
+chk_activity_logs_entity_type WITHOUT the Books entities - since that deploy,
+prod has been REJECTING Books activity-log writes (BooksInvoice/BooksBill/...,
+whole-transaction rollback per the known CHECK trap). Fix is in
+2026_07_24_000002 (unions BASELINE + live + row values + AiPrompt). On prod we
+mark 2026_07_06_{000001,000004,000007} as already-run (their end state is
+covered) and let migrate run the rest - Shahab has the runbook.
