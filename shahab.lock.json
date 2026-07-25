@@ -6,7 +6,8 @@
     "resources/ai-prompts/document-extraction.batch.txt",
     "resources/ai-prompts/document-extraction.context.owner.txt",
     "resources/ai-prompts/document-extraction.context.companies.txt",
-    "resources/ai-prompts/document-extraction.context.bank-accounts.txt"
+    "resources/ai-prompts/document-extraction.context.bank-accounts.txt",
+    "resources/ai-prompts/document-extraction.context.counterparties.txt"
   ],
-  "updated_at": "2026-07-25T19:41:37Z"
+  "updated_at": "2026-07-25T19:41:44Z"
 }
