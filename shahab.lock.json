@@ -16,7 +16,8 @@
     "app/Services/VoiceIntelligenceService.php",
     "app/Services/AiAccountClassifier.php",
     "app/Services/AiTransactionCategorizer.php",
-    "app/Services/VendorExtractionService.php"
+    "app/Services/VendorExtractionService.php",
+    "app/Services/Gemini/DocumentAiExtractor.php"
   ],
-  "updated_at": "2026-07-25T19:43:17Z"
+  "updated_at": "2026-07-25T19:43:39Z"
 }
