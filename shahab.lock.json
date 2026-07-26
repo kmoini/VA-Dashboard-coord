@@ -11,7 +11,8 @@
     "app/Console/Commands/AiPromptsExport.php",
     "app/Http/Controllers/Admin/AiInstructionsController.php",
     "resources/js/Pages/Admin/AiInstructions/Edit.jsx",
-    "tests/Feature/Admin/AiInstructionsTest.php"
+    "tests/Feature/Admin/AiInstructionsTest.php",
+    "docs/ai-instructions-admin.md"
   ],
-  "updated_at": "2026-07-25T23:59:30Z"
+  "updated_at": "2026-07-26T00:00:00Z"
 }
