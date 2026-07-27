@@ -48,6 +48,20 @@ def resolve_memory_dir(root):
     return os.path.join(base, key, 'memory')
 
 
+LINK_RE = re.compile(r'\]\(([^)]+)\)')
+
+
+def index_key(line):
+    """Identity of an index entry: the memory file it points at, else the line itself.
+
+    Keying on the link target (not the whole line) is what stops the index growing
+    forever: two machines wording the same pointer differently are the SAME entry.
+    """
+    s = line.strip()
+    m = LINK_RE.search(s)
+    return m.group(1).lower() if m else s
+
+
 def union_index(dst, src):
     """Union two MEMORY.md index files without ever losing an entry.
 
@@ -55,6 +69,10 @@ def union_index(dst, src):
     otherwise every line (including line 0) is treated as content. Robust whether or
     not a header exists -- a headerless MEMORY.md no longer silently drops its first
     entry (the regression Amin caught: the old code skipped line 0 of both files).
+
+    ONE line per memory file: entries are deduped by link target, dst's wording wins.
+    The old exact-string dedupe let every rewording of a hook accumulate as a separate
+    line -- the index had reached 178 lines for 61 memories (52KB loaded per session).
     """
     def read_lines(p):
         try:
@@ -69,14 +87,16 @@ def union_index(dst, src):
     for lines in (a, b):
         if lines and lines[0].lstrip().startswith('#'):
             out.append(lines[0])
-            seen.add(lines[0].strip())
+            seen.add(index_key(lines[0]))
             break
     # Union all lines; any line already pinned as the header is skipped via seen.
     for line in a + b:
-        s = line.strip()
-        if s and s not in seen:
+        if not line.strip():
+            continue
+        k = index_key(line)
+        if k not in seen:
             out.append(line)
-            seen.add(s)
+            seen.add(k)
     with open(dst, 'w', encoding='utf-8') as f:
         f.write('\n'.join(out) + '\n')
 

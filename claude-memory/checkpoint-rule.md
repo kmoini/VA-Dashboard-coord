@@ -5,6 +5,7 @@ metadata:
   node_type: memory
   type: feedback
   originSessionId: 8f1fb65a-2016-4baf-8cf0-2fd6e4578a77
+  modified: 2026-07-23T17:20:50.503Z
 ---
 
 When the user asks to "add a checkpoint" (or "checkpoint"), perform ALL THREE steps, every time:
@@ -30,4 +31,4 @@ When the user asks to "add a checkpoint" (or "checkpoint"), perform ALL THREE st
   The webhook git-pulls + npm-builds; migrations + Laravel cache clears stay
   manual (see [[deploy-process]]).
 
-**Latest observed:** checkpoint-156 (2026-07-21, ai_prices corrected to real gemini-3.1-flash-lite rate). This session: 153 (PaddleOCR), 154 (thinkingBudget:0 400 fix), 155 (pin model + env-ify AI knobs), 156 (prices). Verify against `git tag` before your next number.
+**Latest observed:** checkpoint-168 (2026-07-23, token In/Out line on the drawer card; 167 = cost In/Out split — both deployed to prod; 167's migrate ran, since prod shows the cost split). Teammates advanced 164-166. Verify against `git tag` (fetch --tags first) before your next number.

@@ -5,6 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 63f90849-d724-4290-8f50-067a17f8a99c
+  modified: 2026-07-23T17:06:57.060Z
 ---
 
 Built 2026-07-09 (Amin asked: "which part of the dashboard AI costs us the most, per user").
@@ -66,6 +67,14 @@ red>60s. (f) "?" tooltips (existing METRIC_INFO) + explicit **USD** (Gemini+Anth
 CAD). Helpers: `AiFeature::stepKind/featureOrigin/isSystem/systemFeatures`,
 `AdminAiUsageController::originTotals/withKind`; UI `groupCalls/renderCalls/renderCallGroupDetail/
 originTotalsCards` in `index 3.html`.
+
+**In/Out cost split (2026-07-23, checkpoint-167, PUSHED to prod via webhook — prod `migrate --force` + `queue:restart` still owed; until migrate runs the cost queries 500 on missing columns):** `cost_input_usd`
++ `cost_output_usd` on both tables (always sum EXACTLY to `cost_usd`; thinking bills as output;
+batch discount hits both sides). Migration `2026_07_23_000001` backfills events from the pinned
+`price_id` (fallback: freshest same-provider/model price supplies the RATIO, rescaled to the frozen
+total) then rebuilds the rollup; pre-split daily buckets stay 0/0 and the UI hides the line. Shown
+in the #dashusers drawer card + AI Cost tab stats. Prod: migrate --force + queue:restart (workers
+hold the old recorder → 0/0 rows until restarted). Doc: `docs/ai-cost-in-out-split.md`.
 
 **Prod owes:** `migrate --force`, `.env` (`ADMIN_ANALYTICS_TOKEN`, `AI_USAGE_TRACKING=true`;
 optionally `GEMINI_CALL_LOG`), `config:clear`, a running scheduler. **No backfill exists** — data
