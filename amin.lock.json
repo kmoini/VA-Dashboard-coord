@@ -7,8 +7,9 @@
     "app/Http/Controllers/ClientsController.php",
     "routes/web.php",
     "app/Http/Middleware/HandleInertiaRequests.php",
-    "app/Services/TransactionService.php"
+    "app/Services/TransactionService.php",
+    "app/Http/Controllers/TransactionsController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-27T18:00:46Z"
+  "updated_at": "2026-07-27T18:01:34Z"
 }
