@@ -6,7 +6,8 @@
     "database/migrations/2026_07_27_110000_add_account_type_and_ifrs_tag_to_transactions.php",
     "app/Accounting/GifiMap.php",
     "app/Services/Gemini/TransactionDraftValidator.php",
-    "app/Services/Gemini/DocumentAiExtractor.php"
+    "app/Services/Gemini/DocumentAiExtractor.php",
+    "resources/ai-prompts/document-extraction.extract.txt"
   ],
-  "updated_at": "2026-07-27T17:15:01Z"
+  "updated_at": "2026-07-27T17:15:42Z"
 }
