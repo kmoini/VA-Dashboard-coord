@@ -9,7 +9,8 @@
     "app/Services/Gemini/DocumentAiExtractor.php",
     "resources/ai-prompts/document-extraction.extract.txt",
     "resources/ai-prompts/document-extraction.batch.txt",
-    "app/Services/Gemini/VoiceCommandInterpreter.php"
+    "app/Services/Gemini/VoiceCommandInterpreter.php",
+    "app/Http/Controllers/TransactionsController.php"
   ],
-  "updated_at": "2026-07-27T17:17:20Z"
+  "updated_at": "2026-07-27T17:17:51Z"
 }
