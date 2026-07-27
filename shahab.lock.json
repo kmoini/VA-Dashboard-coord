@@ -2,7 +2,8 @@
   "owner": "Shahab",
   "status": "active",
   "locked_files": [
-    "app/Models/Transaction.php"
+    "app/Models/Transaction.php",
+    "database/migrations/2026_07_27_110000_add_account_type_and_ifrs_tag_to_transactions.php"
   ],
-  "updated_at": "2026-07-27T17:12:52Z"
+  "updated_at": "2026-07-27T17:13:10Z"
 }
