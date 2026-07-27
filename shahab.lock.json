@@ -1,20 +1,6 @@
 {
   "owner": "Shahab",
-  "status": "active",
-  "locked_files": [
-    "app/Models/Transaction.php",
-    "database/migrations/2026_07_27_110000_add_account_type_and_ifrs_tag_to_transactions.php",
-    "app/Accounting/GifiMap.php",
-    "app/Services/Gemini/TransactionDraftValidator.php",
-    "app/Services/Gemini/DocumentAiExtractor.php",
-    "resources/ai-prompts/document-extraction.extract.txt",
-    "resources/ai-prompts/document-extraction.batch.txt",
-    "app/Services/Gemini/VoiceCommandInterpreter.php",
-    "app/Http/Controllers/TransactionsController.php",
-    "resources/js/Pages/Transactions/Show.jsx",
-    "tests/Unit/GifiMapTest.php",
-    "database/migrations/2026_07_27_120000_publish_account_type_extraction_prompts.php",
-    "tests/Unit/TransactionDraftValidatorTest.php"
-  ],
-  "updated_at": "2026-07-27T17:24:35Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-07-27T17:27:49Z"
 }
