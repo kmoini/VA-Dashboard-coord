@@ -11,5 +11,5 @@
     "resources/ai-prompts/document-extraction.batch.txt",
     "app/Services/Gemini/VoiceCommandInterpreter.php"
   ],
-  "updated_at": "2026-07-27T17:17:07Z"
+  "updated_at": "2026-07-27T17:17:20Z"
 }
