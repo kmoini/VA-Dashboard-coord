@@ -7,7 +7,8 @@
     "app/Accounting/GifiMap.php",
     "app/Services/Gemini/TransactionDraftValidator.php",
     "app/Services/Gemini/DocumentAiExtractor.php",
-    "resources/ai-prompts/document-extraction.extract.txt"
+    "resources/ai-prompts/document-extraction.extract.txt",
+    "resources/ai-prompts/document-extraction.batch.txt"
   ],
-  "updated_at": "2026-07-27T17:15:42Z"
+  "updated_at": "2026-07-27T17:15:58Z"
 }
