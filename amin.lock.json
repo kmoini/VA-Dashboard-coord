@@ -13,8 +13,9 @@
     "app/Services/TransactionExportService.php",
     "app/Services/DashboardService.php",
     "app/Http/Controllers/DashboardController.php",
-    "app/Http/Controllers/ReportsController.php"
+    "app/Http/Controllers/ReportsController.php",
+    "resources/js/Layouts/Components/CompanySwitcher.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-27T18:17:34Z"
+  "updated_at": "2026-07-27T18:22:26Z"
 }
