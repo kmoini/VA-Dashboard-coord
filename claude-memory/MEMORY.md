@@ -60,3 +60,4 @@
 - [International direction](international-direction.md) — i18n must be RTL-safe + ICU + TMS-friendly from day one.
 - [CLAUDE.md tracking + .gitignore gotcha](claude-md-gitignore-tracking.md) — .gitignore never affects tracked files; don't re-ignore CLAUDE.md.
 - [pr staging box](pr-staging-box.md) — pr.voiceaccountant.com = dev staging on prod server; own DB va_dashboard_pr (safe to migrate); pg DB creation needs postgres superuser.
+- [AI prompt registry](ai-prompt-registry.md) — ⚠️ NEVER add an AI prompt as a PHP heredoc (test-enforced); catalog entry + resources/ai-prompts/{key}.txt + AiPromptRegistry; edited at /admin/ai-instructions (platform_admin only). READ before touching any LLM prompt text.

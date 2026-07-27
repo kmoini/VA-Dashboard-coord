@@ -5,6 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 29ebd79e-444d-46cc-a8fb-0a0e32bc2386
+  modified: 2026-07-27T16:09:53.104Z
 ---
 
 `activity_logs` has two Postgres CHECK constraints, `chk_activity_logs_entity_type`
@@ -21,6 +22,17 @@ Confirmed twice:
   (never an allowed value). Every client onboarding via `/refer/{token}` rolled back and
   showed "the email may already be in use" on *any* email. Fixed in checkpoint-124 by
   using `'ReferralToken'`, the already-allowed value matching the logged `entity_id`.
+
+- 2026-07-24/25 (third time, PROD, found by Shahab while migrating prod) — the Books branch
+  merged out of order, so `2026_07_13_000003_add_document_folder_to_activity_logs` rebuilt
+  `chk_activity_logs_entity_type` from a hardcoded list that has `QuickBooksConnection`/
+  `QuickBooksInvoice` but NO `BooksInvoice`/`BooksBill`/`BooksPayment` (verified in that file).
+  Since that deploy, prod had been REJECTING every Books activity-log write, rolling back the
+  whole Books transaction. Fix is `2026_07_24_000002_add_ai_prompt_to_activity_logs`, which
+  stops hardcoding: it reads the LIVE allow-list, unions it with a BASELINE (Books entities
+  included) plus `AiPrompt`, so it cannot drift again. On prod, `2026_07_06_{000001,000004,000007}`
+  are marked already-run (their end state is covered) and the rest of `migrate` runs; Shahab
+  has the runbook. **This is the argument for never hardcoding the list in a new migration.**
 
 **Sibling constraint — `chk_activity_logs_user_or_ai`** (same roll-back family): requires
 `(user_id NOT NULL AND action_source NOT IN ('ai_worker','stripe_webhook'))` OR
