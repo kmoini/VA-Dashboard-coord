@@ -12,7 +12,8 @@
     "app/Services/Gemini/VoiceCommandInterpreter.php",
     "app/Http/Controllers/TransactionsController.php",
     "resources/js/Pages/Transactions/Show.jsx",
-    "tests/Unit/GifiMapTest.php"
+    "tests/Unit/GifiMapTest.php",
+    "database/migrations/2026_07_27_120000_publish_account_type_extraction_prompts.php"
   ],
-  "updated_at": "2026-07-27T17:21:46Z"
+  "updated_at": "2026-07-27T17:22:13Z"
 }
