@@ -11,7 +11,8 @@
     "resources/ai-prompts/document-extraction.batch.txt",
     "app/Services/Gemini/VoiceCommandInterpreter.php",
     "app/Http/Controllers/TransactionsController.php",
-    "resources/js/Pages/Transactions/Show.jsx"
+    "resources/js/Pages/Transactions/Show.jsx",
+    "tests/Unit/GifiMapTest.php"
   ],
-  "updated_at": "2026-07-27T17:21:13Z"
+  "updated_at": "2026-07-27T17:21:46Z"
 }
