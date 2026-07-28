@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "resources/ai-prompts/document-classify.folder.txt"
+    "resources/ai-prompts/document-classify.folder.txt",
+    "database/migrations/2026_07_28_100001_publish_car_expenses_classifier_prompt.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-28T15:58:13Z"
+  "updated_at": "2026-07-28T15:58:30Z"
 }
