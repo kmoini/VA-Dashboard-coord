@@ -4,7 +4,8 @@
   "locked_files": [
     "app/Accounting/GifiReference.php",
     "database/migrations/2026_07_28_120000_create_gifi_codes_table.php",
-    "app/Models/GifiCode.php"
+    "app/Models/GifiCode.php",
+    "app/Accounting/GifiResolver.php"
   ],
-  "updated_at": "2026-07-28T02:39:07Z"
+  "updated_at": "2026-07-28T02:39:42Z"
 }
