@@ -8,7 +8,8 @@
     "app/Accounting/GifiResolver.php",
     "app/Services/Gemini/TransactionDraftValidator.php",
     "resources/ai-prompts/document-extraction.extract.txt",
-    "resources/ai-prompts/document-extraction.batch.txt"
+    "resources/ai-prompts/document-extraction.batch.txt",
+    "database/migrations/2026_07_28_130000_publish_gifi_out_of_prompt.php"
   ],
-  "updated_at": "2026-07-28T02:42:01Z"
+  "updated_at": "2026-07-28T02:42:23Z"
 }
