@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "database/migrations/2026_07_06_000001_add_books_actions_to_activity_logs.php"
+    "database/migrations/2026_07_06_000001_add_books_actions_to_activity_logs.php",
+    "database/migrations/2026_07_06_000004_add_migration_run_to_activity_logs.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-28T18:16:48Z"
+  "updated_at": "2026-07-28T18:24:28Z"
 }
