@@ -1,10 +1,11 @@
 ---
 name: duosync-silent-push-failure
-description: "DuoSync's memory push silently no-op'd for several past sessions — recovered manually 2026-07-17, root cause not fully pinned down"
+description: "DuoSync's memory sync silently no-op's in BOTH directions (push 2026-07-17, start-hook pull 2026-07-28) - recovered manually both times, root cause not pinned down"
 metadata: 
   node_type: memory
   type: feedback
   originSessionId: 316a8d1f-1edb-4b47-a849-f2aab83110cc
+  modified: 2026-07-28T17:54:22.322Z
 ---
 
 Running `bash .claude/hooks/duosync-end.sh` (the normal session-end hook) completed with no
@@ -36,3 +37,22 @@ C:/PROJECTS/VA-Dashboard-coord/claude-memory/`) and if it's missing, re-run the 
 "C:/PROJECTS/VA-Dashboard-coord/duosync-memory.py" push'`, then `git add claude-memory && git
 commit && git pull --rebase && git push` in the coord repo. Worth periodically spot-checking the
 pool has recent content rather than trusting the hook silently succeeded.
+
+**2026-07-28 — same failure, opposite direction (start-hook PULL).** The marketing session's
+SessionStart hook demonstrably ran (it appended a `SESSION START` line and committed it to the
+coord repo), yet the pool -> local merge at `duosync-start.sh:39` did not apply: the pool's
+`tentpole-satellite-tools.md` (mtime 2026-07-27, the richer 07-19 content) never overwrote the
+local 07-17 copy. `shutil.copy2` preserves mtimes, so an untouched local mtime is proof the
+merge never copied, not just that it copied something old. Running the exact same wrapper by
+hand worked instantly — again no clean repro. Ruled out: duplicate/misresolved project memory
+dir (only one `e--Projects-voiceaccountant` exists) and a broken shim (`py -3` works; note
+calling `duosync-memory.py` **directly** with `python3` fails on this box — the MS Store stub
+intercepts it, so always go through `duosync-memory.sh`, which defines the `py -3` fallback).
+The dashboard project's local store had likewise drifted to 42 files vs the pool's 63.
+
+**How to apply (both directions):** treat the hooks as best-effort, not guaranteed. A quick
+audit is `comm` on `ls *.md` between the pool and each project's store plus `diff -rq` for
+content drift; then `bash "$DUOSYNC_COORD/duosync-memory.sh" pull|push` with `DUOSYNC_COORD` and
+`PROJECT_ROOT` set, and commit/push the coord repo. Also check `git rev-list --count
+origin/main..HEAD` in the coord repo — an unpushed session-start commit is the tell that a
+silenced git call failed (there was one this session).
