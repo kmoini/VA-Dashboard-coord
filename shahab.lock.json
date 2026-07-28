@@ -1,9 +1,6 @@
 {
   "owner": "Shahab",
-  "status": "active",
-  "locked_files": [
-    "knowledge-base.html",
-    "blog/index.html"
-  ],
-  "updated_at": "2026-07-28T02:04:02Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-07-28T02:04:52Z"
 }
