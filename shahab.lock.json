@@ -7,7 +7,8 @@
     "app/Models/GifiCode.php",
     "app/Accounting/GifiResolver.php",
     "app/Services/Gemini/TransactionDraftValidator.php",
-    "resources/ai-prompts/document-extraction.extract.txt"
+    "resources/ai-prompts/document-extraction.extract.txt",
+    "resources/ai-prompts/document-extraction.batch.txt"
   ],
-  "updated_at": "2026-07-28T02:40:35Z"
+  "updated_at": "2026-07-28T02:40:48Z"
 }
