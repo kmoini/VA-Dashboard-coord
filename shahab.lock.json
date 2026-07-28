@@ -1,6 +1,8 @@
 {
   "owner": "Shahab",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-07-28T22:43:42Z"
+  "status": "active",
+  "locked_files": [
+    "app/Accounting/GifiReference_comprehensive.php"
+  ],
+  "updated_at": "2026-07-28T22:50:35Z"
 }
