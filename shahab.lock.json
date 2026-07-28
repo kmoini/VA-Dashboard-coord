@@ -6,7 +6,8 @@
     "database/migrations/2026_07_28_120000_create_gifi_codes_table.php",
     "app/Models/GifiCode.php",
     "app/Accounting/GifiResolver.php",
-    "app/Services/Gemini/TransactionDraftValidator.php"
+    "app/Services/Gemini/TransactionDraftValidator.php",
+    "resources/ai-prompts/document-extraction.extract.txt"
   ],
-  "updated_at": "2026-07-28T02:40:03Z"
+  "updated_at": "2026-07-28T02:40:17Z"
 }
