@@ -1,24 +1,6 @@
 {
   "owner": "Shahab",
-  "status": "active",
-  "locked_files": [
-    "routes/mobile-webhooks.php",
-    "CLAUDE.md",
-    "config/n8n.php",
-    "tests/Feature/MobileWebhook/SignupTest.php",
-    "tests/Feature/MobileWebhook/EmailLoginTest.php",
-    "tests/Feature/MobileWebhook/AppleAuthTest.php",
-    "app/Accounting/GifiIfrsMap.php",
-    "tests/Feature/MobileWebhook/GoogleAuthTest.php",
-    "tests/Feature/MobileWebhook/FacebookAuthTest.php",
-    "app/Accounting/IfrsResolver.php",
-    "tests/Feature/MobileWebhook/MicrosoftAuthTest.php",
-    "app/Services/Gemini/TransactionDraftValidator.php",
-    "tests/Feature/MobileWebhook/PasswordResetTest.php",
-    "tests/Feature/MobileWebhook/PhoneFlowsTest.php",
-    "tests/Feature/MobileWebhook/SendEmailVerificationTest.php",
-    "tests/Feature/MobileWebhook/AccountantJwtVerifyTest.php",
-    "app/Http/Controllers/ClientPortalController.php"
-  ],
-  "updated_at": "2026-07-29T18:20:57Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-07-29T18:21:00Z"
 }
