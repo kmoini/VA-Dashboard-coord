@@ -7,8 +7,9 @@
     "app/Models/Transaction.php",
     "app/Models/Attachment.php",
     "app/Services/ClientAccessService.php",
-    "app/Http/Controllers/ClientsController.php"
+    "app/Http/Controllers/ClientsController.php",
+    "docs/PAST-CLIENTS-ACCESS-REVOCATION.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-29T19:40:11Z"
+  "updated_at": "2026-07-29T19:54:33Z"
 }
