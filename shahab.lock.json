@@ -4,7 +4,8 @@
   "locked_files": [
     "app/Services/Accounting/GifiAssigner.php",
     "app/Http/Controllers/TransactionsController.php",
-    "app/Http/Controllers/ClientPortalController.php"
+    "app/Http/Controllers/ClientPortalController.php",
+    "tests/Feature/GifiAssignerTest.php"
   ],
-  "updated_at": "2026-07-29T04:15:47Z"
+  "updated_at": "2026-07-29T04:16:30Z"
 }
