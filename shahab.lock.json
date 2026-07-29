@@ -1,6 +1,8 @@
 {
   "owner": "Shahab",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-07-29T03:39:53Z"
+  "status": "active",
+  "locked_files": [
+    "app/Services/Accounting/GifiLearningService.php"
+  ],
+  "updated_at": "2026-07-29T03:51:53Z"
 }
