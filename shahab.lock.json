@@ -2,7 +2,8 @@
   "owner": "Shahab",
   "status": "active",
   "locked_files": [
-    "routes/mobile-webhooks.php"
+    "routes/mobile-webhooks.php",
+    "CLAUDE.md"
   ],
-  "updated_at": "2026-07-29T18:16:13Z"
+  "updated_at": "2026-07-29T18:16:18Z"
 }
