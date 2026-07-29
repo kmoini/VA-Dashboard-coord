@@ -1,11 +1,6 @@
 {
   "owner": "Shahab",
-  "status": "active",
-  "locked_files": [
-    "tests/Feature/MobileWebhook/AppleAuthTest.php",
-    "tests/Feature/MobileWebhook/GoogleAuthTest.php",
-    "tests/Feature/MobileWebhook/FacebookAuthTest.php",
-    "tests/Feature/MobileWebhook/MicrosoftAuthTest.php"
-  ],
-  "updated_at": "2026-07-29T18:22:36Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-07-29T18:22:43Z"
 }
