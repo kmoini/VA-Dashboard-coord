@@ -4,7 +4,8 @@
   "locked_files": [
     "app/Services/Accounting/GifiLearningService.php",
     "app/Services/Gemini/DocumentAiIngestService.php",
-    "tests/Feature/GifiLearningServiceTest.php"
+    "tests/Feature/GifiLearningServiceTest.php",
+    "docs/TAX-CODE-AUTO-ASSIGNMENT.md"
   ],
-  "updated_at": "2026-07-29T03:57:48Z"
+  "updated_at": "2026-07-29T03:59:30Z"
 }
