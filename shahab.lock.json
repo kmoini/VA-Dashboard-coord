@@ -4,7 +4,8 @@
   "locked_files": [
     "config/n8n.php",
     "app/Services/N8nGateway.php",
-    "app/Http/Middleware/N8nStrangler.php"
+    "app/Http/Middleware/N8nStrangler.php",
+    "app/Http/Controllers/Webhook/FxConvertController.php"
   ],
-  "updated_at": "2026-07-29T05:13:28Z"
+  "updated_at": "2026-07-29T05:13:58Z"
 }
