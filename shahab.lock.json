@@ -15,7 +15,8 @@
     "tests/Feature/MobileWebhook/MicrosoftAuthTest.php",
     "app/Services/Gemini/TransactionDraftValidator.php",
     "tests/Feature/MobileWebhook/PasswordResetTest.php",
-    "tests/Feature/MobileWebhook/PhoneFlowsTest.php"
+    "tests/Feature/MobileWebhook/PhoneFlowsTest.php",
+    "tests/Feature/MobileWebhook/SendEmailVerificationTest.php"
   ],
-  "updated_at": "2026-07-29T18:18:51Z"
+  "updated_at": "2026-07-29T18:19:09Z"
 }
