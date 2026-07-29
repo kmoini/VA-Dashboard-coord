@@ -1,15 +1,6 @@
 {
   "owner": "Shahab",
-  "status": "active",
-  "locked_files": [
-    "tests/Feature/MobileWebhook/MicrosoftAuthTest.php",
-    "tests/Feature/MobileWebhook/SendEmailVerificationTest.php",
-    "tests/Feature/MobileWebhook/PasswordResetTest.php",
-    "tests/Feature/MobileWebhook/PhoneFlowsTest.php",
-    "tests/Unit/IfrsResolverTest.php",
-    "app/Accounting/IfrsMap.php",
-    "tests/Unit/TransactionDraftValidatorTest.php",
-    "docs/IFRS-AUTO-ASSIGNMENT.md"
-  ],
-  "updated_at": "2026-07-29T18:28:24Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-07-29T18:30:36Z"
 }
