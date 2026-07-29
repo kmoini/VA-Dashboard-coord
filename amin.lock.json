@@ -9,8 +9,9 @@
     "config/services.php",
     "app/Services/FlarumSsoService.php",
     ".env.example",
-    "database/migrations/2026_07_29_000001_add_until_date_to_client_firm_grants.php"
+    "database/migrations/2026_07_29_000001_add_until_date_to_client_firm_grants.php",
+    "app/Models/ClientFirmGrant.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-29T18:24:48Z"
+  "updated_at": "2026-07-29T18:25:18Z"
 }
