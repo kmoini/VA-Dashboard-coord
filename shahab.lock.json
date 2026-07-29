@@ -6,7 +6,8 @@
     "CLAUDE.md",
     "config/n8n.php",
     "tests/Feature/MobileWebhook/SignupTest.php",
-    "tests/Feature/MobileWebhook/EmailLoginTest.php"
+    "tests/Feature/MobileWebhook/EmailLoginTest.php",
+    "tests/Feature/MobileWebhook/AppleAuthTest.php"
   ],
-  "updated_at": "2026-07-29T18:17:04Z"
+  "updated_at": "2026-07-29T18:17:23Z"
 }
