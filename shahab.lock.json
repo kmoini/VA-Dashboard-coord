@@ -6,7 +6,8 @@
     "app/Services/N8nGateway.php",
     "app/Http/Middleware/N8nStrangler.php",
     "app/Http/Controllers/Webhook/FxConvertController.php",
-    "tests/Feature/Webhook/FxConvertTest.php"
+    "tests/Feature/Webhook/FxConvertTest.php",
+    "routes/api.php"
   ],
-  "updated_at": "2026-07-29T05:14:40Z"
+  "updated_at": "2026-07-29T05:14:51Z"
 }
