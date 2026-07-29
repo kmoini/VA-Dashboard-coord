@@ -2,7 +2,8 @@
   "owner": "Shahab",
   "status": "active",
   "locked_files": [
-    "app/Services/Accounting/GifiLearningService.php"
+    "app/Services/Accounting/GifiLearningService.php",
+    "app/Services/Gemini/DocumentAiIngestService.php"
   ],
-  "updated_at": "2026-07-29T03:51:53Z"
+  "updated_at": "2026-07-29T03:52:35Z"
 }
