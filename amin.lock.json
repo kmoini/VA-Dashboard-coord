@@ -5,8 +5,9 @@
     "app/Services/ClientAccessService.php",
     "app/Models/Client.php",
     "app/Models/Transaction.php",
-    "app/Models/Attachment.php"
+    "app/Models/Attachment.php",
+    "app/Http/Controllers/DocumentsController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-29T18:30:57Z"
+  "updated_at": "2026-07-29T18:35:08Z"
 }
