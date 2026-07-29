@@ -1,8 +1,6 @@
 {
   "owner": "Shahab",
-  "status": "active",
-  "locked_files": [
-    ".github/workflows/tests.yml"
-  ],
-  "updated_at": "2026-07-29T04:48:45Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-07-29T04:50:09Z"
 }
