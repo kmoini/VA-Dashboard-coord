@@ -2,7 +2,8 @@
   "owner": "Shahab",
   "status": "active",
   "locked_files": [
-    "app/Accounting/GifiResolver.php"
+    "app/Accounting/GifiResolver.php",
+    "app/Accounting/IfrsReference.php"
   ],
-  "updated_at": "2026-07-29T05:42:45Z"
+  "updated_at": "2026-07-29T05:46:17Z"
 }
