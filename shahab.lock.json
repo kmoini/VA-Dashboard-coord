@@ -4,7 +4,8 @@
   "locked_files": [
     "app/Accounting/IfrsMap.php",
     "app/Accounting/IfrsReference.php",
-    "app/Accounting/IfrsResolver.php"
+    "app/Accounting/IfrsResolver.php",
+    "app/Services/Gemini/TransactionDraftValidator.php"
   ],
-  "updated_at": "2026-07-29T04:56:10Z"
+  "updated_at": "2026-07-29T04:56:40Z"
 }
