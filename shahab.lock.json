@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "routes/mobile-webhooks.php",
-    "CLAUDE.md"
+    "CLAUDE.md",
+    "config/n8n.php"
   ],
-  "updated_at": "2026-07-29T18:16:18Z"
+  "updated_at": "2026-07-29T18:16:31Z"
 }
