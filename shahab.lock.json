@@ -4,7 +4,8 @@
   "locked_files": [
     "routes/mobile-webhooks.php",
     "CLAUDE.md",
-    "config/n8n.php"
+    "config/n8n.php",
+    "tests/Feature/MobileWebhook/SignupTest.php"
   ],
-  "updated_at": "2026-07-29T18:16:31Z"
+  "updated_at": "2026-07-29T18:16:49Z"
 }
