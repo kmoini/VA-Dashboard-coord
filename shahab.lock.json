@@ -1,6 +1,8 @@
 {
   "owner": "Shahab",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-07-29T04:41:58Z"
+  "status": "active",
+  "locked_files": [
+    "docs/GIFI-STATUS-AND-IFRS-DECISION.md"
+  ],
+  "updated_at": "2026-07-29T04:43:56Z"
 }
