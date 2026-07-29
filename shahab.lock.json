@@ -2,7 +2,8 @@
   "owner": "Shahab",
   "status": "active",
   "locked_files": [
-    "tests/Feature/GifiResolverTest.php"
+    "tests/Feature/GifiResolverTest.php",
+    "tests/Unit/IfrsResolverTest.php"
   ],
-  "updated_at": "2026-07-29T05:47:31Z"
+  "updated_at": "2026-07-29T05:47:57Z"
 }
