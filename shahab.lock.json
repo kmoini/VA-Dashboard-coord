@@ -9,7 +9,8 @@
     "app/Accounting/T2125CodeReference.php",
     "app/Services/Accounting/TransactionTaxCodeMatcher.php",
     "tests/Feature/TransactionTaxCodeMatcherTest.php",
-    "tests/Feature/DocumentAiTaxCodeAssignmentTest.php"
+    "tests/Feature/DocumentAiTaxCodeAssignmentTest.php",
+    "docs/TAX-CODE-AUTO-ASSIGNMENT.md"
   ],
-  "updated_at": "2026-07-29T03:29:00Z"
+  "updated_at": "2026-07-29T03:31:05Z"
 }
