@@ -14,7 +14,8 @@
     "app/Accounting/IfrsResolver.php",
     "tests/Feature/MobileWebhook/MicrosoftAuthTest.php",
     "app/Services/Gemini/TransactionDraftValidator.php",
-    "tests/Feature/MobileWebhook/PasswordResetTest.php"
+    "tests/Feature/MobileWebhook/PasswordResetTest.php",
+    "tests/Feature/MobileWebhook/PhoneFlowsTest.php"
   ],
-  "updated_at": "2026-07-29T18:18:27Z"
+  "updated_at": "2026-07-29T18:18:51Z"
 }
