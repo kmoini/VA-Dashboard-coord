@@ -1,11 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Console/Commands/CheckNotifications.php",
-    "app/Http/Controllers/PeriodLockController.php",
-    "docs/NOTIFICATIONS.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-29T14:45:28Z"
+  "updated_at": "2026-07-29T14:50:24Z"
 }
