@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "app/Accounting/GifiResolver.php",
-    "app/Accounting/IfrsReference.php"
+    "app/Accounting/IfrsReference.php",
+    "app/Accounting/GifiReference.php"
   ],
-  "updated_at": "2026-07-29T05:46:17Z"
+  "updated_at": "2026-07-29T05:46:38Z"
 }
