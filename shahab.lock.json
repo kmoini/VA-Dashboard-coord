@@ -1,8 +1,6 @@
 {
   "owner": "Shahab",
-  "status": "active",
-  "locked_files": [
-    "app/Http/Controllers/ClientPortalController.php"
-  ],
-  "updated_at": "2026-07-29T04:57:43Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-07-29T04:58:04Z"
 }
