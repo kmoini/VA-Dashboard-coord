@@ -5,7 +5,8 @@
     "app/Accounting/IfrsMap.php",
     "app/Accounting/IfrsReference.php",
     "app/Accounting/IfrsResolver.php",
-    "app/Services/Gemini/TransactionDraftValidator.php"
+    "app/Services/Gemini/TransactionDraftValidator.php",
+    "app/Http/Controllers/TransactionsController.php"
   ],
-  "updated_at": "2026-07-29T04:56:52Z"
+  "updated_at": "2026-07-29T04:57:15Z"
 }
