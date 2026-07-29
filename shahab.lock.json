@@ -11,7 +11,8 @@
     "app/Accounting/GifiIfrsMap.php",
     "tests/Feature/MobileWebhook/GoogleAuthTest.php",
     "tests/Feature/MobileWebhook/FacebookAuthTest.php",
-    "app/Accounting/IfrsResolver.php"
+    "app/Accounting/IfrsResolver.php",
+    "tests/Feature/MobileWebhook/MicrosoftAuthTest.php"
   ],
-  "updated_at": "2026-07-29T18:18:03Z"
+  "updated_at": "2026-07-29T18:18:07Z"
 }
