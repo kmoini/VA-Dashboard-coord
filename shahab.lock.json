@@ -1,8 +1,6 @@
 {
   "owner": "Shahab",
-  "status": "active",
-  "locked_files": [
-    "docs/IFRS-AUTO-ASSIGNMENT.md"
-  ],
-  "updated_at": "2026-07-29T06:09:47Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-07-29T06:09:49Z"
 }
