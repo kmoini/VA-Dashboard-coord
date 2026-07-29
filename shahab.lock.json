@@ -5,7 +5,8 @@
     "routes/mobile-webhooks.php",
     "CLAUDE.md",
     "config/n8n.php",
-    "tests/Feature/MobileWebhook/SignupTest.php"
+    "tests/Feature/MobileWebhook/SignupTest.php",
+    "tests/Feature/MobileWebhook/EmailLoginTest.php"
   ],
-  "updated_at": "2026-07-29T18:16:49Z"
+  "updated_at": "2026-07-29T18:17:04Z"
 }
