@@ -8,7 +8,8 @@
     "app/Services/Accounting/CategoryNormalizer.php",
     "app/Accounting/T2125CodeReference.php",
     "app/Services/Accounting/TransactionTaxCodeMatcher.php",
-    "tests/Feature/TransactionTaxCodeMatcherTest.php"
+    "tests/Feature/TransactionTaxCodeMatcherTest.php",
+    "tests/Feature/DocumentAiTaxCodeAssignmentTest.php"
   ],
-  "updated_at": "2026-07-29T03:19:04Z"
+  "updated_at": "2026-07-29T03:22:14Z"
 }
