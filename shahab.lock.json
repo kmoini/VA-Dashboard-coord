@@ -7,7 +7,8 @@
     "app/Models/Transaction.php",
     "app/Services/Accounting/CategoryNormalizer.php",
     "app/Accounting/T2125CodeReference.php",
-    "app/Services/Accounting/TransactionTaxCodeMatcher.php"
+    "app/Services/Accounting/TransactionTaxCodeMatcher.php",
+    "tests/Feature/TransactionTaxCodeMatcherTest.php"
   ],
-  "updated_at": "2026-07-29T03:15:51Z"
+  "updated_at": "2026-07-29T03:17:45Z"
 }
