@@ -7,7 +7,8 @@
     "tests/Feature/MobileWebhook/PasswordResetTest.php",
     "tests/Feature/MobileWebhook/PhoneFlowsTest.php",
     "tests/Unit/IfrsResolverTest.php",
-    "app/Accounting/IfrsMap.php"
+    "app/Accounting/IfrsMap.php",
+    "tests/Unit/TransactionDraftValidatorTest.php"
   ],
-  "updated_at": "2026-07-29T18:25:22Z"
+  "updated_at": "2026-07-29T18:26:31Z"
 }
