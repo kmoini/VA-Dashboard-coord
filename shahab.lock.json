@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "app/Services/Gemini/DocumentAiIngestService.php",
-    "database/migrations/2026_07_29_030720_add_tax_code_source_and_confidence_to_transactions.php"
+    "database/migrations/2026_07_29_030720_add_tax_code_source_and_confidence_to_transactions.php",
+    "app/Models/Transaction.php"
   ],
-  "updated_at": "2026-07-29T03:07:37Z"
+  "updated_at": "2026-07-29T03:08:13Z"
 }
