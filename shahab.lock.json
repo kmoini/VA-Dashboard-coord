@@ -1,6 +1,8 @@
 {
   "owner": "Shahab",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-07-29T05:03:24Z"
+  "status": "active",
+  "locked_files": [
+    "config/n8n.php"
+  ],
+  "updated_at": "2026-07-29T05:12:43Z"
 }
