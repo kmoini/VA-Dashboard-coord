@@ -1,12 +1,6 @@
 {
   "owner": "Shahab",
-  "status": "active",
-  "locked_files": [
-    "app/Accounting/IfrsMap.php",
-    "app/Accounting/IfrsReference.php",
-    "app/Accounting/IfrsResolver.php",
-    "app/Services/Gemini/TransactionDraftValidator.php",
-    "app/Http/Controllers/TransactionsController.php"
-  ],
-  "updated_at": "2026-07-29T04:57:15Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-07-29T04:57:30Z"
 }
