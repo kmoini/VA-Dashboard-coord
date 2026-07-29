@@ -1,9 +1,6 @@
 {
   "owner": "Shahab",
-  "status": "active",
-  "locked_files": [
-    "tests/Feature/TransactionTaxCodeMatcherTest.php",
-    "app/Services/Accounting/TransactionTaxCodeMatcher.php"
-  ],
-  "updated_at": "2026-07-29T03:00:21Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-07-29T03:02:08Z"
 }
