@@ -2,7 +2,8 @@
   "owner": "Shahab",
   "status": "active",
   "locked_files": [
-    "tests/Feature/Vendors/VendorRegistryTest.php"
+    "tests/Feature/Vendors/VendorRegistryTest.php",
+    "tests/Feature/Intelligence/VoiceIntelligenceTest.php"
   ],
-  "updated_at": "2026-07-29T04:30:09Z"
+  "updated_at": "2026-07-29T04:32:00Z"
 }
