@@ -1,12 +1,6 @@
 {
   "owner": "Shahab",
-  "status": "active",
-  "locked_files": [
-    "tests/Feature/GifiResolverTest.php",
-    "tests/Unit/IfrsResolverTest.php",
-    "resources/ai-prompts/document-extraction.extract.txt",
-    "resources/ai-prompts/document-extraction.batch.txt",
-    "docs/IFRS-AUTO-ASSIGNMENT.md"
-  ],
-  "updated_at": "2026-07-29T05:49:34Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-07-29T05:50:26Z"
 }
