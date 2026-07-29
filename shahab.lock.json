@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "app/Services/Accounting/GifiAssigner.php",
-    "app/Http/Controllers/TransactionsController.php"
+    "app/Http/Controllers/TransactionsController.php",
+    "app/Http/Controllers/ClientPortalController.php"
   ],
-  "updated_at": "2026-07-29T04:15:28Z"
+  "updated_at": "2026-07-29T04:15:47Z"
 }
