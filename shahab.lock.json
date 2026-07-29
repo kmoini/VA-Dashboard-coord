@@ -2,7 +2,8 @@
   "owner": "Shahab",
   "status": "active",
   "locked_files": [
-    "app/Accounting/IfrsMap.php"
+    "app/Accounting/IfrsMap.php",
+    "app/Accounting/IfrsReference.php"
   ],
-  "updated_at": "2026-07-29T04:54:39Z"
+  "updated_at": "2026-07-29T04:55:27Z"
 }
