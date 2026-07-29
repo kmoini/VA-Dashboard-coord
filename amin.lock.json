@@ -7,8 +7,9 @@
     "routes/web.php",
     "resources/js/Components/TransactionsTable.jsx",
     "config/services.php",
-    "app/Services/FlarumSsoService.php"
+    "app/Services/FlarumSsoService.php",
+    ".env.example"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-29T18:20:19Z"
+  "updated_at": "2026-07-29T18:24:35Z"
 }
