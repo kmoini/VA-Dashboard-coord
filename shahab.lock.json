@@ -8,7 +8,8 @@
     "tests/Feature/MobileWebhook/PhoneFlowsTest.php",
     "tests/Unit/IfrsResolverTest.php",
     "app/Accounting/IfrsMap.php",
-    "tests/Unit/TransactionDraftValidatorTest.php"
+    "tests/Unit/TransactionDraftValidatorTest.php",
+    "docs/IFRS-AUTO-ASSIGNMENT.md"
   ],
-  "updated_at": "2026-07-29T18:26:31Z"
+  "updated_at": "2026-07-29T18:28:24Z"
 }
