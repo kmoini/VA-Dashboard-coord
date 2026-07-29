@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "resources/js/Components/AuditMode.jsx"
+    "resources/js/Components/AuditMode.jsx",
+    "app/Http/Controllers/TransactionsController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-29T00:48:56Z"
+  "updated_at": "2026-07-29T00:50:09Z"
 }
