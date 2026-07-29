@@ -1,21 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Services/ClientAccessService.php",
-    "app/Models/Client.php",
-    "app/Models/Transaction.php",
-    "app/Models/Attachment.php",
-    "app/Http/Controllers/DocumentsController.php",
-    "app/Http/Middleware/HandleInertiaRequests.php",
-    "app/Http/Controllers/ClientsController.php",
-    "routes/web.php",
-    "app/Http/Controllers/ClientPortalController.php",
-    "app/Policies/ClientPolicy.php",
-    "resources/js/Pages/Clients/Index.jsx",
-    "resources/js/Pages/ClientPortal/Settings.jsx",
-    "tests/Feature/Clients/PastClientAccessTest.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-29T18:45:37Z"
+  "updated_at": "2026-07-29T18:47:57Z"
 }
