@@ -13,8 +13,9 @@
     "app/Http/Controllers/ClientPortalController.php",
     "app/Policies/ClientPolicy.php",
     "resources/js/Pages/Clients/Index.jsx",
-    "resources/js/Pages/ClientPortal/Settings.jsx"
+    "resources/js/Pages/ClientPortal/Settings.jsx",
+    "tests/Feature/Clients/PastClientAccessTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-29T18:43:52Z"
+  "updated_at": "2026-07-29T18:45:37Z"
 }
