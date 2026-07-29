@@ -4,7 +4,8 @@
   "locked_files": [
     "tests/Feature/MobileWebhook/MicrosoftAuthTest.php",
     "tests/Feature/MobileWebhook/SendEmailVerificationTest.php",
-    "tests/Feature/MobileWebhook/PasswordResetTest.php"
+    "tests/Feature/MobileWebhook/PasswordResetTest.php",
+    "tests/Feature/MobileWebhook/PhoneFlowsTest.php"
   ],
-  "updated_at": "2026-07-29T18:23:40Z"
+  "updated_at": "2026-07-29T18:24:04Z"
 }
