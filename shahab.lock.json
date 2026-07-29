@@ -1,6 +1,8 @@
 {
   "owner": "Shahab",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-07-29T18:15:19Z"
+  "status": "active",
+  "locked_files": [
+    "routes/mobile-webhooks.php"
+  ],
+  "updated_at": "2026-07-29T18:15:29Z"
 }
