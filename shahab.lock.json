@@ -2,7 +2,8 @@
   "owner": "Shahab",
   "status": "active",
   "locked_files": [
-    "config/n8n.php"
+    "config/n8n.php",
+    "app/Services/N8nGateway.php"
   ],
-  "updated_at": "2026-07-29T05:12:43Z"
+  "updated_at": "2026-07-29T05:13:07Z"
 }
