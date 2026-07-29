@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "app/Services/Accounting/GifiLearningService.php",
-    "app/Services/Gemini/DocumentAiIngestService.php"
+    "app/Services/Gemini/DocumentAiIngestService.php",
+    "tests/Feature/GifiLearningServiceTest.php"
   ],
-  "updated_at": "2026-07-29T03:56:12Z"
+  "updated_at": "2026-07-29T03:56:53Z"
 }
