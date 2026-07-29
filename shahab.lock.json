@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "config/n8n.php",
-    "app/Services/N8nGateway.php"
+    "app/Services/N8nGateway.php",
+    "app/Http/Middleware/N8nStrangler.php"
   ],
-  "updated_at": "2026-07-29T05:13:07Z"
+  "updated_at": "2026-07-29T05:13:28Z"
 }
