@@ -1,17 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Http/Controllers/TransactionsController.php",
-    "resources/js/Pages/Transactions/Index.jsx",
-    "routes/web.php",
-    "resources/js/Components/TransactionsTable.jsx",
-    "config/services.php",
-    "app/Services/FlarumSsoService.php",
-    ".env.example",
-    "database/migrations/2026_07_29_000001_add_until_date_to_client_firm_grants.php",
-    "app/Models/ClientFirmGrant.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-29T18:25:47Z"
+  "updated_at": "2026-07-29T18:25:59Z"
 }
