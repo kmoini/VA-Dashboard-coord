@@ -1,6 +1,8 @@
 {
   "owner": "Shahab",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-07-29T00:47:36Z"
+  "status": "active",
+  "locked_files": [
+    "docs/UPLOAD-TO-TRANSACTION-FLOW.md"
+  ],
+  "updated_at": "2026-07-29T00:51:24Z"
 }
