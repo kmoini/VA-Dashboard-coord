@@ -1,10 +1,6 @@
 {
   "owner": "Shahab",
-  "status": "active",
-  "locked_files": [
-    "config/mobile.php",
-    "app/Services/Mobile/MobileFileService.php",
-    "app/Http/Controllers/MobileWebhook/SubscriptionController.php"
-  ],
-  "updated_at": "2026-07-30T19:35:23Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-07-30T19:36:10Z"
 }
