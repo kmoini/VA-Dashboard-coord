@@ -6,8 +6,9 @@
     "app/Services/Subscriptions/GooglePlayServiceAccount.php",
     "config/services.php",
     "config/mobile.php",
-    "tests/Feature/MobileWebhook/SubscriptionTest.php"
+    "tests/Feature/MobileWebhook/SubscriptionTest.php",
+    "tests/Feature/Console/RevalidateGoogleSubscriptionsTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-30T20:22:46Z"
+  "updated_at": "2026-07-30T20:23:02Z"
 }
