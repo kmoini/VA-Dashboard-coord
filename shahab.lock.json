@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "resources/ai-prompts/document-extraction.extract.txt",
-    "resources/ai-prompts/document-extraction.batch.txt"
+    "resources/ai-prompts/document-extraction.batch.txt",
+    "database/migrations/2026_07_30_130000_publish_multipage_bill_rule.php"
   ],
-  "updated_at": "2026-07-30T18:02:14Z"
+  "updated_at": "2026-07-30T18:02:56Z"
 }
