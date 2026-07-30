@@ -6,8 +6,9 @@
     "app/Http/Middleware/EnforceReadOnlyAuditor.php",
     "app/Models/User.php",
     "bootstrap/app.php",
-    "app/Http/Controllers/TransactionsController.php"
+    "app/Http/Controllers/TransactionsController.php",
+    "resources/js/Pages/Transactions/Index.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-30T02:56:29Z"
+  "updated_at": "2026-07-30T02:59:06Z"
 }
