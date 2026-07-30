@@ -2,7 +2,8 @@
   "owner": "Shahab",
   "status": "active",
   "locked_files": [
-    "config/mobile.php"
+    "config/mobile.php",
+    "app/Services/Mobile/MobileFileService.php"
   ],
-  "updated_at": "2026-07-30T19:34:48Z"
+  "updated_at": "2026-07-30T19:35:07Z"
 }
