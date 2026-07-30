@@ -8,8 +8,9 @@
     "config/mobile.php",
     "tests/Feature/MobileWebhook/SubscriptionTest.php",
     "tests/Feature/Console/RevalidateGoogleSubscriptionsTest.php",
-    ".env.example"
+    ".env.example",
+    "docs/production-log-triage-2026-07-30.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-30T20:23:51Z"
+  "updated_at": "2026-07-30T20:24:25Z"
 }
