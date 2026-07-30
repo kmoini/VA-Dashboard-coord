@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Http/Controllers/MobileWebhook/SubscriptionController.php",
-    "app/Services/Subscriptions/GooglePlayServiceAccount.php"
+    "app/Services/Subscriptions/GooglePlayServiceAccount.php",
+    "config/services.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-30T20:21:25Z"
+  "updated_at": "2026-07-30T20:21:47Z"
 }
