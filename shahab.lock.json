@@ -5,7 +5,8 @@
     "resources/ai-prompts/document-extraction.extract.txt",
     "resources/ai-prompts/document-extraction.batch.txt",
     "database/migrations/2026_07_30_130000_publish_multipage_bill_rule.php",
-    "tests/Unit/MultiPageDocumentGrouperTest.php"
+    "tests/Unit/MultiPageDocumentGrouperTest.php",
+    "docs/MULTIPAGE-BILL-EXTRACTION.md"
   ],
-  "updated_at": "2026-07-30T18:03:45Z"
+  "updated_at": "2026-07-30T18:09:16Z"
 }
