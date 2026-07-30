@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "config/mobile.php",
-    "app/Services/Mobile/MobileFileService.php"
+    "app/Services/Mobile/MobileFileService.php",
+    "app/Http/Controllers/MobileWebhook/SubscriptionController.php"
   ],
-  "updated_at": "2026-07-30T19:35:07Z"
+  "updated_at": "2026-07-30T19:35:23Z"
 }
