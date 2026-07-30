@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "database/migrations/2026_07_30_100000_add_auditor_role.php"
+    "database/migrations/2026_07_30_100000_add_auditor_role.php",
+    "app/Http/Middleware/EnforceReadOnlyAuditor.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-30T02:50:31Z"
+  "updated_at": "2026-07-30T02:52:20Z"
 }
