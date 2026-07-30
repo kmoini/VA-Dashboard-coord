@@ -6,8 +6,9 @@
     "docs/platform-client-directory.md",
     "docs/platform-operator-tier.md",
     "app/Http/Middleware/EnsureEmailIsVerifiedOrOperator.php",
-    "bootstrap/app.php"
+    "bootstrap/app.php",
+    "app/Http/Controllers/PlatformImpersonationController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-30T18:04:47Z"
+  "updated_at": "2026-07-30T18:05:42Z"
 }
