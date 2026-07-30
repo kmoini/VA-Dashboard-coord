@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "tests/Feature/PlatformClientDirectoryTest.php"
+    "tests/Feature/PlatformClientDirectoryTest.php",
+    "docs/platform-client-directory.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-30T17:43:15Z"
+  "updated_at": "2026-07-30T17:58:11Z"
 }
