@@ -1,16 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Http/Controllers/MobileWebhook/SubscriptionController.php",
-    "app/Services/Subscriptions/GooglePlayServiceAccount.php",
-    "config/services.php",
-    "config/mobile.php",
-    "tests/Feature/MobileWebhook/SubscriptionTest.php",
-    "tests/Feature/Console/RevalidateGoogleSubscriptionsTest.php",
-    ".env.example",
-    "docs/production-log-triage-2026-07-30.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-30T20:24:46Z"
+  "updated_at": "2026-07-30T20:37:57Z"
 }
