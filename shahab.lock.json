@@ -1,6 +1,8 @@
 {
   "owner": "Shahab",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-07-30T18:16:38Z"
+  "status": "active",
+  "locked_files": [
+    "config/mobile.php"
+  ],
+  "updated_at": "2026-07-30T19:34:48Z"
 }
