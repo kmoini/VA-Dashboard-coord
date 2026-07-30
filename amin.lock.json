@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "config/mobile.php",
-    "docs/file-check-route.md"
+    "docs/file-check-route.md",
+    "docs/file-size-check-route.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-30T02:13:36Z"
+  "updated_at": "2026-07-30T02:14:34Z"
 }
