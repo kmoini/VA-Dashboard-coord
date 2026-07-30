@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "config/mobile.php"
+    "config/mobile.php",
+    "docs/file-check-route.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-30T02:06:34Z"
+  "updated_at": "2026-07-30T02:13:36Z"
 }
