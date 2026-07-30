@@ -1,13 +1,6 @@
 {
   "owner": "Shahab",
-  "status": "active",
-  "locked_files": [
-    "resources/ai-prompts/document-extraction.extract.txt",
-    "resources/ai-prompts/document-extraction.batch.txt",
-    "database/migrations/2026_07_30_130000_publish_multipage_bill_rule.php",
-    "tests/Unit/MultiPageDocumentGrouperTest.php",
-    "docs/MULTIPAGE-BILL-EXTRACTION.md",
-    "app/Http/Controllers/TransactionsController.php"
-  ],
-  "updated_at": "2026-07-30T18:14:07Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-07-30T18:16:38Z"
 }
