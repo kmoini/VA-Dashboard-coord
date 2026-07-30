@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "tests/Feature/Console/RevalidateGoogleSubscriptionsTest.php"
+    "tests/Feature/Console/RevalidateGoogleSubscriptionsTest.php",
+    ".env.example"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-30T18:51:07Z"
+  "updated_at": "2026-07-30T19:06:34Z"
 }
