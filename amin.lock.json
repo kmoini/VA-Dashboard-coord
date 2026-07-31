@@ -12,8 +12,9 @@
     "app/Services/BooksCredentialFactory.php",
     "config/services.php",
     "app/Http/Controllers/BooksController.php",
-    "database/migrations/2026_07_31_000005_add_books_organization_to_activity_logs.php"
+    "database/migrations/2026_07_31_000005_add_books_organization_to_activity_logs.php",
+    "app/Http/Middleware/EnsureBooksWritable.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-31T23:27:02Z"
+  "updated_at": "2026-07-31T23:28:04Z"
 }
