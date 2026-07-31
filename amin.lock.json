@@ -7,8 +7,9 @@
     "database/migrations/2026_07_31_000003_add_books_access_to_client_firm_grants.php",
     "database/migrations/2026_07_31_000004_add_books_reveal_credentials_permission.php",
     "app/Models/ClientFirmGrant.php",
-    "app/Models/ClientCompany.php"
+    "app/Models/ClientCompany.php",
+    "app/Models/BigcapitalConnection.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-31T23:11:48Z"
+  "updated_at": "2026-07-31T23:12:12Z"
 }
