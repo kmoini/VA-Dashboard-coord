@@ -1,9 +1,6 @@
 {
   "owner": "Shahab",
-  "status": "active",
-  "locked_files": [
-    "tests/Feature/MobileWebhook/FxConvertTest.php",
-    "tests/Feature/MobileWebhook/OnboardingTest.php"
-  ],
-  "updated_at": "2026-07-31T02:39:21Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-07-31T02:41:02Z"
 }
