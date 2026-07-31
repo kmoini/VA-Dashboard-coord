@@ -1,7 +1,9 @@
 {
   "owner": "Amin",
-  "status": "idle",
-  "locked_files": [],
+  "status": "active",
+  "locked_files": [
+    "database/migrations/2026_07_31_000001_add_entity_type_to_client_companies.php"
+  ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-31T22:43:14Z"
+  "updated_at": "2026-07-31T22:59:16Z"
 }
