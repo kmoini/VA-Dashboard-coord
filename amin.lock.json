@@ -8,8 +8,9 @@
     "database/migrations/2026_07_31_000004_add_books_reveal_credentials_permission.php",
     "app/Models/ClientFirmGrant.php",
     "app/Models/ClientCompany.php",
-    "app/Models/BigcapitalConnection.php"
+    "app/Models/BigcapitalConnection.php",
+    "app/Services/BooksCredentialFactory.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-31T23:14:17Z"
+  "updated_at": "2026-07-31T23:14:48Z"
 }
