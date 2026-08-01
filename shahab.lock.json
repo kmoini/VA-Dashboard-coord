@@ -2,7 +2,8 @@
   "owner": "Shahab",
   "status": "active",
   "locked_files": [
-    "pricing-model.json"
+    "pricing-model.json",
+    "pricing.html"
   ],
-  "updated_at": "2026-08-01T15:15:20Z"
+  "updated_at": "2026-08-01T15:15:40Z"
 }
