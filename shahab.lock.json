@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "scripts/sync-pricing.mjs",
-    "scripts/serve.mjs"
+    "scripts/serve.mjs",
+    "package.json"
   ],
-  "updated_at": "2026-08-01T15:42:46Z"
+  "updated_at": "2026-08-01T15:42:59Z"
 }
