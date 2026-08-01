@@ -15,8 +15,9 @@
     "database/migrations/2026_07_31_000005_add_books_organization_to_activity_logs.php",
     "app/Http/Middleware/EnsureBooksWritable.php",
     "bootstrap/app.php",
-    "routes/web.php"
+    "routes/web.php",
+    "tests/Feature/Bigcapital/BooksControllerTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-07-31T23:30:47Z"
+  "updated_at": "2026-08-01T00:03:32Z"
 }
