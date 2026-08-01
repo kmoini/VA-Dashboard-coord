@@ -18,8 +18,9 @@
     "routes/web.php",
     "tests/Feature/Bigcapital/BooksControllerTest.php",
     "resources/js/Pages/Books/Index.jsx",
-    "app/Services/ClientAccessService.php"
+    "app/Services/ClientAccessService.php",
+    "app/Http/Controllers/ReferralController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-01T00:19:11Z"
+  "updated_at": "2026-08-01T00:19:53Z"
 }
