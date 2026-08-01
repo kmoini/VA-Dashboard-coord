@@ -21,8 +21,9 @@
     "app/Services/ClientAccessService.php",
     "app/Http/Controllers/ReferralController.php",
     "resources/js/Pages/Referral/Accept.jsx",
-    "app/Services/ClientRegistryProjector.php"
+    "app/Services/ClientRegistryProjector.php",
+    "app/Http/Controllers/ClientsController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-01T00:23:15Z"
+  "updated_at": "2026-08-01T00:23:55Z"
 }
