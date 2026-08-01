@@ -1,32 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "database/migrations/2026_07_31_000001_add_entity_type_to_client_companies.php",
-    "database/migrations/2026_07_31_000002_add_company_scope_to_bigcapital_connections.php",
-    "database/migrations/2026_07_31_000003_add_books_access_to_client_firm_grants.php",
-    "database/migrations/2026_07_31_000004_add_books_reveal_credentials_permission.php",
-    "app/Models/ClientFirmGrant.php",
-    "app/Models/ClientCompany.php",
-    "app/Models/BigcapitalConnection.php",
-    "app/Services/BooksCredentialFactory.php",
-    "config/services.php",
-    "app/Http/Controllers/BooksController.php",
-    "database/migrations/2026_07_31_000005_add_books_organization_to_activity_logs.php",
-    "app/Http/Middleware/EnsureBooksWritable.php",
-    "bootstrap/app.php",
-    "routes/web.php",
-    "tests/Feature/Bigcapital/BooksControllerTest.php",
-    "resources/js/Pages/Books/Index.jsx",
-    "app/Services/ClientAccessService.php",
-    "app/Http/Controllers/ReferralController.php",
-    "resources/js/Pages/Referral/Accept.jsx",
-    "app/Services/ClientRegistryProjector.php",
-    "app/Http/Controllers/ClientsController.php",
-    "resources/js/Pages/Clients/Show.jsx",
-    "tests/Feature/Bigcapital/BooksClientSwitcherTest.php",
-    "docs/books-multi-company.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-01T00:48:05Z"
+  "updated_at": "2026-08-01T00:50:57Z"
 }
