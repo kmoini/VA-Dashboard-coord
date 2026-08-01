@@ -1,11 +1,6 @@
 {
   "owner": "Shahab",
-  "status": "active",
-  "locked_files": [
-    "scripts/sync-pricing.mjs",
-    "scripts/serve.mjs",
-    "package.json",
-    "pricing.html"
-  ],
-  "updated_at": "2026-08-01T15:45:47Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-08-01T15:48:13Z"
 }
