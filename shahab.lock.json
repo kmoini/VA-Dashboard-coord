@@ -4,7 +4,8 @@
   "locked_files": [
     "scripts/sync-pricing.mjs",
     "scripts/serve.mjs",
-    "package.json"
+    "package.json",
+    "pricing.html"
   ],
-  "updated_at": "2026-08-01T15:42:59Z"
+  "updated_at": "2026-08-01T15:43:13Z"
 }
