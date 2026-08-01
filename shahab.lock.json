@@ -1,6 +1,8 @@
 {
   "owner": "Shahab",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-08-01T01:23:23Z"
+  "status": "active",
+  "locked_files": [
+    "pricing-model.json"
+  ],
+  "updated_at": "2026-08-01T15:15:20Z"
 }
