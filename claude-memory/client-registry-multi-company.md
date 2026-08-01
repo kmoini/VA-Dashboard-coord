@@ -1,12 +1,18 @@
 ---
 name: client-registry-multi-company
-description: "Multi-company + bank-account registry per client; AI fills Corporation/Bank columns + direction. Phases 1-5 DEPLOYED (cp169-171), phase 6 built local. READ before client registry / DocumentAI corporation_name."
+description: "Multi-company + bank-account registry per client; AI fills Corporation/Bank columns + direction. ALL DEPLOYED cp169-177 (incl. the grant layer + self-serve). READ before client registry / DocumentAI corporation_name."
 metadata: 
   node_type: memory
   type: project
   originSessionId: 214b33a4-0102-4f94-a64b-81dc65df1f16
-  modified: 2026-07-25T01:54:27.361Z
+  modified: 2026-07-31T20:40:50.877Z
 ---
+
+**STATUS (verified 2026-07-31 against docs/client-registry-multi-company.md): every
+phase below shipped, cp169-177 — including the grant layer AND self-serve
+`PersonalWorkspaceService`. The per-phase "built local / NOT deployed" notes further
+down are historical.** One correction pending: that doc files Bigcapital connections
+under "firm tooling", which [[books-multi-company-plan]] deliberately overrides.
 
 Dashboard feature: a client can register the COMPANIES it owns + BANK ACCOUNTS
 (one company may have many accounts; account optionally tied to a company).

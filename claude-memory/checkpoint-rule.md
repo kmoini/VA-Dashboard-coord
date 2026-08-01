@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: feedback
   originSessionId: 8f1fb65a-2016-4baf-8cf0-2fd6e4578a77
-  modified: 2026-07-23T17:20:50.503Z
+  modified: 2026-07-30T20:50:16.952Z
 ---
 
 When the user asks to "add a checkpoint" (or "checkpoint"), perform ALL THREE steps, every time:
@@ -31,4 +31,18 @@ When the user asks to "add a checkpoint" (or "checkpoint"), perform ALL THREE st
   The webhook git-pulls + npm-builds; migrations + Laravel cache clears stay
   manual (see [[deploy-process]]).
 
-**Latest observed:** checkpoint-168 (2026-07-23, token In/Out line on the drawer card; 167 = cost In/Out split — both deployed to prod; 167's migrate ran, since prod shows the cost split). Teammates advanced 164-166. Verify against `git tag` (fetch --tags first) before your next number.
+- Expect the push to be REJECTED as non-fast-forward: teammates push to `main`
+  constantly. Fix is `git fetch` then rebase your commit onto `origin/main` —
+  and `git tag -d` your tag FIRST, because the rebase rewrites the commit it
+  points at, then re-tag after. Stash unrelated WIP before rebasing.
+- Read the teammate commits you just pulled in. On 2026-07-30 Shahab had fixed
+  the same bug from another angle an hour earlier; the right move was adopting
+  his location and amending my message, not shipping a duplicate.
+
+- Also watch for `main` moving UNDER you mid-session (DuoSync hooks / teammate
+  sync fast-forward the local branch while your working tree is dirty). On
+  2026-07-30 HEAD went from `ab73ad0` to `63edbfc` between the first `git status`
+  and the commit. Before committing, re-check `git log -1` and re-run your tests
+  against the new base — do not trust a test run from earlier in the session.
+
+**Latest observed:** checkpoint-201 (2026-07-30, platform operator client directory, see [[platform-operator-tier]]). Verify against `git tag` (fetch --tags first) before your next number.

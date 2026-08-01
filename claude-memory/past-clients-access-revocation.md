@@ -1,11 +1,11 @@
 ---
 name: past-clients-access-revocation
-description: "Ending an engagement = \"past client\" with history-kept (read_only + until_date) or cut (revoked); Delete Client REMOVED from /clients; enforce via Transaction::forFirm + new Attachment::forFirm. Built local 2026-07-29, NOT deployed."
+description: "Ending an engagement = \"past client\" with history-kept (read_only + until_date) or cut (revoked); Delete Client REMOVED from /clients; enforce via Transaction::forFirm + new Attachment::forFirm. DEPLOYED to prod as checkpoint-194 (2026-07-30); migrate + optimize:clear owed on the server."
 metadata: 
   node_type: memory
   type: project
   originSessionId: 0859969f-2119-4765-8978-807596d31e53
-  modified: 2026-07-29T22:00:13.105Z
+  modified: 2026-07-30T16:00:29.404Z
 ---
 
 Ending a client engagement never deletes records, it only ends the FIRM's access.
@@ -39,9 +39,16 @@ transactions lingered in firm-wide "All clients" views (Amin reported this);
 and `releaseToSelfServe()` crashed for clients with no email
 (`accountant_accounts.firm_email` is NOT NULL).
 
-State: built + migrated on LOCAL only, full suite shows no regression (80
-pre-existing failures unchanged, +8 new tests in
-`tests/Feature/Clients/PastClientAccessTest.php`). NOT committed/deployed —
-see [[wait-for-user-test-before-deploy]]. Docs:
-`docs/PAST-CLIENTS-ACCESS-REVOCATION.md` per [[document-each-change]].
-Related: [[client-workspace-architecture]], [[client-registry-multi-company]].
+State: **DEPLOYED to production 2026-07-30** as commit `cb64f2b` on `main`, tag
+`checkpoint-194`. ⚠️ The n8n webhook only pulls + builds, so `php artisan migrate`
++ `optimize:clear` + `queue:restart` were still OWED on the server — until they
+run, `/clients` errors (`until_date` missing) and the removed `clients.destroy`
+route stays cached. Suite: 1062 pass / 75 fail, all 75 pre-existing.
+
+⚠️ **CLAUDE.md's "all work on dev" rule was WRONG and has been rewritten**:
+`dev` is 139 commits behind and abandoned; checkpoints 184-194 all live on
+`main`, and production deploys from `main`. See [[checkpoint-rule]].
+
+Docs: `docs/PAST-CLIENTS-ACCESS-REVOCATION.md` (incl. the deploy section) per
+[[document-each-change]]. Related: [[client-workspace-architecture]],
+[[client-registry-multi-company]], [[deploy-process]].
