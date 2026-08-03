@@ -9,8 +9,9 @@
     "app/Http/Controllers/BooksController.php",
     "routes/web.php",
     "resources/js/Pages/Books/Index.jsx",
-    "tests/Feature/Bigcapital/BooksControllerTest.php"
+    "tests/Feature/Bigcapital/BooksControllerTest.php",
+    "docs/books-multi-company.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-03T17:30:32Z"
+  "updated_at": "2026-08-03T17:36:41Z"
 }
