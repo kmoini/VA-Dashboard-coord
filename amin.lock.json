@@ -4,8 +4,9 @@
   "locked_files": [
     "resources/js/Layouts/AuthenticatedLayout.jsx",
     "database/migrations/2026_07_31_000007_add_provision_status_to_bigcapital_connections.php",
-    "app/Jobs/ProvisionBookJob.php"
+    "app/Jobs/ProvisionBookJob.php",
+    "app/Models/BigcapitalConnection.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-03T17:01:18Z"
+  "updated_at": "2026-08-03T17:02:03Z"
 }
