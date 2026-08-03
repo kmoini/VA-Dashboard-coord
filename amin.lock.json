@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "database/migrations/2026_07_31_000006_add_detached_company_name_to_bigcapital_connections.php",
-    "app/Services/ClientRegistryProjector.php"
+    "app/Services/ClientRegistryProjector.php",
+    "app/Models/BigcapitalConnection.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-03T15:51:21Z"
+  "updated_at": "2026-08-03T15:52:08Z"
 }
