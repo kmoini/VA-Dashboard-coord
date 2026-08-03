@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "app/Jobs/ProvisionBookJob.php"
+    "app/Jobs/ProvisionBookJob.php",
+    "resources/js/Pages/Books/Index.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-03T20:39:50Z"
+  "updated_at": "2026-08-03T20:40:51Z"
 }
