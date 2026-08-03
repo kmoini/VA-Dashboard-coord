@@ -7,8 +7,9 @@
     "app/Models/BigcapitalConnection.php",
     "app/Http/Controllers/BooksController.php",
     "resources/js/Pages/Books/Index.jsx",
-    "tests/Feature/Bigcapital/BooksRegistryLinkTest.php"
+    "tests/Feature/Bigcapital/BooksRegistryLinkTest.php",
+    "tests/Feature/Bigcapital/BooksControllerTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-03T15:55:29Z"
+  "updated_at": "2026-08-03T15:56:10Z"
 }
