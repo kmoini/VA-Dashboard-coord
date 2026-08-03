@@ -6,8 +6,9 @@
     "database/migrations/2026_07_31_000007_add_provision_status_to_bigcapital_connections.php",
     "app/Jobs/ProvisionBookJob.php",
     "app/Models/BigcapitalConnection.php",
-    "app/Http/Controllers/BooksController.php"
+    "app/Http/Controllers/BooksController.php",
+    "routes/web.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-03T17:19:14Z"
+  "updated_at": "2026-08-03T17:20:04Z"
 }
