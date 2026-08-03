@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "app/Models/ClientCompany.php"
+    "app/Models/ClientCompany.php",
+    "app/Http/Controllers/ClientsController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-03T18:58:25Z"
+  "updated_at": "2026-08-03T18:59:25Z"
 }
