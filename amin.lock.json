@@ -1,11 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "database/migrations/2026_07_31_000008_drop_is_default_from_bigcapital_connections.php",
-    "app/Models/BigcapitalConnection.php",
-    "tests/Feature/Bigcapital/BooksClientSwitcherTest.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-04T18:19:27Z"
+  "updated_at": "2026-08-04T18:34:38Z"
 }
