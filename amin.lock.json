@@ -7,8 +7,9 @@
     "app/Accounting/Providers/QuickBooksProvider.php",
     "app/Services/CsvAccountImporter.php",
     "app/Http/Controllers/BooksController.php",
-    "routes/web.php"
+    "routes/web.php",
+    "resources/js/Pages/Books/Index.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-05T16:45:24Z"
+  "updated_at": "2026-08-05T16:46:20Z"
 }
