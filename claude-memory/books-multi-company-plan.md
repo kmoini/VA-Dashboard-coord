@@ -5,12 +5,26 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 8841ce90-8290-47d8-a6d5-69475b5dca29
-  modified: 2026-08-01T00:49:36.014Z
+  modified: 2026-08-03T16:50:08.670Z
 ---
 
-**ALL PHASES BUILT LOCALLY 2026-07-31 — not committed, not deployed, awaiting Amin's
-manual test (he asked to test only at the end). Full write-up + manual test guide:
-`docs/books-multi-company.md`.** Books tests 117 → 127 passing; the 9 reds in
+**ALL PHASES BUILT + MANUALLY TESTED BY AMIN 2026-08-03 — still NOT committed, NOT
+deployed. Full write-up + manual test guide: `docs/books-multi-company.md`.**
+Isolation verified against the LIVE server, not assumed: 6 books for one client → 6
+distinct organization ids, and an account created in one appears in no other.
+
+Two bugs found during that test, both pre-existing and unrelated to multi-company:
+(1) the New Account form carried a hidden `currency: 'USD'` default while the book was
+CAD, and Bigcapital REJECTS a currency on non-multi-currency account types
+(ACCOUNT_TYPE_NOT_SUPPORTS_MULTI_CURRENCY) — so creating an expense account was
+impossible on any book. Currency now defaults to null everywhere (accounts, customers,
+vendors) = inherit the org's base currency. Journals still default to USD (JournalDTO
+requires a string); whether that should follow the book's currency is OPEN.
+(2) Provisioning is non-atomic with no recovery: a network blip between `register()` and
+the follow-up login leaves an organization on the server that we have no row for and no
+password to — unusable AND undeletable (no delete API). Happened twice. The fix (persist
+a `pending` connection with its credentials BEFORE calling register, then move the whole
+thing to a queued job with retry) is agreed but NOT built. Books tests 117 → 127 passing; the 9 reds in
 tests/Feature/Bigcapital are pre-existing (8 SmartImportTest hitting a nonexistent
 route). Full suite 78 failing vs a 75 baseline: the 3 deltas are intentional behaviour
 changes whose tests were rewritten (no-client-pinned now shows NO book instead of an

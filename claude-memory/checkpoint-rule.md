@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: feedback
   originSessionId: 8f1fb65a-2016-4baf-8cf0-2fd6e4578a77
-  modified: 2026-07-30T20:50:16.952Z
+  modified: 2026-08-04T23:58:21.208Z
 ---
 
 When the user asks to "add a checkpoint" (or "checkpoint"), perform ALL THREE steps, every time:
@@ -45,4 +45,10 @@ When the user asks to "add a checkpoint" (or "checkpoint"), perform ALL THREE st
   and the commit. Before committing, re-check `git log -1` and re-run your tests
   against the new base — do not trust a test run from earlier in the session.
 
-**Latest observed:** checkpoint-201 (2026-07-30, platform operator client directory, see [[platform-operator-tier]]). Verify against `git tag` (fetch --tags first) before your next number.
+- A CONCURRENT session on this machine may commit your work before you do. On
+  2026-07-31 a parallel session committed my finished-but-uncommitted
+  log-triage work as checkpoint-203 under Amin's git identity, while I still
+  thought it was pending. Before making a checkpoint, check whether HEAD
+  already contains your files (`git log --stat -1`) instead of re-committing.
+
+**Latest observed:** checkpoint-205 (2026-08-04, the Books accounting-overhaul PLAN doc — audit only, no code; see [[books-accounting-overhaul-plan]]). 204 = books become one ledger per company. Earlier: checkpoint-203 (2026-07-31, Google-subscription scheduler no longer fires on installs that never adopted it; DEPLOYED to production). 201 = platform operator client directory, 202 = operator switcher, both from a parallel session. Verify against `git tag` (fetch --tags first) before your next number.
