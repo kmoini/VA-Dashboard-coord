@@ -5,8 +5,9 @@
     "app/Accounting/DTOs/AccountDTO.php",
     "app/Accounting/Providers/BigcapitalProvider.php",
     "app/Accounting/Providers/QuickBooksProvider.php",
-    "app/Services/CsvAccountImporter.php"
+    "app/Services/CsvAccountImporter.php",
+    "app/Http/Controllers/BooksController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-05T16:41:23Z"
+  "updated_at": "2026-08-05T16:42:15Z"
 }
