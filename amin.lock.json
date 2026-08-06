@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "app/Models/TransactionLine.php"
+    "app/Models/TransactionLine.php",
+    "app/Models/Transaction.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-06T19:07:03Z"
+  "updated_at": "2026-08-06T19:09:45Z"
 }
