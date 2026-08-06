@@ -1,12 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Services/Books/BankStatementImporter.php",
-    "app/Services/Books/BankLineMatcher.php",
-    "app/Models/Transaction.php",
-    "tests/Feature/Bigcapital/BankStatementTest.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-06T22:11:40Z"
+  "updated_at": "2026-08-06T22:19:25Z"
 }
