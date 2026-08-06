@@ -6,8 +6,9 @@
     "app/Models/Transaction.php",
     "app/Services/Books/TransactionPoster.php",
     "app/Services/TransactionService.php",
-    "tests/Feature/Bigcapital/TransactionPosterTest.php"
+    "tests/Feature/Bigcapital/TransactionPosterTest.php",
+    "app/Http/Controllers/Marketing/Sync2allWebhookController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-06T21:41:35Z"
+  "updated_at": "2026-08-06T21:48:47Z"
 }
