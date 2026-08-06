@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "resources/js/Pages/Books/Index.jsx"
+    "resources/js/Pages/Books/Index.jsx",
+    "docs/books-overhaul-test-guide-fa.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-06T22:45:02Z"
+  "updated_at": "2026-08-06T23:07:15Z"
 }
