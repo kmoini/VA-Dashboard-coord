@@ -1,6 +1,8 @@
 {
   "owner": "Kamyar",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-08-06T11:47:39Z"
+  "status": "active",
+  "locked_files": [
+    "database/migrations/2026_08_06_000001_add_missing_actions_to_activity_logs.php"
+  ],
+  "updated_at": "2026-08-06T12:11:10Z"
 }
