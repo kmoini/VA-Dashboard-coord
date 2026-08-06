@@ -1,16 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Models/TransactionLine.php",
-    "app/Models/Transaction.php",
-    "app/Services/Books/TransactionPoster.php",
-    "app/Services/TransactionService.php",
-    "tests/Feature/Bigcapital/TransactionPosterTest.php",
-    "app/Http/Controllers/Marketing/Sync2allWebhookController.php",
-    "tests/Feature/Growth/UnsubscribeFlowTest.php",
-    "database/migrations/2026_08_06_000004_create_bank_statement_tables.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-06T21:53:12Z"
+  "updated_at": "2026-08-06T21:58:08Z"
 }
