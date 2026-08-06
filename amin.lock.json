@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Accounting/Providers/BigcapitalProvider.php",
     "app/Http/Controllers/BooksController.php",
-    "database/migrations/2026_08_06_000005_add_books_credits_to_activity_logs.php"
+    "database/migrations/2026_08_06_000005_add_books_credits_to_activity_logs.php",
+    "routes/web.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-06T23:51:02Z"
+  "updated_at": "2026-08-06T23:53:00Z"
 }
