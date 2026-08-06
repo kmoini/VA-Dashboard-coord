@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: f6eeabb2-cfa9-43ba-812e-85520b1ecf22
-  modified: 2026-08-04T23:56:40.765Z
+  modified: 2026-08-05T23:21:36.576Z
 ---
 
 Full audit + build order: `va-dashboard2/docs/books-accounting-overhaul-plan.md`
@@ -27,6 +27,19 @@ the product against QuickBooks Desktop and raising 9 requirements.
 5. Amin owes: the accountant's own coded chart, and real sample files (a
    QuickBooks Desktop CoA export + real bank statements as CSV and PDF from more
    than one bank). Phase 3 is blocked on the files.
+
+**Phase 0 is BUILT and manually tested green (2026-08-05)** against a real
+Bigcapital org — commits 6cb7680, 5d5f047, 6df80b6, ef23902. Doc:
+`docs/books-phase0-chart-of-accounts.md`. NOT deployed. Facts it settled:
+- Bigcapital **returns sub-accounts NESTED inside their parent**, not as sibling
+  rows. Reading only the top level made them invisible, so re-importing hit
+  `ACCOUNT.NAME.NOT.UNIQUE` for accounts we had just created ourselves.
+- `parent_account_id` + `subaccount` on `POST /api/accounts` works end to end.
+- Bigcapital **seeds a CODED default chart** at provisioning (40007, 50001 …), and
+  there is **no delete-account path anywhere** — so Phase 1 must PREVENT the
+  default chart when the accountant brings their own coding, not clean it up.
+- Still unverified: `accountLedger()`'s real response shape (needs a bank account
+  with posted transactions), and whether Bigcapital supports line-level tax.
 
 **Findings that cost real effort to derive — do not re-derive:**
 - `transactions` has NO link to the chart of accounts, no debit/credit line
