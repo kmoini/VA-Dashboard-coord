@@ -8,8 +8,9 @@
     "app/Services/TransactionService.php",
     "tests/Feature/Bigcapital/TransactionPosterTest.php",
     "app/Http/Controllers/Marketing/Sync2allWebhookController.php",
-    "tests/Feature/Growth/UnsubscribeFlowTest.php"
+    "tests/Feature/Growth/UnsubscribeFlowTest.php",
+    "database/migrations/2026_08_06_000004_create_bank_statement_tables.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-06T21:50:20Z"
+  "updated_at": "2026-08-06T21:53:12Z"
 }
