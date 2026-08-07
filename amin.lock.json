@@ -5,8 +5,9 @@
     "docs/ai-learning-loop-phase0.md",
     "routes/auth.php",
     "app/Http/Controllers/Auth/VerifyEmailController.php",
-    "app/Http/Controllers/Auth/AuthenticatedSessionController.php"
+    "app/Http/Controllers/Auth/AuthenticatedSessionController.php",
+    "resources/js/Pages/Auth/Login.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-07T21:54:25Z"
+  "updated_at": "2026-08-07T21:55:09Z"
 }
