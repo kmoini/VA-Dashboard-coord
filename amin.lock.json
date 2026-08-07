@@ -18,8 +18,9 @@
     "resources/views/growth/flyer-pdf.blade.php",
     "resources/js/Pages/Growth/Index.jsx",
     "resources/js/Pages/Growth/Rewards.jsx",
-    "resources/js/Pages/Growth/AdminLeaderboard.jsx"
+    "resources/js/Pages/Growth/AdminLeaderboard.jsx",
+    "tests/Feature/Growth/AdvocateProgramTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-07T01:21:07Z"
+  "updated_at": "2026-08-07T01:23:19Z"
 }
