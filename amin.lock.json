@@ -6,8 +6,9 @@
     "app/Services/Books/BankStatementImporter.php",
     "app/Http/Controllers/BankStatementController.php",
     "app/Models/Campaign.php",
-    "app/Services/Marketing/ContactImportService.php"
+    "app/Services/Marketing/ContactImportService.php",
+    "app/Services/Marketing/Sync2allClient.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-07T01:45:47Z"
+  "updated_at": "2026-08-07T01:47:11Z"
 }
