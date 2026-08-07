@@ -6,8 +6,9 @@
     "app/Http/Controllers/Auth/EmailVerificationPromptController.php",
     "app/Models/User.php",
     "app/Services/RegistrationService.php",
-    "tests/Feature/Auth/EmailVerificationTest.php"
+    "tests/Feature/Auth/EmailVerificationTest.php",
+    "app/Http/Controllers/Auth/RegisteredUserController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-07T22:02:30Z"
+  "updated_at": "2026-08-07T22:04:29Z"
 }
