@@ -9,8 +9,9 @@
     "app/Services/Marketing/ContactImportService.php",
     "app/Services/Marketing/Sync2allClient.php",
     "tests/Feature/Bigcapital/BankStatementTest.php",
-    "app/Services/Marketing/CampaignDispatchService.php"
+    "app/Services/Marketing/CampaignDispatchService.php",
+    "app/Jobs/Marketing/SendCampaignVoiceBlastJob.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-07T01:48:04Z"
+  "updated_at": "2026-08-07T01:49:40Z"
 }
