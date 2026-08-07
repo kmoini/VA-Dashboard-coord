@@ -15,8 +15,9 @@
     "app/Http/Controllers/Marketing/GrowthCenterController.php",
     "app/Http/Controllers/Marketing/RewardController.php",
     "routes/web.php",
-    "resources/views/growth/flyer-pdf.blade.php"
+    "resources/views/growth/flyer-pdf.blade.php",
+    "resources/js/Pages/Growth/Index.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-07T01:07:25Z"
+  "updated_at": "2026-08-07T01:11:54Z"
 }
