@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "resources/js/Pages/Auth/VerifyEmail.jsx",
-    "app/Http/Controllers/Auth/EmailVerificationPromptController.php"
+    "app/Http/Controllers/Auth/EmailVerificationPromptController.php",
+    "app/Models/User.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-07T21:59:29Z"
+  "updated_at": "2026-08-07T22:00:11Z"
 }
