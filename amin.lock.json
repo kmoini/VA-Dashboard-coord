@@ -15,8 +15,9 @@
     "resources/js/Pages/Growth/Campaigns/Create.jsx",
     "resources/js/Pages/Books/Index.jsx",
     "resources/js/Pages/Growth/Campaigns/Show.jsx",
-    "tests/Feature/Growth/VoiceCampaignTest.php"
+    "tests/Feature/Growth/VoiceCampaignTest.php",
+    "docs/books-overhaul-test-guide-fa.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-07T02:06:10Z"
+  "updated_at": "2026-08-07T02:09:23Z"
 }
