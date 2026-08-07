@@ -10,8 +10,9 @@
     "app/Services/Marketing/Sync2allClient.php",
     "tests/Feature/Bigcapital/BankStatementTest.php",
     "app/Services/Marketing/CampaignDispatchService.php",
-    "app/Jobs/Marketing/SendCampaignVoiceBlastJob.php"
+    "app/Jobs/Marketing/SendCampaignVoiceBlastJob.php",
+    "app/Http/Controllers/Marketing/CampaignController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-07T01:52:34Z"
+  "updated_at": "2026-08-07T01:52:48Z"
 }
