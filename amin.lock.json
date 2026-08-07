@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "app/Services/ActivityLogService.php"
+    "app/Services/ActivityLogService.php",
+    "tests/Feature/Auth/EmailVerificationTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-07T22:12:51Z"
+  "updated_at": "2026-08-07T22:12:52Z"
 }
