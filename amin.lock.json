@@ -10,8 +10,9 @@
     "app/Services/Marketing/GrowthScoreService.php",
     "app/Services/NotificationService.php",
     "app/Models/ReferralSignUp.php",
-    "app/Console/Commands/DetectReferralRewards.php"
+    "app/Console/Commands/DetectReferralRewards.php",
+    "routes/console.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-07T01:01:24Z"
+  "updated_at": "2026-08-07T01:01:36Z"
 }
