@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: f6eeabb2-cfa9-43ba-812e-85520b1ecf22
-  modified: 2026-08-05T23:21:36.576Z
+  modified: 2026-08-07T02:15:12.308Z
 ---
 
 Full audit + build order: `va-dashboard2/docs/books-accounting-overhaul-plan.md`
@@ -40,6 +40,39 @@ Bigcapital org — commits 6cb7680, 5d5f047, 6df80b6, ef23902. Doc:
   default chart when the accountant brings their own coding, not clean it up.
 - Still unverified: `accountLedger()`'s real response shape (needs a bank account
   with posted transactions), and whether Bigcapital supports line-level tax.
+
+**Phases 2, 3 and 4 BUILT 2026-08-06, NOT tested, NOT deployed** — commits c06c598,
+29d653c, 0fbab98, f88e80a, 25e4e38. Persian end-to-end test guide:
+`docs/books-overhaul-test-guide-fa.md`. Prod owes `migrate --force` (4 migrations).
+- `TransactionPoster` posts an approved transaction to the ledger. Refuses rather
+  than guesses (account matched by number then EXACT name); idempotent via a
+  key derived from the transaction + unique index; un-approve writes a REVERSING
+  entry; a locked or tax-submitted period refuses the write (the period lock had
+  never gated anything before).
+- A bill books against A/P and its settlement clears A/P, so an invoice and its
+  receipt stop double-counting the cost. Control account found by TYPE, never name.
+- GST/HST splits onto its own line: input tax credit on purchases, liability on
+  sales. Tax account matched on a LIABILITY whose name names a tax.
+- `bank_statement_imports` / `bank_statement_lines` + `BankStatementImporter`
+  (finally calls the dead `BankCsvImporter`) + `BankLineMatcher`. Fingerprint
+  dedup so re-uploading a month is safe. Amount is a PRECONDITION not a signal;
+  two equally-good candidates are left for the human. Register UI in Books→Banking.
+- ⚠️ Correction to an earlier claim: `voidInvoice`/`voidBill` DO preserve the audit
+  trail — both capture the full document via `getInvoice`/`getBill` and log it with
+  the reason before deleting, and refuse when payments exist.
+
+**Phase 5 + OFX BUILT 2026-08-06** — commits cb58720, 98724ad, 7a4cc93, c6e37f4:
+vendor credits, credit notes, Set Credits on Pay Bill, A/R + A/P aging, the
+cash/accrual switch (basis now travels on `DateRange`), account search by number,
+and OFX/QFX statements (format detected from CONTENTS, not extension — OFX 1.x is
+SGML so a regex parser, not XML). Ships with the activity_logs CHECK widening for
+`BooksVendorCredit`/`BooksCreditNote`. 313 tests pass.
+⚠️ The credit and aging Bigcapital endpoints are NOT verified against a live server
+— same class of unknown that bit sub-accounts in Phase 0.
+
+**STILL NOT built:** PDF statements (needs an AiPromptCatalog entry), Tax Centre
+page, reconciliation auto-tick from matched lines, undeposited funds / bank
+deposit, deactivating unused default accounts.
 
 **Findings that cost real effort to derive — do not re-derive:**
 - `transactions` has NO link to the chart of accounts, no debit/credit line
