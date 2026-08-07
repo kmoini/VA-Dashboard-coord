@@ -1,26 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "resources/js/Pages/Books/Index.jsx",
-    "app/Http/Controllers/BooksController.php",
-    "database/migrations/2026_08_06_100001_create_referral_rewards_table.php",
-    "app/Models/ReferralReward.php",
-    "app/Services/Marketing/ReferralRewardService.php",
-    "app/Services/Marketing/GrowthScoreService.php",
-    "app/Services/NotificationService.php",
-    "app/Models/ReferralSignUp.php",
-    "app/Console/Commands/DetectReferralRewards.php",
-    "routes/console.php",
-    "app/Http/Controllers/Marketing/GrowthCenterController.php",
-    "app/Http/Controllers/Marketing/RewardController.php",
-    "routes/web.php",
-    "resources/views/growth/flyer-pdf.blade.php",
-    "resources/js/Pages/Growth/Index.jsx",
-    "resources/js/Pages/Growth/Rewards.jsx",
-    "resources/js/Pages/Growth/AdminLeaderboard.jsx",
-    "tests/Feature/Growth/AdvocateProgramTest.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-07T01:27:43Z"
+  "updated_at": "2026-08-07T01:36:52Z"
 }
