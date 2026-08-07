@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "resources/js/Pages/Auth/VerifyEmail.jsx"
+    "resources/js/Pages/Auth/VerifyEmail.jsx",
+    "app/Http/Controllers/Auth/EmailVerificationPromptController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-07T21:57:49Z"
+  "updated_at": "2026-08-07T21:58:58Z"
 }
