@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Observers/TransactionObserver.php",
     "tests/Feature/Intelligence/FeedbackCaptureTest.php",
-    "resources/js/Layouts/Components/Sidebar.jsx"
+    "resources/js/Layouts/Components/Sidebar.jsx",
+    "docs/ai-learning-loop-phase0.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-07T23:44:53Z"
+  "updated_at": "2026-08-07T23:45:07Z"
 }
