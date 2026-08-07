@@ -6,8 +6,9 @@
     "app/Http/Controllers/BooksController.php",
     "database/migrations/2026_08_06_000005_add_books_credits_to_activity_logs.php",
     "routes/web.php",
-    "app/Accounting/DTOs/DateRange.php"
+    "app/Accounting/DTOs/DateRange.php",
+    "tests/Feature/Bigcapital/BooksCreditsTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-07T00:22:16Z"
+  "updated_at": "2026-08-07T00:23:41Z"
 }
