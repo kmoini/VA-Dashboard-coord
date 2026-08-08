@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "resources/ai-prompts/assistant.voice-transaction.txt"
+    "resources/ai-prompts/assistant.voice-transaction.txt",
+    "app/Services/AiAssistantService.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-08T19:33:59Z"
+  "updated_at": "2026-08-08T19:34:52Z"
 }
