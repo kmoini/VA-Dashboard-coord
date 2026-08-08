@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Observers/TransactionObserver.php",
     "app/Services/CompanyIntelligenceService.php",
-    "database/migrations/2026_08_08_000002_create_intelligence_cycle_runs_table.php"
+    "database/migrations/2026_08_08_000002_create_intelligence_cycle_runs_table.php",
+    "app/Models/IntelligenceCycleRun.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-08T16:31:42Z"
+  "updated_at": "2026-08-08T16:32:19Z"
 }
