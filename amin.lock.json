@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "app/Observers/TransactionObserver.php"
+    "app/Observers/TransactionObserver.php",
+    "tests/Feature/Intelligence/FeedbackCaptureTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-08T04:11:18Z"
+  "updated_at": "2026-08-08T04:11:48Z"
 }
