@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "app/Services/IntercoMatchingService.php"
+    "app/Services/IntercoMatchingService.php",
+    "tests/Feature/MultiEntity/IntercoMatchingTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-08T04:38:27Z"
+  "updated_at": "2026-08-08T04:40:07Z"
 }
