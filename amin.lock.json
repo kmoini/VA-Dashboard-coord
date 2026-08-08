@@ -9,8 +9,9 @@
     "app/Console/Commands/RunIntelligenceCycle.php",
     "app/Http/Controllers/IntelligenceController.php",
     "tests/Feature/Intelligence/LoopHealthAndAccuracyTest.php",
-    "app/Services/FirmKnowledgeService.php"
+    "app/Services/FirmKnowledgeService.php",
+    "resources/js/Pages/Intelligence/Digest.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-08T16:50:42Z"
+  "updated_at": "2026-08-08T16:52:57Z"
 }
