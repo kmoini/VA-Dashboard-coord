@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Http/Controllers/BankReconciliationController.php",
     "tests/Feature/Bigcapital/BankReconciliationTest.php",
-    "resources/js/Pages/Books/Index.jsx"
+    "resources/js/Pages/Books/Index.jsx",
+    "app/Accounting/Countries/CanadaProfile.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-08T00:17:45Z"
+  "updated_at": "2026-08-08T00:20:49Z"
 }
