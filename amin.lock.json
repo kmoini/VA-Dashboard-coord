@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "app/Support/Numerals.php"
+    "app/Support/Numerals.php",
+    "app/Services/AiAssistantService.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-08T20:29:01Z"
+  "updated_at": "2026-08-08T20:30:01Z"
 }
