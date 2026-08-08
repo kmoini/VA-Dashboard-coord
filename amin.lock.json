@@ -1,18 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Http/Controllers/BankReconciliationController.php",
-    "tests/Feature/Bigcapital/BankReconciliationTest.php",
-    "resources/js/Pages/Books/Index.jsx",
-    "app/Accounting/Countries/CanadaProfile.php",
-    "app/Accounting/Countries/USProfile.php",
-    "app/Accounting/Countries/UKProfile.php",
-    "routes/web.php",
-    "app/Http/Controllers/BooksController.php",
-    "tests/Feature/Bigcapital/BooksCreditsTest.php",
-    "docs/books-overhaul-test-guide-fa.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-08T01:00:54Z"
+  "updated_at": "2026-08-08T01:15:29Z"
 }
