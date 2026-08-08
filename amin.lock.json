@@ -6,8 +6,9 @@
     "app/Services/AiAssistantService.php",
     "app/Services/AiPrompts/AiPromptCatalog.php",
     "app/Services/Gemini/VoiceCommandInterpreter.php",
-    "resources/ai-prompts/voice-command.interpret.txt"
+    "resources/ai-prompts/voice-command.interpret.txt",
+    "tests/Feature/Intelligence/StandingInstructionsTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-08T19:51:41Z"
+  "updated_at": "2026-08-08T19:53:34Z"
 }
