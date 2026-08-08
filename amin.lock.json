@@ -6,8 +6,9 @@
     "tests/Feature/Bigcapital/BankReconciliationTest.php",
     "resources/js/Pages/Books/Index.jsx",
     "app/Accounting/Countries/CanadaProfile.php",
-    "app/Accounting/Countries/USProfile.php"
+    "app/Accounting/Countries/USProfile.php",
+    "app/Accounting/Countries/UKProfile.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-08T00:22:46Z"
+  "updated_at": "2026-08-08T00:24:46Z"
 }
