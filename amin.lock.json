@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "resources/ai-prompts/assistant.voice-transaction.txt",
-    "app/Services/AiAssistantService.php"
+    "app/Services/AiAssistantService.php",
+    "app/Services/AiPrompts/AiPromptCatalog.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-08T19:34:52Z"
+  "updated_at": "2026-08-08T19:36:31Z"
 }
