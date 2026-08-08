@@ -9,8 +9,9 @@
     "app/Accounting/Countries/USProfile.php",
     "app/Accounting/Countries/UKProfile.php",
     "routes/web.php",
-    "app/Http/Controllers/BooksController.php"
+    "app/Http/Controllers/BooksController.php",
+    "tests/Feature/Bigcapital/BooksCreditsTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-08T00:42:29Z"
+  "updated_at": "2026-08-08T00:43:41Z"
 }
