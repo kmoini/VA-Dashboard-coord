@@ -5,8 +5,9 @@
     "database/migrations/2026_08_08_000001_add_intercompany_to_transactions.php",
     "app/Models/Transaction.php",
     "app/Accounting/Countries/CanadaProfile.php",
-    "app/Services/Books/TransactionPoster.php"
+    "app/Services/Books/TransactionPoster.php",
+    "app/Services/TransactionService.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-08T03:11:20Z"
+  "updated_at": "2026-08-08T03:14:38Z"
 }
