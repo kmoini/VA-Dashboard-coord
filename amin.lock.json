@@ -6,8 +6,9 @@
     "resources/ai-prompts/document-extraction.batch.txt",
     "app/Services/Documents/DocumentRole.php",
     "app/Services/Documents/DocumentRoleDetector.php",
-    "app/Services/Gemini/DocumentAiExtractor.php"
+    "app/Services/Gemini/DocumentAiExtractor.php",
+    "database/migrations/2026_08_09_000001_add_document_role_and_triage_to_attachments.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-09T21:47:28Z"
+  "updated_at": "2026-08-09T21:49:13Z"
 }
