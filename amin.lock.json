@@ -9,8 +9,9 @@
     "app/Services/Gemini/DocumentAiExtractor.php",
     "database/migrations/2026_08_09_000001_add_document_role_and_triage_to_attachments.php",
     "app/Models/Attachment.php",
-    "app/Services/Gemini/DocumentAiIngestService.php"
+    "app/Services/Gemini/DocumentAiIngestService.php",
+    "app/Jobs/ExtractDocumentTransactionsJob.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-09T22:07:40Z"
+  "updated_at": "2026-08-09T22:07:58Z"
 }
