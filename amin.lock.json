@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "config/services.php"
+    "config/services.php",
+    "app/Services/AiAssistantService.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-09T18:47:15Z"
+  "updated_at": "2026-08-09T19:06:09Z"
 }
