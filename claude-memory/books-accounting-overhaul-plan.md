@@ -1,12 +1,23 @@
 ---
 name: books-accounting-overhaul-plan
-description: "LOCKED 2026-08-04 six-phase plan to make Books/Record-Keeping/Document-Hub a real double-entry system (accountant's 9 requirements). PLAN ONLY, nothing built. Read before touching Books, transactions posting, chart of accounts, bank statements or reconciliation."
+description: "SHIPPED to production 2026-08-08 — the whole accounting overhaul (phases 0-5 + inter-company). Books is HIDDEN from clients pending Amin's sign-off. Full record: va-dashboard2/docs/books-accounting-overhaul-record.md. Read before touching Books, transaction posting, chart of accounts, bank statements, reconciliation or inter-company."
 metadata: 
   node_type: memory
   type: project
   originSessionId: f6eeabb2-cfa9-43ba-812e-85520b1ecf22
-  modified: 2026-08-07T02:15:12.308Z
+  modified: 2026-08-09T02:39:35.332Z
 ---
+
+**SHIPPED 2026-08-08.** Everything below was built and is on production. The record of
+what was actually built, why decisions changed, and what is still open:
+`va-dashboard2/docs/books-accounting-overhaul-record.md`. Test script (Persian):
+`docs/books-overhaul-test-guide-fa.md`. checkpoint-211 covers phases 0-5; commits
+4d10b04, e6f49dd, a71c84f, 8c6603c landed after it.
+
+⚠️ **Books is hidden from clients** — both sidebar entries are `platformOnly` until
+Amin signs off. Restore `minLevel: 3` in `Sidebar.jsx` afterwards.
+⚠️ **Credit / aging / tax Bigcapital endpoints have NEVER run against a live server.**
+Request shapes came from docs. Same class of unknown that bit sub-accounts in phase 0.
 
 Full audit + build order: `va-dashboard2/docs/books-accounting-overhaul-plan.md`
 (checkpoint-205, commit b300a91). Driven by Amin's company accountant reviewing
