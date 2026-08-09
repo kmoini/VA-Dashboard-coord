@@ -16,8 +16,9 @@
     "routes/web.php",
     "app/Http/Controllers/TransactionsController.php",
     "app/Console/Commands/DocumentAiClearCache.php",
-    "resources/js/Components/TransactionsTable.jsx"
+    "resources/js/Components/TransactionsTable.jsx",
+    "resources/js/Components/DocumentTriageDrawer.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-09T22:32:32Z"
+  "updated_at": "2026-08-09T22:56:00Z"
 }
