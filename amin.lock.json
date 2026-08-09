@@ -11,8 +11,9 @@
     "app/Models/Attachment.php",
     "app/Services/Gemini/DocumentAiIngestService.php",
     "app/Jobs/ExtractDocumentTransactionsJob.php",
-    "app/Jobs/PollDocumentAiBatchesJob.php"
+    "app/Jobs/PollDocumentAiBatchesJob.php",
+    "app/Http/Controllers/DocumentTriageController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-09T22:08:47Z"
+  "updated_at": "2026-08-09T22:14:13Z"
 }
