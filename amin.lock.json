@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "app/Services/LearnedPreferenceService.php"
+    "app/Services/LearnedPreferenceService.php",
+    "tests/Feature/Intelligence/LearnedPreferenceTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-09T00:50:16Z"
+  "updated_at": "2026-08-09T00:51:31Z"
 }
