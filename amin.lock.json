@@ -19,8 +19,9 @@
     "resources/js/Components/TransactionsTable.jsx",
     "resources/js/Components/DocumentTriageDrawer.jsx",
     "resources/js/Pages/Transactions/Index.jsx",
-    "tests/Unit/DocumentRoleDetectorTest.php"
+    "tests/Unit/DocumentRoleDetectorTest.php",
+    "tests/Feature/DocumentTriageTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-10T00:34:22Z"
+  "updated_at": "2026-08-10T00:38:57Z"
 }
