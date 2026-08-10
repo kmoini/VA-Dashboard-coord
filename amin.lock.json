@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "vite.config.js"
+    "vite.config.js",
+    "app/Console/Commands/PruneViteBuild.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-10T15:12:07Z"
+  "updated_at": "2026-08-10T15:12:58Z"
 }
