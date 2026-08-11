@@ -1,12 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "resources/ai-prompts/document-extraction.extract.txt",
-    "resources/ai-prompts/document-extraction.batch.txt",
-    "database/migrations/2026_08_11_000003_publish_settlement_currency_prompts.php",
-    "tests/Feature/PromptPublishGuardTest.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-11T17:08:54Z"
+  "updated_at": "2026-08-11T17:50:11Z"
 }
