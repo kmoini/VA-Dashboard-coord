@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "resources/js/Pages/Settings/Index.jsx",
-    "tests/Feature/Auth/PhoneSignInTest.php"
+    "tests/Feature/Auth/PhoneSignInTest.php",
+    "docs/phone-signin-phase0.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-11T23:20:26Z"
+  "updated_at": "2026-08-11T23:45:34Z"
 }
