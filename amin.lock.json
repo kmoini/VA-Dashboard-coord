@@ -1,13 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "tests/Feature/GifiVocabularyCoverageTest.php",
-    "app/Accounting/GifiReference.php",
-    "database/migrations/2026_08_11_000001_reseed_gifi_keywords_subcontractors.php",
-    "database/migrations/2026_08_11_000002_publish_document_role_prompts.php",
-    "docs/document-role-and-triage.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-11T05:53:35Z"
+  "updated_at": "2026-08-11T15:17:54Z"
 }
