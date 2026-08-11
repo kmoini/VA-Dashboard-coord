@@ -5,8 +5,9 @@
     "tests/Feature/GifiVocabularyCoverageTest.php",
     "app/Accounting/GifiReference.php",
     "database/migrations/2026_08_11_000001_reseed_gifi_keywords_subcontractors.php",
-    "database/migrations/2026_08_11_000002_publish_document_role_prompts.php"
+    "database/migrations/2026_08_11_000002_publish_document_role_prompts.php",
+    "docs/document-role-and-triage.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-11T05:38:00Z"
+  "updated_at": "2026-08-11T05:50:12Z"
 }
