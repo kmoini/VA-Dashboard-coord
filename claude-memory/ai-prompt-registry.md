@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: eafb3201-0d1c-4375-b764-d525833f5889
-  modified: 2026-07-27T16:10:02.484Z
+  modified: 2026-08-10T22:19:50.479Z
 ---
 
 Every LLM prompt in the dashboard is a versioned, admin-editable template rather than a
@@ -31,6 +31,29 @@ heredoc buried in a service is invisible, unversioned, and undeployable without 
 
 **How to apply:** NEVER add an AI prompt as a PHP heredoc, there is a test enforcing this.
 Add a catalog entry in `AiPromptCatalog` + a `resources/ai-prompts/{key}.txt` file, and
-render via `AiPromptRegistry`. After pulling this change: `php artisan migrate` (2 new
-migrations) + `npm run build`. Related: [[gemini-model-policy]],
+render via `AiPromptRegistry`.
+
+⚠️ **THE TRAP (cost a whole prod debugging session, 2026-08-10): editing the .txt file
+does NOT change production.** `AiPromptRegistry::activeContent()` resolves DB override
+FIRST and the shipped file is only a fallback. Every key someone has ever saved at
+`/admin/ai-instructions` has an active DB version, so a shipped prompt improvement is
+silently ignored on prod, forever, with no error. It bit checkpoint-221: the new
+`document_role` guidance shipped in the file, the JSON schema (PHP, so it DID deploy)
+forced the model to answer a field the prompt never explained, and the model guessed from
+the enum names. Result looked like "the AI is just wrong" — cheque copies and leases still
+booked, pay stubs correct by luck.
+
+**Check before assuming a prompt change is live:**
+`$r->overrideContent($key) !== null ? 'DATABASE' : 'file'` plus
+`str_contains($r->activeContent($key), '<your new text>')`.
+
+**To actually roll a file change out**, first prove the file is a superset of the DB
+version (compare line by line: no DB line missing from the file), then publish the file
+content as a NEW version with a real note:
+`$r->publish($key, $r->shippedContent($key), null, 'Refinement: ...')`.
+Do NOT use `resetToShipped()` casually: `document-extraction.extract` / `.batch` carry 11+
+deliberate refinements (v1-v11, each tied to a reported bug), and its note is a fixed
+"Reset to shipped default" that destroys the refinement trail this project relies on.
+
+Related: [[document-role-triage]], [[gemini-model-policy]],
 [[activity-log-entity-type-trap]], [[global-ai-assistant-agent]].
