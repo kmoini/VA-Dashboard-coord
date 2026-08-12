@@ -11,8 +11,9 @@
     "app/Models/User.php",
     "app/Http/Controllers/Settings/SettingsPhoneController.php",
     "app/Http/Controllers/TeamController.php",
-    "tests/Feature/Auth/PhoneIdentityTest.php"
+    "tests/Feature/Auth/PhoneIdentityTest.php",
+    "database/migrations/2026_08_11_000003_release_phone_numbers_of_deleted_users.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-12T02:02:16Z"
+  "updated_at": "2026-08-12T02:12:34Z"
 }
