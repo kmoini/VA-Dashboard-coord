@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Http/Controllers/Settings/SettingsPhoneController.php",
-    "app/Http/Middleware/HandleInertiaRequests.php"
+    "app/Http/Middleware/HandleInertiaRequests.php",
+    "app/Http/Controllers/SetupNoticeController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-12T20:06:49Z"
+  "updated_at": "2026-08-12T20:11:19Z"
 }
