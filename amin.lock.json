@@ -9,8 +9,9 @@
     "database/migrations/2026_08_11_000002_release_phone_numbers_of_deleted_users.php",
     "database/migrations/2026_08_11_000003_make_users_password_nullable.php",
     "app/Models/User.php",
-    "app/Http/Controllers/Settings/SettingsPhoneController.php"
+    "app/Http/Controllers/Settings/SettingsPhoneController.php",
+    "app/Http/Controllers/TeamController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-12T01:53:08Z"
+  "updated_at": "2026-08-12T01:55:03Z"
 }
