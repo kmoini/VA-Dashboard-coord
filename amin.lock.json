@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Http/Controllers/Marketing/ContactImportController.php",
     "app/Services/Marketing/ContactImportService.php",
-    "resources/js/Components/ContactImportWizard.jsx"
+    "resources/js/Components/ContactImportWizard.jsx",
+    "app/Http/Controllers/Marketing/GrowthCenterController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-12T22:56:28Z"
+  "updated_at": "2026-08-12T23:01:57Z"
 }
