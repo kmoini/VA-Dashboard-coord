@@ -5,8 +5,9 @@
     "resources/js/Pages/Settings/Index.jsx",
     "tests/Feature/Auth/PhoneSignInTest.php",
     "docs/phone-signin-phase0.md",
-    "database/migrations/2026_08_11_000001_add_phone_verified_at_to_users_table.php"
+    "database/migrations/2026_08_11_000001_add_phone_verified_at_to_users_table.php",
+    "database/migrations/2026_08_11_000002_release_phone_numbers_of_deleted_users.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-12T01:44:17Z"
+  "updated_at": "2026-08-12T01:46:22Z"
 }
