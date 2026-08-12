@@ -1,59 +1,69 @@
 ---
 name: document-role-triage
-description: "Cheque copies / pay stubs / quotes no longer become transactions — document_role gate + Record Keeping review drawer. Built 2026-08-09, NOT deployed. Read before extraction prompts, DocumentAiIngestService, or attachment triage."
+description: "SHIPPED cp-221/222/223 — document_role keeps cheque prints, pay stubs, quotes, contracts and CREDIT NOTES out of the ledger, plus the Record Keeping review drawer. Read before extraction prompts, DocumentAiIngestService, GIFI keywords, or attachment triage."
 metadata: 
   node_type: memory
   type: project
   originSessionId: 2cb1ed71-a29a-48cd-885e-2494e25660fc
-  modified: 2026-08-10T01:14:57.427Z
+  modified: 2026-08-11T15:34:10.769Z
 ---
 
-Built 2026-08-09 on `va-dashboard2`, **local only, NOT deployed**, awaiting Amin's
-manual test. Full record: `docs/document-role-and-triage.md`. Persian test guide:
-`docs/document-triage-test-guide-fa.md`.
+**SHIPPED to production 2026-08-10/11** as checkpoints 221, 222, 223. Full record:
+`va-dashboard2/docs/document-role-and-triage.md`. Persian test guide:
+`docs/document-triage-test-guide-fa.md`. Verified on prod with real client documents.
 
-**Root cause worth not re-deriving:** the extraction prompt itself said "a document
-with an amount and a vendor IS a transaction and MUST be extracted". So printed
-cheques, remittance stubs and pay slips each became a `pending` expense — double
-counting the invoice they settle. `TransactionDraftValidator` only ever rejected
-`amount <= 0`; there was no concept of "not a ledger event" anywhere in the code.
+**Root cause, do not re-derive:** the extraction prompt itself said "a document with an
+amount and a vendor IS a transaction and MUST be extracted". So cheque prints, pay slips
+and a 47-page lease each became a `pending` expense. `TransactionDraftValidator` only ever
+rejected `amount <= 0`; nothing in the code held the idea "not a ledger event".
 
-**Shape:** new top-level `document_role` on the extraction response schema (REQUIRED,
-enum) → `App\Services\Documents\DocumentRole`. Only `source_document` is postable;
-`payment_advice` / `payroll_document` / `supporting` / `non_financial` are held back.
-**`null` role is POSTABLE on purpose** (fail-open for old rows and unclassified paths).
-Second judge = `DocumentRoleDetector`, a deterministic keyword pass that can only move
-postable → non-postable (CHQ.#, "and 00/100 Dollars", "Amt. Paid", Net Pay + Total
-Gross, CPP + EI). Payroll is tested BEFORE cheque markers — a payroll cheque has both.
+**Shape:** top-level `document_role` on the extraction schema (REQUIRED, enum) →
+`App\Services\Documents\DocumentRole`. Postable: `source_document` only. Held back:
+`payment_advice`, `payroll_document`, `supporting`, `credit_note`, `non_financial`.
+⚠️ **NULL role is POSTABLE by design** (fail-open for old rows/unclassified paths).
+Second judge = `DocumentRoleDetector`, deterministic keywords, can only move postable →
+non-postable. Held-back docs are still fully READ (amount/date/party feed the drawer and
+"book it anyway"), auto-link to a matching entry via `findMatch`, and land in the Record
+Keeping "N documents, no entry" drawer (attach / book anyway / keep as document).
 
-**Traps solved (do not undo):**
-- The checksum replay (`tryReuseByChecksum`) has no model verdict and no text, so the
-  role is stored INSIDE `ai_extract_raw` and travels with the bytes. Without it a
-  re-uploaded cheque gets booked on the second upload.
-- Reading ≠ booking: held-back documents are still fully extracted, because the
-  amount/date/party is what makes the review queue actionable and what "book it
-  anyway" replays with no second Gemini call.
-- `holdBack()` runs `findMatch()` and AUTO-LINKS an unambiguous match, so a cheque for
-  an invoice already in the books never reaches a human.
-- New `ai_extract_status` value `not_a_transaction`, distinct from `no_transactions`
-  ("found no amount").
-- Audit uses entity_type `Attachment` + action `updated`, both already in the CHECK
-  allow-lists — no new value, see [[activity-log-entity-type-trap]].
-- Fixed in passing: `persistDrafts` called `pg_advisory_xact_lock` unguarded, making
-  the whole persist path untestable on the SQLite test connection.
+**⚠️⚠️ THE TRAP THAT COST A WHOLE SESSION:** editing `resources/ai-prompts/*.txt` does
+NOTHING on production — `AiPromptRegistry` resolves the DB override first, silently, no
+error. cp-221 shipped the prompt in the file while the schema (PHP) deployed, so the model
+was forced to answer a field nobody had explained and guessed from enum names. **Prompt
+changes now ship as a MIGRATION** (`2026_08_11_000002`, pattern from `2026_07_30_110000`).
+Never go back to file-only edits. See [[ai-prompt-registry]].
 
-**Amin's decisions 2026-08-09:** pay stubs are non-postable (any single-line reading of
-one is wrong); unpaid estimates non-postable but a PAID stamp / Balance Due 0.00 makes
-it a source document; the queue is scoped to client only, NEVER to the ledger's date
-filters; existing wrong transactions are NOT cleaned up (pre-launch, no real clients).
+**Same file-vs-DB shape for GIFI keywords:** they live in the `gifi_codes` TABLE seeded
+from `GifiReference` by migration. Editing the reference alone changes nothing.
 
-**Deploy owes:** `migrate --force`, `npm run build`, `optimize:clear` (5 new routes),
-`queue:restart`, and `php artisan document-ai:clear-cache` (the schema changed; stale
-cached readings would be replayed).
+**Other findings worth keeping:**
+- A negative total used to be resolved by FLIPPING THE DIRECTION: a −$282.44 Rogers credit
+  became $282.44 of **revenue**. Whole class (refunds, returns, vendor credits, reversed
+  fees). `credit_note` holds them; the ledger still cannot express a negative amount.
+- An ISSUED cheque (bank + MICR + "PAY TO THE ORDER OF" + signature) IS a source document;
+  a bare print/stub is `payment_advice`. Owner decision: for a payee who never invoices,
+  the cheque is the only record.
+- A cheque leaves `vendor` EMPTY (no merchant field), so the Payee column fell through to
+  `corporation_name` and showed the client's own company. Validator now fills vendor from
+  `to_party` (customer from `from_party`). Matters because `findMatch` keys on vendor.
+- `findMatch` has a 2nd pass on **invoice_number with no date window** — a cheque dated
+  2025-09-25 settling an invoice dated 11-MAY-2025 is 4 months outside the ±3-day window.
+- `GifiVocabularyCoverageTest` walks the prompt's whole P&L vocabulary against the GIFI
+  table. It found exactly ONE gap (9110 lacked the plural "subcontractors"), which also
+  means the rest of the vocabulary is sound.
+- Economy (Gemini Batch) is the DEFAULT upload mode, keeps NO document text, so the
+  keyword detector is inert there and only the model judges. It also had zero test
+  coverage, which is how a labelling bug shipped in it.
 
-⚠️ The suite has ~52 PRE-EXISTING failures in this checkout (`database/factories/`
-does not exist → `Class "Database\Factories\UserFactory" not found`, plus M2M,
-Bigcapital, Community, RuleEngine). 17 new tests pass. Don't chase those 52.
+**Still open:** `credit_note` and `payroll_document` have no posting path (Books phase 5
+already has `BooksVendorCredit`/`BooksCreditNote`; Payroll is unbuilt). A cheque with no
+line items can only be coded by guess — see the People-registry backlog,
+`docs/backlog-people-registry-and-cheque-rule.md` (Part 1 done, Part 2 open, 4 questions
+for Amin incl. a SIN/PII decision).
+
+⚠️ The suite has ~52 PRE-EXISTING failures in this checkout (`database/factories/` is
+missing → `Class "Database\Factories\UserFactory" not found`, plus M2M, Bigcapital,
+Community, RuleEngine). 27 tests for this feature pass. Don't chase those 52.
 
 Related: [[document-ai-pipeline]], [[ai-prompt-registry]], [[document-hub-folders]],
-[[books-accounting-overhaul-plan]], [[wait-for-user-test-before-deploy]].
+[[books-accounting-overhaul-plan]], [[checkpoint-rule]].
