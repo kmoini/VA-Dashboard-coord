@@ -1,7 +1,9 @@
 {
   "owner": "Amin",
-  "status": "idle",
-  "locked_files": [],
+  "status": "active",
+  "locked_files": [
+    "app/Http/Middleware/EnsureEmailIsVerifiedOrOperator.php"
+  ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-12T02:53:49Z"
+  "updated_at": "2026-08-12T03:03:41Z"
 }
