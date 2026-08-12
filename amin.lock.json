@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "app/Http/Controllers/Marketing/ContactImportController.php"
+    "app/Http/Controllers/Marketing/ContactImportController.php",
+    "app/Services/Marketing/ContactImportService.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-12T22:41:17Z"
+  "updated_at": "2026-08-12T22:45:35Z"
 }
