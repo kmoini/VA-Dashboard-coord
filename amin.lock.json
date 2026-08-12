@@ -1,15 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Http/Controllers/Auth/PasswordController.php",
-    "app/Http/Controllers/ClientPortalController.php",
-    "app/Services/SmsOtpService.php",
-    "resources/js/Pages/ClientPortal/Settings.jsx",
-    "resources/js/Components/PhoneRegisterForm.jsx",
-    "resources/js/Pages/Auth/PhoneRegister.jsx",
-    "resources/js/Components/PhoneLoginModal.jsx"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-12T18:37:27Z"
+  "updated_at": "2026-08-12T18:58:03Z"
 }
