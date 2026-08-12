@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Http/Middleware/EnsureEmailIsVerifiedOrOperator.php",
     "app/Services/PersonalWorkspaceService.php",
-    "app/Services/RegistrationService.php"
+    "app/Services/RegistrationService.php",
+    "app/Http/Controllers/Auth/PhoneAuthController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-12T03:18:15Z"
+  "updated_at": "2026-08-12T03:24:28Z"
 }
