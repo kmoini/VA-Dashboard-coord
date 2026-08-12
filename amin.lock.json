@@ -5,8 +5,9 @@
     "app/Http/Controllers/Marketing/ContactImportController.php",
     "app/Services/Marketing/ContactImportService.php",
     "resources/js/Components/ContactImportWizard.jsx",
-    "app/Http/Controllers/Marketing/GrowthCenterController.php"
+    "app/Http/Controllers/Marketing/GrowthCenterController.php",
+    "resources/js/Pages/Growth/Index.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-12T23:01:57Z"
+  "updated_at": "2026-08-12T23:05:41Z"
 }
