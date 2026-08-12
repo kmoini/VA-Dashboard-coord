@@ -8,8 +8,9 @@
     "app/Http/Controllers/Auth/PhoneAuthController.php",
     "app/Services/PhoneRegistrationTicket.php",
     "app/Http/Controllers/Auth/PhoneRegistrationController.php",
-    "routes/auth.php"
+    "routes/auth.php",
+    "app/Http/Controllers/ProfileController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-12T03:47:30Z"
+  "updated_at": "2026-08-12T03:49:07Z"
 }
