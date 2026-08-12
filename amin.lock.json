@@ -1,25 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Http/Middleware/EnsureEmailIsVerifiedOrOperator.php",
-    "app/Services/PersonalWorkspaceService.php",
-    "app/Services/RegistrationService.php",
-    "app/Http/Controllers/Auth/PhoneAuthController.php",
-    "app/Services/PhoneRegistrationTicket.php",
-    "app/Http/Controllers/Auth/PhoneRegistrationController.php",
-    "routes/auth.php",
-    "app/Http/Controllers/ProfileController.php",
-    "routes/web.php",
-    "resources/js/Pages/Auth/PhoneRegister.jsx",
-    "resources/js/Components/PhoneLoginModal.jsx",
-    "resources/js/Pages/Auth/PhoneLogin.jsx",
-    "tests/Feature/Auth/PhoneRegistrationTest.php",
-    "app/Http/Middleware/HandleInertiaRequests.php",
-    "resources/js/Pages/Profile/Partials/DeleteUserForm.jsx",
-    "resources/js/Pages/Settings/Index.jsx",
-    "docs/phone-signin-phase2.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-12T05:02:12Z"
+  "updated_at": "2026-08-12T05:09:46Z"
 }
