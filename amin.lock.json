@@ -1,22 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Http/Controllers/Marketing/ContactImportController.php",
-    "app/Services/Marketing/ContactImportService.php",
-    "resources/js/Components/ContactImportWizard.jsx",
-    "app/Http/Controllers/Marketing/GrowthCenterController.php",
-    "resources/js/Pages/Growth/Index.jsx",
-    "app/Http/Controllers/Marketing/CampaignController.php",
-    "resources/js/Pages/Growth/Campaigns/Create.jsx",
-    "resources/views/growth/flyer-pdf.blade.php",
-    "resources/js/Pages/Growth/Templates.jsx",
-    "app/Http/Controllers/Settings/SettingsPhoneController.php",
-    "resources/js/Pages/Settings/Index.jsx",
-    "resources/js/Pages/Referral/Accept.jsx",
-    "tests/Feature/Growth/ContactImportTest.php",
-    "resources/js/Components/PhoneEnrollModal.jsx"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-12T23:57:54Z"
+  "updated_at": "2026-08-12T23:58:01Z"
 }
