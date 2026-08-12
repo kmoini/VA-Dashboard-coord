@@ -11,8 +11,9 @@
     "resources/js/Layouts/AuthenticatedLayout.jsx",
     "resources/js/Pages/Settings/Index.jsx",
     "resources/js/Pages/ClientPortal/Settings.jsx",
-    "tests/Feature/Auth/SetupCompletionTest.php"
+    "tests/Feature/Auth/SetupCompletionTest.php",
+    "docs/phone-signin-phase4-5.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-12T21:49:29Z"
+  "updated_at": "2026-08-12T22:03:23Z"
 }
