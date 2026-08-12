@@ -13,8 +13,9 @@
     "routes/web.php",
     "resources/js/Pages/Auth/PhoneRegister.jsx",
     "resources/js/Components/PhoneLoginModal.jsx",
-    "resources/js/Pages/Auth/PhoneLogin.jsx"
+    "resources/js/Pages/Auth/PhoneLogin.jsx",
+    "tests/Feature/Auth/PhoneRegistrationTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-12T04:12:58Z"
+  "updated_at": "2026-08-12T04:16:31Z"
 }
