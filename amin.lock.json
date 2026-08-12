@@ -8,8 +8,9 @@
     "database/migrations/2026_08_11_000001_add_phone_verified_at_to_users_table.php",
     "database/migrations/2026_08_11_000002_release_phone_numbers_of_deleted_users.php",
     "database/migrations/2026_08_11_000003_make_users_password_nullable.php",
-    "app/Models/User.php"
+    "app/Models/User.php",
+    "app/Http/Controllers/Settings/SettingsPhoneController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-12T01:51:06Z"
+  "updated_at": "2026-08-12T01:51:47Z"
 }
