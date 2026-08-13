@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "app/Http/Requests/Auth/LoginRequest.php"
+    "app/Http/Requests/Auth/LoginRequest.php",
+    "resources/js/Pages/Auth/Login.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-13T02:19:51Z"
+  "updated_at": "2026-08-13T02:24:28Z"
 }
