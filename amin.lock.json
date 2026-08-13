@@ -7,8 +7,9 @@
     "routes/web.php",
     "app/Services/Marketing/CampaignEmailRenderer.php",
     "app/Jobs/Marketing/SendCampaignEmailJob.php",
-    "app/Jobs/Marketing/SendCampaignSmsBlastJob.php"
+    "app/Jobs/Marketing/SendCampaignSmsBlastJob.php",
+    "app/Http/Controllers/Marketing/RewardController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-13T00:30:49Z"
+  "updated_at": "2026-08-13T00:31:48Z"
 }
