@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "config/filesystems.php"
+    "config/filesystems.php",
+    "app/Http/Controllers/Marketing/IdentityController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-13T00:26:13Z"
+  "updated_at": "2026-08-13T00:27:09Z"
 }
