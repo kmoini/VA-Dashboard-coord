@@ -5,8 +5,9 @@
     "app/Http/Controllers/Marketing/IdentityController.php",
     "resources/js/Pages/Growth/Identity.jsx",
     "app/Services/Marketing/CampaignEmailRenderer.php",
-    "app/Jobs/Marketing/SendCampaignEmailJob.php"
+    "app/Jobs/Marketing/SendCampaignEmailJob.php",
+    "app/Console/Commands/PreviewCampaignEmail.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-13T23:15:43Z"
+  "updated_at": "2026-08-13T23:17:47Z"
 }
