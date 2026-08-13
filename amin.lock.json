@@ -20,8 +20,9 @@
     "resources/js/Pages/Growth/Identity.jsx",
     "resources/js/Pages/Growth/Index.jsx",
     "resources/js/Pages/Growth/Campaigns/Create.jsx",
-    "tests/Feature/Growth/IdentityAndStudioTest.php"
+    "tests/Feature/Growth/IdentityAndStudioTest.php",
+    "resources/js/Pages/Auth/VerifyEmail.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-13T01:20:52Z"
+  "updated_at": "2026-08-13T01:21:08Z"
 }
