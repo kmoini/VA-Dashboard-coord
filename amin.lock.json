@@ -18,8 +18,9 @@
     "app/Services/Marketing/MarketingPostGenerator.php",
     "app/Http/Controllers/Marketing/PostStudioController.php",
     "resources/js/Pages/Growth/Identity.jsx",
-    "resources/js/Pages/Growth/Index.jsx"
+    "resources/js/Pages/Growth/Index.jsx",
+    "resources/js/Pages/Growth/Campaigns/Create.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-13T00:59:26Z"
+  "updated_at": "2026-08-13T01:02:20Z"
 }
