@@ -11,8 +11,9 @@
     "app/Http/Controllers/Marketing/RewardController.php",
     "resources/views/growth/flyer-pdf.blade.php",
     "app/Http/Controllers/Marketing/CampaignController.php",
-    "resources/ai-prompts/marketing-post.generate.txt"
+    "resources/ai-prompts/marketing-post.generate.txt",
+    "database/migrations/2026_08_06_120002_publish_marketing_post_prompt.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-13T00:36:22Z"
+  "updated_at": "2026-08-13T00:36:43Z"
 }
