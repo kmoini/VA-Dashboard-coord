@@ -1,12 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Http/Requests/Auth/LoginRequest.php",
-    "resources/js/Pages/Auth/Login.jsx",
-    "tests/Feature/Auth/PhoneRegistrationTest.php",
-    "app/Console/Commands/PreviewCampaignEmail.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-13T02:33:40Z"
+  "updated_at": "2026-08-13T02:40:17Z"
 }
