@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "app/Services/Marketing/TemplateRenderer.php"
+    "app/Services/Marketing/TemplateRenderer.php",
+    "app/Jobs/Marketing/SendCampaignSmsBlastJob.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-13T19:40:23Z"
+  "updated_at": "2026-08-13T19:46:34Z"
 }
