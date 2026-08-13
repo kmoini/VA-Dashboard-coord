@@ -9,8 +9,9 @@
     "app/Jobs/Marketing/SendCampaignEmailJob.php",
     "app/Jobs/Marketing/SendCampaignSmsBlastJob.php",
     "app/Http/Controllers/Marketing/RewardController.php",
-    "resources/views/growth/flyer-pdf.blade.php"
+    "resources/views/growth/flyer-pdf.blade.php",
+    "app/Http/Controllers/Marketing/CampaignController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-13T00:33:29Z"
+  "updated_at": "2026-08-13T00:33:40Z"
 }
