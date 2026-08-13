@@ -1,29 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "config/filesystems.php",
-    "app/Http/Controllers/Marketing/IdentityController.php",
-    "routes/web.php",
-    "app/Services/Marketing/CampaignEmailRenderer.php",
-    "app/Jobs/Marketing/SendCampaignEmailJob.php",
-    "app/Jobs/Marketing/SendCampaignSmsBlastJob.php",
-    "app/Http/Controllers/Marketing/RewardController.php",
-    "resources/views/growth/flyer-pdf.blade.php",
-    "app/Http/Controllers/Marketing/CampaignController.php",
-    "resources/ai-prompts/marketing-post.generate.txt",
-    "database/migrations/2026_08_06_120002_publish_marketing_post_prompt.php",
-    "app/Services/AiPrompts/AiPromptCatalog.php",
-    "app/Services/Ai/AiFeature.php",
-    "app/Services/Marketing/MarketingPostGenerator.php",
-    "app/Http/Controllers/Marketing/PostStudioController.php",
-    "resources/js/Pages/Growth/Identity.jsx",
-    "resources/js/Pages/Growth/Index.jsx",
-    "resources/js/Pages/Growth/Campaigns/Create.jsx",
-    "tests/Feature/Growth/IdentityAndStudioTest.php",
-    "resources/js/Pages/Auth/VerifyEmail.jsx",
-    "resources/js/Pages/ClientPortal/Settings.jsx"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-13T01:29:47Z"
+  "updated_at": "2026-08-13T01:30:32Z"
 }
