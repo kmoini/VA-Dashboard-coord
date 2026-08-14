@@ -1,13 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Http/Controllers/Marketing/IdentityController.php",
-    "resources/js/Pages/Growth/Identity.jsx",
-    "app/Services/Marketing/CampaignEmailRenderer.php",
-    "app/Jobs/Marketing/SendCampaignEmailJob.php",
-    "app/Console/Commands/PreviewCampaignEmail.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-13T23:21:43Z"
+  "updated_at": "2026-08-14T00:01:32Z"
 }
