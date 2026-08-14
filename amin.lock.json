@@ -10,8 +10,9 @@
     "app/Jobs/Marketing/SendCampaignSmsBlastJob.php",
     "app/Http/Controllers/Marketing/NumberController.php",
     "routes/web.php",
-    "resources/js/Pages/Growth/Number.jsx"
+    "resources/js/Pages/Growth/Number.jsx",
+    "tests/Feature/Growth/DedicatedNumberTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-14T22:04:17Z"
+  "updated_at": "2026-08-14T22:10:48Z"
 }
