@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Models/MarketingNumber.php",
-    "config/marketing.php"
+    "config/marketing.php",
+    "app/Services/Marketing/Sync2allClient.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-14T21:32:17Z"
+  "updated_at": "2026-08-14T21:34:16Z"
 }
