@@ -5,8 +5,9 @@
     "app/Models/MarketingNumber.php",
     "config/marketing.php",
     "app/Services/Marketing/Sync2allClient.php",
-    "app/Services/Marketing/NumberBillingService.php"
+    "app/Services/Marketing/NumberBillingService.php",
+    "app/Http/Controllers/StripeWebhookController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-14T21:40:08Z"
+  "updated_at": "2026-08-14T21:47:44Z"
 }
