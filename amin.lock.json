@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Jobs/Marketing/SendCampaignSmsBlastJob.php",
     "app/Services/Marketing/CampaignDispatchService.php",
-    "app/Http/Controllers/Marketing/CampaignController.php"
+    "app/Http/Controllers/Marketing/CampaignController.php",
+    "resources/js/Pages/Growth/Campaigns/Create.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-14T01:49:56Z"
+  "updated_at": "2026-08-14T01:55:27Z"
 }
