@@ -9,8 +9,9 @@
     "routes/web.php",
     "database/migrations/2026_08_15_100001_create_connection_events_table.php",
     "app/Models/ConnectionEvent.php",
-    "app/Services/Privacy/ThirdPartyCredentialRevoker.php"
+    "app/Services/Privacy/ThirdPartyCredentialRevoker.php",
+    "app/Services/QuickBooksService.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-15T20:01:57Z"
+  "updated_at": "2026-08-15T20:02:39Z"
 }
