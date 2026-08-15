@@ -1,25 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Http/Controllers/Marketing/NumberController.php",
-    "app/Http/Controllers/Marketing/AdminSettingsController.php",
-    "app/Jobs/Marketing/ProbeNumberCountriesJob.php",
-    "routes/console.php",
-    "routes/web.php",
-    "database/migrations/2026_08_15_100001_create_connection_events_table.php",
-    "app/Models/ConnectionEvent.php",
-    "app/Services/Privacy/ThirdPartyCredentialRevoker.php",
-    "app/Services/QuickBooksService.php",
-    "resources/js/Pages/Growth/AdminSettings.jsx",
-    "app/Jobs/RevokeThirdPartyCredentialsJob.php",
-    "app/Services/Privacy/AccountClosureService.php",
-    "app/Http/Controllers/ProfileController.php",
-    "app/Http/Controllers/ClientPortalController.php",
-    "app/Http/Controllers/EmailConnectionController.php",
-    "app/Http/Controllers/QuickBooksController.php",
-    "tests/Feature/Privacy/CredentialRevocationTest.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-15T20:08:56Z"
+  "updated_at": "2026-08-15T20:19:02Z"
 }
