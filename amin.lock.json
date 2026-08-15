@@ -13,8 +13,9 @@
     "app/Services/QuickBooksService.php",
     "resources/js/Pages/Growth/AdminSettings.jsx",
     "app/Jobs/RevokeThirdPartyCredentialsJob.php",
-    "app/Services/Privacy/AccountClosureService.php"
+    "app/Services/Privacy/AccountClosureService.php",
+    "app/Http/Controllers/ProfileController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-15T20:03:44Z"
+  "updated_at": "2026-08-15T20:04:12Z"
 }
