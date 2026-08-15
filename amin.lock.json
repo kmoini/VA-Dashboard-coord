@@ -7,8 +7,9 @@
     "app/Jobs/Marketing/ProbeNumberCountriesJob.php",
     "routes/console.php",
     "routes/web.php",
-    "database/migrations/2026_08_15_100001_create_connection_events_table.php"
+    "database/migrations/2026_08_15_100001_create_connection_events_table.php",
+    "app/Models/ConnectionEvent.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-15T19:59:32Z"
+  "updated_at": "2026-08-15T19:59:58Z"
 }
