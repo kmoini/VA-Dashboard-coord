@@ -7,8 +7,9 @@
     "setup-community-v2.ps1",
     "docs/privacy-audit-2026-08/02-retention-register.md",
     "app/Services/Marketing/NumberPricing.php",
-    "docs/privacy-audit-2026-08/03-user-facing-deletion-copy.md"
+    "docs/privacy-audit-2026-08/03-user-facing-deletion-copy.md",
+    "docs/privacy-audit-2026-08/04-token-revocation-plan.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-15T16:58:02Z"
+  "updated_at": "2026-08-15T16:59:05Z"
 }
