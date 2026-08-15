@@ -1,18 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Models/MarketingNumber.php",
-    "config/marketing.php",
-    "app/Services/Marketing/Sync2allClient.php",
-    "app/Services/Marketing/NumberBillingService.php",
-    "app/Http/Controllers/StripeWebhookController.php",
-    "app/Jobs/Marketing/SendCampaignSmsBlastJob.php",
-    "app/Http/Controllers/Marketing/NumberController.php",
-    "routes/web.php",
-    "resources/js/Pages/Growth/Number.jsx",
-    "tests/Feature/Growth/DedicatedNumberTest.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-15T15:29:45Z"
+  "updated_at": "2026-08-15T15:31:51Z"
 }
