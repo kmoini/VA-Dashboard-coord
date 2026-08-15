@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Services/Marketing/Sync2allClient.php",
     "app/Http/Controllers/Marketing/NumberController.php",
-    "docs/privacy-audit-2026-08/00-scope-and-method.md"
+    "docs/privacy-audit-2026-08/00-scope-and-method.md",
+    "docs/privacy-audit-2026-08/01-dashboard-findings.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-15T15:51:00Z"
+  "updated_at": "2026-08-15T15:54:02Z"
 }
