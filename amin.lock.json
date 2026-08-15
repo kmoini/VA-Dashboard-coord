@@ -5,8 +5,9 @@
     "resources/js/Pages/Growth/Number.jsx",
     "app/Services/Gemini/GeminiClient.php",
     "app/Services/Gemini/DocumentAiExtractor.php",
-    "app/Services/Gemini/VoiceCommandInterpreter.php"
+    "app/Services/Gemini/VoiceCommandInterpreter.php",
+    "app/Services/Documents/DocumentClassifier.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-15T20:46:32Z"
+  "updated_at": "2026-08-15T20:47:27Z"
 }
