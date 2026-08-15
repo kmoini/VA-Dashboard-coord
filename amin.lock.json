@@ -5,8 +5,9 @@
     "app/Http/Controllers/Marketing/AdminSettingsController.php",
     "app/Models/PlatformSetting.php",
     "resources/js/Pages/Growth/AdminSettings.jsx",
-    "resources/js/Pages/Growth/Number.jsx"
+    "resources/js/Pages/Growth/Number.jsx",
+    "app/Http/Controllers/Marketing/NumberController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-15T17:41:08Z"
+  "updated_at": "2026-08-15T18:46:53Z"
 }
