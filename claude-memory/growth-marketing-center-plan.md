@@ -5,10 +5,12 @@ metadata:
   node_type: memory
   type: project
   originSessionId: f15acdf7-3df5-4965-883a-7b62cd86273c
-  modified: 2026-08-15T04:11:57.623Z
+  modified: 2026-08-15T21:11:40.800Z
 ---
 
 Plan agreed with Amin 2026-08-05 (from colleague's 6-point "accountants as marketing partners" doc). Build order 1→2→3→4 mandatory; phases 5-6 flexible.
+
+**NUMBERS SAGA CLOSED 2026-08-15 (final commits 2f32a10, 0c2088c — both sides ack'd, nothing outstanding)**: definitive account picture — BUYABLE 13: local+tollfree US/CA/PR/VI (all four NANP, area-code search works — engine applies national_destination_code for ANY country, so prefix filtering outside NANP is a future UI-only change), mobile-only AU/BE/BR/LT/NL/PL/ZA/SE/GB; NOT BUYABLE: FI/IE/MX/TH (Kamyar to enable in Telnyx portal — account verification not code); DE permanently impossible (Telnyx sells no SMS-capable numbers there — tell whoever opens the portal). Probe cache VERSIONED (Sync2allClient::countryTypesCacheKey, v2 — value-shape change had made stale prod cache read as all-unbuyable incl. verified GB/SE); ProbeNumberCountriesJob sweeps all countries daily 05:10 + "Refresh country data" button on Growth Settings (each probe ~8s Telnyx-live, hence background); admin grid shows carrier ~cost → computed charge per country, unbuyables greyed; buy-page selector greys "— unavailable" dynamically, NOTHING hardcoded. ⚠️ lesson recorded twice now: staged-list check before commit (flarum.env sweep) + optimize:clear after every deploy with new routes.
 
 **NUMBERS INTERNATIONAL FINAL 2026-08-15 (commits bc7297c→0e586c2, 65/65 tests, deployed)**: cost-plus pricing GLOBAL (per-number: max(floor, multiplier×telnyx cost) rounded up to $, quoted server-side 1h, checkout quote-only — client never sends price); platform-admin runtime settings at /growth/admin/settings (email caps ×3 + number floors ×2 + multiplier; PlatformSetting KV w/ forever-cache + config fallback; Growth Settings button added to operator toolbar in PlatformSwitcher.jsx); engine item-23 final shape integrated: empty inventory = 200 + emptyReasonCode (10031 filter-empty→[], 10015→no-coverage msg), per-country buyable types via /numbers/countries/:code (GB/SE mobile-only, DE unbuyable) — portal /growth/number/country-types (cached 6h) gates the type buttons, mobile/national types supported end-to-end. ⚠️ remind Amin: optimize:clear after EVERY deploy with new routes (bit him twice).
 
