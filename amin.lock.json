@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Models/ReferralToken.php",
     "resources/views/app.blade.php",
-    "routes/web.php"
+    "routes/web.php",
+    "app/Http/Controllers/Marketing/GrowthCenterController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-19T21:35:02Z"
+  "updated_at": "2026-08-19T21:38:58Z"
 }
