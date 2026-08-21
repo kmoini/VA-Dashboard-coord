@@ -4,8 +4,9 @@
   "locked_files": [
     "tests/Feature/Growth/IdentityAndStudioTest.php",
     "tests/Feature/Growth/VoiceCampaignTest.php",
-    "tests/Feature/Growth/SmsCampaignTest.php"
+    "tests/Feature/Growth/SmsCampaignTest.php",
+    "database/migrations/2026_08_20_100001_create_marketing_usage_table.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-21T00:53:44Z"
+  "updated_at": "2026-08-21T01:00:17Z"
 }
