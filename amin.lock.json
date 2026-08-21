@@ -15,8 +15,9 @@
     "app/Http/Controllers/Marketing/CampaignController.php",
     "resources/js/Pages/Growth/Campaigns/Create.jsx",
     "app/Http/Controllers/Marketing/AdminSettingsController.php",
-    "resources/js/Pages/Growth/AdminSettings.jsx"
+    "resources/js/Pages/Growth/AdminSettings.jsx",
+    "tests/Feature/Growth/UsageMeterTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-21T01:13:52Z"
+  "updated_at": "2026-08-21T01:15:22Z"
 }
