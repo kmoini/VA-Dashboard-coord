@@ -18,8 +18,9 @@
     "resources/js/Pages/Growth/AdminSettings.jsx",
     "tests/Feature/Growth/UsageMeterTest.php",
     "tests/Feature/Growth/DedicatedNumberTest.php",
-    "app/Models/MarketingNumber.php"
+    "app/Models/MarketingNumber.php",
+    "app/Services/Marketing/NumberBillingService.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-21T01:26:31Z"
+  "updated_at": "2026-08-21T01:28:55Z"
 }
