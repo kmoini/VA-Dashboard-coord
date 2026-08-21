@@ -25,8 +25,9 @@
     "resources/js/Pages/Growth/Number.jsx",
     "app/Http/Controllers/Marketing/AdminUsageController.php",
     "resources/js/Pages/Growth/AdminUsage.jsx",
-    "resources/js/Layouts/Components/PlatformSwitcher.jsx"
+    "resources/js/Layouts/Components/PlatformSwitcher.jsx",
+    "tests/Feature/Growth/AdminUsageTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-21T01:39:41Z"
+  "updated_at": "2026-08-21T01:40:21Z"
 }
