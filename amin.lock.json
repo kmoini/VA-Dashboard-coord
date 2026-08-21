@@ -1,11 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Services/Marketing/NumberBillingService.php",
-    "routes/web.php",
-    "resources/js/Pages/Growth/Number.jsx"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-21T20:37:43Z"
+  "updated_at": "2026-08-21T21:14:28Z"
 }
