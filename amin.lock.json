@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Services/Marketing/NumberBillingService.php",
-    "routes/web.php"
+    "routes/web.php",
+    "resources/js/Pages/Growth/Number.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-21T20:23:23Z"
+  "updated_at": "2026-08-21T20:37:43Z"
 }
