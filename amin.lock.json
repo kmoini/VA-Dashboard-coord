@@ -9,8 +9,9 @@
     "app/Models/MarketingUsage.php",
     "app/Services/Marketing/UsageMeter.php",
     "config/marketing.php",
-    "app/Services/NotificationService.php"
+    "app/Services/NotificationService.php",
+    "app/Jobs/Marketing/SendCampaignSmsBlastJob.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-21T01:02:43Z"
+  "updated_at": "2026-08-21T01:03:48Z"
 }
