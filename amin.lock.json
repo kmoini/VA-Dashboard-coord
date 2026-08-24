@@ -1,9 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "resources/js/Pages/Growth/Number.jsx"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-24T17:08:24Z"
+  "updated_at": "2026-08-24T17:12:22Z"
 }
