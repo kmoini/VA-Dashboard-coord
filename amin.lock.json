@@ -6,8 +6,9 @@
     "resources/js/Pages/Growth/Campaigns/Create.jsx",
     "resources/js/Pages/Growth/Contacts.jsx",
     "tests/Feature/Growth/ShareComposerTest.php",
-    "docs/growth-marketing-center.md"
+    "docs/growth-marketing-center.md",
+    "docs/ai-learning-loop-handoff.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-25T17:57:21Z"
+  "updated_at": "2026-08-25T17:59:26Z"
 }
