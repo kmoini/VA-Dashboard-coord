@@ -7,8 +7,9 @@
     "resources/js/Pages/Growth/Contacts.jsx",
     "tests/Feature/Growth/ShareComposerTest.php",
     "docs/growth-marketing-center.md",
-    "docs/ai-learning-loop-handoff.md"
+    "docs/ai-learning-loop-handoff.md",
+    "docs/phone-authentication.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-25T17:59:26Z"
+  "updated_at": "2026-08-25T18:04:56Z"
 }
