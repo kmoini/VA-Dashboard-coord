@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Http/Controllers/Marketing/CampaignController.php",
     "resources/js/Pages/Growth/Campaigns/Create.jsx",
-    "resources/js/Pages/Growth/Contacts.jsx"
+    "resources/js/Pages/Growth/Contacts.jsx",
+    "tests/Feature/Growth/ShareComposerTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-25T17:03:15Z"
+  "updated_at": "2026-08-25T17:03:26Z"
 }
