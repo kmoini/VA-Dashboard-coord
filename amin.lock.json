@@ -9,8 +9,9 @@
     "app/Integrations/DTOs/ProviderCapabilities.php",
     "app/Integrations/DTOs/LedgerEntryDTO.php",
     "config/integrations.php",
-    "app/Integrations/IntegrationRegistry.php"
+    "app/Integrations/IntegrationRegistry.php",
+    "app/Integrations/Providers/QuickBooksExportProvider.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-26T16:34:20Z"
+  "updated_at": "2026-08-26T16:34:57Z"
 }
