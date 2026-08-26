@@ -11,5 +11,5 @@
     "tests/Feature/Integrations/DriftAndConflictTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-26T22:08:16Z"
+  "updated_at": "2026-08-26T22:09:58Z"
 }
