@@ -1,17 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Http/Controllers/QuickBooksController.php",
-    "routes/web.php",
-    "app/Models/QuickBooksConnection.php",
-    "app/Http/Controllers/TransactionsController.php",
-    "resources/js/Pages/Transactions/Index.jsx",
-    "resources/js/Components/TransactionsTable.jsx",
-    "resources/js/Pages/Integration/Index.jsx",
-    "docs/INTEGRATION-PERMISSIONS.md",
-    "docs/INTEGRATION-PUSH-PHASE-1.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-26T19:31:15Z"
+  "updated_at": "2026-08-26T19:33:03Z"
 }
