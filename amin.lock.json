@@ -4,8 +4,9 @@
   "locked_files": [
     "database/migrations/2026_08_26_000003_add_role_to_connection_tables.php",
     "app/Models/IntegrationMapping.php",
-    "app/Integrations/Contracts/LedgerExportProvider.php"
+    "app/Integrations/Contracts/LedgerExportProvider.php",
+    "app/Integrations/DTOs/PushResult.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-26T16:32:09Z"
+  "updated_at": "2026-08-26T16:32:37Z"
 }
