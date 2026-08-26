@@ -5,8 +5,9 @@
     "app/Integrations/DTOs/LedgerEntryDTO.php",
     "app/Integrations/Providers/QuickBooks/QuickBooksReferenceResolver.php",
     "app/Integrations/Providers/QuickBooks/QuickBooksEntityMapper.php",
-    "database/migrations/2026_08_26_000006_add_capabilities_to_quickbooks_connections.php"
+    "database/migrations/2026_08_26_000006_add_capabilities_to_quickbooks_connections.php",
+    "app/Integrations/Providers/QuickBooksExportProvider.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-26T20:17:20Z"
+  "updated_at": "2026-08-26T20:19:01Z"
 }
