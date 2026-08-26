@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Integrations/DTOs/LedgerEntryDTO.php",
-    "app/Integrations/Providers/QuickBooks/QuickBooksReferenceResolver.php"
+    "app/Integrations/Providers/QuickBooks/QuickBooksReferenceResolver.php",
+    "app/Integrations/Providers/QuickBooks/QuickBooksEntityMapper.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-26T20:15:48Z"
+  "updated_at": "2026-08-26T20:16:50Z"
 }
