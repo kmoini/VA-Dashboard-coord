@@ -15,8 +15,9 @@
     "app/Services/QuickBooksService.php",
     "app/Services/QuickBooksPushService.php",
     "app/Http/Controllers/AccountingController.php",
-    "app/Models/QuickBooksConnection.php"
+    "app/Models/QuickBooksConnection.php",
+    "app/Models/BigcapitalConnection.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-26T16:40:33Z"
+  "updated_at": "2026-08-26T16:41:13Z"
 }
