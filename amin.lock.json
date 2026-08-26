@@ -12,8 +12,9 @@
     "app/Http/Controllers/AccountingController.php",
     "resources/js/Pages/Accounting/Index.jsx",
     "tests/Feature/Integrations/LedgerMappingTest.php",
-    "tests/Feature/Integrations/IntegrationPushFoundationTest.php"
+    "tests/Feature/Integrations/IntegrationPushFoundationTest.php",
+    "tests/Feature/QuickBooks/QuickBooksPushTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-26T20:29:18Z"
+  "updated_at": "2026-08-26T20:34:59Z"
 }
