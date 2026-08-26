@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Integrations/DriftDetector.php",
-    "app/Observers/TransactionObserver.php"
+    "app/Observers/TransactionObserver.php",
+    "app/Integrations/Providers/QuickBooksExportProvider.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-26T21:56:47Z"
+  "updated_at": "2026-08-26T21:57:35Z"
 }
