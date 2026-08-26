@@ -9,8 +9,9 @@
     "app/Integrations/Providers/QuickBooksExportProvider.php",
     "app/Models/QuickBooksConnection.php",
     "app/Jobs/PushTransactionJob.php",
-    "app/Http/Controllers/AccountingController.php"
+    "app/Http/Controllers/AccountingController.php",
+    "resources/js/Pages/Accounting/Index.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-26T20:22:51Z"
+  "updated_at": "2026-08-26T20:23:42Z"
 }
