@@ -8,8 +8,9 @@
     "app/Http/Controllers/TransactionsController.php",
     "resources/js/Pages/Transactions/Index.jsx",
     "resources/js/Components/TransactionsTable.jsx",
-    "resources/js/Pages/Integration/Index.jsx"
+    "resources/js/Pages/Integration/Index.jsx",
+    "docs/INTEGRATION-PERMISSIONS.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-26T19:12:53Z"
+  "updated_at": "2026-08-26T19:29:54Z"
 }
