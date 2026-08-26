@@ -9,8 +9,9 @@
     "resources/js/Pages/Transactions/Index.jsx",
     "resources/js/Components/TransactionsTable.jsx",
     "resources/js/Pages/Integration/Index.jsx",
-    "docs/INTEGRATION-PERMISSIONS.md"
+    "docs/INTEGRATION-PERMISSIONS.md",
+    "docs/INTEGRATION-PUSH-PHASE-1.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-26T19:29:54Z"
+  "updated_at": "2026-08-26T19:31:15Z"
 }
