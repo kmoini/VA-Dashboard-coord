@@ -14,8 +14,9 @@
     "tests/Feature/Integrations/LedgerMappingTest.php",
     "tests/Feature/Integrations/IntegrationPushFoundationTest.php",
     "tests/Feature/QuickBooks/QuickBooksPushTest.php",
-    "app/Jobs/PushAttachmentJob.php"
+    "app/Jobs/PushAttachmentJob.php",
+    "tests/Feature/Integrations/AttachmentPushTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-26T21:41:02Z"
+  "updated_at": "2026-08-26T21:42:47Z"
 }
