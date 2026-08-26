@@ -6,8 +6,9 @@
     "app/Models/IntegrationMapping.php",
     "app/Integrations/Contracts/LedgerExportProvider.php",
     "app/Integrations/DTOs/PushResult.php",
-    "app/Integrations/DTOs/ProviderCapabilities.php"
+    "app/Integrations/DTOs/ProviderCapabilities.php",
+    "app/Integrations/DTOs/LedgerEntryDTO.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-26T16:33:01Z"
+  "updated_at": "2026-08-26T16:33:30Z"
 }
