@@ -1,13 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Services/QuickBooksService.php",
-    "app/Integrations/DTOs/ProviderCapabilities.php",
-    "app/Integrations/Providers/QuickBooksExportProvider.php",
-    "app/Integrations/Providers/QuickBooks/QuickBooksEntityMapper.php",
-    "tests/Feature/Integrations/LedgerMappingTest.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-27T16:29:48Z"
+  "updated_at": "2026-08-27T17:04:07Z"
 }
