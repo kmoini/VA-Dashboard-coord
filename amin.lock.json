@@ -1,12 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Jobs/PushTransactionJob.php",
-    "app/Jobs/PushAttachmentJob.php",
-    "app/Jobs/ResyncTransactionJob.php",
-    "resources/js/Components/TransactionsTable.jsx"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-27T19:55:23Z"
+  "updated_at": "2026-08-27T20:01:07Z"
 }
