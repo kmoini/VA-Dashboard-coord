@@ -4,8 +4,9 @@
   "locked_files": [
     "database/migrations/2026_08_27_000001_add_source_to_integration_mappings.php",
     "app/Integrations/Providers/QuickBooks/GifiAccountMatcher.php",
-    "app/Integrations/Providers/QuickBooks/QuickBooksReferenceResolver.php"
+    "app/Integrations/Providers/QuickBooks/QuickBooksReferenceResolver.php",
+    "app/Models/IntegrationMapping.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-27T19:38:57Z"
+  "updated_at": "2026-08-27T19:39:29Z"
 }
