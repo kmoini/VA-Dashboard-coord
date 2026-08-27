@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "app/Integrations/Providers/QuickBooksExportProvider.php"
+    "app/Integrations/Providers/QuickBooksExportProvider.php",
+    "tests/Feature/Integrations/LedgerMappingTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-27T17:08:07Z"
+  "updated_at": "2026-08-27T17:08:45Z"
 }
