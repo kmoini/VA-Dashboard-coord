@@ -1,15 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Integrations/DriftDetector.php",
-    "app/Observers/TransactionObserver.php",
-    "app/Integrations/Providers/QuickBooksExportProvider.php",
-    "app/Http/Controllers/TransactionsController.php",
-    "resources/js/Components/TransactionsTable.jsx",
-    "resources/js/Pages/Accounting/Index.jsx",
-    "tests/Feature/Integrations/DriftAndConflictTest.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-26T22:12:44Z"
+  "updated_at": "2026-08-27T15:13:59Z"
 }
