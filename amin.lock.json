@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Services/QuickBooksService.php",
     "app/Integrations/DTOs/ProviderCapabilities.php",
-    "app/Integrations/Providers/QuickBooksExportProvider.php"
+    "app/Integrations/Providers/QuickBooksExportProvider.php",
+    "app/Integrations/Providers/QuickBooks/QuickBooksEntityMapper.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-08-27T16:27:17Z"
+  "updated_at": "2026-08-27T16:27:46Z"
 }
