@@ -6,8 +6,9 @@
     "app/Integrations/Providers/QuickBooks/GifiAccountTargetResolver.php",
     "app/Integrations/Providers/QuickBooks/QuickBooksAccountCreator.php",
     "tests/Feature/Integrations/GifiQboMappingTest.php",
-    "tests/Feature/Integrations/QuickBooksAccountCreationTest.php"
+    "tests/Feature/Integrations/QuickBooksAccountCreationTest.php",
+    "docs/GIFI-QBO-MAPPING-TEST-GUIDE.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-03T17:02:02Z"
+  "updated_at": "2026-09-03T17:08:18Z"
 }
