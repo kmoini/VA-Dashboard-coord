@@ -6,8 +6,9 @@
     "app/Console/Commands/HarvestQuickBooksSubtypes.php",
     "tests/Feature/Integrations/QboVocabularyTest.php",
     "database/migrations/2026_09_03_000002_add_postable_and_contra_to_gifi_codes.php",
-    "database/migrations/2026_09_03_000003_repair_and_extend_gifi_codes.php"
+    "database/migrations/2026_09_03_000003_repair_and_extend_gifi_codes.php",
+    "tests/Feature/Accounting/GifiReferenceIntegrityTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-03T16:32:17Z"
+  "updated_at": "2026-09-03T16:33:40Z"
 }
