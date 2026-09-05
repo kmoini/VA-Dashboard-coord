@@ -51,4 +51,4 @@ When the user asks to "add a checkpoint" (or "checkpoint"), perform ALL THREE st
   thought it was pending. Before making a checkpoint, check whether HEAD
   already contains your files (`git log --stat -1`) instead of re-committing.
 
-**Latest observed:** checkpoint-205 (2026-08-04, the Books accounting-overhaul PLAN doc — audit only, no code; see [[books-accounting-overhaul-plan]]). 204 = books become one ledger per company. Earlier: checkpoint-203 (2026-07-31, Google-subscription scheduler no longer fires on installs that never adopted it; DEPLOYED to production). 201 = platform operator client directory, 202 = operator switcher, both from a parallel session. Verify against `git tag` (fetch --tags first) before your next number.
+**Latest observed:** checkpoint-239 (2026-09-04, GIFI to QuickBooks account mapping, built and live-verified on production; see [[gifi-qbo-account-mapping]]). 238 = Growth voice round closed (2026-08-19). Verify against `git tag` (fetch --tags first) before your next number, several people push here.
