@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "app/Accounting/TaxCodeVocabulary.php"
+    "app/Accounting/TaxCodeVocabulary.php",
+    "tests/Feature/Accounting/SalesTaxGuardTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-08T18:56:59Z"
+  "updated_at": "2026-09-08T19:00:55Z"
 }
