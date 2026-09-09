@@ -1,24 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Services/Ai/Concerns/CallsAiForJson.php",
-    "app/Services/Ai/AiUsageRecorder.php",
-    "config/services.php",
-    "app/Http/Controllers/Api/AdminAiUsageController.php",
-    "public/dash.html",
-    ".env.example",
-    "tests/Feature/Bigcapital/SmartImportTest.php",
-    "tests/Feature/Growth/IdentityAndStudioTest.php",
-    "tests/Unit/Services/NoHardCodedAiModelTest.php",
-    "tests/Feature/Bigcapital/CsvAccountImporterTest.php",
-    "tests/Feature/Bigcapital/BooksControllerTest.php",
-    "tests/Feature/Intelligence/VoiceIntelligenceTest.php",
-    "tests/Feature/Intelligence/IntelligenceCycleTest.php",
-    "docs/AI-ASSISTANT.md",
-    "docs/DEPLOYMENT.md",
-    "docs/ANTHROPIC-RETIREMENT-2026-09-09.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-09T16:42:41Z"
+  "updated_at": "2026-09-09T16:43:00Z"
 }
