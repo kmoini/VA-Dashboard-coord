@@ -5,8 +5,9 @@
     "app/Services/Ai/Concerns/CallsAiForJson.php",
     "app/Services/Ai/AiUsageRecorder.php",
     "config/services.php",
-    "app/Http/Controllers/Api/AdminAiUsageController.php"
+    "app/Http/Controllers/Api/AdminAiUsageController.php",
+    "public/dash.html"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-09T16:13:16Z"
+  "updated_at": "2026-09-09T16:14:01Z"
 }
