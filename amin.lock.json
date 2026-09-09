@@ -7,8 +7,9 @@
     "config/services.php",
     "app/Http/Controllers/Api/AdminAiUsageController.php",
     "public/dash.html",
-    ".env.example"
+    ".env.example",
+    "tests/Feature/Bigcapital/SmartImportTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-09T16:15:45Z"
+  "updated_at": "2026-09-09T16:18:16Z"
 }
