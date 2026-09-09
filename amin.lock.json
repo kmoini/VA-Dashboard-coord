@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Services/Ai/Concerns/CallsAiForJson.php",
-    "app/Services/Ai/AiUsageRecorder.php"
+    "app/Services/Ai/AiUsageRecorder.php",
+    "config/services.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-09T16:10:22Z"
+  "updated_at": "2026-09-09T16:10:51Z"
 }
