@@ -16,8 +16,9 @@
     "tests/Feature/Intelligence/VoiceIntelligenceTest.php",
     "tests/Feature/Intelligence/IntelligenceCycleTest.php",
     "docs/AI-ASSISTANT.md",
-    "docs/DEPLOYMENT.md"
+    "docs/DEPLOYMENT.md",
+    "docs/ANTHROPIC-RETIREMENT-2026-09-09.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-09T16:39:37Z"
+  "updated_at": "2026-09-09T16:42:41Z"
 }
