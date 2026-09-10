@@ -4,8 +4,9 @@
   "locked_files": [
     "database/migrations/2026_09_10_000001_add_country_to_quickbooks_connections.php",
     "database/migrations/2026_09_10_000002_create_qbo_subtype_locales.php",
-    "app/Models/QboSubtypeLocale.php"
+    "app/Models/QboSubtypeLocale.php",
+    "app/Accounting/CompanyCountry.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-10T15:33:41Z"
+  "updated_at": "2026-09-10T15:37:25Z"
 }
