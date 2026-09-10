@@ -1,12 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "resources/ai-prompts/document-extraction.tax.can.txt",
-    "resources/ai-prompts/document-extraction.tax.gbr.txt",
-    "resources/ai-prompts/document-extraction.tax.aus.txt",
-    "database/migrations/2026_09_10_000003_publish_per_country_tax_prompts.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-10T20:44:29Z"
+  "updated_at": "2026-09-10T20:58:22Z"
 }
