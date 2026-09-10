@@ -4,8 +4,9 @@
   "locked_files": [
     "resources/ai-prompts/document-extraction.tax.can.txt",
     "resources/ai-prompts/document-extraction.tax.gbr.txt",
-    "resources/ai-prompts/document-extraction.tax.aus.txt"
+    "resources/ai-prompts/document-extraction.tax.aus.txt",
+    "database/migrations/2026_09_10_000003_publish_per_country_tax_prompts.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-10T20:34:48Z"
+  "updated_at": "2026-09-10T20:44:29Z"
 }
