@@ -51,4 +51,4 @@ When the user asks to "add a checkpoint" (or "checkpoint"), perform ALL THREE st
   thought it was pending. Before making a checkpoint, check whether HEAD
   already contains your files (`git log --stat -1`) instead of re-committing.
 
-**Latest observed:** checkpoint-239 (2026-09-04, GIFI to QuickBooks account mapping, built and live-verified on production; see [[gifi-qbo-account-mapping]]). 238 = Growth voice round closed (2026-08-19). Verify against `git tag` (fetch --tags first) before your next number, several people push here.
+**Latest observed:** checkpoint-241 (2026-09-09, sales tax posts the right number; three push defects closed, see [[quickbooks-push-idempotency]] and [[sales-tax-hst-gst]]). 240 = Canadian QuickBooks verified end to end, 239 = the GIFI to QBO mapping build. Verify against `git tag` (fetch --tags first) before your next number, several people push here.
