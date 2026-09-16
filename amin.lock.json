@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "app/Accounting/CountryCurrency.php"
+    "app/Accounting/CountryCurrency.php",
+    "tests/Feature/Clients/ClientCurrencyTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-16T13:32:06Z"
+  "updated_at": "2026-09-16T14:28:11Z"
 }
