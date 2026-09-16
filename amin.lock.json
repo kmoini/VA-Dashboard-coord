@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Accounting/CountryCurrency.php",
-    "tests/Feature/Clients/ClientCurrencyTest.php"
+    "tests/Feature/Clients/ClientCurrencyTest.php",
+    "database/migrations/2026_09_16_000001_add_country_to_referral_tokens.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-16T14:28:11Z"
+  "updated_at": "2026-09-16T16:22:57Z"
 }
