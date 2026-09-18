@@ -51,4 +51,4 @@ When the user asks to "add a checkpoint" (or "checkpoint"), perform ALL THREE st
   thought it was pending. Before making a checkpoint, check whether HEAD
   already contains your files (`git log --stat -1`) instead of re-committing.
 
-**Latest observed:** checkpoint-241 (2026-09-09, sales tax posts the right number; three push defects closed, see [[quickbooks-push-idempotency]] and [[sales-tax-hst-gst]]). 240 = Canadian QuickBooks verified end to end, 239 = the GIFI to QBO mapping build. Verify against `git tag` (fetch --tags first) before your next number, several people push here.
+**Latest observed:** checkpoint-242 (2026-09-17, Britain and Australia verified end to end; see [[international-quickbooks]]). 241 = sales tax posts the right number, 240 = Canadian QuickBooks verified, 239 = the GIFI to QBO mapping build. Verify against `git tag` (fetch --tags first) before your next number, several people push here.
