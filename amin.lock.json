@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "app/Integrations/Providers/QuickBooks/SubtypeEvidence.php"
+    "app/Integrations/Providers/QuickBooks/SubtypeEvidence.php",
+    "tests/Feature/Integrations/SubtypeEvidenceTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-18T17:10:33Z"
+  "updated_at": "2026-09-18T17:20:52Z"
 }
