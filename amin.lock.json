@@ -10,8 +10,9 @@
     "app/Http/Controllers/TransactionsController.php",
     "resources/js/Pages/Transactions/Create.jsx",
     "resources/js/Pages/Clients/Show.jsx",
-    "tests/Feature/Bigcapital/BooksControllerTest.php"
+    "tests/Feature/Bigcapital/BooksControllerTest.php",
+    "tests/Feature/Clients/RegistrySourceOfTruthTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-19T19:21:09Z"
+  "updated_at": "2026-09-19T19:22:59Z"
 }
