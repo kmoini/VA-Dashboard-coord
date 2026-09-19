@@ -1,7 +1,9 @@
 {
   "owner": "Amin",
-  "status": "idle",
-  "locked_files": [],
+  "status": "active",
+  "locked_files": [
+    "database/migrations/2026_09_19_000001_add_company_name_to_referral_tokens.php"
+  ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-19T13:30:07Z"
+  "updated_at": "2026-09-19T13:34:08Z"
 }
