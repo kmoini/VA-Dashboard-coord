@@ -1,19 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Services/ClientRegistryProjector.php",
-    "app/Models/ClientBankAccount.php",
-    "database/migrations/2026_09_19_000002_registry_tables_become_the_source_of_truth.php",
-    "app/Http/Controllers/ClientsController.php",
-    "app/Http/Controllers/ClientPortalController.php",
-    "app/Http/Controllers/TransactionsController.php",
-    "resources/js/Pages/Transactions/Create.jsx",
-    "resources/js/Pages/Clients/Show.jsx",
-    "tests/Feature/Bigcapital/BooksControllerTest.php",
-    "tests/Feature/Clients/RegistrySourceOfTruthTest.php",
-    "docs/client-registry-multi-company.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-19T20:00:32Z"
+  "updated_at": "2026-09-19T20:04:13Z"
 }
