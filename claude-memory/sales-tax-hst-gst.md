@@ -86,9 +86,12 @@ make it invent tax on documents that carry none.
 - ✅ Live-verified end to end 2026-09-09 on CA realm `9341457870284884`:
   `Bill/186 TotalAmt=188.18 TotalTax=21.65 line=166.53`, from a real supplier
   bill. Extraction gave the gross figures (188.18 / 146.34), not the net ones.
-- ⚠️ QBO computes the tax from the mapped code's RATE, so a document whose tax is
-  a cent or two off the arithmetic posts the arithmetic. Pinning the printed
-  figure needs `TxnTaxDetail.TaxLine` with a `TaxRateRef`, not yet built.
+- ✅ cp-244 (2026-09-18): the document's tax is PINNED as `TxnTaxDetail.TaxLine`
+  with a `TaxRateRef` (probed first with `quickbooks:probe-tax-override`: QBO
+  keeps it; TotalTax alone is IGNORED). ⚠️⚠️ Without it a MIXED-RATE receipt
+  (zero-rated groceries + taxed items) posted the full rate on the whole net line,
+  a wrong TOTAL. Live: Maple Market 33.01 / HST 2.08 posted 33.01 (else 34.95).
+  Pinned only when one code, one rate on that side, and tax NOT above rate x line.
 - Existing transactions gain nothing retroactively.
 - No firm-level default tax code yet (would help a firm whose clients are all in
   one province, mirroring the GIFI firm override).

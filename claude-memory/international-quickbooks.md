@@ -5,13 +5,14 @@ metadata:
   type: project
   node_type: memory
   originSessionId: 874e2ef0-5494-42e8-8004-9a78a8cb856e
-  modified: 2026-09-17T20:29:42.703Z
+  modified: 2026-09-18T19:56:26.714Z
 ---
 
 Full write-up: `docs/INTERNATIONAL-QUICKBOOKS.md`. Verified live on real
 documents: Canada `Bill/186 188.18/21.65/166.53`, Britain
 `Purchase/184 12.70/2.12/10.58 GBP`, Australia
-`Purchase/198 160.40/14.58/145.82 AUD`.
+`Purchase/198 160.40/14.58/145.82 AUD`, United States `Purchase/175 22.92 USD`
+(cp-243: a Walmart receipt, subtotal 21.42 + tax 1.50, posted the TOTAL as one line).
 
 ## ⚠️⚠️ The shape of every bug in this arc
 
@@ -55,6 +56,11 @@ threw. Look for this shape first.
 - A company's Preferences were cached forever, so code added later (homeCurrency)
   never appeared. Now aged out at 7 days AND checked for shape.
 - `qbo_subtype_locales` records SIGHTINGS only. Absence is never a refusal.
+  USED since cp-245 (2026-09-18; UI path not live-exercised, a full sandbox chart auto-matches before Choose account appears): `SubtypeEvidence` decides
+  the create-account warning per country; accepted creates record a sighting.
+  ⚠️ Never hard-code a country name in UI copy; the server sends `subtype_note`.
+- ⚠️ QBO query language escapes `'` with a BACKSLASH, not SQL doubling: `Sainsbury''s`
+  got HTTP 400 so apostrophe vendors never pushed (fixed cp-245, live-verified).
 
 Related: [[sales-tax-hst-gst]], [[quickbooks-push-idempotency]],
 [[gifi-qbo-account-mapping]], [[checkpoint-rule]].

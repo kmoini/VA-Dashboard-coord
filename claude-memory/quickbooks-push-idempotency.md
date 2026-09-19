@@ -5,7 +5,7 @@ metadata:
   type: project
   node_type: memory
   originSessionId: 874e2ef0-5494-42e8-8004-9a78a8cb856e
-  modified: 2026-09-09T21:06:35.181Z
+  modified: 2026-09-18T21:16:15.227Z
 ---
 
 Three defects found on 2026-09-09 by pushing ONE real bill to a real Canadian
@@ -52,6 +52,16 @@ bug being repaired.
   way to tell "not in this company" from "cannot read it".
 - Sandbox realms: conn 1 = `9341457268634337` (US), conn 2 = `9341457870284884`
   (CA, client 67).
+
+## Deletion watcher (cp-246, 2026-09-18, live-verified)
+
+`quickbooks:watch-deletions` (every 15 min) reads Intuit's CDC feed
+(`GET cdc?entities=..&changedSince=..`, 30-day max) and marks rows
+`deleted_remotely` + `qb_sync_status=deleted`; the row offers Resend. ⚠️ Marks
+only, NEVER re-sends (Amin's intent: deletion is a deliberate correction). Cursor
+`quickbooks_connections.deletions_checked_at` does not move on a failed read.
+⚠️ Attachment sync rows must be reset when a dead entry is replaced, or the new
+entry arrives WITHOUT its receipt (was a live bug). See docs/QUICKBOOKS-DELETION-WATCHER.md.
 
 Related: [[sales-tax-hst-gst]], [[gifi-qbo-account-mapping]],
 [[wait-for-user-test-before-deploy]].

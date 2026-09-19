@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: feedback
   originSessionId: 8f1fb65a-2016-4baf-8cf0-2fd6e4578a77
-  modified: 2026-08-04T23:58:21.208Z
+  modified: 2026-09-18T21:15:34.969Z
 ---
 
 When the user asks to "add a checkpoint" (or "checkpoint"), perform ALL THREE steps, every time:
@@ -51,4 +51,4 @@ When the user asks to "add a checkpoint" (or "checkpoint"), perform ALL THREE st
   thought it was pending. Before making a checkpoint, check whether HEAD
   already contains your files (`git log --stat -1`) instead of re-committing.
 
-**Latest observed:** checkpoint-242 (2026-09-17, Britain and Australia verified end to end; see [[international-quickbooks]]). 241 = sales tax posts the right number, 240 = Canadian QuickBooks verified, 239 = the GIFI to QBO mapping build. Verify against `git tag` (fetch --tags first) before your next number, several people push here.
+**Latest observed:** checkpoint-246 (2026-09-18, QuickBooks deletion watcher: deleted entries offer Resend; see [[quickbooks-push-idempotency]]). 245 = subtype sightings used per country + apostrophe vendor names push ([[international-quickbooks]]). 244 = a mixed-rate receipt posts its own total ([[sales-tax-hst-gst]]). 243 = the United States verified, 242 = Britain and Australia. 241 = sales tax posts the right number, 240 = Canadian QuickBooks verified, 239 = the GIFI to QBO mapping build. Verify against `git tag` (fetch --tags first) before your next number, several people push here.
