@@ -7,8 +7,9 @@
     "app/Jobs/SubmitDocumentBatchJob.php",
     "routes/web.php",
     "app/Http/Controllers/DocumentsController.php",
-    "resources/js/Pages/Transactions/Index.jsx"
+    "resources/js/Pages/Transactions/Index.jsx",
+    "resources/js/Components/TransactionsTable.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-19T15:39:34Z"
+  "updated_at": "2026-09-19T15:39:42Z"
 }
