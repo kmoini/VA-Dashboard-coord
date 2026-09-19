@@ -5,8 +5,9 @@
     "database/migrations/2026_09_19_000001_add_company_name_to_referral_tokens.php",
     "app/Models/ReferralToken.php",
     "app/Http/Controllers/ClientsController.php",
-    "app/Http/Controllers/ReferralController.php"
+    "app/Http/Controllers/ReferralController.php",
+    "resources/js/Pages/Clients/Index.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-19T13:34:40Z"
+  "updated_at": "2026-09-19T13:34:47Z"
 }
