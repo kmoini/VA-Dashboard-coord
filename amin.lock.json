@@ -1,15 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "database/migrations/2026_09_19_000001_add_company_name_to_referral_tokens.php",
-    "app/Models/ReferralToken.php",
-    "app/Http/Controllers/ClientsController.php",
-    "app/Http/Controllers/ReferralController.php",
-    "resources/js/Pages/Clients/Index.jsx",
-    "app/Console/Commands/MoveCompanyNameOutOfBusinessNumber.php",
-    "tests/Feature/Clients/ClientAddFormTest.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-19T13:35:59Z"
+  "updated_at": "2026-09-19T13:51:07Z"
 }
