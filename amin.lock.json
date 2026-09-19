@@ -1,10 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Services/ClientCompanyScope.php",
-    "tests/Feature/Clients/CompanyScopeVisibilityTest.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-19T20:33:22Z"
+  "updated_at": "2026-09-19T20:37:33Z"
 }
