@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Services/ClientRegistryProjector.php",
     "app/Models/ClientBankAccount.php",
-    "database/migrations/2026_09_19_000002_registry_tables_become_the_source_of_truth.php"
+    "database/migrations/2026_09_19_000002_registry_tables_become_the_source_of_truth.php",
+    "app/Http/Controllers/ClientsController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-19T18:45:58Z"
+  "updated_at": "2026-09-19T18:47:24Z"
 }
