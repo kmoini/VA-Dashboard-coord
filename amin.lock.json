@@ -5,8 +5,9 @@
     "app/Services/Documents/EconomyFallback.php",
     "app/Jobs/PollDocumentAiBatchesJob.php",
     "app/Jobs/SubmitDocumentBatchJob.php",
-    "routes/web.php"
+    "routes/web.php",
+    "app/Http/Controllers/DocumentsController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-19T15:37:30Z"
+  "updated_at": "2026-09-19T15:37:37Z"
 }
