@@ -6,8 +6,9 @@
     "app/Models/ReferralToken.php",
     "app/Http/Controllers/ClientsController.php",
     "app/Http/Controllers/ReferralController.php",
-    "resources/js/Pages/Clients/Index.jsx"
+    "resources/js/Pages/Clients/Index.jsx",
+    "app/Console/Commands/MoveCompanyNameOutOfBusinessNumber.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-19T13:34:47Z"
+  "updated_at": "2026-09-19T13:35:25Z"
 }
