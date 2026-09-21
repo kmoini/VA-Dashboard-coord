@@ -5,8 +5,9 @@
     "database/migrations/2026_09_21_000002_add_client_company_to_quickbooks_connections.php",
     "app/Integrations/Providers/QuickBooks/QuickBooksConnectionRouter.php",
     "app/Integrations/PushOfferService.php",
-    "app/Http/Controllers/AccountingController.php"
+    "app/Http/Controllers/AccountingController.php",
+    "app/Http/Controllers/TransactionsController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-21T21:06:54Z"
+  "updated_at": "2026-09-21T21:10:50Z"
 }
