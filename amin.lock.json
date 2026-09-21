@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "app/Services/Registry/BankAccountBackfill.php"
+    "app/Services/Registry/BankAccountBackfill.php",
+    "tests/Feature/Clients/BankAccountBackfillTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-21T14:40:01Z"
+  "updated_at": "2026-09-21T14:40:09Z"
 }
