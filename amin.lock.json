@@ -11,8 +11,9 @@
     "app/Http/Controllers/TransactionsController.php",
     "app/Http/Controllers/VendorsController.php",
     "routes/web.php",
-    "app/Http/Controllers/GifiCatalogController.php"
+    "app/Http/Controllers/GifiCatalogController.php",
+    "resources/js/lib/gifiCatalog.js"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-21T23:49:01Z"
+  "updated_at": "2026-09-21T23:49:25Z"
 }
