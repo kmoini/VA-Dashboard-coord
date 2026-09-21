@@ -12,8 +12,9 @@
     "routes/web.php",
     "resources/js/Components/PeopleEditor.jsx",
     "resources/js/Pages/ClientPortal/People.jsx",
-    "resources/js/Layouts/Components/Sidebar.jsx"
+    "resources/js/Layouts/Components/Sidebar.jsx",
+    "docs/PEOPLE-REGISTRY.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-21T18:38:30Z"
+  "updated_at": "2026-09-21T18:52:59Z"
 }
