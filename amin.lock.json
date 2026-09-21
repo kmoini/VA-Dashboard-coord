@@ -7,8 +7,9 @@
     "app/Models/ClientPersonCompany.php",
     "app/Services/ClientPeopleWriter.php",
     "tests/Feature/Clients/ClientPeopleTest.php",
-    "app/Http/Controllers/ClientsController.php"
+    "app/Http/Controllers/ClientsController.php",
+    "app/Http/Controllers/ClientPortalController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-21T17:56:09Z"
+  "updated_at": "2026-09-21T17:58:58Z"
 }
