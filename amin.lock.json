@@ -17,8 +17,9 @@
     "resources/js/Pages/Transactions/Create.jsx",
     "resources/js/Components/GifiCodeDatalist.jsx",
     "resources/js/Pages/Transactions/Show.jsx",
-    "resources/js/Pages/Clients/Show.jsx"
+    "resources/js/Pages/Clients/Show.jsx",
+    "app/Services/Accounting/GifiLearningService.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-21T23:57:00Z"
+  "updated_at": "2026-09-21T23:57:18Z"
 }
