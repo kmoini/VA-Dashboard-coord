@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: eaa51cfc-6d53-487f-b1cb-02b3d152a689
-  modified: 2026-07-21T23:41:45.983Z
+  modified: 2026-09-19T17:40:39.644Z
 ---
 
 Built 2026-06-16 (Phase 1), shipped as **checkpoint-042** (`213d754`, DEPLOYED via
@@ -43,6 +43,17 @@ scheduled every 5 min. (2) Scanner + Google Drive ARE AI-wired via the shared
 Amin): modal `aiMode` starts `'economy'`; server side, anything that isn't an
 explicit `mode=instant` resolves to economy (`DocumentAiDispatcher::mode()` +
 `DocumentsController@upload`). Instant is an explicit opt-in in the picker.
+
+**Economy failure policy (d782094, 2026-09-19, Amin's decision):** slow is NEVER
+auto-switched to Instant (only the person's "Read now"); a REAL failure sends the
+affected files to Instant ONCE via `EconomyFallback`. ⚠️ The zombie sweep used to
+fail every Economy file waiting >2h ("Extraction was interrupted"); it now skips
+files in an open batch. See docs/ECONOMY-FALLBACK.md.
+
+⚠️ Dates (cp-249): `TransactionDraftValidator` used exact `^YYYY-MM-DD$`, so
+"2025-06-14 16:42" was DROPPED and the ingest silently used today. Now year-first
+prefix + checkdate; day-first stays null (ambiguous). The model's raw date lands
+in `ai_raw_data.extras.model_date` when dropped: check that before guessing.
 
 **Prod owes:** add `GEMINI_API_KEY` to prod `.env` + `config:clear`, `npm run
 build`, and a running queue worker (already runs for PollMobileChangesJob).

@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: feedback
   originSessionId: 8f1fb65a-2016-4baf-8cf0-2fd6e4578a77
-  modified: 2026-09-18T21:15:34.969Z
+  modified: 2026-09-19T17:40:36.049Z
 ---
 
 When the user asks to "add a checkpoint" (or "checkpoint"), perform ALL THREE steps, every time:
@@ -51,4 +51,4 @@ When the user asks to "add a checkpoint" (or "checkpoint"), perform ALL THREE st
   thought it was pending. Before making a checkpoint, check whether HEAD
   already contains your files (`git log --stat -1`) instead of re-committing.
 
-**Latest observed:** checkpoint-246 (2026-09-18, QuickBooks deletion watcher: deleted entries offer Resend; see [[quickbooks-push-idempotency]]). 245 = subtype sightings used per country + apostrophe vendor names push ([[international-quickbooks]]). 244 = a mixed-rate receipt posts its own total ([[sales-tax-hst-gst]]). 243 = the United States verified, 242 = Britain and Australia. 241 = sales tax posts the right number, 240 = Canadian QuickBooks verified, 239 = the GIFI to QBO mapping build. Verify against `git tag` (fetch --tags first) before your next number, several people push here.
+**Latest observed:** checkpoint-249 (2026-09-19, Economy fallback + Read now + receipt date with time kept; see [[document-ai-pipeline]]). 248 = Record Keeping frozen columns opaque; failed_jobs flushed on prod. 247 = one add-client form ([[add-client-single-form]]). 246 = QuickBooks deletion watcher, deleted entries offer Resend ([[quickbooks-push-idempotency]]). 245 = subtype sightings used per country + apostrophe vendor names push ([[international-quickbooks]]). 244 = a mixed-rate receipt posts its own total ([[sales-tax-hst-gst]]). 243 = the United States verified, 242 = Britain and Australia. 241 = sales tax posts the right number, 240 = Canadian QuickBooks verified, 239 = the GIFI to QBO mapping build. Verify against `git tag` (fetch --tags first) before your next number, several people push here.
