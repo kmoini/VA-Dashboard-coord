@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "database/migrations/2026_09_21_000002_add_client_company_to_quickbooks_connections.php"
+    "database/migrations/2026_09_21_000002_add_client_company_to_quickbooks_connections.php",
+    "app/Integrations/Providers/QuickBooks/QuickBooksConnectionRouter.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-21T20:57:13Z"
+  "updated_at": "2026-09-21T20:57:29Z"
 }
