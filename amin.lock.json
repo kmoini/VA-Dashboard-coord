@@ -5,8 +5,9 @@
     "app/Http/Controllers/AccountingController.php",
     "app/Integrations/Providers/QuickBooks/QuickBooksReferenceResolver.php",
     "database/migrations/2026_09_21_000003_account_type_mappings_use_quickbooks_type_names.php",
-    "resources/js/Pages/Accounting/Index.jsx"
+    "resources/js/Pages/Accounting/Index.jsx",
+    "tests/Feature/Integrations/AccountTypeMappingTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-21T22:55:04Z"
+  "updated_at": "2026-09-21T22:58:39Z"
 }
