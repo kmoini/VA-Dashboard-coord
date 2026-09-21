@@ -9,8 +9,9 @@
     "tests/Feature/Integrations/AccountTypeMappingTest.php",
     "app/Rules/PostableGifiCode.php",
     "app/Http/Controllers/TransactionsController.php",
-    "app/Http/Controllers/VendorsController.php"
+    "app/Http/Controllers/VendorsController.php",
+    "routes/web.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-21T23:48:26Z"
+  "updated_at": "2026-09-21T23:48:53Z"
 }
