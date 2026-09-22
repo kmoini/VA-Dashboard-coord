@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 874e2ef0-5494-42e8-8004-9a78a8cb856e
-  modified: 2026-09-19T20:03:13.186Z
+  modified: 2026-09-21T20:45:12.678Z
 ---
 
 Decisions (Amin, 2026-09-19), after a full code survey:
@@ -47,6 +47,15 @@ the only store (metadata companies/bank_accounts removed by migration
 BOTH forms; full account number encrypted in `client_bank_accounts.account_number`,
 shown masked; registry writes need firmCanWrite. ⚠️ Don't reintroduce reads of
 `metadata['companies'|'bank_accounts']`: they no longer exist.
+
+**Phase 1 BUILT + Amin-tested locally (cp-250, 2026-09-21), NOT deployed:**
+`client_people` + `client_person_companies` (roles per company, several at once;
+ownership only for owners, over 100% warns and saves; payment nature = AI hint;
+no SIN). ONE `PeopleEditor.jsx` + `ClientsController::peopleRules()` +
+`ClientPeopleWriter` serve the accountant tab AND `/client/people`; each save
+stamps accountant|client. ⚠️ Same name twice = ONE person with two companies
+(merged, never dropped: dropping it silently lost a 100% shareholding).
+People are collapsed CARDS; only the edited one opens.
 
 Parked prior design reused: docs/backlog-people-registry-and-cheque-rule.md.
 Related: [[client-registry-multi-company]], [[books-multi-company-plan]],
