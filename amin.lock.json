@@ -7,8 +7,9 @@
     "tests/Feature/Accounting/CanadianChartOfAccountsTest.php",
     "app/Http/Controllers/AccountingController.php",
     "resources/js/Pages/Accounting/Index.jsx",
-    "tests/Feature/QuickBooks/QuickBooksAccountMappingTest.php"
+    "tests/Feature/QuickBooks/QuickBooksAccountMappingTest.php",
+    "docs/CANADIAN-CHART-OF-ACCOUNTS-2026-09-22.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-22T18:57:20Z"
+  "updated_at": "2026-09-22T19:17:23Z"
 }
