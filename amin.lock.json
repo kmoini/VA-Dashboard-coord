@@ -1,11 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "resources/js/Pages/Accounting/Index.jsx",
-    "app/Http/Controllers/AccountingController.php",
-    "tests/Feature/QuickBooks/QuickBooksAccountMappingTest.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-22T21:48:33Z"
+  "updated_at": "2026-09-22T22:05:26Z"
 }
