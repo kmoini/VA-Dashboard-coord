@@ -6,8 +6,9 @@
     "resources/js/Components/TransactionsTable.jsx",
     "resources/js/Components/GifiCodeDatalist.jsx",
     "app/Http/Controllers/TransactionsController.php",
-    "tests/Feature/Integrations/GifiQboMappingTest.php"
+    "tests/Feature/Integrations/GifiQboMappingTest.php",
+    "app/Http/Controllers/AccountingController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-22T15:23:08Z"
+  "updated_at": "2026-09-22T15:24:04Z"
 }
