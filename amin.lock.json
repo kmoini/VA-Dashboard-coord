@@ -21,8 +21,9 @@
     "app/Services/Accounting/GifiLearningService.php",
     "resources/js/Components/TransactionsTable.jsx",
     "tests/Feature/Accounting/GifiTotalsAreNotSelectableTest.php",
-    "docs/GIFI-TOTALS-NOT-SELECTABLE-2026-09-21.md"
+    "docs/GIFI-TOTALS-NOT-SELECTABLE-2026-09-21.md",
+    "app/Services/Gemini/DocumentAiIngestService.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-22T00:28:16Z"
+  "updated_at": "2026-09-22T00:31:10Z"
 }
