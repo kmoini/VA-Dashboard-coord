@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Http/Controllers/AccountingController.php",
     "routes/web.php",
-    "resources/js/Pages/Accounting/Index.jsx"
+    "resources/js/Pages/Accounting/Index.jsx",
+    "tests/Feature/QuickBooks/QuickBooksAccountMappingTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-22T20:03:08Z"
+  "updated_at": "2026-09-22T20:07:06Z"
 }
