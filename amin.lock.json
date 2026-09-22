@@ -1,31 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Http/Controllers/AccountingController.php",
-    "app/Integrations/Providers/QuickBooks/QuickBooksReferenceResolver.php",
-    "database/migrations/2026_09_21_000003_account_type_mappings_use_quickbooks_type_names.php",
-    "resources/js/Pages/Accounting/Index.jsx",
-    "tests/Feature/Integrations/AccountTypeMappingTest.php",
-    "app/Rules/PostableGifiCode.php",
-    "app/Http/Controllers/TransactionsController.php",
-    "app/Http/Controllers/VendorsController.php",
-    "routes/web.php",
-    "app/Http/Controllers/GifiCatalogController.php",
-    "resources/js/lib/gifiCatalog.js",
-    "resources/js/Pages/Transactions/Index.jsx",
-    "resources/js/Pages/Transactions/Create.jsx",
-    "resources/js/Components/GifiCodeDatalist.jsx",
-    "resources/js/Pages/Transactions/Show.jsx",
-    "resources/js/Pages/Clients/Show.jsx",
-    "app/Services/Accounting/GifiLearningService.php",
-    "resources/js/Components/TransactionsTable.jsx",
-    "tests/Feature/Accounting/GifiTotalsAreNotSelectableTest.php",
-    "docs/GIFI-TOTALS-NOT-SELECTABLE-2026-09-21.md",
-    "app/Services/Gemini/DocumentAiIngestService.php",
-    "tests/Feature/Documents/OrphanPagesAttachToTheirEntryTest.php",
-    "docs/DOCUMENT-PAGES-WITH-NO-ENTRY-2026-09-21.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-22T00:42:07Z"
+  "updated_at": "2026-09-22T00:47:02Z"
 }
