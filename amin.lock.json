@@ -9,8 +9,9 @@
     "tests/Feature/Integrations/GifiQboMappingTest.php",
     "app/Http/Controllers/AccountingController.php",
     "tests/Feature/QuickBooks/QuickBooksAccountMappingTest.php",
-    "database/migrations/2026_09_22_000001_map_every_gifi_code_including_totals.php"
+    "database/migrations/2026_09_22_000001_map_every_gifi_code_including_totals.php",
+    "resources/js/Pages/Accounting/Index.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-22T15:27:55Z"
+  "updated_at": "2026-09-22T15:28:04Z"
 }
