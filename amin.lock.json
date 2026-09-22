@@ -20,8 +20,9 @@
     "resources/js/Pages/Clients/Show.jsx",
     "app/Services/Accounting/GifiLearningService.php",
     "resources/js/Components/TransactionsTable.jsx",
-    "tests/Feature/Accounting/GifiTotalsAreNotSelectableTest.php"
+    "tests/Feature/Accounting/GifiTotalsAreNotSelectableTest.php",
+    "docs/GIFI-TOTALS-NOT-SELECTABLE-2026-09-21.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-22T00:07:31Z"
+  "updated_at": "2026-09-22T00:28:16Z"
 }
