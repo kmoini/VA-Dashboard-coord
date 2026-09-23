@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Services/Gemini/DocumentAiExtractor.php",
-    "resources/ai-prompts/document-extraction.extract.txt"
+    "resources/ai-prompts/document-extraction.extract.txt",
+    "resources/ai-prompts/document-extraction.batch.txt"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-23T22:19:55Z"
+  "updated_at": "2026-09-23T22:20:13Z"
 }
