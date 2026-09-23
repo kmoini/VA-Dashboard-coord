@@ -11,8 +11,9 @@
     "database/migrations/2026_09_23_000002_republish_tax_and_date_are_required.php",
     "tests/Feature/PromptPublishGuardTest.php",
     "tests/Feature/Accounting/SalesTaxExtractionSchemaTest.php",
-    "tests/Feature/Accounting/SalesTaxGuardTest.php"
+    "tests/Feature/Accounting/SalesTaxGuardTest.php",
+    "docs/sales-tax-was-never-answered.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-23T22:53:09Z"
+  "updated_at": "2026-09-23T23:08:24Z"
 }
