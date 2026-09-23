@@ -1,19 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Services/Gemini/DocumentAiExtractor.php",
-    "resources/ai-prompts/document-extraction.extract.txt",
-    "resources/ai-prompts/document-extraction.batch.txt",
-    "resources/ai-prompts/document-extraction.tax.can.txt",
-    "resources/ai-prompts/document-extraction.tax.gbr.txt",
-    "resources/ai-prompts/document-extraction.tax.aus.txt",
-    "database/migrations/2026_09_23_000002_republish_tax_and_date_are_required.php",
-    "tests/Feature/PromptPublishGuardTest.php",
-    "tests/Feature/Accounting/SalesTaxExtractionSchemaTest.php",
-    "tests/Feature/Accounting/SalesTaxGuardTest.php",
-    "docs/sales-tax-was-never-answered.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-23T23:08:24Z"
+  "updated_at": "2026-09-23T23:13:06Z"
 }
