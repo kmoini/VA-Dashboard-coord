@@ -8,8 +8,9 @@
     "resources/ai-prompts/document-extraction.tax.can.txt",
     "resources/ai-prompts/document-extraction.tax.gbr.txt",
     "resources/ai-prompts/document-extraction.tax.aus.txt",
-    "database/migrations/2026_09_23_000002_republish_tax_and_date_are_required.php"
+    "database/migrations/2026_09_23_000002_republish_tax_and_date_are_required.php",
+    "tests/Feature/PromptPublishGuardTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-23T22:21:32Z"
+  "updated_at": "2026-09-23T22:28:22Z"
 }
