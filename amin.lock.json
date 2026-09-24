@@ -5,8 +5,9 @@
     "app/Http/Controllers/AccountingController.php",
     "app/Models/IntegrationMapping.php",
     "resources/js/Pages/Accounting/Index.jsx",
-    "tests/Feature/QuickBooks/QuickBooksAccountMappingTest.php"
+    "tests/Feature/QuickBooks/QuickBooksAccountMappingTest.php",
+    "docs/OPEN-WORK-2026-09-21.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-23T23:39:50Z"
+  "updated_at": "2026-09-24T14:22:22Z"
 }
