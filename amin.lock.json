@@ -4,8 +4,9 @@
   "locked_files": [
     "tests/Feature/Integrations/QuickBooksConnectionRoutingTest.php",
     "app/Integrations/Providers/QuickBooks/QuickBooksConnectionRouter.php",
-    "app/Console/Commands/QuickBooksRouteCheck.php"
+    "app/Console/Commands/QuickBooksRouteCheck.php",
+    "app/Models/QuickBooksConnection.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-24T14:45:16Z"
+  "updated_at": "2026-09-24T14:56:49Z"
 }
