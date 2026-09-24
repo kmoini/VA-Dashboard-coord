@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Integrations/Providers/QuickBooks/QuickBooksAccountCreator.php",
     "app/Http/Controllers/AccountingController.php",
-    "tests/Feature/QuickBooks/QuickBooksAccountMappingTest.php"
+    "tests/Feature/QuickBooks/QuickBooksAccountMappingTest.php",
+    "docs/QUICKBOOKS-ROUTING-TEST-2026-09-24.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-24T15:31:53Z"
+  "updated_at": "2026-09-24T15:51:21Z"
 }
