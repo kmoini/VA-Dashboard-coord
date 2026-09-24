@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "app/Accounting/GifiReference.php"
+    "app/Accounting/GifiReference.php",
+    "database/migrations/2026_09_24_000001_a_draw_is_not_a_dividend.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-24T17:15:43Z"
+  "updated_at": "2026-09-24T17:16:24Z"
 }
