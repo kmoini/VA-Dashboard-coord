@@ -1,13 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "tests/Feature/Integrations/QuickBooksConnectionRoutingTest.php",
-    "app/Integrations/Providers/QuickBooks/QuickBooksConnectionRouter.php",
-    "app/Console/Commands/QuickBooksRouteCheck.php",
-    "app/Models/QuickBooksConnection.php",
-    "docs/QUICKBOOKS-ROUTING-TEST-2026-09-24.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-24T15:13:04Z"
+  "updated_at": "2026-09-24T15:13:56Z"
 }
