@@ -1,11 +1,11 @@
 ---
 name: sales-tax-hst-gst
-description: "SHIPPED 2026-09-08/09: HST/GST is extracted, mapped per QBO company, shown and editable. ⚠️⚠️ tax_amount is INSIDE amount, never added; TransactionDraftValidator drops bad tax and NEVER moves the amount (Amin's condition). ⚠️ prompt changes need a publish migration. READ before extraction prompts, tax, ITC, or QuickBooks TaxCodeRef work."
+description: "SHIPPED 2026-09-08/09: HST/GST is extracted, mapped per QBO company, shown and editable. ⚠️⚠️ tax_amount is INSIDE amount, never added; TransactionDraftValidator drops bad tax and NEVER moves the amount (Amin's condition). ⚠️⚠️ 2026-09-23: tax+date were OPTIONAL in the Gemini schema and flash-lite simply skipped them, so every document pushed as Out of Scope; they are REQUIRED now with an explicit way to say none. ⚠️ prompt changes need a publish migration. READ before extraction prompts, tax, ITC, or QuickBooks TaxCodeRef work."
 metadata: 
   node_type: memory
   type: project
   originSessionId: 874e2ef0-5494-42e8-8004-9a78a8cb856e
-  modified: 2026-09-09T21:05:54.937Z
+  modified: 2026-09-23T23:12:26.950Z
 ---
 
 Built 2026-09-08/09 in four phases, after the GIFI to QuickBooks work
@@ -77,9 +77,30 @@ ships in the same commit (pattern: `2026_09_08_000003_publish_sales_tax_extracti
 It caught this change. The batch prompt gets the byte-identical block, generated
 from the extract one, or Economy Batch documents silently carry no tax.
 
-⚠️ The tax fields are OPTIONAL in the Gemini response schema. Everything else is
-`required` because flash-lite skips optional fields; here that pressure would
-make it invent tax on documents that carry none.
+## ⚠️⚠️ 2026-09-23: tax was never ANSWERED, and "optional" was why
+
+Tax used to be OPTIONAL in the Gemini response schema, reasoning that requiring
+it would make the model invent tax on documents that carry none. That reasoning
+cost every row: flash-lite skips optional fields, so `tax_amount`, `tax_code`
+AND `effective_date` came back **absent** (not null, not 0) on six consecutive
+real documents, including a scanned invoice printing `HST 19.50` on its face.
+All six reached QuickBooks as "Out of Scope of Tax" with nothing saying so, and
+the missing date meant the row was silently stamped with today.
+
+⚠️ Three earlier runs of the real extractor looked like model nondeterminism
+(1 in 3 returned tax). That reading was WRONG. Do not diagnose a missing field
+as flakiness before checking whether it is in `required`.
+
+The fix: `tax_code` + `tax_amount` + `effective_date` are REQUIRED, with an
+explicit honest escape, `OUT_OF_SCOPE` / `NO_VAT` / `GST_FREE` plus amount 0,
+and `""` for a dateless document. `tax_rate` stays optional (a printed rate has
+no "none" to state). After it: 3 runs of 3 returned HST_ON 19.50; a PD7A and an
+e-transfer answered OUT_OF_SCOPE / 0. Safe because the validator still drops a
+named code with no figure and never moves the amount. Full write-up:
+`docs/sales-tax-was-never-answered.md`.
+
+⚠️ Existing rows do NOT gain the tax: a re-read links back to the transaction
+rather than overwriting a row the accountant may have edited.
 
 ## Open
 
