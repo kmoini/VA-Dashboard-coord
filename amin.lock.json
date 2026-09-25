@@ -6,8 +6,9 @@
     "app/Http/Controllers/Inbox/InboundEmailsController.php",
     "routes/web.php",
     "app/Http/Controllers/Settings/EmailInboxController.php",
-    "app/Http/Controllers/SettingsController.php"
+    "app/Http/Controllers/SettingsController.php",
+    "app/Http/Middleware/HandleInertiaRequests.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-25T20:10:46Z"
+  "updated_at": "2026-09-25T20:10:54Z"
 }
