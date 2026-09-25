@@ -5,8 +5,9 @@
     "app/Services/Email/ResendInboundClient.php",
     "app/Services/Email/InboundEmailService.php",
     "app/Models/InboundEmail.php",
-    "app/Http/Controllers/SettingsController.php"
+    "app/Http/Controllers/SettingsController.php",
+    "resources/js/Components/EmailForwardingCard.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-25T19:08:41Z"
+  "updated_at": "2026-09-25T19:08:48Z"
 }
