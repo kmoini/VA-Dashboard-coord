@@ -16,8 +16,9 @@
     "resources/js/Layouts/Components/Sidebar.jsx",
     "app/Models/Client.php",
     "app/Services/Gemini/ClientAiContext.php",
-    "resources/js/Components/EmailForwardingCard.jsx"
+    "resources/js/Components/EmailForwardingCard.jsx",
+    "resources/js/Pages/Clients/Index.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-25T20:15:04Z"
+  "updated_at": "2026-09-25T20:15:11Z"
 }
