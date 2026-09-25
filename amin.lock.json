@@ -14,8 +14,9 @@
     "resources/js/Pages/Chat/Studio/MessagesChatStudio.tsx",
     "resources/js/Pages/Chat/MessagesStudio.jsx",
     "resources/js/Layouts/Components/Sidebar.jsx",
-    "app/Models/Client.php"
+    "app/Models/Client.php",
+    "app/Services/Gemini/ClientAiContext.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-25T20:14:18Z"
+  "updated_at": "2026-09-25T20:14:37Z"
 }
