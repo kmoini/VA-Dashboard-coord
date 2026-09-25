@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "database/migrations/2026_09_25_000002_a_trusted_sender_belongs_to_a_client.php"
+    "database/migrations/2026_09_25_000002_a_trusted_sender_belongs_to_a_client.php",
+    "app/Models/EmailAllowedSender.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-25T17:50:33Z"
+  "updated_at": "2026-09-25T17:50:43Z"
 }
