@@ -1,17 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "database/migrations/2026_09_25_000002_a_trusted_sender_belongs_to_a_client.php",
-    "app/Models/EmailAllowedSender.php",
-    "app/Services/Email/InboundEmailService.php",
-    "app/Models/InboundEmail.php",
-    "app/Http/Controllers/Settings/EmailInboxController.php",
-    "routes/web.php",
-    "app/Http/Controllers/SettingsController.php",
-    "resources/js/Components/EmailForwardingCard.jsx",
-    "tests/Feature/Email/InboundEmailReviewTest.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-25T18:26:40Z"
+  "updated_at": "2026-09-25T18:38:24Z"
 }
