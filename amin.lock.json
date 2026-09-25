@@ -1,29 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Services/Email/InboundEmailService.php",
-    "app/Http/Controllers/Inbox/InboundEmailsController.php",
-    "routes/web.php",
-    "app/Http/Controllers/Settings/EmailInboxController.php",
-    "app/Http/Controllers/SettingsController.php",
-    "app/Http/Middleware/HandleInertiaRequests.php",
-    "app/Http/Controllers/ClientsController.php",
-    "app/Http/Controllers/ChatController.php",
-    "resources/js/Pages/Inbox/Emails.jsx",
-    "resources/js/Pages/Chat/Studio/MessagesChatStudio.tsx",
-    "resources/js/Pages/Chat/MessagesStudio.jsx",
-    "resources/js/Layouts/Components/Sidebar.jsx",
-    "app/Models/Client.php",
-    "app/Services/Gemini/ClientAiContext.php",
-    "resources/js/Components/EmailForwardingCard.jsx",
-    "resources/js/Pages/Clients/Index.jsx",
-    "tests/Feature/Email/InboundEmailReviewTest.php",
-    "resources/ai-prompts/document-extraction.context.people.txt",
-    "app/Services/Gemini/DocumentAiExtractor.php",
-    "app/Services/AiPrompts/AiPromptCatalog.php",
-    "docs/email-integration-review-queue.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-25T20:22:50Z"
+  "updated_at": "2026-09-25T20:27:36Z"
 }
