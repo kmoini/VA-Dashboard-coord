@@ -6,8 +6,9 @@
     "database/migrations/2026_09_25_000003_an_email_keeps_its_body_and_its_files.php",
     "app/Models/Attachment.php",
     "app/Models/InboundEmail.php",
-    "app/Services/Email/ResendInboundClient.php"
+    "app/Services/Email/ResendInboundClient.php",
+    "app/Services/Email/InboundEmailService.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-25T20:08:23Z"
+  "updated_at": "2026-09-25T20:08:31Z"
 }
