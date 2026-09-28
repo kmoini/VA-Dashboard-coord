@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Services/Email/InboundEmailService.php",
     "app/Services/Email/IntakeOutcome.php",
-    "app/Services/NotificationService.php"
+    "app/Services/NotificationService.php",
+    "app/Jobs/ProcessInboundEmail.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-28T18:05:36Z"
+  "updated_at": "2026-09-28T18:05:45Z"
 }
