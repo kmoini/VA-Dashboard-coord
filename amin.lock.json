@@ -6,8 +6,9 @@
     "app/Services/Email/IntakeOutcome.php",
     "app/Services/NotificationService.php",
     "app/Jobs/ProcessInboundEmail.php",
-    "app/Models/InboundEmail.php"
+    "app/Models/InboundEmail.php",
+    "resources/js/Pages/Inbox/Emails.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-28T18:06:05Z"
+  "updated_at": "2026-09-28T18:06:12Z"
 }
