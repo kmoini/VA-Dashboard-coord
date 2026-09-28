@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Services/Email/TransactionMatcher.php",
-    "tests/Feature/Email/InboundEmailIntakeTest.php"
+    "tests/Feature/Email/InboundEmailIntakeTest.php",
+    "docs/email-integration-review-queue.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-28T18:26:59Z"
+  "updated_at": "2026-09-28T18:30:51Z"
 }
