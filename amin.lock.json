@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Console/Commands/ExtractionCheck.php",
-    "resources/extraction-cases/cases.json"
+    "resources/extraction-cases/cases.json",
+    "tests/Feature/Accounting/ExtractionCasesAreUsableTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-28T21:52:15Z"
+  "updated_at": "2026-09-28T21:53:48Z"
 }
