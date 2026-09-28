@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "resources/extraction-cases/cases.json"
+    "resources/extraction-cases/cases.json",
+    "app/Console/Commands/ExtractionCheck.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-28T18:35:45Z"
+  "updated_at": "2026-09-28T18:41:05Z"
 }
