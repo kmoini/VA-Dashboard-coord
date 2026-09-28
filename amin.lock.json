@@ -1,11 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Services/Email/TransactionMatcher.php",
-    "tests/Feature/Email/InboundEmailIntakeTest.php",
-    "docs/email-integration-review-queue.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-28T18:31:14Z"
+  "updated_at": "2026-09-28T18:35:38Z"
 }
