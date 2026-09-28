@@ -5,6 +5,7 @@ metadata:
   node_type: memory
   type: reference
   originSessionId: eaa51cfc-6d53-487f-b1cb-02b3d152a689
+  modified: 2026-09-26T17:05:34.450Z
 ---
 
 The dashboard's **Google Drive import** (Batch Upload Picker) and **"Sign in with
@@ -33,6 +34,8 @@ URIs, AND the Picker key referrers. Each surfaced as a different error in turn:
 is a **restricted** scope. Tension to resolve at production scale: publishing the
 consent screen for arbitrary accountant sign-in may collide with restricted-scope
 verification — a SEPARATE OAuth client for sign-in vs Drive may be cleaner.
+
+**UPDATE 2026-09-26 (email connection):** the Settings "Email Account Connection" card uses a DIFFERENT callback, `route('settings.email.callback')` = `/settings/email/callback`; it was never on the client → `redirect_uri_mismatch` for Amin. Now registered for `https://my.voiceaccountant.com` + `http://localhost:8000`. Gmail API enabled. Consent screen is **In production / External / UNVERIFIED** (banner "Your app requires verification"; drive.readonly restricted scope was already there unjustified). Scopes registered: gmail.send (sensitive) + userinfo.email/profile; **gmail.readonly deliberately NOT registered and removed from code** (restricted → paid CASA). Users see "Google hasn't verified this app" → Advanced → continue; 100-user cap until verification. See [[email-integration-forwarding]].
 
 **Prod:** put the three `GOOGLE_*` in prod `.env` + `config:clear`. The prod origin
 `https://my.voiceaccountant.com` (+ its `/auth/google/callback`) is already on the

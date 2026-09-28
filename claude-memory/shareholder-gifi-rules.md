@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 874e2ef0-5494-42e8-8004-9a78a8cb856e
-  modified: 2026-09-25T21:05:31.881Z
+  modified: 2026-09-26T16:17:18.661Z
 ---
 
 The accounting team's answers, 2026-09-24, now implemented and live.
@@ -41,15 +41,31 @@ approved and pushed. Entity type is read from the ENTRY's own company (a client
 can run a corporation and a partnership side by side); unknown entity or no
 company attached changes nothing.
 
-## Still open with the team as of 2026-09-25
+## ⭐⭐ 1300 IS THE HOLDING LINE (team, 2026-09-26, both open questions closed)
 
-- They answered question 5 with **GIFI 3990** "Shareholder Transaction Clearing /
-  Suspense", which is **not in the CRA index** we loaded from RC4088. Asked
-  whether it is a chart-of-accounts account name rather than a GIFI line.
-- Current vs long-term cannot be told from a document. Asked whether to always
-  default to current, or add a per-client setting. See
-  [[gifi-codes-table-not-file]] for why the resolver cannot distinguish them at
-  all today.
+"کد 1300 کد کلی «مطالبات از سهامداران/مدیران» تا موقع بستن سال مالی تعیین تکلیف
+شود." An undetermined movement OUT to a shareholder waits on the general **1300**
+until the year-end close decides what it was. A receipt for a payment to a
+shareholder goes there too.
+
+⚠️ So 1301 is only reached when the document itself says "individual": choosing
+it asserts both that the shareholder is a person AND that the balance is
+current, and a cheque stub says neither. 2781 is unaffected, because the
+owner-paid-a-cost-personally case IS determinate and they gave a worked entry
+for it.
+
+This also makes the current/long-term question moot: that split is decided at
+year-end, not from a document, so **no per-client setting is needed** and the
+extraction should never reach for 3261 on its own. **3990 was dropped**; it is
+not in CRA's index.
+
+⚠️ A defect of mine that this closed: the draw wording was added to 1300 on
+09-24 and to 1301 on 09-25 without being removed from 1300, so two codes
+competed for the same phrases and the winner was the tie-break. When adding a
+keyword, always check no sibling already claims it.
+
+## Still owed by the team
+
 - The 165-account review sheet: `php artisan accounting:chart-review --out=x.csv`
   gives them each account beside CRA's own label for the code we assigned, with
   two blank columns to answer in.
