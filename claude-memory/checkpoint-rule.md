@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: feedback
   originSessionId: 8f1fb65a-2016-4baf-8cf0-2fd6e4578a77
-  modified: 2026-09-21T20:45:07.987Z
+  modified: 2026-09-28T19:38:56.981Z
 ---
 
 When the user asks to "add a checkpoint" (or "checkpoint"), perform ALL THREE steps, every time:
@@ -51,4 +51,13 @@ When the user asks to "add a checkpoint" (or "checkpoint"), perform ALL THREE st
   thought it was pending. Before making a checkpoint, check whether HEAD
   already contains your files (`git log --stat -1`) instead of re-committing.
 
-**Latest observed:** checkpoint-250 (2026-09-21, registry redesign phases 0+1: tables of record, People; see [[registry-people-redesign-plan]]). ⚠️ NOT deployed when tagged: two data migrations wait for the end-of-day deploy ([[local-test-before-push]]). 249 = Economy fallback + Read now + receipt date with time kept ([[document-ai-pipeline]]). 248 = Record Keeping frozen columns opaque; failed_jobs flushed on prod. 247 = one add-client form ([[add-client-single-form]]). 246 = QuickBooks deletion watcher, deleted entries offer Resend ([[quickbooks-push-idempotency]]). 245 = subtype sightings used per country + apostrophe vendor names push ([[international-quickbooks]]). 244 = a mixed-rate receipt posts its own total ([[sales-tax-hst-gst]]). 243 = the United States verified, 242 = Britain and Australia. 241 = sales tax posts the right number, 240 = Canadian QuickBooks verified, 239 = the GIFI to QBO mapping build. Verify against `git tag` (fetch --tags first) before your next number, several people push here.
+- SELECTIVE PUSH when teammates' unpushed commits sit on local `main` (Amin
+  wants only the reviewed work deployed): `git worktree add --detach /e/Projects/va-tmp-push origin/main`,
+  cherry-pick your commit there, tag, `git push origin HEAD:main` + the tag,
+  `git worktree remove --force`. Used for checkpoints 256, 257, 259 (2026-09-28).
+  Local `main` then shows "ahead N, behind M"; the teammate rebases later and
+  the duplicate patch drops out. ⚠️ A teammate may have tagged the next number
+  on a commit that is NOT on origin/main yet (258 → 12f5b40): `git tag -l`
+  after `fetch --tags` still catches it, so always re-derive.
+
+**Latest observed:** checkpoint-262 (2026-09-28, the coding engine reads the receipt, and it is measured; see [[extraction-measurement-harness]]). 261 = receipt folds into the reviewed entry, a re-forwarded copy is not attached twice. 260 = body invoice writes an allowed ai_source, retries store each file once. 259 = email intake, signature image no longer hides the body invoice; 257 = receipt entered once / pay stub filed / body read / held-email bell; 256 = drive.file; 255 = Send from dashboard + Google send-only; 254 = Inbox → Email page; 253/252 = email review queue; see [[email-integration-forwarding]]). Before that: checkpoint-250 (2026-09-21, registry redesign phases 0+1: tables of record, People; see [[registry-people-redesign-plan]]). ⚠️ NOT deployed when tagged: two data migrations wait for the end-of-day deploy ([[local-test-before-push]]). 249 = Economy fallback + Read now + receipt date with time kept ([[document-ai-pipeline]]). 248 = Record Keeping frozen columns opaque; failed_jobs flushed on prod. 247 = one add-client form ([[add-client-single-form]]). 246 = QuickBooks deletion watcher, deleted entries offer Resend ([[quickbooks-push-idempotency]]). 245 = subtype sightings used per country + apostrophe vendor names push ([[international-quickbooks]]). 244 = a mixed-rate receipt posts its own total ([[sales-tax-hst-gst]]). 243 = the United States verified, 242 = Britain and Australia. 241 = sales tax posts the right number, 240 = Canadian QuickBooks verified, 239 = the GIFI to QBO mapping build. Verify against `git tag` (fetch --tags first) before your next number, several people push here.

@@ -23,6 +23,7 @@
 - [International QuickBooks](international-quickbooks.md) - SHIPPED cp-242 (2026-09-17): Britain and Australia verified end to end. ⚠️⚠️ everything used to assume Canada silently;
 - [QuickBooks push idempotency](quickbooks-push-idempotency.md) - ⚠️⚠️ Intuit REPLAYS a repeated RequestId, and replays it even when the entity was DELETED, so a push reports success against a bill that does not exist; key is derived from the PAYLOAD, not the transaction.
 - [GIFI to QuickBooks account mapping](gifi-qbo-account-mapping.md) — SHIPPED cp-239: every postable GIFI code maps to an exact QBO account type + detail type; first-expense-account guess retired.
+- [Extraction measurement harness](extraction-measurement-harness.md) — ⭐ `ai:extraction-check --runs=3` on the SERVER before/after any prompt or GIFI change; 18/18 at cp-262. It caught three bugs reasoning had missed, including the model's ifrs_tag overruling its own correct category.
 - [gifi_codes is a TABLE, not the file](gifi-codes-table-not-file.md) — ⚠️⚠️ editing GifiReference.php does NOT change prod; the resolver reads the seeded gifi_codes table. Re-sync migration + 2 cache busts required. Also: seeded keywords were the label chopped into words, which is how a draw got coded as a dividend.
 - [Shareholder GIFI rules](shareholder-gifi-rules.md) — the accounting team's codes (1301/2181/2781/3261, partner mirror 1310/2210/2790/3270). ⚠️⚠️ a partnership NEVER uses 2781/1301 and a sole proprietorship has no shareholder line. LIVE 2026-09-25.
 - [AI prompt registry](ai-prompt-registry.md) — ⚠️ NEVER add an AI prompt as a PHP heredoc (test-enforced). ⚠️⚠️ EDITING resources/ai-prompts/*.txt DOES NOT CHANGE PROD — the DB override wins silently; you must publish the file as a new version. READ before touching any LLM prompt text.
@@ -37,6 +38,7 @@
 - [Document AI pipeline](document-ai-pipeline.md) — dashboard's own Gemini bulk-extraction; Economy batch DEFAULT (2026-07-21), Instant opt-in. READ before Document Hub upload / Gemini services.
 - [Document Hub folders redesign](document-hub-folders.md) — folders + AI auto-filing + Trash/30d + nested max-3; cp139-141 DEPLOYED. Unsorted = folder_id NULL. READ before /documents / DocumentFolder.
 - [env() outside config trap](env-outside-config-trap.md) — ⚠️ `env()` outside config/*.php returns NULL after config:cache; silently broke Google Play validation + spammed the scheduler log. Add a config block, read config(); tests use config() not putenv().
+- [Postgres json has no `=`](postgres-json-no-equality.md) — ⚠️⚠️ `where('json_col','[]')` THROWS on Postgres and passes on the test SQLite; it killed a migration mid-deploy 2026-09-28 and rolled back 766 upserts, leaving the code live and the data old. Read rows, filter in PHP.
 - [activity_logs entity_type trap](activity-log-entity-type-trap.md) — ⚠️ entity_type/action outside Postgres CHECK rolls back WHOLE transaction, surfaces as unrelated error; sqlite skips CHECK. Bit us 3x, incl.
 - [Multi-currency FX](multi-currency-fx.md) — ✅ DEPLOYED cp119-122: base-currency normalisation, BoC+ECB rates, fx:backfill, portal FX cards. READ before amounts/currency/reports.
 - [Batch Upload + AI tester fixes](batch-upload-ai-tester-fixes.md) — ✅ DEPLOYED cp117-121: chunked uploads, per-file retry, worker-timeout rule. Amin owes prod php.ini bumps. READ before BatchUploadModal / TransactionsTable.
@@ -55,7 +57,7 @@
 - [Books Phase 3 production deploy](books-phase3-production-deploy.md) — void/Quick Expense/payments on prod (520d356); Bigcapital gotchas in docs/bugs.md R-21..R-26. READ before Books write paths.
 - [Bigcapital UI adaptive design goal](bigcapital-ui-adaptive-design-goal.md) — familiar to QBO/Xero users, but never copy IP; keep token identity. READ before Books UI.
 - [Bigcapital deployment](bigcapital-deployment.md) — live on Railway; JWT_SECRET weak; migrations run from build/ not dist/.
-- [Payroll & HR master plan](payroll-hr-architecture.md) — NOT BUILT. Bigcapital + Frappe HR + custom CRA/IRS engine. READ before payroll work.
+- [Payroll & HR master plan](payroll-hr-architecture.md) — NOT BUILT. ✅ AGREED 2026-09-28: pay stub → AI extract → review → QBO JournalEntry push; WAIT for Amin's "start". ⚠️ bank-feed double count. Engine/OSS notes inside. READ before payroll work.
 - [Product master plan doc](product-master-plan-doc.md) — docs/PRODUCT-MASTER-PLAN.md = product-vision doc ("Section N"), not the phase log.
 - [Tentpole satellite tools](tentpole-satellite-tools.md) — 7/12 live at public-tentpole-matrix.vercel.app (repo kmoini/public-tentpole-matrix); manual vercel --prod only. READ before tentpole work.
 - [Checkpoint rule](checkpoint-rule.md) — commit checkpoint-NNN + annotated tag + push both. ⚠️ derive NNN from live `git tag` after fetch (shared repo). Latest: 238 (2026-08-19 voice ringless E2E closed).

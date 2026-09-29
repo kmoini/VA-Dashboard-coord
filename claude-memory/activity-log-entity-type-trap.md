@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 29ebd79e-444d-46cc-a8fb-0a0e32bc2386
-  modified: 2026-07-27T16:09:53.104Z
+  modified: 2026-09-28T20:06:29.868Z
 ---
 
 `activity_logs` has two Postgres CHECK constraints, `chk_activity_logs_entity_type`
@@ -44,6 +44,15 @@ fell through to `web_dashboard`+null user → constraint violation → `Transact
 back → mobile transactions silently never reached Record Keeping. Fixed (commit 7dd4014) by
 `($tx->source==='ai' || !auth()->check()) ? 'ai_worker' : null` — mirroring the `updated()` hook.
 When creating a Transaction in ANY no-auth path, expect this. Related: [[mobile-poll-queue-fix]].
+
+**Cousin on `transactions` (2026-09-28, prod):** `check_transactions_ai_source` allows only
+`ocr_receipt, ocr_invoice, bank_feed, email_parser, mobile_quickentry` (and NULL); sibling
+`check_transactions_source` allows `ai, client, accountant` (email drafts use 'email', so that
+one must have been widened since). The email body-only path wrote `ai_source='email_body'` and
+every such invoice failed 5× with "Check violation … transactions". Fixed by whitelisting in
+`InboundEmailService::aiSourceFor()` + a test that pins the allowed set. Before writing ANY new
+value into `transactions.source` / `ai_source`, grep the CHECK in
+`2026_02_02_000001_add_ai_lifecycle_fields_to_transactions_table.php` and later migrations.
 
 **Why:** dev runs sqlite, and every one of these migrations early-returns on sqlite
 (`if (DB::getDriverName() === 'sqlite') return;`). CHECK constraints therefore do not
