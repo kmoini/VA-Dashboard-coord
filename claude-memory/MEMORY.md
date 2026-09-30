@@ -1,5 +1,6 @@
 # Memory Index
 - [Answer in Persian](answer-in-persian.md) — ⚠️⚠️ HARD RULE (Amin, repeated): ALWAYS reply to Amin in Persian unless he asks otherwise; code/commits/docs stay English. Check before sending, drift happens after long tool runs.
+- [QBO API read quota](qbo-api-read-quota.md) — ⚠️⚠️ Intuit counts READS per workspace (Builder: hard 500K/mo cap). Our 15-min CDC watcher = ~2,880 reads/company/month, pushes read first too → cap at ~130 companies, ~$13/company on Silver overage. READ before pricing or QBO sync work.
 - [Canadian standard chart of accounts](canadian-standard-chart-of-accounts.md) — ⚠️⚠️ the team's Canadian_COA_QuickBooks_With_GIFI.xlsx has a FABRICATED GIFI column (revenue at 4000; CRA uses 8000).
 - [Never overrule the accountant](never-overrule-the-accountant.md) — ⚠️⚠️ HARD RULE (Amin, 2026-09-22): never block or warn an accountant out of their own choice; is_postable-style flags constrain the MACHINE, never the human. Fixing wrong data is welcome, adding a gate is not.
 - [Accounting team QBO complaints](accounting-team-qbo-complaints.md) — 2026-09-21/22: 3 complaints. ⚠️⚠️ the GIFI pickers had WRONG LABELS (8690 read "Travel", CRA 8690 is Insurance) on three hard-coded lists that disagreed.
