@@ -8,8 +8,9 @@
     "routes/web.php",
     "resources/js/Components/TransactionsTable.jsx",
     "resources/js/Pages/Transactions/Index.jsx",
-    "app/Console/Commands/ReviewNotes.php"
+    "app/Console/Commands/ReviewNotes.php",
+    "tests/Feature/ReviewNoteTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-09-30T18:57:17Z"
+  "updated_at": "2026-09-30T18:59:08Z"
 }
