@@ -23,8 +23,9 @@
     "app/Accounting/V2/AccountCandidateResolver.php",
     "app/Accounting/V2/ReviewEvaluator.php",
     "app/Accounting/V2/TransactionFingerprint.php",
-    "app/Accounting/V2/DuplicateMatcherV2.php"
+    "app/Accounting/V2/DuplicateMatcherV2.php",
+    "app/Accounting/V2/TransactionDecisionRecorder.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-01T19:23:24Z"
+  "updated_at": "2026-10-01T19:23:30Z"
 }
