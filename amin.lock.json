@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "resources/ai-prompts/document-extraction.event.txt"
+    "resources/ai-prompts/document-extraction.event.txt",
+    "resources/ai-prompts/document-extraction.multi.txt"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-01T22:35:38Z"
+  "updated_at": "2026-10-01T22:36:17Z"
 }
