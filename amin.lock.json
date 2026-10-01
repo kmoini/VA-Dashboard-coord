@@ -32,8 +32,9 @@
     "routes/web.php",
     "app/Services/Gemini/DocumentAiIngestService.php",
     "routes/console.php",
-    "app/Http/Controllers/TransactionsController.php"
+    "app/Http/Controllers/TransactionsController.php",
+    "tests/Feature/AccountingV2/V2TestCase.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-01T19:30:50Z"
+  "updated_at": "2026-10-01T19:35:11Z"
 }
