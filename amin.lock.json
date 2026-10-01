@@ -19,8 +19,9 @@
     "database/migrations/2026_10_01_000003_create_transaction_decisions_and_match_candidates.php",
     "app/Accounting/V2/EventContext.php",
     "app/Accounting/V2/BusinessEventResolver.php",
-    "app/Accounting/V2/FundingAccountResolver.php"
+    "app/Accounting/V2/FundingAccountResolver.php",
+    "app/Accounting/V2/AccountCandidateResolver.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-01T19:22:49Z"
+  "updated_at": "2026-10-01T19:23:01Z"
 }
