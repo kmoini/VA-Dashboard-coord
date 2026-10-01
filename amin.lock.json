@@ -27,8 +27,9 @@
     "app/Accounting/V2/TransactionDecisionRecorder.php",
     "app/Accounting/V2/QboAccountSnapshotService.php",
     "app/Console/Commands/QuickBooksSnapshotAccounts.php",
-    "app/Accounting/V2/V2DraftPipeline.php"
+    "app/Accounting/V2/V2DraftPipeline.php",
+    "app/Models/Transaction.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-01T19:23:50Z"
+  "updated_at": "2026-10-01T19:25:02Z"
 }
