@@ -17,8 +17,9 @@
     "app/Http/Controllers/ClientPortalController.php",
     "app/Services/Mobile/MobileTransactionProjector.php",
     "app/Http/Controllers/MobileVoiceIntakeController.php",
-    "app/Services/Email/InboundEmailService.php"
+    "app/Services/Email/InboundEmailService.php",
+    "app/Services/Gemini/DocumentAiIngestService.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-01T22:53:54Z"
+  "updated_at": "2026-10-01T22:54:30Z"
 }
