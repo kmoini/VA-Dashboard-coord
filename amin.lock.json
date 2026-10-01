@@ -37,8 +37,9 @@
     "tests/Feature/AccountingV2/FlagsOffKeepsLegacyBehaviourTest.php",
     "tests/Feature/AccountingV2/BusinessEventResolverTest.php",
     "tests/Feature/AccountingV2/ReviewAndFundingTest.php",
-    "tests/Feature/AccountingV2/AccountCandidatesFromSnapshotTest.php"
+    "tests/Feature/AccountingV2/AccountCandidatesFromSnapshotTest.php",
+    "tests/Feature/AccountingV2/DuplicateIdentityTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-01T19:38:27Z"
+  "updated_at": "2026-10-01T19:38:44Z"
 }
