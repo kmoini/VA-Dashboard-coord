@@ -6,8 +6,9 @@
     "resources/ai-prompts/document-extraction.multi.txt",
     "app/Accounting/V2/CanonicalDraft.php",
     "app/Accounting/V2/DuplicateMatcherV2.php",
-    "app/Accounting/V2/V2DraftPipeline.php"
+    "app/Accounting/V2/V2DraftPipeline.php",
+    "app/Accounting/V2/ReviewEvaluator.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-01T22:38:47Z"
+  "updated_at": "2026-10-01T22:39:28Z"
 }
