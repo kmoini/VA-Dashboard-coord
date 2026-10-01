@@ -22,8 +22,9 @@
     "tests/Feature/AccountingV2/TaxDecisionResolverTest.php",
     "tests/Feature/AccountingV2/ExtractorV2SchemaTest.php",
     "tests/Feature/AccountingV2/MultiTransactionDocumentTest.php",
-    "tests/Feature/AccountingV2/IntakePathsTest.php"
+    "tests/Feature/AccountingV2/IntakePathsTest.php",
+    "docs/ACCOUNTING-V2-PHASE2.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-01T23:05:44Z"
+  "updated_at": "2026-10-01T23:08:08Z"
 }
