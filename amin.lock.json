@@ -4,8 +4,9 @@
   "locked_files": [
     "config/accounting_v2.php",
     "app/Accounting/V2/AccountingV2.php",
-    "app/Accounting/V2/BusinessEventFamily.php"
+    "app/Accounting/V2/BusinessEventFamily.php",
+    "app/Accounting/V2/BusinessEvent.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-01T19:14:58Z"
+  "updated_at": "2026-10-01T19:15:05Z"
 }
