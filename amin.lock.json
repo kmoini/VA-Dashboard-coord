@@ -23,5 +23,5 @@
     "tests/Feature/AccountingV2/ExtractorV2SchemaTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-01T23:00:25Z"
+  "updated_at": "2026-10-01T23:01:00Z"
 }
