@@ -35,8 +35,9 @@
     "app/Http/Controllers/TransactionsController.php",
     "tests/Feature/AccountingV2/V2TestCase.php",
     "tests/Feature/AccountingV2/FlagsOffKeepsLegacyBehaviourTest.php",
-    "tests/Feature/AccountingV2/BusinessEventResolverTest.php"
+    "tests/Feature/AccountingV2/BusinessEventResolverTest.php",
+    "tests/Feature/AccountingV2/ReviewAndFundingTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-01T19:37:55Z"
+  "updated_at": "2026-10-01T19:38:10Z"
 }
