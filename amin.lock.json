@@ -30,8 +30,9 @@
     "app/Accounting/V2/V2DraftPipeline.php",
     "app/Models/Transaction.php",
     "routes/web.php",
-    "app/Services/Gemini/DocumentAiIngestService.php"
+    "app/Services/Gemini/DocumentAiIngestService.php",
+    "routes/console.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-01T19:27:51Z"
+  "updated_at": "2026-10-01T19:28:01Z"
 }
