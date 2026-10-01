@@ -15,8 +15,9 @@
     "app/Models/TransactionDecision.php",
     "app/Models/TransactionMatchCandidate.php",
     "database/migrations/2026_10_01_000001_accounting_v2_foundation_columns.php",
-    "database/migrations/2026_10_01_000002_create_qbo_account_snapshots_table.php"
+    "database/migrations/2026_10_01_000002_create_qbo_account_snapshots_table.php",
+    "database/migrations/2026_10_01_000003_create_transaction_decisions_and_match_candidates.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-01T19:17:57Z"
+  "updated_at": "2026-10-01T19:18:05Z"
 }
