@@ -15,8 +15,9 @@
     "app/Services/AiPrompts/AiPromptCatalog.php",
     "app/Services/TransactionService.php",
     "app/Http/Controllers/ClientPortalController.php",
-    "app/Services/Mobile/MobileTransactionProjector.php"
+    "app/Services/Mobile/MobileTransactionProjector.php",
+    "app/Http/Controllers/MobileVoiceIntakeController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-01T22:49:48Z"
+  "updated_at": "2026-10-01T22:50:26Z"
 }
