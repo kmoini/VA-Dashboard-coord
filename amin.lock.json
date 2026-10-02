@@ -9,8 +9,9 @@
     "app/Services/AiPrompts/AiPromptCatalog.php",
     "app/Services/Gemini/DocumentAiExtractor.php",
     "app/Services/Books/StatementDocumentIntake.php",
-    "app/Services/Books/BankLineMatcher.php"
+    "app/Services/Books/BankLineMatcher.php",
+    "app/Models/Attachment.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-02T17:55:40Z"
+  "updated_at": "2026-10-02T17:56:18Z"
 }
