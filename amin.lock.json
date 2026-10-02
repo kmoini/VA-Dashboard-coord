@@ -19,8 +19,9 @@
     "resources/js/Components/BankLinesDrawer.jsx",
     "resources/js/Components/TransactionsTable.jsx",
     "resources/js/Pages/Transactions/Index.jsx",
-    "tests/Feature/AccountingV2/StatementLinesTest.php"
+    "tests/Feature/AccountingV2/StatementLinesTest.php",
+    "docs/ACCOUNTING-V2-PHASE2_5-BANK-STATEMENTS.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-02T18:11:35Z"
+  "updated_at": "2026-10-02T18:14:39Z"
 }
