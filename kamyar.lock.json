@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "blog/stop-chasing-documents-receipts/index.html",
-    "blog/index.html"
+    "blog/index.html",
+    "sitemap.xml"
   ],
-  "updated_at": "2026-10-02T15:11:31Z"
+  "updated_at": "2026-10-02T15:11:44Z"
 }
