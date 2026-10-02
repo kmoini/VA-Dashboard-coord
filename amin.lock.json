@@ -12,8 +12,9 @@
     "app/Services/Books/BankLineMatcher.php",
     "app/Models/Attachment.php",
     "app/Services/Gemini/DocumentAiIngestService.php",
-    "app/Accounting/V2/IntakeDraftService.php"
+    "app/Accounting/V2/IntakeDraftService.php",
+    "app/Http/Controllers/BankLinesController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-02T18:00:01Z"
+  "updated_at": "2026-10-02T18:01:12Z"
 }
