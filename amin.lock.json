@@ -5,8 +5,9 @@
     "config/accounting_v2.php",
     "app/Accounting/V2/AccountingV2.php",
     "resources/ai-prompts/bank-statement.extract.txt",
-    "resources/ai-prompts/document-extraction.multi.txt"
+    "resources/ai-prompts/document-extraction.multi.txt",
+    "app/Services/AiPrompts/AiPromptCatalog.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-02T17:51:59Z"
+  "updated_at": "2026-10-02T17:52:35Z"
 }
