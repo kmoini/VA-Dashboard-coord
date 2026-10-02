@@ -19,3 +19,5 @@ Prerequisites before V2 (owner must decide, section 21 lists 16 decisions): pin 
 **Why:** the team was about to design V2 from a hypothesis; this doc is the evidence-based baseline and the agreed shape to discuss.
 
 **How to apply:** when asked to implement any V2 piece, start from the doc's sections 16 to 19 and the migration order; never change `transaction_type`/`status`/`account_type` VALUES in place; add columns beside and project back. Re-read section 14 (20 blind spots) before scoping.
+
+**Baseline tag (2026-10-01):** `checkpoint-264` on va-dashboard2 main (commit dd763e8, docs/architecture/README.md + v2-reconciliation-2026-10-01.html). Return point if V2 work goes wrong: `git checkout checkpoint-264`. Tag and commit are LOCAL only; Amin has not said to push. A fourth report exists: VoiceAccountant-V2-Reconciliation-Report-2026-10-01.pdf (sections A to U) in Downloads and in docs/architecture/.

@@ -36,3 +36,5 @@ middle of their testing.
   Amin tests locally, then goes straight to production. Do not propose staging
   again.
 - Take a database backup before any deploy carrying a data migration.
+
+Reaffirmed by Amin 2026-10-01 at the start of Accounting V2 implementation: "do not send changes to live; when it is done we test locally first, then push if OK." Applies to every V2 phase: commit locally, hand over a local test guide, no push, no checkpoint tag until his test passes.
