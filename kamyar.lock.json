@@ -1,10 +1,6 @@
 {
   "owner": "Kamyar",
-  "status": "active",
-  "locked_files": [
-    "blog/voice-accountant-vs-dext-xero-wellybox/index.html",
-    "blog/bookkeeping-by-voice-5-minutes-a-day/index.html",
-    "blog/best-bookkeeping-receipt-apps-freelancers-2026/index.html"
-  ],
-  "updated_at": "2026-10-02T15:31:33Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-10-02T15:31:51Z"
 }
