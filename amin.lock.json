@@ -1,12 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Accounting/V2/ReviewReason.php",
-    "app/Accounting/V2/BusinessEventResolver.php",
-    "docs/ACCOUNTING-V2-DECISIONS.md",
-    "tests/Feature/AccountingV2/AwaitingInvoiceTest.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-02T19:36:43Z"
+  "updated_at": "2026-10-02T19:40:20Z"
 }
