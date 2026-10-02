@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "database/migrations/2026_10_02_000001_add_reconciliation_check_to_bank_statement_imports.php",
-    "app/Models/BankStatementImport.php"
+    "app/Models/BankStatementImport.php",
+    "app/Services/Books/StatementDocumentIntake.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-02T20:38:37Z"
+  "updated_at": "2026-10-02T20:39:27Z"
 }
