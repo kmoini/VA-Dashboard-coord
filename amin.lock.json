@@ -17,8 +17,9 @@
     "routes/web.php",
     "app/Http/Controllers/TransactionsController.php",
     "resources/js/Components/BankLinesDrawer.jsx",
-    "resources/js/Components/TransactionsTable.jsx"
+    "resources/js/Components/TransactionsTable.jsx",
+    "resources/js/Pages/Transactions/Index.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-02T18:05:28Z"
+  "updated_at": "2026-10-02T18:05:57Z"
 }
