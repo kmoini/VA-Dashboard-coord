@@ -1,6 +1,8 @@
 {
   "owner": "Kamyar",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-10-02T15:37:38Z"
+  "status": "active",
+  "locked_files": [
+    "for-quickbooks.html"
+  ],
+  "updated_at": "2026-10-02T15:42:51Z"
 }
