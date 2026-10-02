@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Services/Books/StatementDocumentIntake.php",
     "app/Services/Gemini/DocumentAiIngestService.php",
-    "app/Services/Books/BankLineMatcher.php"
+    "app/Services/Books/BankLineMatcher.php",
+    "tests/Feature/AccountingV2/StatementLinesTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-02T19:04:48Z"
+  "updated_at": "2026-10-02T19:05:40Z"
 }
