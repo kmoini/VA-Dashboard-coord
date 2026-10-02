@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "resources/ai-prompts/bank-statement.extract.txt",
-    "app/Services/Books/StatementDocumentIntake.php"
+    "app/Services/Books/StatementDocumentIntake.php",
+    "resources/js/Components/BankLinesDrawer.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-02T21:08:01Z"
+  "updated_at": "2026-10-02T21:08:40Z"
 }
