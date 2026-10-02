@@ -1,6 +1,9 @@
 {
   "owner": "Kamyar",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-10-02T13:16:59Z"
+  "status": "active",
+  "locked_files": [
+    "blog/stop-chasing-documents-receipts/index.html",
+    "blog/index.html"
+  ],
+  "updated_at": "2026-10-02T15:11:31Z"
 }
