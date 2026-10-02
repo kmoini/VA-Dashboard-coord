@@ -1,10 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Services/Books/StatementDocumentIntake.php",
-    "app/Http/Controllers/BankLinesController.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-02T21:19:47Z"
+  "updated_at": "2026-10-02T21:21:57Z"
 }
