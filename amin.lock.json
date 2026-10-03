@@ -1,18 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "config/accounting_v2.php",
-    "app/Accounting/V2/AccountingV2.php",
-    "app/Accounting/V2/EventContext.php",
-    "app/Accounting/V2/BusinessEventResolver.php",
-    "app/Integrations/DTOs/LedgerEntryDTO.php",
-    "app/Integrations/Providers/QuickBooks/QuickBooksEntityMapper.php",
-    "app/Integrations/Providers/QuickBooks/QuickBooksReferenceResolver.php",
-    "app/Integrations/Providers/QuickBooksExportProvider.php",
-    "tests/Feature/AccountingV2/EventPostingTest.php",
-    "docs/ACCOUNTING-V2-PHASE3.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-03T15:19:28Z"
+  "updated_at": "2026-10-03T15:23:51Z"
 }
