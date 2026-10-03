@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Accounting/V2/SettlementCandidates.php",
-    "app/Accounting/V2/SettlementLinker.php"
+    "app/Accounting/V2/SettlementLinker.php",
+    "resources/js/Components/SettlementPicker.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-03T20:14:49Z"
+  "updated_at": "2026-10-03T20:17:05Z"
 }
