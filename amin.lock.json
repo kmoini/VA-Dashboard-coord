@@ -6,8 +6,9 @@
     "app/Accounting/V2/AccountingV2.php",
     "app/Accounting/V2/EventContext.php",
     "app/Accounting/V2/BusinessEventResolver.php",
-    "app/Integrations/DTOs/LedgerEntryDTO.php"
+    "app/Integrations/DTOs/LedgerEntryDTO.php",
+    "app/Integrations/Providers/QuickBooks/QuickBooksEntityMapper.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-03T15:02:20Z"
+  "updated_at": "2026-10-03T15:03:03Z"
 }
