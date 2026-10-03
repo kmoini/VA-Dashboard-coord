@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 7acbadfe-1c7f-4ff1-9d46-af6d92524552
-  modified: 2026-10-01T23:09:00.355Z
+  modified: 2026-10-02T17:24:18.407Z
 ---
 
 Built 2026-10-01 evening on `main` after checkpoint-265 (local commit, not pushed). Guide: `docs/ACCOUNTING-V2-PHASE2.md`. Design basis: [[v2-architecture-audit-2026-09]], builds on [[accounting-v2-phase1-status]].
@@ -16,4 +16,6 @@ Built 2026-10-01 evening on `main` after checkpoint-265 (local commit, not pushe
 
 **Why:** Amin said "فاز ۲ را شروع کن" after approving and deploying phase 1; the audits' first recommendation was one draft contract for all intake paths.
 
-**How to apply:** next = Amin's local test (table in the doc), then checkpoint (next number from live `git tag`) + push only when he says so. Before enabling the EVENT flag for the accounting team on prod, run `ai:extraction-check --runs=3` on the server ([[extraction-measurement-harness]]): a new required enum can shift the model's other answers. Then phase 3 (QBO event-based mapping, snapshot-driven account selection) and phase 4 (settlement lifecycle).
+**Local test 2026-10-02 (Amin) passed** on manual form, duplicate, receipt onto a manual row, multi-line statement, e-Transfer, and found 3 bugs fixed the same day (3869561, 1a15add: human rows never rewritten by the tax resolver; receipt fills the row's own tax decision; rule-decided tax reaches the row). Also added: icon-only + button in Record Keeping and tax fields on the manual form (e75394d, 5b1f72c). Amin said OK to push on 2026-10-02 → checkpoint-266 commands handed to him (auto-mode blocks git push). Open item: [[open-question-etransfer-without-bill]]. Agreed next: phase 2.5 (bank statement → statement lines + matching, NOT ledger rows), then phase 3.
+
+**How to apply:** checkpoint (next number from live `git tag`) + push only when he says so. Before enabling the EVENT flag for the accounting team on prod, run `ai:extraction-check --runs=3` on the server ([[extraction-measurement-harness]]): a new required enum can shift the model's other answers. Then phase 3 (QBO event-based mapping, snapshot-driven account selection) and phase 4 (settlement lifecycle).

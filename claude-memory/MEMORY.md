@@ -1,4 +1,6 @@
 # Memory Index
+- [Accounting V2 phase 2.5: bank statements](accounting-v2-phase2-5-bank-statements.md) — BUILT LOCALLY 2026-10-02 after cp-266, NOT pushed: a statement becomes bank_statement_lines (evidence), ledger keeps bank charges only, matcher both ways, Record Keeping chip + drawer. READ before statements/reconciliation.
+- [Decision: payment without a bill awaits its invoice](open-question-etransfer-without-bill.md) — RESOLVED by the accounting team 2026-10-02 (option B): never expensed by the engine; AP_PAYMENT + AWAITING_INVOICE, or settles_transaction_id when an open bill matches. Logged in docs/ACCOUNTING-V2-DECISIONS.md. READ before payment event rules or phase 4.
 - [Accounting V2 phase 2 status](accounting-v2-phase2-status.md) — BUILT LOCALLY 2026-10-01 after cp-265, NOT pushed: IntakeDraftService puts manual/portal/mobile/voice/email through the V2 draft.
 - [Accounting V2 phase 1 status](accounting-v2-phase1-status.md) — BUILT LOCALLY 2026-10-01, flags off, NOT pushed, waiting for Amin's local test.
 - [V2 architecture audit 2026-09](v2-architecture-audit-2026-09.md) — 2026-09-30 validation of the V2 hypothesis + recommendation (option A: additive evolution.
@@ -95,3 +97,6 @@
 - [International direction](international-direction.md) — i18n must be RTL-safe + ICU + TMS-friendly from day one.
 - [CLAUDE.md tracking + .gitignore gotcha](claude-md-gitignore-tracking.md) — .gitignore never affects tracked files; don't re-ignore CLAUDE.md.
 - [pr staging box](pr-staging-box.md) — pr.voiceaccountant.com = dev staging on prod server; own DB va_dashboard_pr (safe to migrate); pg DB creation needs postgres superuser.
+- [Dext alternatives comparison page](dext-alternatives-landing-page.md) — lives at blog/dext-alternatives-2026/ (NOT root, NOT on homepage); Dext DOES attach docs to QBO; Hubdoc retired 2026-05-08; www deploy is manual by Amin.
+- [Marketing scope + blog placement](marketing-scope-and-blog-placement.md) — ⚠️⚠️ FEEDBACK (Amin 2026-10-02): in the marketing repo talk MARKETING ONLY (never dashboard status); content pages go under blog/<slug>/, not the root or homepage.
+- [Tentpole funnel brief PENDING](tentpole-funnel-brief-pending.md) — ⏸ 2026-10-02: Kamyar brief (wire 11 free tools to signup) ON HOLD until Amin relays Kamyar pick of 4 options; findings: no CSV exports, no import deep link, shared ToolShell.
