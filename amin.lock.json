@@ -1,12 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Accounting/V2/SettlementCandidates.php",
-    "app/Accounting/V2/SettlementLinker.php",
-    "resources/js/Components/SettlementPicker.jsx",
-    "tests/Feature/AccountingV2/PartialSettlementTest.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-03T20:19:16Z"
+  "updated_at": "2026-10-03T20:23:25Z"
 }
