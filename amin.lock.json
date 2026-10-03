@@ -5,8 +5,9 @@
     "app/Accounting/V2/IntakeDraftService.php",
     "app/Accounting/V2/CanonicalDraft.php",
     "app/Integrations/DTOs/LedgerEntryDTO.php",
-    "tests/Feature/AccountingV2/EventPostingTest.php"
+    "tests/Feature/AccountingV2/EventPostingTest.php",
+    "tests/Feature/AccountingV2/IntakePathsTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-03T17:09:05Z"
+  "updated_at": "2026-10-03T17:09:52Z"
 }
