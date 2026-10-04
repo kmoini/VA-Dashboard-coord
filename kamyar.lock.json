@@ -1,6 +1,8 @@
 {
   "owner": "Kamyar",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-10-04T17:17:27Z"
+  "status": "active",
+  "locked_files": [
+    "blog/dext-alternatives-2026/index.html"
+  ],
+  "updated_at": "2026-10-04T17:17:56Z"
 }
