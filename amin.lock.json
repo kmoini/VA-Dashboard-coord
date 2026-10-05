@@ -1,7 +1,9 @@
 {
   "owner": "Amin",
-  "status": "idle",
-  "locked_files": [],
+  "status": "active",
+  "locked_files": [
+    "database/migrations/2026_10_05_000001_create_transaction_settlements.php"
+  ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-05T19:24:53Z"
+  "updated_at": "2026-10-05T19:33:45Z"
 }
