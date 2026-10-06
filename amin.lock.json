@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "database/migrations/2026_10_06_000003_create_client_loans_tables.php"
+    "database/migrations/2026_10_06_000003_create_client_loans_tables.php",
+    "app/Models/ClientLoan.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-06T20:36:56Z"
+  "updated_at": "2026-10-06T20:37:18Z"
 }
