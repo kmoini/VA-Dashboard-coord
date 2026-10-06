@@ -6,8 +6,9 @@
     "app/Models/ClientLoan.php",
     "app/Models/ClientLoanScheduleRow.php",
     "app/Accounting/V2/LoanSchedule.php",
-    "app/Http/Controllers/ClientLoansController.php"
+    "app/Http/Controllers/ClientLoansController.php",
+    "resources/js/Components/LoansCard.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-06T20:40:50Z"
+  "updated_at": "2026-10-06T20:41:42Z"
 }
