@@ -1,9 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "docs/ACCOUNTING-V2-DECISION-PACK-2026-10-07.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-07T23:02:04Z"
+  "updated_at": "2026-10-07T23:02:52Z"
 }
