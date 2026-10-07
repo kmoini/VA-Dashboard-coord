@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "database/migrations/2026_10_07_000001_add_is_related_party_to_registry.php"
+    "database/migrations/2026_10_07_000001_add_is_related_party_to_registry.php",
+    "docs/ACCOUNTING-V2-PHASE6.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-07T23:15:51Z"
+  "updated_at": "2026-10-07T23:35:20Z"
 }
