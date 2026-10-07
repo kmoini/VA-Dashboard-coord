@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "tests/Feature/AccountingV2/ScenarioMatrixTest.php"
+    "tests/Feature/AccountingV2/ScenarioMatrixTest.php",
+    "docs/ACCOUNTING-V2-AUDIT-2026-10-07.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-07T22:51:35Z"
+  "updated_at": "2026-10-07T22:55:49Z"
 }
