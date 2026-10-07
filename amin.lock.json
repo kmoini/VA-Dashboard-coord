@@ -1,13 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "tests/Feature/AccountingV2/ProductionSafetyTest.php",
-    "app/Accounting/V2/GifiFromAccount.php",
-    "app/Accounting/V2/AccountingSides.php",
-    "resources/js/Components/AccountPicker.jsx",
-    "tests/Feature/AccountingV2/AccountFirstTest.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-07T22:04:37Z"
+  "updated_at": "2026-10-07T22:18:33Z"
 }
