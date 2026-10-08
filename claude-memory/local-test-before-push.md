@@ -38,3 +38,5 @@ middle of their testing.
 - Take a database backup before any deploy carrying a data migration.
 
 Reaffirmed by Amin 2026-10-01 at the start of Accounting V2 implementation: "do not send changes to live; when it is done we test locally first, then push if OK." Applies to every V2 phase: commit locally, hand over a local test guide, no push, no checkpoint tag until his test passes.
+
+**CHANGED 2026-10-07 (Amin): the V2 engine is LIVE for every firm and Amin now tests on PRODUCTION, not localhost. Do not ask for localhost test steps or screenshots any more. Flow per fix: build + tests green → commit (named paths) → give Amin tag/push commands → he runs `git pull --ff-only` + optimize:clear + queue:restart on the server → he tests on production and sends screenshots. Still never push from here; still never tag on the server.**

@@ -41,3 +41,5 @@ best-practice but optional; history purge is not worth it on a private repo.
 The DURABLE rule still stands regardless: NEVER write secrets to any path inside
 the repo tree — the auto-commit pushes the working tree without review. Related:
 [[local-dev-run-windows]], [[duosync-setup]].
+
+**2026-10-07 incident:** `From Begining till Dec 31th 2025.CSV` (a client's full general-ledger export: names, bank account numbers) was sitting in the repo ROOT and my blanket `git add -A` committed it on 2026-10-03 (14103fc); it reached GitHub and the server with checkpoint-277. Untracked in c189b83 + root `/*.csv /*.CSV /*.xlsx` ignored. HISTORY REWRITTEN 2026-10-07 by Amin from a fresh clone (py -3 -m git_filter_repo --force --invert-paths), force-pushed main + tags 271-277 (new hashes: main c842701, cp-277 → b2e9855); local and server reset to origin/main; verified 0 commits reference the file. Any other clone (teammates, DuoSync coord) must `git fetch && git reset --hard origin/main` before pushing or the old history returns. Rule for me: never `git add -A`; add named paths, and run `git status --short` before every commit to spot stray data files.
