@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "index.html",
-    "product.html"
+    "product.html",
+    "llms.txt"
   ],
-  "updated_at": "2026-10-08T23:15:30Z"
+  "updated_at": "2026-10-08T23:15:44Z"
 }
