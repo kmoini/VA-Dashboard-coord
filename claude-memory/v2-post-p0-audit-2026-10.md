@@ -13,3 +13,5 @@ Policy-free work (not done): show metadata.extras.line_items in the review drawe
 
 **Why:** the brief forbids making accounting policy; these gaps need the team.
 **How to apply:** when Amin relays the team's answers, build each event as rule + side + reason + push shape + scenario test; do not touch the P0 guarantees (list in section A of the audit). Related: [[accounting-v2-phase4-status]], [[never-overrule-the-accountant]].
+
+**Phase 8 (2026-10-08, local 915dac4, not pushed).** Read-only closure: `docs/ACCOUNTING-V2-POLICY-DECISIONS.md` lists P1-P14 (12 POLICY REQUIRED, 2 CONFIRMATION) with an answer sheet; `docs/ACCOUNTING-V2-PHASE8.md` is the production gate (45 events, 44 reasons, QBO/GIFI/tax/learning/duplicate/multi-person gates, 1149 passed + the 13 baseline failures). Owner interim for P1 (several people on one sheet) = ONE row with the lines kept; Amin will relay the team's answer. Still unverified in a sandbox: applying the deposit-refund JournalEntry to the unapplied Payment (P6). Production status: READY AFTER ACCOUNTING DECISIONS.

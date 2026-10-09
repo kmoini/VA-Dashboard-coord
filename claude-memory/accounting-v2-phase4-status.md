@@ -5,8 +5,10 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 7acbadfe-1c7f-4ff1-9d46-af6d92524552
-  modified: 2026-10-03T19:10:20.089Z
+  modified: 2026-10-08T20:00:00.000Z
 ---
+
+**2026-10-08 prod day 2 (checkpoint-287 = 5bddfbb, LIVE, confirmed by server git log).** Four prod tests done: account pick OK, related party OK, multi-person sheet fixed by the prompt revert (re-test pending), asset disposal VERIFIED end to end (row #1731 → QBO Deposit #263 to Chequing, account picked by Amin). Six root-cause fixes that day in docs/ACCOUNTING-V2-PHASE7.md section 23: held event posts only to the row pick (never GIFI mapping); override not held; account pick clears the event reason; the pick opens in place from the row button and re-queues the push; picking the engine's own account locks (`confirmDimension`); the form's Bank account also writes `funding_client_bank_account_id` (LedgerEntryDTO reads it first). ⚠️ The CA sandbox (connection 8, Sandbox Company CA ae74) had NO Bank / Credit Card / A/P accounts: that is why every push asked for a payment account; Amin created them in QBO and mapped Chequing ••3922 under Accounting → Bank and card accounts. Chart cache key `qbo:chart:{connection_id}` (300s). e74e497 (card shows loading/error/no-bank state, empty chart not cached) is LOCAL, not pushed.
 
 Built 2026-10-03 on `main` after checkpoint-270; checkpoint-271 = commits d57fc07..519ffbd, pushed by Amin 2026-10-03 (server optimize:clear + queue:restart done). Sandbox-verified: payment held, bill typed later with Kind=Bill releases it, Bill 224 then BillPayment 225 linked, balance 0. Guide: `docs/ACCOUNTING-V2-PHASE4.md`. Follows [[accounting-v2-phase3-status]] and the team decision [[open-question-etransfer-without-bill]].
 
