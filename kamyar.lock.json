@@ -1,10 +1,6 @@
 {
   "owner": "Kamyar",
-  "status": "active",
-  "locked_files": [
-    "index.html",
-    "product.html",
-    "llms.txt"
-  ],
-  "updated_at": "2026-10-09T00:31:19Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-10-09T00:31:46Z"
 }
