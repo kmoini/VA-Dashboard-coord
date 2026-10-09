@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "tests/Feature/AccountingV2/LoanProceedsSafetyTest.php"
+    "tests/Feature/AccountingV2/LoanProceedsSafetyTest.php",
+    "tests/Feature/AccountingV2/FingerprintContractTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-09T18:12:02Z"
+  "updated_at": "2026-10-09T18:12:33Z"
 }
