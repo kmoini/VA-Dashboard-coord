@@ -1,8 +1,6 @@
 {
   "owner": "Kamyar",
-  "status": "active",
-  "locked_files": [
-    "branded-app-preview.html"
-  ],
-  "updated_at": "2026-10-09T00:45:27Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-10-09T00:46:23Z"
 }
