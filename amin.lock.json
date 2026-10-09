@@ -4,8 +4,9 @@
   "locked_files": [
     "tests/Feature/AccountingV2/RowEndpointLockTest.php",
     "tests/Feature/AccountingV2/RegistryIdentityTest.php",
-    "tests/Feature/AccountingV2/ChartSnapshotLifecycleTest.php"
+    "tests/Feature/AccountingV2/ChartSnapshotLifecycleTest.php",
+    "database/migrations/2026_10_09_000001_add_actor_to_ai_feedback_signals.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-09T17:40:00Z"
+  "updated_at": "2026-10-09T17:41:30Z"
 }
