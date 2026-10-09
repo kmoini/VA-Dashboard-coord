@@ -2,7 +2,8 @@
   "owner": "Kamyar",
   "status": "active",
   "locked_files": [
-    "index.html"
+    "index.html",
+    "product.html"
   ],
-  "updated_at": "2026-10-09T00:30:52Z"
+  "updated_at": "2026-10-09T00:31:05Z"
 }
