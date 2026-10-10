@@ -65,3 +65,5 @@ entry arrives WITHOUT its receipt (was a live bug). See docs/QUICKBOOKS-DELETION
 
 Related: [[sales-tax-hst-gst]], [[gifi-qbo-account-mapping]],
 [[wait-for-user-test-before-deploy]].
+
+**2026-10-09 P6 sandbox probe (scripts/qbo-p6-probe.php, connection 8).** (1) An unapplied customer Payment CAN be applied to a JournalEntry that debits A/R for the customer: FULL Payment update (Id, SyncToken, CustomerRef, TotalAmt, DepositToAccountRef, Line [{Amount, LinkedTxn [{TxnId: JE, TxnType: 'JournalEntry'}]}]) → UnappliedAmt 0, line linked; the JE side shows no LinkedTxn. A full update REPLACES the Line set, so re-sending the same desired state does not double-apply; appending would. (2) A SPARSE Payment update without CustomerRef is refused (code 2020). (3) Re-confirmed: a reused RequestId is replayed even after the entity was deleted (create returned the deleted id; everything after said code 610 'Another user has deleted this transaction'): never reuse a RequestId across attempts, use a per-run nonce in probes. Result recorded in docs/ACCOUNTING-V2-INTERIM-HARDENING.md; NOT implemented in the flow (waits for the team's P6 confirmation).
