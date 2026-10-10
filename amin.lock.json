@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "database/factories/AccountantAccountFactory.php"
+    "database/factories/AccountantAccountFactory.php",
+    "database/factories/UserFactory.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-10T19:57:02Z"
+  "updated_at": "2026-10-10T19:57:11Z"
 }
