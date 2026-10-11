@@ -1,7 +1,9 @@
 {
   "owner": "Amin",
-  "status": "idle",
-  "locked_files": [],
+  "status": "active",
+  "locked_files": [
+    "docs/ACCOUNTING-V2-MASTER-EXECUTION-REPORT.md"
+  ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-11T23:37:57Z"
+  "updated_at": "2026-10-11T23:45:28Z"
 }
