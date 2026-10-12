@@ -4,8 +4,9 @@
   "locked_files": [
     "config/accounting_v2.php",
     "app/Services/Accounting/GifiLearningService.php",
-    "tests/Feature/GifiLearningServiceTest.php"
+    "tests/Feature/GifiLearningServiceTest.php",
+    "app/Integrations/Providers/QuickBooksExportProvider.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-12T02:44:33Z"
+  "updated_at": "2026-10-12T02:47:36Z"
 }
