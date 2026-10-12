@@ -20,8 +20,9 @@
     "app/Services/TransactionService.php",
     "app/Http/Controllers/TransactionsController.php",
     "tests/Feature/AccountingV2/IntakePathsTest.php",
-    "app/Services/Mobile/MobileTransactionProjector.php"
+    "app/Services/Mobile/MobileTransactionProjector.php",
+    "app/Policies/TransactionPolicy.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-12T01:35:22Z"
+  "updated_at": "2026-10-12T01:35:31Z"
 }
