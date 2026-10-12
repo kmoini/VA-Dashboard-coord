@@ -8,8 +8,9 @@
     "app/Services/LearnedPreferenceService.php",
     "tests/Feature/Intelligence/LearnedPreferenceTest.php",
     "app/Services/Books/TransactionPoster.php",
-    "tests/Feature/Bigcapital/TransactionPosterTest.php"
+    "tests/Feature/Bigcapital/TransactionPosterTest.php",
+    "app/Integrations/Providers/QuickBooks/QuickBooksEntityMapper.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-12T01:29:11Z"
+  "updated_at": "2026-10-12T01:29:56Z"
 }
