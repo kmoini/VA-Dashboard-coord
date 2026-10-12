@@ -10,8 +10,9 @@
     "app/Services/Books/TransactionPoster.php",
     "tests/Feature/Bigcapital/TransactionPosterTest.php",
     "app/Integrations/Providers/QuickBooks/QuickBooksEntityMapper.php",
-    "app/Integrations/DTOs/LedgerEntryDTO.php"
+    "app/Integrations/DTOs/LedgerEntryDTO.php",
+    "tests/Feature/AccountingV2/EventPostingTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-12T01:30:11Z"
+  "updated_at": "2026-10-12T01:30:28Z"
 }
