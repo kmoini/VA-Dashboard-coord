@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "tests/Feature/AccountingV2/RetryBlockedSkipsArchivedTest.php",
-    "app/Http/Controllers/AccountingController.php"
+    "app/Http/Controllers/AccountingController.php",
+    "app/Console/Commands/AccountingV2Status.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-12T18:35:38Z"
+  "updated_at": "2026-10-12T18:36:34Z"
 }
