@@ -1,14 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "tests/Feature/Mobile/MobileEngagementTest.php",
-    "database/migrations/2026_10_11_000001_widen_activity_log_actions_for_inbound_email.php",
-    "tests/Feature/ActivityLogVocabularyTest.php",
-    "tests/Feature/Email/InboundEmailIntakeTest.php",
-    "docs/ACCOUNTING-V2-FINALIZATION-REPORT.md",
-    ".github/workflows/tests.yml"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-12T00:19:20Z"
+  "updated_at": "2026-10-12T00:21:38Z"
 }
