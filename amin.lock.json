@@ -10,8 +10,9 @@
     "app/Services/Gemini/ClientAiContext.php",
     "app/Accounting/V2/GifiFromAccount.php",
     "app/Services/Email/InboundEmailService.php",
-    "docs/DEPLOYMENT.md"
+    "docs/DEPLOYMENT.md",
+    "docs/ACCOUNTING-V2-REPAIR-PASS-2026-10-12.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-12T18:52:41Z"
+  "updated_at": "2026-10-12T18:54:08Z"
 }
