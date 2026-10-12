@@ -17,8 +17,9 @@
     "app/Accounting/V2/IntakeDraftService.php",
     "app/Accounting/V2/AccountCandidateResolver.php",
     "app/Accounting/V2/TransactionDecisionRecorder.php",
-    "app/Services/TransactionService.php"
+    "app/Services/TransactionService.php",
+    "app/Http/Controllers/TransactionsController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-12T01:32:12Z"
+  "updated_at": "2026-10-12T01:32:19Z"
 }
