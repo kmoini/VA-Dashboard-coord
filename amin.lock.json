@@ -7,8 +7,9 @@
     "tests/Feature/Fx/ApprovedAmountsSurviveBulkConversionTest.php",
     "app/Services/LearnedPreferenceService.php",
     "tests/Feature/Intelligence/LearnedPreferenceTest.php",
-    "app/Services/Books/TransactionPoster.php"
+    "app/Services/Books/TransactionPoster.php",
+    "tests/Feature/Bigcapital/TransactionPosterTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-12T01:29:05Z"
+  "updated_at": "2026-10-12T01:29:11Z"
 }
