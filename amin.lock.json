@@ -5,5 +5,5 @@
     "app/Jobs/ConvertTransactionCurrencyJob.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-12T01:25:52Z"
+  "updated_at": "2026-10-12T01:26:01Z"
 }
