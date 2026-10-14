@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "app/Accounting/V2/AccountCandidateResolver.php"
+    "app/Accounting/V2/AccountCandidateResolver.php",
+    "app/Integrations/Providers/QuickBooks/QuickBooksEntityMapper.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-14T15:46:13Z"
+  "updated_at": "2026-10-14T15:46:39Z"
 }
