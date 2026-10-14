@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Console/Commands/AccountingV2Status.php",
     "tests/Feature/AccountingV2/UploadToPostingTest.php",
-    "app/Http/Controllers/AccountingController.php"
+    "app/Http/Controllers/AccountingController.php",
+    "app/Integrations/Providers/QuickBooks/QuickBooksEntityMapper.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-14T21:42:37Z"
+  "updated_at": "2026-10-14T22:03:55Z"
 }
