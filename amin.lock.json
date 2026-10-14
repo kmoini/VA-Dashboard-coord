@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Services/TransactionService.php",
     "app/Integrations/Providers/QuickBooks/QuickBooksEntityMapper.php",
-    "app/Http/Controllers/AccountingController.php"
+    "app/Http/Controllers/AccountingController.php",
+    "docs/ACCOUNTING-V2-CHECKPOINT-297-AUDIT.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-14T14:13:25Z"
+  "updated_at": "2026-10-14T14:20:48Z"
 }
