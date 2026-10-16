@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Services/Gemini/TransactionDraftValidator.php",
     "app/Accounting/V2/ReviewReason.php",
-    "app/Accounting/V2/ReviewEvaluator.php"
+    "app/Accounting/V2/ReviewEvaluator.php",
+    "tests/Feature/AccountingV2/DateSafetyTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-16T18:48:57Z"
+  "updated_at": "2026-10-16T18:49:18Z"
 }
