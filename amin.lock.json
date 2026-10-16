@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Accounting/V2/DecisionMemory.php",
     "app/Accounting/V2/AccountCandidateResolver.php",
-    "app/Accounting/V2/GifiCandidateResolver.php"
+    "app/Accounting/V2/GifiCandidateResolver.php",
+    "tests/Feature/AccountingV2/DecisionMemoryTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-16T21:53:59Z"
+  "updated_at": "2026-10-16T21:55:29Z"
 }
