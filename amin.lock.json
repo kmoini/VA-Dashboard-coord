@@ -1,13 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Services/Gemini/TransactionDraftValidator.php",
-    "app/Accounting/V2/ReviewReason.php",
-    "app/Accounting/V2/ReviewEvaluator.php",
-    "tests/Feature/AccountingV2/DateSafetyTest.php",
-    "docs/ACCOUNTING-V2-PHASE1-ACCOUNT-MATCH-AND-DATES-2026-10-16.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-16T18:56:36Z"
+  "updated_at": "2026-10-16T18:57:18Z"
 }
