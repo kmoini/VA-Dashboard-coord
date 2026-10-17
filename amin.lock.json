@@ -6,8 +6,9 @@
     "app/Services/Accounting/GifiAssigner.php",
     "app/Http/Controllers/TransactionsController.php",
     "app/Http/Controllers/ClientPortalController.php",
-    "app/Services/Gemini/DocumentAiIngestService.php"
+    "app/Services/Gemini/DocumentAiIngestService.php",
+    "tests/Feature/GifiLearningServiceTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-17T19:17:33Z"
+  "updated_at": "2026-10-17T19:18:03Z"
 }
