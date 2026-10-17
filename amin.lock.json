@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "resources/js/Components/AccountPicker.jsx"
+    "resources/js/Components/AccountPicker.jsx",
+    "app/Http/Controllers/TransactionsController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-17T18:02:17Z"
+  "updated_at": "2026-10-17T18:03:39Z"
 }
