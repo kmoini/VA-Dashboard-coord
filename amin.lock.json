@@ -6,8 +6,9 @@
     "app/Services/Documents/TiffConverter.php",
     "app/Services/Documents/EvidenceNormalizer.php",
     "tests/Support/MakesSpreadsheets.php",
-    "tests/Unit/Documents/EvidenceTypesTest.php"
+    "tests/Unit/Documents/EvidenceTypesTest.php",
+    "tests/Unit/Documents/SpreadsheetTextExtractorTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-17T20:54:19Z"
+  "updated_at": "2026-10-17T20:54:33Z"
 }
