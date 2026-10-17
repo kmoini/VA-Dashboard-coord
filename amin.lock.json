@@ -9,8 +9,9 @@
     "tests/Unit/Documents/EvidenceTypesTest.php",
     "tests/Unit/Documents/SpreadsheetTextExtractorTest.php",
     "tests/Unit/Documents/EvidenceNormalizerTest.php",
-    "tests/Feature/Documents/UploadTypesTest.php"
+    "tests/Feature/Documents/UploadTypesTest.php",
+    "docs/UPLOAD-FILE-TYPES-2026-10-17.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-17T21:01:32Z"
+  "updated_at": "2026-10-17T21:04:07Z"
 }
