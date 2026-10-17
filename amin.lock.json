@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Services/Accounting/GifiLearningService.php",
     "app/Services/Accounting/GifiAssigner.php",
-    "app/Http/Controllers/TransactionsController.php"
+    "app/Http/Controllers/TransactionsController.php",
+    "app/Http/Controllers/ClientPortalController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-17T19:17:18Z"
+  "updated_at": "2026-10-17T19:17:26Z"
 }
