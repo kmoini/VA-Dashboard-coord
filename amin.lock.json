@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Services/Documents/SpreadsheetTextExtractor.php",
     "app/Http/Controllers/DocumentsController.php",
-    "resources/js/Components/SheetPreview.jsx"
+    "resources/js/Components/SheetPreview.jsx",
+    "resources/js/lib/fileType.js"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-17T21:38:46Z"
+  "updated_at": "2026-10-17T21:38:54Z"
 }
