@@ -8,8 +8,9 @@
     "app/Models/LearnedRuleSwitch.php",
     "app/Accounting/V2/DecisionMemory.php",
     "app/Http/Controllers/AiPreferencesController.php",
-    "routes/web.php"
+    "routes/web.php",
+    "tests/Feature/AccountingV2/LearnedRulesPageTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-17T17:19:36Z"
+  "updated_at": "2026-10-17T17:21:49Z"
 }
