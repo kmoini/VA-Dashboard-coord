@@ -1,17 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Services/Documents/SpreadsheetTextExtractor.php",
-    "app/Services/Documents/TiffConverter.php",
-    "app/Services/Documents/EvidenceNormalizer.php",
-    "tests/Support/MakesSpreadsheets.php",
-    "tests/Unit/Documents/EvidenceTypesTest.php",
-    "tests/Unit/Documents/SpreadsheetTextExtractorTest.php",
-    "tests/Unit/Documents/EvidenceNormalizerTest.php",
-    "tests/Feature/Documents/UploadTypesTest.php",
-    "docs/UPLOAD-FILE-TYPES-2026-10-17.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-17T21:12:03Z"
+  "updated_at": "2026-10-17T21:17:33Z"
 }
