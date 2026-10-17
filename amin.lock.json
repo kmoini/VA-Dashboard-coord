@@ -4,8 +4,9 @@
   "locked_files": [
     "resources/js/Components/AccountPicker.jsx",
     "app/Http/Controllers/TransactionsController.php",
-    "tests/Feature/AccountingV2/GifiCandidateEngineTest.php"
+    "tests/Feature/AccountingV2/GifiCandidateEngineTest.php",
+    "docs/ACCOUNTING-V2-ACCOUNTANT-TEST-PLAN-2026-10-15.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-17T18:03:51Z"
+  "updated_at": "2026-10-17T18:08:58Z"
 }
