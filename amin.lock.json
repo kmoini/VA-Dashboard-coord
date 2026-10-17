@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "app/Services/Documents/SpreadsheetTextExtractor.php"
+    "app/Services/Documents/SpreadsheetTextExtractor.php",
+    "app/Http/Controllers/DocumentsController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-17T21:37:12Z"
+  "updated_at": "2026-10-17T21:38:04Z"
 }
