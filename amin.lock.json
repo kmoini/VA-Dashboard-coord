@@ -1,17 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Services/Accounting/GifiLearningService.php",
-    "app/Services/Accounting/GifiAssigner.php",
-    "app/Http/Controllers/TransactionsController.php",
-    "app/Http/Controllers/ClientPortalController.php",
-    "app/Services/Gemini/DocumentAiIngestService.php",
-    "tests/Feature/GifiLearningServiceTest.php",
-    "app/Accounting/V2/DecisionMemory.php",
-    "resources/js/Pages/Settings/AiPreferences.jsx",
-    "tests/Feature/AccountingV2/LearnedRulesPageTest.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-17T19:24:33Z"
+  "updated_at": "2026-10-17T19:28:35Z"
 }
