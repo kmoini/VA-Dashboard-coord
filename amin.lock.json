@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Accounting/V2/GifiCandidateResolver.php",
     "tests/Feature/AccountingV2/GifiCandidateEngineTest.php",
-    "database/migrations/2026_10_17_000001_create_learned_rule_switches.php"
+    "database/migrations/2026_10_17_000001_create_learned_rule_switches.php",
+    "app/Models/LearnedRuleSwitch.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-17T17:17:42Z"
+  "updated_at": "2026-10-17T17:18:01Z"
 }
