@@ -9,8 +9,9 @@
     "app/Services/Gemini/DocumentAiIngestService.php",
     "tests/Feature/GifiLearningServiceTest.php",
     "app/Accounting/V2/DecisionMemory.php",
-    "resources/js/Pages/Settings/AiPreferences.jsx"
+    "resources/js/Pages/Settings/AiPreferences.jsx",
+    "tests/Feature/AccountingV2/LearnedRulesPageTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-17T19:24:25Z"
+  "updated_at": "2026-10-17T19:24:33Z"
 }
