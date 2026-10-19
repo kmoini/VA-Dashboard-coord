@@ -1,12 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "database/migrations/2026_10_19_000001_publish_settlement_report_prompt.php",
-    "tests/Unit/SettlementReportPromptTest.php",
-    "docs/SETTLEMENT-REPORT-RULE-2026-10-19.md",
-    "tests/Feature/PromptPublishGuardTest.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-19T17:08:48Z"
+  "updated_at": "2026-10-19T17:14:20Z"
 }
