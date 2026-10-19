@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "app/Integrations/PushGate.php"
+    "app/Integrations/PushGate.php",
+    "app/Jobs/ResyncTransactionJob.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-19T21:50:50Z"
+  "updated_at": "2026-10-19T21:52:58Z"
 }
