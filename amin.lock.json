@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "database/migrations/2026_10_19_000001_publish_settlement_report_prompt.php",
-    "tests/Unit/SettlementReportPromptTest.php"
+    "tests/Unit/SettlementReportPromptTest.php",
+    "docs/SETTLEMENT-REPORT-RULE-2026-10-19.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-19T17:03:15Z"
+  "updated_at": "2026-10-19T17:04:55Z"
 }
