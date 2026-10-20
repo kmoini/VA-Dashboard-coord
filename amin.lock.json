@@ -6,8 +6,9 @@
     "tests/Feature/Integrations/PushGateTest.php",
     "database/migrations/2026_10_19_000002_add_company_to_learned_rule_switches.php",
     "app/Console/Commands/MemoryScopeReport.php",
-    "docs/PHASE0B-COMPANY-SCOPED-MEMORY-2026-10-19.md"
+    "docs/PHASE0B-COMPANY-SCOPED-MEMORY-2026-10-19.md",
+    "tests/Feature/QuickBooks/QuickBooksTokenReliabilityTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-20T00:18:20Z"
+  "updated_at": "2026-10-20T00:19:48Z"
 }
