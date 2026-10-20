@@ -11,8 +11,9 @@
     "app/Services/QuickBooksReconnectRequired.php",
     "database/migrations/2026_10_19_000003_add_reconnect_state_to_quickbooks_connections.php",
     "app/Models/QuickBooksConnection.php",
-    "docs/PHASE0C-QUICKBOOKS-TOKEN-RELIABILITY-2026-10-19.md"
+    "docs/PHASE0C-QUICKBOOKS-TOKEN-RELIABILITY-2026-10-19.md",
+    "docs/PHASE0-SAFETY-SUMMARY-2026-10-19.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-20T00:25:15Z"
+  "updated_at": "2026-10-20T00:36:23Z"
 }
