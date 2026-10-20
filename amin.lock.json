@@ -6,8 +6,9 @@
     "app/History/HistoricalContextService.php",
     "app/Http/Controllers/HistoryContextController.php",
     "resources/js/Components/HistoryContext.jsx",
-    "tests/Feature/History/HistoryImportTest.php"
+    "tests/Feature/History/HistoryImportTest.php",
+    "docs/PHASE3-HISTORY-CONTEXT-2026-10-20.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-20T14:45:58Z"
+  "updated_at": "2026-10-20T14:46:12Z"
 }
