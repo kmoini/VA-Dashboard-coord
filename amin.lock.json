@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "tests/Feature/AccountingV2/HistoryDecisionsTest.php"
+    "tests/Feature/AccountingV2/HistoryDecisionsTest.php",
+    "app/Accounting/V2/AccountNameNormalizer.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-20T21:08:47Z"
+  "updated_at": "2026-10-20T21:10:05Z"
 }
