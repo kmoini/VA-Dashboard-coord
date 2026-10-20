@@ -5,8 +5,9 @@
     "app/History/HistoricalContextService.php",
     "app/History/HistoryAccountLinker.php",
     "app/Accounting/V2/GifiCandidateResolver.php",
-    "app/Accounting/V2/HistoryDecisionResolver.php"
+    "app/Accounting/V2/HistoryDecisionResolver.php",
+    "tests/Feature/AccountingV2/HistoryDecisionsTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-20T18:34:53Z"
+  "updated_at": "2026-10-20T18:36:19Z"
 }
