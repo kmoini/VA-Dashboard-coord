@@ -8,8 +8,9 @@
     "app/Models/HistoryImport.php",
     "app/Models/HistoryImportRow.php",
     "app/Models/HistoryEntry.php",
-    "app/Models/HistoryLine.php"
+    "app/Models/HistoryLine.php",
+    "app/Models/HistoryLink.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-20T01:34:08Z"
+  "updated_at": "2026-10-20T01:34:14Z"
 }
