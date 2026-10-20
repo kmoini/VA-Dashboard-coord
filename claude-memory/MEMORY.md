@@ -1,110 +1,112 @@
 # Memory Index
-- [V2 remaining work, PARKED 2026-10-15](v2-remaining-work-after-team-test.md) — ⏸ saved before fixing the accounting team's first-test problems; REMIND Amin to resume it (owner tasks: status/token/S3/policy answers; engineering: decisions, S3 migration, auto-link, live proof of Deposit/VendorCredit/RefundReceipt, flaky test, temp routes).
-- [Prod deploy was stale 2026-10-07](prod-deploy-stale-2026-10-07.md) — ⚠️⚠️ the live checkout was 64 commits behind (webhook never pulled since 2026-09-30); tag/push ONLY from local; after every checkpoint ask for the server's `git log -1` output. READ before deploy or 'is it live?'.
-- [Accounting V2 phase 4: settlement lifecycle](accounting-v2-phase4-status.md) — settlement lifecycle, phases 4 to 7 plus the prod day-2 fixes; LIVE through cp-287. ⚠️ held payment = QBO JournalEntry applied by a TotalAmt-0 BillPayment (a Check to A/P cannot be applied via API). Full per-checkpoint record inside the file. READ before bill/payment linking.
-- [Accounting V2 phase 3: event posting](accounting-v2-phase3-status.md) — BUILT LOCALLY 2026-10-03 after cp-269, NOT pushed, needs a QBO sandbox test: posting by event (Transfer, BillPayment, Payment, Invoice, held awaiting-invoice), chosen snapshot account sent, funding from registry never "first bank". READ before any push/mapper change.
-- [Accounting V2 phase 2.5: bank statements](accounting-v2-phase2-5-bank-statements.md) — BUILT LOCALLY 2026-10-02 after cp-266, NOT pushed: a statement becomes bank_statement_lines (evidence), ledger keeps bank charges only, matcher both ways, Record Keeping chip + drawer. READ before statements/reconciliation.
-- [Decision: payment without a bill awaits its invoice](open-question-etransfer-without-bill.md) — RESOLVED by the accounting team 2026-10-02 (option B): never expensed by the engine; AP_PAYMENT + AWAITING_INVOICE, or settles_transaction_id when an open bill matches. Logged in docs/ACCOUNTING-V2-DECISIONS.md. READ before payment event rules or phase 4.
-- [Accounting V2 phase 2 status](accounting-v2-phase2-status.md) — BUILT LOCALLY 2026-10-01 after cp-265, NOT pushed: IntakeDraftService puts manual/portal/mobile/voice/email through the V2 draft.
-- [Accounting V2 phase 1 status](accounting-v2-phase1-status.md) — BUILT LOCALLY 2026-10-01, flags off, NOT pushed, waiting for Amin's local test.
-- [V2 architecture audit 2026-09](v2-architecture-audit-2026-09.md) — 2026-09-30 validation of the V2 hypothesis + recommendation (option A: additive evolution.
-- [Accounting AI engine audit 2026-09](accounting-ai-engine-audit-2026-09.md) — 2026-09-30 read-only 15-part audit (Claude Doc) of document→Gemini→GIFI→QBO engine.
-- [Answer in Persian](answer-in-persian.md) — ⚠️⚠️ HARD RULE (Amin, repeated): ALWAYS reply to Amin in Persian unless he asks otherwise; code/commits/docs stay English.
-- [Bigcapital NOT in use](bigcapital-not-in-use.md) — ⚠️⚠️ HARD RULE (Amin, repeated 2026-09-30): Bigcapital/Books is NOT part of the product today; never put it in pricing.
-- [QBO API read quota](qbo-api-read-quota.md) — ⚠️⚠️ Intuit counts READS per workspace (Builder: hard 500K/mo cap). Our 15-min CDC watcher = ~2,880 reads/company/month.
-- [Canadian standard chart of accounts](canadian-standard-chart-of-accounts.md) — ⚠️⚠️ the team's Canadian_COA_QuickBooks_With_GIFI.xlsx has a FABRICATED GIFI column (revenue at 4000.
-- [Never overrule the accountant](never-overrule-the-accountant.md) — ⚠️⚠️ HARD RULE (Amin, 2026-09-22): never block or warn an accountant out of their own choice.
-- [Accounting team QBO complaints](accounting-team-qbo-complaints.md) — 2026-09-21/22: 3 complaints. ⚠️⚠️ the GIFI pickers had WRONG LABELS (8690 read "Travel".
-- [Local test before push](local-test-before-push.md) — ⚠️⚠️ CHANGED 2026-10-07: V2 is LIVE, Amin tests on PRODUCTION (no localhost steps/screenshots); per fix: commit → Amin tags+pushes from local → server pull → he tests on prod. Never push or tag from here.
+- [Historical context audit 2026-10-19](historical-context-audit-2026-10-19.md) — ⚠️⚠️ read-only audit: accounting.push sends UNAPPROVED rows; DecisionMemory leaks across companies; QBO lock-catch bug; settlement rule c023522 stays unshipped; Phase 0a push gate BUILT on validation/phase0a-push-safety-20261019 (1554def, CI green), not merged. READ before profile/history/learning/push work.
+- [V2 remaining work, PARKED 2026-10-15](v2-remaining-work-after-team-test.md) — ⏸ parked before fixing the accounting team's first-test problems; REMIND Amin to resume (owner answers + engineering list inside).
+- [AR accountant workflow questions](ar-accountant-workflow-questions.md) — 2026-10-19: deposit slip → Invoice/Payment/Deposit gap; team uses QB DESKTOP + Undeposited Funds; question list sent, answers PENDING.
+- [Prod deploy was stale 2026-10-07](prod-deploy-stale-2026-10-07.md) — ⚠️⚠️ live checkout was 64 commits behind; tag/push ONLY from local; after every checkpoint ask for the server's `git log -1`. READ before deploy or "is it live?".
+- [Accounting V2 phase 4: settlement lifecycle](accounting-v2-phase4-status.md) — phases 4 to 7 + prod day-2 fixes, LIVE through cp-287. ⚠️ held payment = QBO JournalEntry applied by a TotalAmt-0 BillPayment. READ before bill/payment linking.
+- [Accounting V2 phase 3: event posting](accounting-v2-phase3-status.md) — built locally 2026-10-03 after cp-269, needs QBO sandbox test. READ before any push/mapper change.
+- [Accounting V2 phase 2.5: bank statements](accounting-v2-phase2-5-bank-statements.md) — built locally 2026-10-02 after cp-266: statement → bank_statement_lines, matcher both ways, Record Keeping chip + drawer. READ before statements/reconciliation.
+- [Decision: payment without a bill awaits its invoice](open-question-etransfer-without-bill.md) — RESOLVED 2026-10-02 (option B): AP_PAYMENT + AWAITING_INVOICE, or settles_transaction_id. READ before payment event rules.
+- [Accounting V2 phase 2 status](accounting-v2-phase2-status.md) — built locally 2026-10-01 after cp-265: IntakeDraftService routes every intake through the V2 draft.
+- [Accounting V2 phase 1 status](accounting-v2-phase1-status.md) — built locally 2026-10-01, flags off.
+- [V2 architecture audit 2026-09](v2-architecture-audit-2026-09.md) — 2026-09-30 validation + recommendation (option A: additive evolution).
+- [Accounting AI engine audit 2026-09](accounting-ai-engine-audit-2026-09.md) — 2026-09-30 read-only 15-part audit of document→Gemini→GIFI→QBO.
+- [Answer in Persian](answer-in-persian.md) — ⚠️⚠️ HARD RULE: ALWAYS reply to Amin in Persian unless asked otherwise; code/commits/docs stay English.
+- [Bigcapital NOT in use](bigcapital-not-in-use.md) — ⚠️⚠️ HARD RULE (2026-09-30): Bigcapital/Books is NOT part of the product today; never in pricing.
+- [QBO API read quota](qbo-api-read-quota.md) — ⚠️⚠️ Intuit counts READS per workspace (Builder: 500K/mo cap); 15-min CDC watcher ≈ 2,880 reads/company/month.
+- [Canadian standard chart of accounts](canadian-standard-chart-of-accounts.md) — ⚠️⚠️ the team's COA xlsx has a FABRICATED GIFI column.
+- [Never overrule the accountant](never-overrule-the-accountant.md) — ⚠️⚠️ HARD RULE (2026-09-22): never block or warn an accountant out of their own choice.
+- [Accounting team QBO complaints](accounting-team-qbo-complaints.md) — 2026-09-21/22: 3 complaints; ⚠️⚠️ GIFI pickers had WRONG LABELS.
+- [Local test before push](local-test-before-push.md) — ⚠️⚠️ CHANGED 2026-10-07: Amin tests on PRODUCTION; per fix: commit → Amin tags+pushes from local → server pull → prod test. Never push or tag from here.
 - [Phone authentication](phone-authentication.md) — SHIPPED cp225-235: phone sign-in, registration, optional password, account-close rules.
 - [Registry/People redesign plan](registry-people-redesign-plan.md) — LOCKED 2026-09-19: owner vs user split, People table, realm per company.
 - [Add-client single form](add-client-single-form.md) — cp-247: ONE add-client form (popup on /clients); Create page deleted.
-- [No dash in frontend](no-dash-in-frontend.md) — ⚠️⚠️ HARD RULE (Amin, 2026-08-21): never use em-dash or spaced hyphen as punctuation in ANY user-visible text, all projects.
-- [Privacy & security audit](privacy-security-audit.md) — Phases 0-4 DONE (docs/privacy-audit-2026-08/); credential revocation + AI minimisation shipped LOCAL.
-- [Document role + triage queue](document-role-triage.md) — SHIPPED cp-221/222/223: cheque prints, pay stubs, quotes, contracts and CREDIT NOTES stay out of the ledger (document_role gate + auto-.
-- [Growth & Marketing Center plan](growth-marketing-center-plan.md) — ALL phases + monetization LIVE (number gate, callerId, quotas/overage billing, Growth Usage page, call forwarding).
-- [Growth/Books session pact](growth-books-session-pact.md) — 2026-08-05 file-territory + protocol agreement between the two concurrent va-dashboard2 sessions (append-only shared files.
-- [Books accounting overhaul plan](books-accounting-overhaul-plan.md) — LOCKED 2026-08-04 (cp-205), NOT built: 6 phases to make Books+Record Keeping a real double-entry system per the accountant's 9 asks.
-- [IO Lock (concurrent edit)](io-lock-concurrent-edit.md) — advisory lease-based lock so accountant+client can't clobber same transaction/registry; Cache::add (portable), 90s TTL + heartbeat.
+- [No dash in frontend](no-dash-in-frontend.md) — ⚠️⚠️ HARD RULE (2026-08-21): never em-dash or spaced hyphen as punctuation in ANY user-visible text, all projects.
+- [Privacy & security audit](privacy-security-audit.md) — phases 0-4 DONE (docs/privacy-audit-2026-08/); credential revocation + AI minimisation shipped LOCAL.
+- [Document role + triage queue](document-role-triage.md) — SHIPPED cp-221/223: cheque prints, pay stubs, quotes, contracts, credit notes stay out of the ledger.
+- [Growth & Marketing Center plan](growth-marketing-center-plan.md) — ALL phases + monetization LIVE (number gate, callerId, quotas/overage, call forwarding).
+- [Growth/Books session pact](growth-books-session-pact.md) — 2026-08-05 file-territory agreement between concurrent va-dashboard2 sessions.
+- [Books accounting overhaul plan](books-accounting-overhaul-plan.md) — LOCKED 2026-08-04 (cp-205), NOT built: 6 phases to real double-entry.
+- [IO Lock (concurrent edit)](io-lock-concurrent-edit.md) — advisory lease lock (Cache::add, 90s TTL + heartbeat) so accountant+client can't clobber the same row.
 - [Sub-company switcher](sub-company-switcher.md) — 2nd header dropdown narrowing a multi-company client to ONE company + Unassigned badge/bulk-assign.
-- [Client registry multi-company](client-registry-multi-company.md) — client's owned COMPANIES + BANK ACCOUNTS registry; AI fills Corporation/Bank cols + direction via ClientRegistryMatcher gate.
-- [Bigcapital tenant storage ceiling](bigcapital-tenant-storage-ceiling.md) — ⚠️ each book = its own MariaDB DB (~30MB); the 500MB Railway volume hard-fails provisioning at ~13 books with errno 135 "No more room i.
-- [Books multi-company plan](books-multi-company-plan.md) — LOCKED 2026-07-31, NOT built: books become client-owned + one per ClientCompany, auto-generated Bigcapital creds.
-- [Platform operator tier](platform-operator-tier.md) — cp162-163: Telescope + platform_admin tier + view-as impersonation; super_admin scope bug FIXED.
-- [Sales tax HST/GST](sales-tax-hst-gst.md) — SHIPPED 2026-09-08/09: HST/GST extracted, mapped per QBO company, shown and editable. ⚠️⚠️ tax_amount is INSIDE amount.
-- [International QuickBooks](international-quickbooks.md) — SHIPPED cp-242 (2026-09-17): Britain and Australia verified end to end.
-- [QuickBooks push idempotency](quickbooks-push-idempotency.md) — ⚠️⚠️ Intuit REPLAYS a repeated RequestId, and replays it even when the entity was DELETED.
+- [Client registry multi-company](client-registry-multi-company.md) — client's COMPANIES + BANK ACCOUNTS registry; AI fills Corporation/Bank via ClientRegistryMatcher gate.
+- [Bigcapital tenant storage ceiling](bigcapital-tenant-storage-ceiling.md) — ⚠️ each book = own MariaDB DB (~30MB); 500MB Railway volume fails at ~13 books.
+- [Books multi-company plan](books-multi-company-plan.md) — LOCKED 2026-07-31, NOT built: books client-owned, one per ClientCompany.
+- [Platform operator tier](platform-operator-tier.md) — cp162-163: Telescope + platform_admin tier + view-as impersonation.
+- [Sales tax HST/GST](sales-tax-hst-gst.md) — SHIPPED 2026-09-08/09. ⚠️⚠️ tax_amount is INSIDE amount.
+- [International QuickBooks](international-quickbooks.md) — SHIPPED cp-242: Britain and Australia verified end to end.
+- [QuickBooks push idempotency](quickbooks-push-idempotency.md) — ⚠️⚠️ Intuit REPLAYS a repeated RequestId, even when the entity was DELETED.
 - [GIFI to QuickBooks account mapping](gifi-qbo-account-mapping.md) — SHIPPED cp-239: every postable GIFI code maps to an exact QBO account type + detail type.
 - [Extraction measurement harness](extraction-measurement-harness.md) — ⭐ `ai:extraction-check --runs=3` on the SERVER before/after any prompt or GIFI change; 18/18 at cp-262.
-- [gifi_codes is a TABLE, not the file](gifi-codes-table-not-file.md) — ⚠️⚠️ editing GifiReference.php does NOT change prod; the resolver reads the seeded gifi_codes table.
-- [Shareholder GIFI rules](shareholder-gifi-rules.md) — the accounting team's codes (1301/2181/2781/3261, partner mirror 1310/2210/2790/3270).
-- [AI prompt registry](ai-prompt-registry.md) — ⚠️ NEVER add an AI prompt as a PHP heredoc (test-enforced). ⚠️⚠️ EDITING resources/ai-prompts/*.txt DOES NOT CHANGE PROD — the DB overr.
-- [PaddleOCR integration](paddle-ocr-integration.md) — OCR-first → cheap Gemini text path; fail-safe fallback. cp-153 DEPLOYED but gated OFF (OCR_ENABLED=false).
-- [Gemini thinkingBudget:0 → 400](gemini-thinkingbudget-400.md) — ⚠️ Gemini 3.x REJECTS thinkingBudget:0 (broke ALL extraction); cp-154 omits thinkingConfig when budget<=0.
-- [Anthropic retired](anthropic-retired.md) — 2026-09-09 (Amin): Claude/Anthropic FULLY REMOVED from va-dashboard2 (code path, config, env vars, rollback switch.
-- [Gemini model policy](gemini-model-policy.md) — ⚠️ PINNED gemini-3.1-flash-lite stable (cp-155), NOT -latest alias; never hard-code, read services.gemini config.
-- [Gemini repetition-loop cost bleed](gemini-repetition-loop-cost.md) — extraction loops → 85K tokens/call; fixed cp137-138 (maxOutputTokens + dedupeRows).
-- [Gemini cost overspend investigation](gemini-cost-overspend-investigation.md) — ⚠️ $450+ bill root-caused: mobile chat-with-file FREE_LIMIT 3000 + queue retry_after < worker timeout double-billing + PDF fan-out.
-- [AI usage monitoring](ai-usage-monitoring.md) — token+cost ledger + admin API + call logs; built 2026-07-09/10, NOT deployed. Token-normalisation traps.
-- [AI cost optimization](ai-cost-optimization.md) — image downscale, PDF text layer, prompt-cache reorder (2026-07-07). NOT deployed.
-- [Document AI pipeline](document-ai-pipeline.md) — dashboard's own Gemini bulk-extraction; Economy batch DEFAULT (2026-07-21), Instant opt-in.
-- [Document Hub folders redesign](document-hub-folders.md) — folders + AI auto-filing + Trash/30d + nested max-3; cp139-141 DEPLOYED. Unsorted = folder_id NULL.
+- [gifi_codes is a TABLE, not the file](gifi-codes-table-not-file.md) — ⚠️⚠️ editing GifiReference.php does NOT change prod; resolver reads the seeded table.
+- [Shareholder GIFI rules](shareholder-gifi-rules.md) — the team's codes (1301/2181/2781/3261, partner mirror 1310/2210/2790/3270).
+- [AI prompt registry](ai-prompt-registry.md) — ⚠️ NEVER add a prompt as a PHP heredoc. ⚠️⚠️ editing resources/ai-prompts/*.txt does NOT change prod (DB override).
+- [PaddleOCR integration](paddle-ocr-integration.md) — OCR-first → cheap Gemini text path; cp-153 deployed but gated OFF.
+- [Gemini thinkingBudget:0 → 400](gemini-thinkingbudget-400.md) — ⚠️ Gemini 3.x rejects thinkingBudget:0; cp-154 omits thinkingConfig when budget<=0.
+- [Anthropic retired](anthropic-retired.md) — 2026-09-09: Claude/Anthropic FULLY REMOVED from va-dashboard2.
+- [Gemini model policy](gemini-model-policy.md) — ⚠️ PINNED gemini-3.1-flash-lite stable (cp-155); never hard-code, read services.gemini config.
+- [Gemini repetition-loop cost bleed](gemini-repetition-loop-cost.md) — extraction loops → 85K tokens/call; fixed cp137-138.
+- [Gemini cost overspend investigation](gemini-cost-overspend-investigation.md) — ⚠️ $450+ bill root-caused (mobile chat FREE_LIMIT, retry double-billing, PDF fan-out).
+- [AI usage monitoring](ai-usage-monitoring.md) — token+cost ledger + admin API; built 2026-07-09/10, NOT deployed.
+- [AI cost optimization](ai-cost-optimization.md) — image downscale, PDF text layer, prompt-cache reorder; NOT deployed.
+- [Document AI pipeline](document-ai-pipeline.md) — dashboard's own Gemini bulk extraction; Economy batch DEFAULT, Instant opt-in.
+- [Document Hub folders redesign](document-hub-folders.md) — folders + AI auto-filing + Trash/30d; cp139-141 DEPLOYED.
 - [env() outside config trap](env-outside-config-trap.md) — ⚠️ `env()` outside config/*.php returns NULL after config:cache.
-- [Postgres json has no `=`](postgres-json-no-equality.md) — ⚠️⚠️ `where('json_col','[]')` THROWS on Postgres and passes on the test SQLite.
-- [activity_logs entity_type trap](activity-log-entity-type-trap.md) — ⚠️ entity_type/action outside Postgres CHECK rolls back WHOLE transaction, surfaces as unrelated error; sqlite skips CHECK. Bit us 3x.
-- [Multi-currency FX](multi-currency-fx.md) — ✅ DEPLOYED cp119-122: base-currency normalisation, BoC+ECB rates, fx:backfill, portal FX cards.
-- [Batch Upload + AI tester fixes](batch-upload-ai-tester-fixes.md) — ✅ DEPLOYED cp117-121: chunked uploads, per-file retry, worker-timeout rule. Amin owes prod php.ini bumps.
-- [Email Integration (forwarding)](email-integration-forwarding.md) — ✅ LIVE + E2E-verified 2026-09-25; cp-252..254: trusted senders per client, Inbox → Email page (/inbox/emails, body kept.
-- [Chat media ADR-0007](chat-media-adr0007.md) — chat photos/voice/files deployed; empty-bubble fix (bidirectional link + self-heal).
-- [Mobile poll queue fix](mobile-poll-queue-fix.md) — ⚠️ jobs on non-`default` queue silently never run in prod; PollMobileChangesJob fix on dev, NOT deployed.
-- [Past clients / access revocation](past-clients-access-revocation.md) — engagement ends → past client with read-only `until_date` history or fully revoked.
-- [Client workspace architecture](client-workspace-architecture.md) — client = single-client accountant session on REAL pages (cp-027 pivot); Phase 2 self-serve NEXT.
-- [Client workspace: firm tools + Inbox](client-workspace-firm-tools-and-inbox.md) — portal Inbox + Books/Report/Accounting/Integration per-client (role.min.client + firewall).
-- [Clients redesign plan](clients-redesign-plan.md) — agreed IA: tabbed Client Workspace, vendors per-client tab, 1 "Add client" button. Not started.
-- [Global AI Assistant agent](global-ai-assistant-agent.md) — confirm-gated agent on Gemini; Phase 1 done; Windows PHP→Gemini stall gotcha. READ before AiAssistantService.
-- [Record Keeping AI Voice-to-Edit](record-keeping-ai-voice-edit.md) — voice→AI field-diff→approve; 7 locked decisions; Phase 1 building.
+- [Postgres json has no `=`](postgres-json-no-equality.md) — ⚠️⚠️ `where('json_col','[]')` THROWS on Postgres, passes on SQLite.
+- [activity_logs CHECK traps](activity-log-entity-type-trap.md) — ⚠️ entity_type/action outside the CHECK, or user_id NULL on a guest route (user_or_ai), rolls back the WHOLE transaction as an unrelated error; sqlite skips CHECK. Bit us 4x (last: /refer accept 2026-10-19).
+- [Multi-currency FX](multi-currency-fx.md) — ✅ DEPLOYED cp119-122: base-currency normalisation, BoC+ECB rates, fx:backfill.
+- [Batch Upload + AI tester fixes](batch-upload-ai-tester-fixes.md) — ✅ DEPLOYED cp117-121: chunked uploads, per-file retry; Amin owes prod php.ini bumps.
+- [Email Integration (forwarding)](email-integration-forwarding.md) — ✅ LIVE 2026-09-25, cp-252..254: trusted senders per client, Inbox → Email page.
+- [Chat media ADR-0007](chat-media-adr0007.md) — chat photos/voice/files deployed; empty-bubble fix.
+- [Mobile poll queue fix](mobile-poll-queue-fix.md) — ⚠️ jobs on non-`default` queue silently never run in prod.
+- [Past clients / access revocation](past-clients-access-revocation.md) — engagement ends → read-only `until_date` history or fully revoked.
+- [Client workspace architecture](client-workspace-architecture.md) — client = single-client accountant session on REAL pages (cp-027 pivot).
+- [Client workspace: firm tools + Inbox](client-workspace-firm-tools-and-inbox.md) — portal Inbox + Books/Report/Accounting/Integration per client.
+- [Clients redesign plan](clients-redesign-plan.md) — agreed IA: tabbed Client Workspace, vendors per-client tab. Not started.
+- [Global AI Assistant agent](global-ai-assistant-agent.md) — confirm-gated agent on Gemini; Phase 1 done. READ before AiAssistantService.
+- [Record Keeping AI Voice-to-Edit](record-keeping-ai-voice-edit.md) — voice→AI field-diff→approve; 7 locked decisions.
 - [Transaction source origin rules](transaction-source-origin-rules.md) — spec NOT built: Source badge by ORIGIN via transactions.mobile_id.
-- [Bank reconciliation feature](bank-reconciliation-feature.md) — Banking tab in Books built 2026-07-06, NOT committed. Distinct from tentpole web tool.
-- [Books migration wizard](books-migration-wizard.md) — QBO+Desktop full-entity migration engine built 2026-07-06, NOT committed/run. READ before Books import code.
-- [Books Phase 3 production deploy](books-phase3-production-deploy.md) — void/Quick Expense/payments on prod (520d356); Bigcapital gotchas in docs/bugs.md R-21..R-26.
-- [Bigcapital UI adaptive design goal](bigcapital-ui-adaptive-design-goal.md) — familiar to QBO/Xero users, but never copy IP; keep token identity. READ before Books UI.
-- [Bigcapital deployment](bigcapital-deployment.md) — live on Railway; JWT_SECRET weak; migrations run from build/ not dist/.
-- [Payroll & HR master plan](payroll-hr-architecture.md) — NOT BUILT. ✅ AGREED 2026-09-28: pay stub → AI extract → review → QBO JournalEntry push; WAIT for Amin's "start".
-- [Product master plan doc](product-master-plan-doc.md) — docs/PRODUCT-MASTER-PLAN.md = product-vision doc ("Section N"), not the phase log.
-- [Tentpole satellite tools](tentpole-satellite-tools.md) — 7/12 live at public-tentpole-matrix.vercel.app (repo kmoini/public-tentpole-matrix); manual vercel --prod only.
-- [Checkpoint rule](checkpoint-rule.md) — commit checkpoint-NNN + annotated tag + push both (from Amin's LOCAL machine only, never `git add -A`), then Amin runs `/deploy` (webhook is manual, not on push) + server steps + pastes `git log -1`. ⚠️ derive NNN from live `git tag` after fetch (shared repo).
+- [Bank reconciliation feature](bank-reconciliation-feature.md) — Banking tab in Books built 2026-07-06, NOT committed.
+- [Books migration wizard](books-migration-wizard.md) — QBO+Desktop migration engine built 2026-07-06, NOT committed. READ before Books import code.
+- [Books Phase 3 production deploy](books-phase3-production-deploy.md) — void/Quick Expense/payments on prod; Bigcapital gotchas in docs/bugs.md R-21..R-26.
+- [Bigcapital UI adaptive design goal](bigcapital-ui-adaptive-design-goal.md) — familiar to QBO/Xero users, never copy IP.
+- [Bigcapital deployment](bigcapital-deployment.md) — live on Railway; JWT_SECRET weak; migrations run from build/.
+- [Payroll & HR master plan](payroll-hr-architecture.md) — NOT BUILT; agreed 2026-09-28 (pay stub → AI → review → QBO JE). WAIT for Amin's "start".
+- [Product master plan doc](product-master-plan-doc.md) — docs/PRODUCT-MASTER-PLAN.md = product-vision doc, not the phase log.
+- [Tentpole satellite tools](tentpole-satellite-tools.md) — 7/12 live at public-tentpole-matrix.vercel.app; manual vercel --prod only.
+- [Checkpoint rule](checkpoint-rule.md) — commit checkpoint-NNN + annotated tag + push (Amin's LOCAL machine only, never `git add -A`); then Amin runs `/deploy` + server steps + pastes `git log -1`. ⚠️ derive NNN from live `git tag`.
 - [Wait for user test before deploy](wait-for-user-test-before-deploy.md) — ⚠️ build, STOP, wait for Amin's test before checkpoint/deploy.
-- [Deploy process](deploy-process.md) — webhook: git pull + npm build (+ composer install observed 2026-07-22); migrations + optimize:clear MANUAL.
-- [Deployment guide](deployment-guide.md) — authoritative docs/DEPLOYMENT.md; Supervisor=queue-only, cron=schedule:run; Docker→Railway plan. Keep updated.
-- [Auto-commit leaks secrets](autocommit-leaks-secrets.md) — ⚠️ repo auto-pushes WITHOUT review (has leaked creds). NEVER write secrets anywhere in the repo.
-- [S3 write + Railway migration](s3-write-railway-migration.md) — ⚠️ prod S3 key read-only → uploads fall to local disk (LOST on redeploy); temp /temp/s3-write-test route to REMOVE.
-- [Upload ghost-row bug](upload-ghost-row-bug.md) — silent put() failures made attachment rows with no bytes; guarded storeUpload(). READ before upload/storage code.
-- [Attachment file-size fix](attachment-file-size-fix.md) — S3 HEAD backfill (f6c5cbc). ⚠️ temp /testfilesize + /testfilecheck routes LIVE on prod — remove.
-- [Mobile attachment binaries missing](mobile-attachment-binaries-missing.md) — mobile rows mirror but S3 objects 404; mobile-side (DQ-0014); use mobile:attachment-doctor.
-- [Handoff: mobile attachment visibility](handoff-mobile-attachment-visibility.md) — 3 fixes (flysystem dep, key basename fallback, morph-alias); temp /temp/s3-attachment-test owed removal.
-- [Handoff: invoice/chat/record-keeping](handoff-invoice-chat-recordkeeping.md) — cp039-041 fixes gated by UNCONFIRMED prod steps (migrate+build+config:clear).
-- [Prod white screen = Vite hot file](prod-vite-hot-white-screen.md) — leftover public/hot → @vite dev mode → blank site. rm public/hot + optimize:clear.
-- [Dashboard nav performance](dashboard-nav-perf.md) — Inertia prefetch + persistent layout fixed in f27e462. READ before nav speed / AuthenticatedLayout.
+- [Deploy process](deploy-process.md) — webhook: git pull + npm build (+ composer install); migrations + optimize:clear MANUAL.
+- [Deployment guide](deployment-guide.md) — authoritative docs/DEPLOYMENT.md; Supervisor=queue-only, cron=schedule:run.
+- [Auto-commit leaks secrets](autocommit-leaks-secrets.md) — ⚠️ repo auto-pushes WITHOUT review. NEVER write secrets anywhere in the repo.
+- [S3 write + Railway migration](s3-write-railway-migration.md) — ⚠️ prod S3 key read-only → uploads fall to local disk; temp /temp/s3-write-test route to REMOVE.
+- [Upload ghost-row bug](upload-ghost-row-bug.md) — silent put() failures made attachment rows with no bytes; guarded storeUpload().
+- [Attachment file-size fix](attachment-file-size-fix.md) — S3 HEAD backfill. ⚠️ temp /testfilesize + /testfilecheck routes LIVE on prod; remove.
+- [Mobile attachment binaries missing](mobile-attachment-binaries-missing.md) — mobile rows mirror but S3 objects 404 (DQ-0014); use mobile:attachment-doctor.
+- [Handoff: mobile attachment visibility](handoff-mobile-attachment-visibility.md) — 3 fixes; temp /temp/s3-attachment-test owed removal.
+- [Handoff: invoice/chat/record-keeping](handoff-invoice-chat-recordkeeping.md) — cp039-041 fixes gated by UNCONFIRMED prod steps.
+- [Prod white screen = Vite hot file](prod-vite-hot-white-screen.md) — leftover public/hot → blank site. rm public/hot + optimize:clear.
+- [Dashboard nav performance](dashboard-nav-perf.md) — Inertia prefetch + persistent layout fixed in f27e462. READ before AuthenticatedLayout.
 - [Dashboard build status](dashboard-build-status.md) — feature arc cp003-012, gotchas (prod M2M key, MOBILE_FAKE_WRITES). READ AT SESSION START.
-- [Colleague 4-branch integration](colleague-branch-integration-2026-06.md) — 4 branches merged; chk_activity_logs fix da12194 (superset). CONFIRM prod deploy finished.
-- [Union-plan coordination](union-plan-coordination.md) — Dashboard Claude ↔ Mobile Claude via union-plan-coord; ADRs 0001-0007; one-way mobile→dashboard poll-sync.
-- [DuoSync setup](duosync-setup.md) — three-way coord at E:/Projects/VA-Dashboard-coord; on dashboard + marketing repos; Windows python3→py -3 shim.
-- [DuoSync shared Claude memory](duosync-shared-memory.md) — one memory pool across Marketing + Dashboard + suite via coord repo.
-- [DuoSync code sync behavior](duosync-code-sync-behavior.md) — hooks merge main→dev on start, push dev on end (dev-branch guarded).
-- [DuoSync coord silent divergence](duosync-coord-silent-divergence.md) — hooks swallow git errors; local coord can silently fall behind origin.
-- [DuoSync silent push failure](duosync-silent-push-failure.md) — memory push silently no-op'd for sessions; check the pool directly, don't assume synced.
+- [Colleague 4-branch integration](colleague-branch-integration-2026-06.md) — 4 branches merged; chk_activity_logs fix da12194.
+- [Union-plan coordination](union-plan-coordination.md) — Dashboard Claude ↔ Mobile Claude via union-plan-coord; ADRs 0001-0007.
+- [DuoSync setup](duosync-setup.md) — three-way coord at E:/Projects/VA-Dashboard-coord; Windows python3→py -3 shim.
+- [DuoSync shared Claude memory](duosync-shared-memory.md) — one memory pool across Marketing + Dashboard + suite.
+- [DuoSync code sync behavior](duosync-code-sync-behavior.md) — hooks merge main→dev on start, push dev on end.
+- [DuoSync coord silent divergence](duosync-coord-silent-divergence.md) — hooks swallow git errors; local coord can fall behind origin.
+- [DuoSync silent push failure](duosync-silent-push-failure.md) — memory push silently no-op'd; check the pool directly.
 - [Feature test handoff](feature-test-handoff.md) — every feature: manual test guide + fake-data injection points for Amin.
 - [Document each change](document-each-change.md) — every important change gets a docs/ markdown with the same checkpoint.
-- [Local dev run (Windows)](local-dev-run-windows.md) — composer dev breaks 3 ways on Windows; use the worked launch command. READ before "run localhost".
-- [Google OAuth setup](google-oauth-setup.md) — Drive import + Google sign-in share one OAuth client; 3 GOOGLE_* env only; localhost≠127.0.0.1 gotcha.
-- [Marketing site suite](marketing-site-suite.md) — two-project suite; SEO/LLM marketing-only; NEVER merge marketing into Laravel. READ before marketing/SEO/hosting.
+- [Local dev run (Windows)](local-dev-run-windows.md) — composer dev breaks 3 ways on Windows; use the worked launch command.
+- [Google OAuth setup](google-oauth-setup.md) — Drive import + Google sign-in share one OAuth client; localhost≠127.0.0.1 gotcha.
+- [Marketing site suite](marketing-site-suite.md) — two-project suite; NEVER merge marketing into Laravel. READ before marketing/SEO/hosting.
 - [International direction](international-direction.md) — i18n must be RTL-safe + ICU + TMS-friendly from day one.
-- [CLAUDE.md tracking + .gitignore gotcha](claude-md-gitignore-tracking.md) — .gitignore never affects tracked files; don't re-ignore CLAUDE.md.
-- [pr staging box](pr-staging-box.md) — pr.voiceaccountant.com = dev staging on prod server; own DB va_dashboard_pr (safe to migrate); pg DB creation needs postgres superuser.
-- [Dext alternatives comparison page](dext-alternatives-landing-page.md) — lives at blog/dext-alternatives-2026/ (NOT root, NOT on homepage); Dext DOES attach docs to QBO; Hubdoc retired 2026-05-08; www deploy is manual by Amin.
-- [Marketing scope + blog placement](marketing-scope-and-blog-placement.md) — ⚠️⚠️ FEEDBACK (Amin 2026-10-02): in the marketing repo talk MARKETING ONLY (never dashboard status); content pages go under blog/<slug>/, not the root or homepage.
-- [Tentpole funnel brief PENDING](tentpole-funnel-brief-pending.md) — ⏸ 2026-10-02: Kamyar brief (wire 11 free tools to signup) ON HOLD until Amin relays Kamyar pick of 4 options; findings: no CSV exports, no import deep link, shared ToolShell.
-- [V2.1 implementation verification 2026-10-07](v21-implementation-verification-2026-10.md) — read-only audit PDF in Downloads (VoiceAccountant-V2.1-Implementation-Verification-2026-10-07.pdf); verdict YELLOW; P0 list: chosen-account reset on recode, locks on approve, recategorize/merge/mobile guards, learning scope, snapshot pagination, forClient at posting gate.
-- [V2 phase 8 policy closure + phases 9A to 9H](v2-post-p0-audit-2026-10.md) — phase 8 LIVE as cp-288, cp-290 LIVE 2026-10-09; P1-P14 answer sheet awaiting the team; CI history, the ai_source CHECK defect and the GifiResolver ORDER BY fix. ⚠️ MOBILE_INBOUND_SECRET was EMPTY on prod (every /api/mobile/* got 503). Full record inside the file. READ before V2 policy, CI or prod-verification work.
-- [V2 post-P0 audit 2026-10-07](v2-post-p0-audit-2026-10.md) — DECISION PACK for the team: docs/ACCOUNTING-V2-DECISION-PACK-2026-10-07.md (10 decisions, cp 4a?); docs/ACCOUNTING-V2-AUDIT-2026-10-07.md: 9 team decisions pending (multi-person receipt Q11, asset disposal, transfer-in, rebates, advance refund, insurance, ITC, related party, balance reason); policy-free work list; mis-classifying gaps today = asset sale/insurance/unregistered transfer-in read as revenue.
-- [Accounting V2 phases 9I to cp-296 audit: CI gate + branches](accounting-v2-phase9-ci-gate-status.md) — ⚠️ prod = main = cp-306 = b9b2a43 LIVE 2026-10-17 (upload types/Excel/CSV/TIFF; server pull + build + optimize:clear confirmed by Amin's paste; app path on server = ~/my.voiceaccountant.com); CI runs only on validation/** branches; cp-300 = 290be2f LIVE (validator: payable-labelled docs classed by direction; split-PDF re-upload replays; accountant test plan); main = 290be2f; accountant sandbox tests from 2026-10-15; cron worker runs under php-cgi; `--once` workers' owner UNKNOWN; ⚠️ tx 1711 possible double payment (JE 256 + BP 257) needs accountant check. Report docs/ACCOUNTING-V2-REPAIR-PASS-2026-10-12.md. READ before V2 branch/CI/deploy work.
+- [CLAUDE.md tracking + .gitignore gotcha](claude-md-gitignore-tracking.md) — .gitignore never affects tracked files.
+- [pr staging box](pr-staging-box.md) — pr.voiceaccountant.com = dev staging on prod server; own DB va_dashboard_pr.
+- [Dext alternatives comparison page](dext-alternatives-landing-page.md) — lives at blog/dext-alternatives-2026/; Hubdoc retired 2026-05-08; www deploy manual by Amin.
+- [Marketing scope + blog placement](marketing-scope-and-blog-placement.md) — ⚠️⚠️ FEEDBACK (2026-10-02): in the marketing repo talk MARKETING ONLY; content pages go under blog/<slug>/.
+- [Tentpole funnel brief PENDING](tentpole-funnel-brief-pending.md) — ⏸ 2026-10-02: Kamyar brief ON HOLD until Amin relays Kamyar's pick of 4 options.
+- [V2.1 implementation verification 2026-10-07](v21-implementation-verification-2026-10.md) — read-only audit PDF in Downloads; verdict YELLOW; P0 list inside.
+- [V2 phase 8 closure + phases 9A to 9H](v2-post-p0-audit-2026-10.md) — phase 8 LIVE cp-288, cp-290 LIVE 2026-10-09; P1-P14 answer sheet awaiting the team. ⚠️ MOBILE_INBOUND_SECRET was EMPTY on prod. READ before V2 policy, CI or prod verification.
+- [V2 post-P0 audit 2026-10-07](v2-post-p0-audit-2026-10.md) — decision pack docs/ACCOUNTING-V2-DECISION-PACK-2026-10-07.md; 9 team decisions pending; policy-free work list.
+- [Accounting V2 phases 9I to cp-296 audit: CI gate + branches](accounting-v2-phase9-ci-gate-status.md) — ⚠️ prod = main = cp-307 = 29f40d8 LIVE 2026-10-19 (server path ~/my.voiceaccountant.com); CI runs only on validation/** branches; ⚠️ tx 1711 possible double payment needs accountant check. READ before V2 branch/CI/deploy work.
