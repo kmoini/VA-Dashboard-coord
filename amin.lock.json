@@ -1,10 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "tests/Feature/QuickBooks/ConnectionCompanyUniqueTest.php",
-    "database/migrations/2026_10_20_000001_unique_company_on_quickbooks_connections.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-20T01:18:38Z"
+  "updated_at": "2026-10-20T01:26:03Z"
 }
