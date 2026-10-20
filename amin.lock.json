@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "tests/Feature/AccountingV2/AccountFirstTest.php",
-    "tests/Feature/Integrations/PushGateTest.php"
+    "tests/Feature/Integrations/PushGateTest.php",
+    "database/migrations/2026_10_19_000002_add_company_to_learned_rule_switches.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-19T22:06:48Z"
+  "updated_at": "2026-10-20T00:12:32Z"
 }
