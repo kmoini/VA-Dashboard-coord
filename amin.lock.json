@@ -9,8 +9,9 @@
     "tests/Feature/AccountingV2/HistoryDecisionsTest.php",
     "app/Accounting/V2/CanonicalDraft.php",
     "app/History/HistoryDecisionApplier.php",
-    "app/Console/Commands/HistoryDecisions.php"
+    "app/Console/Commands/HistoryDecisions.php",
+    "app/Http/Controllers/HistoryLinkController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-20T18:43:34Z"
+  "updated_at": "2026-10-20T18:44:06Z"
 }
