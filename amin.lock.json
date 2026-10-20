@@ -1,20 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/History/HistoricalContextService.php",
-    "app/History/HistoryAccountLinker.php",
-    "app/Accounting/V2/GifiCandidateResolver.php",
-    "app/Accounting/V2/HistoryDecisionResolver.php",
-    "tests/Feature/AccountingV2/HistoryDecisionsTest.php",
-    "app/Accounting/V2/CanonicalDraft.php",
-    "app/History/HistoryDecisionApplier.php",
-    "app/Console/Commands/HistoryDecisions.php",
-    "app/Http/Controllers/HistoryLinkController.php",
-    "resources/js/Components/HistoryDecisionNote.jsx",
-    "routes/web.php",
-    "app/Http/Controllers/HistoryImportController.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-20T18:53:15Z"
+  "updated_at": "2026-10-20T19:11:10Z"
 }
