@@ -12,8 +12,9 @@
     "app/Models/HistoryLink.php",
     "app/History/HistoryImportService.php",
     "app/Http/Controllers/HistoryImportController.php",
-    "tests/Support/MakesQbdReports.php"
+    "tests/Support/MakesQbdReports.php",
+    "tests/Unit/History/QbdTransactionDetailParserTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-20T01:37:08Z"
+  "updated_at": "2026-10-20T01:37:32Z"
 }
