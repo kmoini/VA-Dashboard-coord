@@ -12,8 +12,9 @@
     "app/Console/Commands/HistoryDecisions.php",
     "app/Http/Controllers/HistoryLinkController.php",
     "resources/js/Components/HistoryDecisionNote.jsx",
-    "routes/web.php"
+    "routes/web.php",
+    "app/Http/Controllers/HistoryImportController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-20T18:52:06Z"
+  "updated_at": "2026-10-20T18:52:17Z"
 }
