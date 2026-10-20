@@ -1,19 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "tests/Feature/AccountingV2/AccountFirstTest.php",
-    "tests/Feature/Integrations/PushGateTest.php",
-    "database/migrations/2026_10_19_000002_add_company_to_learned_rule_switches.php",
-    "app/Console/Commands/MemoryScopeReport.php",
-    "docs/PHASE0B-COMPANY-SCOPED-MEMORY-2026-10-19.md",
-    "tests/Feature/QuickBooks/QuickBooksTokenReliabilityTest.php",
-    "app/Services/QuickBooksReconnectRequired.php",
-    "database/migrations/2026_10_19_000003_add_reconnect_state_to_quickbooks_connections.php",
-    "app/Models/QuickBooksConnection.php",
-    "docs/PHASE0C-QUICKBOOKS-TOKEN-RELIABILITY-2026-10-19.md",
-    "docs/PHASE0-SAFETY-SUMMARY-2026-10-19.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-20T00:36:23Z"
+  "updated_at": "2026-10-20T00:37:18Z"
 }
