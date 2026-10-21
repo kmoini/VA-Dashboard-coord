@@ -6,8 +6,9 @@
     "app/Models/ClientCompanyProfile.php",
     "app/Models/ClientCompanyPrincipal.php",
     "app/Profile/CompanyProfilePrefill.php",
-    "app/Http/Controllers/ClientCompanyProfileController.php"
+    "app/Http/Controllers/ClientCompanyProfileController.php",
+    "resources/js/Components/CompanyProfileCard.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-21T16:41:25Z"
+  "updated_at": "2026-10-21T16:42:47Z"
 }
