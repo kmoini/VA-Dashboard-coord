@@ -15,8 +15,9 @@
     "app/Accounting/V2/OwnerStatement/OwnerStatementRepresenter.php",
     "tests/Feature/AccountingV2/OwnerStatementTest.php",
     "database/migrations/2026_10_21_000002_publish_owner_statement_prompt.php",
-    "tests/Unit/OwnerStatementPromptTest.php"
+    "tests/Unit/OwnerStatementPromptTest.php",
+    "docs/PHASE7-OWNER-STATEMENTS-2026-10-21.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-21T16:56:28Z"
+  "updated_at": "2026-10-21T17:00:49Z"
 }
