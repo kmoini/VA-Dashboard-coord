@@ -9,8 +9,9 @@
     "app/Http/Controllers/ClientCompanyProfileController.php",
     "resources/js/Components/CompanyProfileCard.jsx",
     "tests/Feature/Clients/CompanyProfileTest.php",
-    "docs/COMPANY-PROFILE-SLICE1-2026-10-21.md"
+    "docs/COMPANY-PROFILE-SLICE1-2026-10-21.md",
+    "app/Accounting/V2/OwnerStatement/OwnerStatementReconciler.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-21T16:44:44Z"
+  "updated_at": "2026-10-21T16:51:31Z"
 }
