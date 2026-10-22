@@ -1,6 +1,6 @@
 ---
 name: answer-in-persian
-description: "⚠️⚠️ HARD RULE (Amin, repeated many times, last 2026-09-19): ALWAYS reply to Amin in PERSIAN unless he explicitly asks for English. Never drift back to English mid-session."
+description: "⚠️⚠️ HARD RULE (Amin, repeated many times, last 2026-10-21): ALWAYS reply to Amin in PERSIAN unless he explicitly asks for English. Never drift back to English mid-session."
 metadata: 
   node_type: memory
   type: feedback
@@ -25,3 +25,9 @@ correction he should not have to make again.
 - ⚠️ The drift usually happens after a long block of tool work; check the
   language of the reply before sending it, every time.
 - See also [[no-dash-in-frontend]] for the other standing writing rule.
+
+2026-10-21: drifted to English TWICE in one session (after long tool runs and
+English tool output). Amin: "چند بار باید بهت بگم فارسی بده؟ اگه نیاز باشه
+انگلیسی بدی بهت میگم". Before sending ANY message (even a short one between
+tool calls), check it is Persian; English tool output is never a reason to
+answer in English.
