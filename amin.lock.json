@@ -7,8 +7,9 @@
     "app/Accounting/V2/Patterns/PatternMiner.php",
     "app/Accounting/V2/Patterns/PatternDecisionResolver.php",
     "app/Accounting/V2/Patterns/PatternApplier.php",
-    "app/Console/Commands/PatternsMine.php"
+    "app/Console/Commands/PatternsMine.php",
+    "tests/Feature/AccountingV2/LearnedPatternsTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-22T21:20:06Z"
+  "updated_at": "2026-10-22T21:25:02Z"
 }
