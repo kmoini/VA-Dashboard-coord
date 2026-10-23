@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "tests/Feature/Documents/PageSegmentsTest.php"
+    "tests/Feature/Documents/PageSegmentsTest.php",
+    "docs/PAGE-SEGMENTS-2026-10-23.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-23T21:41:41Z"
+  "updated_at": "2026-10-23T21:43:38Z"
 }
