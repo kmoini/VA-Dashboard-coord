@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "database/migrations/2026_10_23_000001_create_v2_measurements_table.php"
+    "database/migrations/2026_10_23_000001_create_v2_measurements_table.php",
+    "app/Models/V2Measurement.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-23T18:00:16Z"
+  "updated_at": "2026-10-23T18:00:29Z"
 }
