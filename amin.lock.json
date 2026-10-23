@@ -1,15 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "database/migrations/2026_10_23_000001_create_v2_measurements_table.php",
-    "app/Models/V2Measurement.php",
-    "app/Accounting/V2/V2Measure.php",
-    "app/Console/Commands/V2MeasureCommand.php",
-    "tests/Feature/AccountingV2/V2MeasureTest.php",
-    "database/migrations/2026_10_23_000002_add_review_reasons_at_arrival_to_transactions.php",
-    "docs/PHASE8-MEASUREMENT-2026-10-23.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-23T18:13:03Z"
+  "updated_at": "2026-10-23T18:20:59Z"
 }
