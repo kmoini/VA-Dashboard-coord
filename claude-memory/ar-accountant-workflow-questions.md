@@ -37,3 +37,13 @@ FOLLOW-UP ANSWERS (2026-10-19):
 - Tax province = address of the CLIENT the accountant works for (not the customer's).
 - Answer 7 confirmed: new customer from the name on the deposit slip.
 Item question (5) re-asked, still open. Questions 9 to 32 still PENDING.
+
+TEAM POLICY DOC RECEIVED 2026-10-22: Downloads/__پاسخ_سیاست_های_حسابداری_QuickBooks.docx (answers all 34 original questions + a 5-rule policy + 3 tiers: Auto-post / Suggest for approval / Hold-Missing information).
+Key team rules: identify the nature first (sale vs prepayment vs deposit vs trust); invoice date = real sale/service date, NOT cheque date; invoice number = next QBO sequence, cheque number in Memo/reference; never assume HST; new customer = suggestion, approval when identity unsure; equal-amount open invoices = stop; Deposit date = real bank date (keep both dates); slip + cheque + bank line = ONE event; uncertain revenue vs liability = Pending Review, temporary posting only to a pre-approved suspense account; auto-post allowed only for: bank line to existing tx, payment to one certain invoice, grouped Deposit of identified receipts, approved fixed recurring rent, documented bank fees, reference data.
+CONFLICTS with Amin's own answers (dates, number, always-13%, auto-create customer, "never stuck"). Proposed reconciliation: system PREPARES the provisional invoice as "Suggest for approval" so the accountant is never stuck but nothing posts on a guess. Amin must decide.
+⚠️ Conflicts with live behaviour: [[historical-context-audit-2026-10-19]] found accounting.push sends UNAPPROVED rows; the team policy forbids that.
+
+AMIN DECISIONS 2026-10-22 (after the team doc):
+- NEVER ask the firm for exact account names per client: each accountant names accounts their own way. The system must FIND the account in that client's QBO chart (by account type/detail type + name, e.g. Undeposited Funds is a built-in QBO account), and when it is missing or ambiguous ASK the accountant once in the transaction, then REMEMBER that pick per client company (not across companies, see the DecisionMemory leak in [[historical-context-audit-2026-10-19]]).
+- "Pre-approved suspense account" = approved by the accountant (or client) per client, same ask-once-and-remember flow.
+- Rollout: EVERYTHING starts as "Suggest for approval". No auto-post until tested for a while.

@@ -1,6 +1,6 @@
 ---
 name: bigcapital-deployment
-description: "Bigcapital server is live on Railway — URL, project name, deployment status, and known issues. Read before touching Books tab or Bigcapital config."
+description: "Bigcapital server is live on Railway (vadash-bigcapital-rt). ⚠️ 2026-10-22 Railway env-var breach: ALL secrets rotated, deploys were paused, post-outage verification PENDING. Read before touching Books tab, Bigcapital config, or Railway."
 metadata: 
   node_type: memory
   type: project
@@ -20,8 +20,10 @@ Bigcapital is deployed on Railway project **`vadash-bigcapital-rt`** (verified 2
 `node /app/packages/server/build/commands.js system:migrate:latest`  
 (README says `dist/commands.js` — wrong for this image; the actual path is `build/`)
 
-**⚠️ Remaining action:**
-- After creating the first org, set `DISABLE_SIGNUP=true` in Railway server Variables to lock down registrations.
+**⚠️ Railway security incident, 2026-10-22.** Railway emailed that an attacker may have read customer env vars (decrypted). Same day, via Claude Cowork in the Railway dashboard, every secret in this project was rotated: MariaDB root + app password (changed inside the DB first, then Variables), Mongo root password, Redis password, server `JWT_SECRET`, `SYSTEM_DB_PASSWORD`/`TENANT_DB_PASSWORD` (literals, now = new root pw), and `DISABLE_SIGNUP=true` set. No account or project tokens existed. `MARIADB_PUBLIC_HOST` empty = no TCP proxy; Mongo/Redis also no public endpoint. Dashboard-side nothing changed (org creds live in our Postgres, `BIGCAPITAL_BASE_URL` is just a URL).
+**STILL PENDING (Railway had "deploys paused" during the incident):** server + Redis deploys were queued, so the server ran old code against the NEW MariaDB password. After Railway resumes: confirm server deploy Active, `GET /api` not 502, Logs readable (never reviewed, dashboard logs would not load), `my.voiceaccountant.com/books` connects. Amin also owes: 2FA on Railway account, review Sessions list, change Railway account password.
+
+**Done 2026-10-22:** `DISABLE_SIGNUP=true` (the old remaining action).
 
 **Fixed 2026-06-29:**
 - `JWT_SECRET` — replaced weak placeholder with a cryptographically secure 64-char hex secret. Server redeployed successfully.
