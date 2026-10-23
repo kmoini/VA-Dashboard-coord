@@ -5,8 +5,9 @@
     "database/migrations/2026_10_23_000001_create_v2_measurements_table.php",
     "app/Models/V2Measurement.php",
     "app/Accounting/V2/V2Measure.php",
-    "app/Console/Commands/V2MeasureCommand.php"
+    "app/Console/Commands/V2MeasureCommand.php",
+    "tests/Feature/AccountingV2/V2MeasureTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-23T18:01:34Z"
+  "updated_at": "2026-10-23T18:03:00Z"
 }
