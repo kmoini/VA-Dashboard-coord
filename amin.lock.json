@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Services/Documents/BalanceForwardGuard.php",
-    "database/migrations/2026_10_24_000001_publish_balance_forward_prompt.php"
+    "database/migrations/2026_10_24_000001_publish_balance_forward_prompt.php",
+    "tests/Unit/BalanceForwardTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-24T14:34:13Z"
+  "updated_at": "2026-10-24T14:34:39Z"
 }
