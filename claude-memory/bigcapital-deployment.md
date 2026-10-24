@@ -12,7 +12,7 @@ Bigcapital is deployed on Railway project **`vadash-bigcapital-rt`** (verified 2
 **API URL:** `https://server-production-406c.up.railway.app`  
 **Dashboard env var:** `BIGCAPITAL_BASE_URL=https://server-production-406c.up.railway.app`
 
-**Services (all Online):** server (v0.16.11) · MariaDB · MongoDB · Redis · webapp (Bigcapital's own UI — unused, we have our own)
+**Services (all Online):** server (**docker.io/bigcapitalhq/server:v0.16.13** since 2026-10-23; the old `ghcr.io/...:v0.16.11` package was REMOVED upstream, so any redeploy on it fails at the registry) · MariaDB · MongoDB · Redis · webapp (Bigcapital's own UI — unused, still on ghcr, will not redeploy)
 
 **Migration status:** `Already up to date` — fully initialized.
 
@@ -21,7 +21,7 @@ Bigcapital is deployed on Railway project **`vadash-bigcapital-rt`** (verified 2
 (README says `dist/commands.js` — wrong for this image; the actual path is `build/`)
 
 **⚠️ Railway security incident, 2026-10-22.** Railway emailed that an attacker may have read customer env vars (decrypted). Same day, via Claude Cowork in the Railway dashboard, every secret in this project was rotated: MariaDB root + app password (changed inside the DB first, then Variables), Mongo root password, Redis password, server `JWT_SECRET`, `SYSTEM_DB_PASSWORD`/`TENANT_DB_PASSWORD` (literals, now = new root pw), and `DISABLE_SIGNUP=true` set. No account or project tokens existed. `MARIADB_PUBLIC_HOST` empty = no TCP proxy; Mongo/Redis also no public endpoint. Dashboard-side nothing changed (org creds live in our Postgres, `BIGCAPITAL_BASE_URL` is just a URL).
-**STILL PENDING (Railway had "deploys paused" during the incident):** server + Redis deploys were queued, so the server ran old code against the NEW MariaDB password. After Railway resumes: confirm server deploy Active, `GET /api` not 502, Logs readable (never reviewed, dashboard logs would not load), `my.voiceaccountant.com/books` connects. Amin also owes: 2FA on Railway account, review Sessions list, change Railway account password.
+**2026-10-23 follow-up, INCIDENT CLOSED:** server redeploy failed because GHCR dropped the image; switched to Docker Hub v0.16.13, `system:migrate:latest` = Already up to date. mariadb container also had to be redeployed (its env still held the OLD 32-char root pw; the DB itself already had the new one). ⚠️ the real sign-up switch is **`SIGNUP_DISABLED`** (not `DISABLE_SIGNUP`, which does nothing); set to true, register now returns `SIGNUP_RESTRICTED` (400). System DB name is **`railway`**, tables UPPERCASE (USERS, TENANTS, SUBSCRIPTION_PLAN_SUBSCRIPTIONS, USER_INVITES, IMPORTS, PLAID_ITEMS). The test probe user (id 34) was deleted with its dependents. User list reviewed: only pre-existing books-*/va-*/zz-test-* accounts, nothing registered during the incident. Network logs showed no register/login hits. Amin did 2FA, sessions, account password on 10-22. Nothing pending on Railway.
 
 **Done 2026-10-22:** `DISABLE_SIGNUP=true` (the old remaining action).
 
