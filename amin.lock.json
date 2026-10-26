@@ -1,29 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Services/Documents/DocumentRole.php",
-    "app/Services/Documents/DocumentRoleDetector.php",
-    "database/migrations/2026_10_26_000001_create_deposit_slips.php",
-    "app/Models/DepositSlip.php",
-    "app/Models/DepositSlipLine.php",
-    "app/Accounting/V2/Ar/DepositSlipTextReader.php",
-    "app/Accounting/V2/Ar/DepositSlipRepresenter.php",
-    "app/Accounting/V2/ReviewReason.php",
-    "app/Accounting/V2/Ar/DepositSlipLinker.php",
-    "app/Accounting/V2/SettlementLinker.php",
-    "app/Integrations/DTOs/LedgerEntryDTO.php",
-    "app/Integrations/Providers/QuickBooks/QuickBooksReferenceResolver.php",
-    "app/Integrations/Providers/QuickBooks/QuickBooksEntityMapper.php",
-    "app/Accounting/V2/Ar/DepositSlipPoster.php",
-    "app/Jobs/PushTransactionJob.php",
-    "app/Services/Gemini/DocumentAiExtractor.php",
-    "database/migrations/2026_10_26_000002_publish_deposit_slip_prompt.php",
-    "app/Services/Gemini/DocumentAiIngestService.php",
-    "app/Jobs/PollDocumentAiBatchesJob.php",
-    "app/Accounting/V2/BusinessEventResolver.php",
-    "app/Http/Controllers/TransactionsController.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-26T19:07:27Z"
+  "updated_at": "2026-10-26T19:26:14Z"
 }
