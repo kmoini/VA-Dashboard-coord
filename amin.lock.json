@@ -7,8 +7,9 @@
     "database/migrations/2026_10_26_000001_create_deposit_slips.php",
     "app/Models/DepositSlip.php",
     "app/Models/DepositSlipLine.php",
-    "app/Accounting/V2/Ar/DepositSlipTextReader.php"
+    "app/Accounting/V2/Ar/DepositSlipTextReader.php",
+    "app/Accounting/V2/Ar/DepositSlipRepresenter.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-26T18:54:46Z"
+  "updated_at": "2026-10-26T18:56:06Z"
 }
