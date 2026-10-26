@@ -20,8 +20,9 @@
     "app/Services/Gemini/DocumentAiExtractor.php",
     "database/migrations/2026_10_26_000002_publish_deposit_slip_prompt.php",
     "app/Services/Gemini/DocumentAiIngestService.php",
-    "app/Jobs/PollDocumentAiBatchesJob.php"
+    "app/Jobs/PollDocumentAiBatchesJob.php",
+    "app/Accounting/V2/BusinessEventResolver.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-10-26T19:06:53Z"
+  "updated_at": "2026-10-26T19:07:02Z"
 }
