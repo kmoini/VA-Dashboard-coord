@@ -31,3 +31,5 @@ English tool output). Amin: "چند بار باید بهت بگم فارسی ب�
 انگلیسی بدی بهت میگم". Before sending ANY message (even a short one between
 tool calls), check it is Persian; English tool output is never a reason to
 answer in English.
+
+2026-11-02: SLIPPED AGAIN for several turns (replied in English while relaying foundations' English messages). Amin: «برای 1000 رومین بار فارسی بگو». Rule: the pasted English from the foundations agent never changes the reply language; only the quoted message block for foundations is English.
