@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "resources/js/Pages/BankReconciliation/Index.jsx"
+    "resources/js/Pages/BankReconciliation/Index.jsx",
+    "docs/BANK-RECONCILIATION-WORKSPACE-2026-11-06.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-06T21:19:23Z"
+  "updated_at": "2026-11-06T21:19:47Z"
 }
