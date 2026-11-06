@@ -1,0 +1,81 @@
+{
+  "name": "Website: Xero and Sage notify me",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "notify-4c5e6ea48b5e0dbb",
+        "responseMode": "onReceived",
+        "options": {
+          "allowedOrigins": "https://voiceaccountant.com,https://www.voiceaccountant.com"
+        }
+      },
+      "id": "n1",
+      "name": "Signup webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ],
+      "webhookId": "notify-4c5e6ea48b5e0dbb"
+    },
+    {
+      "parameters": {
+        "jsCode": "const b = $input.first().json.body || {};\nconst email = String(b.email || '').trim().slice(0, 200);\nconst platform = String(b.platform || '').trim();\nconst okEmail = /^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$/.test(email);\nconst okPlatform = ['Xero', 'Sage'].includes(platform);\nif (!okEmail || !okPlatform) { return []; }\nreturn [{ json: { email, platform, when: new Date().toISOString() } }];"
+      },
+      "id": "n2",
+      "name": "Validate",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        240,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "fromEmail": "support@voiceaccountant.com",
+        "toEmail": "support@voiceaccountant.com",
+        "subject": "=Notify me: {{ $json.platform }}",
+        "emailFormat": "text",
+        "text": "=Platform: {{ $json.platform }}\nEmail: {{ $json.email }}\nTime: {{ $json.when }}\nSource: voiceaccountant.com/integrations"
+      },
+      "id": "n3",
+      "name": "Email the signup",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [
+        480,
+        0
+      ]
+    }
+  ],
+  "connections": {
+    "Signup webhook": {
+      "main": [
+        [
+          {
+            "node": "Validate",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validate": {
+      "main": [
+        [
+          {
+            "node": "Email the signup",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}

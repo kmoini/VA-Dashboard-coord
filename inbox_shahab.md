@@ -20,3 +20,36 @@
 
 **Prompt to paste into your Claude, if useful**
 > Check and fix security exposure from this week's PHP2Shell (PHP), Node.js October 21 security release (22.23.4, 24.22.1, 26.12.1) and eMudhra intermediate CA compromise. Inventory every system we run (cPanel PHP for the live and staging dashboard, n8n, Railway services, any Docker images) and list the current PHP and Node versions. Propose the exact update for each and wait for Kamyar to approve before changing anything. Back up n8n workflows first. After updating, confirm versions, that the website deploy webhook still triggers a git pull, and that HTTPS requests from n8n and the dashboard still work. Write the before and after versions to inbox_kamyar.md without any secrets.
+
+---
+
+## From Kamyar's Claude (2026-11-05): please set up one n8n workflow for the website "Notify me" form, and report back when done
+
+**What this is and why**
+The website page voiceaccountant.com/integrations has a small box where visitors enter their email to be told when Xero or Sage support is ready. We want those signups to reach us. Kamyar chose to use n8n for this. The page will send each signup to an n8n webhook, and n8n emails it to support@voiceaccountant.com. I have prepared the workflow as a file so you only need to import it, pick the email account, and switch it on.
+
+**The file**
+`shared/xero-sage-notify.workflow.json` in this coord repo (same folder level as the inbox files). It contains no passwords or keys.
+
+**What the workflow does (three steps)**
+1. "Signup webhook": receives a POST at `/webhook/notify-4c5e6ea48b5e0dbb` on `n8n.homeleaderrealty.com`. It only accepts browser calls from https://voiceaccountant.com and https://www.voiceaccountant.com (CORS allowed origins). It answers immediately, so the visitor does not wait.
+2. "Validate": checks the email looks like an email and the platform is exactly Xero or Sage. Anything else is dropped silently.
+3. "Email the signup": sends a short email (platform, email, time) from and to support@voiceaccountant.com.
+
+**What I need you to do**
+1. In n8n: Workflows, Import from file, choose `xero-sage-notify.workflow.json`.
+2. Open the node "Email the signup" and select the SMTP or email credential we already use for sending (the file leaves it blank on purpose). If the From address `support@voiceaccountant.com` is not allowed by that account, change From to an allowed address and tell me which.
+3. Make sure the webhook node shows the path `notify-4c5e6ea48b5e0dbb` and that **Production URL** works (not only the Test URL). Do NOT add Basic Auth to this webhook: it is called from visitors' browsers, so it must be open. (The site deploy webhook keeps its Basic Auth; this one is separate.)
+4. Switch the workflow to **Active**.
+5. Test from any terminal (no secrets involved):
+   `curl -i -X POST https://n8n.homeleaderrealty.com/webhook/notify-4c5e6ea48b5e0dbb -H "Content-Type: application/json" -H "Origin: https://voiceaccountant.com" -d '{"email":"test@example.com","platform":"Xero"}'`
+   Expect HTTP 200, a header `Access-Control-Allow-Origin: https://voiceaccountant.com`, and an email arriving at support@voiceaccountant.com. Then send one with a bad email (`"email":"nope"`) and confirm no email arrives.
+6. If CORS or the preflight (OPTIONS) request fails from the browser, tell me what the response headers show.
+
+**Please reply in `inbox_kamyar.md`** with: done or not done; the exact webhook URL if it differs; which email credential you used; and the result of the curl test (status line and whether the email arrived). Please do not paste passwords or tokens (the repo is pushed to GitHub automatically). Kamyar is waiting for your report before the website is switched over.
+
+**One more thing to know (dependency)**
+Two things on the website now depend on n8n being up: (1) the deploy webhook that pulls new site code onto the server, and (2) this signup workflow. If you ever plan to remove or move n8n, tell us first so we can replace both. Also please keep the n8n security update (PHP2Shell and Node, from your earlier message) on the list: this webhook is public, so n8n should be patched.
+
+**Prompt to paste into your Claude, if useful**
+> Import `shared/xero-sage-notify.workflow.json` from the coord repo into n8n (n8n.homeleaderrealty.com), attach our existing SMTP credential to the "Email the signup" node, keep the webhook open without auth, activate it, and test it with the curl command in inbox_shahab.md (expect 200, CORS header for voiceaccountant.com, an email at support@voiceaccountant.com, and no email for an invalid payload). Report the results in inbox_kamyar.md without any secrets.
