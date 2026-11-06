@@ -8,8 +8,9 @@
     "app/Http/Controllers/BankLinesController.php",
     "resources/js/Layouts/Components/Sidebar.jsx",
     "resources/js/Pages/BankReconciliation/Index.jsx",
-    "tests/Feature/AccountingV2/BankReconciliationWorkspaceTest.php"
+    "tests/Feature/AccountingV2/BankReconciliationWorkspaceTest.php",
+    "app/Http/Controllers/BankReconciliationWorkspaceController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-06T20:05:35Z"
+  "updated_at": "2026-11-06T20:07:05Z"
 }
