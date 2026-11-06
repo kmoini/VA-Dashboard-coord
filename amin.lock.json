@@ -5,8 +5,9 @@
     "app/Services/Books/BankLineConfirmer.php",
     "app/Services/Books/BankLineMatcher.php",
     "app/Http/Controllers/BankLinesController.php",
-    "app/Http/Controllers/BankReconciliationWorkspaceController.php"
+    "app/Http/Controllers/BankReconciliationWorkspaceController.php",
+    "tests/Feature/AccountingV2/StatementLinesTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-06T21:29:19Z"
+  "updated_at": "2026-11-06T21:29:56Z"
 }
