@@ -13,8 +13,9 @@
     "app/Services/Books/BankLinePresenter.php",
     "app/Http/Controllers/BankReconciliationWorkspaceController.php",
     "resources/js/Pages/BankReconciliation/Index.jsx",
-    "tests/Feature/AccountingV2/QuickBooksRegisterMirrorTest.php"
+    "tests/Feature/AccountingV2/QuickBooksRegisterMirrorTest.php",
+    "docs/BANK-RECONCILIATION-WORKSPACE-2026-11-06.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-07T19:53:17Z"
+  "updated_at": "2026-11-07T19:55:25Z"
 }
