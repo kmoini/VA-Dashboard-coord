@@ -8,8 +8,9 @@
     "app/Services/Books/QuickBooksRegisterMirror.php",
     "app/Models/ClientBankAccount.php",
     "app/Models/BankStatementImport.php",
-    "app/Policies/TransactionPolicy.php"
+    "app/Policies/TransactionPolicy.php",
+    "routes/web.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-07T19:45:34Z"
+  "updated_at": "2026-11-07T19:45:51Z"
 }
