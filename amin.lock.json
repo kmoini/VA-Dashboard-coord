@@ -7,8 +7,9 @@
     "resources/js/Components/TransactionsTable.jsx",
     "app/Integrations/Providers/QuickBooks/QuickBooksDeletionWatcher.php",
     "resources/js/Pages/BankReconciliation/Index.jsx",
-    "app/Services/Books/BankLinePresenter.php"
+    "app/Services/Books/BankLinePresenter.php",
+    "tests/Feature/AccountingV2/QuickBooksRegisterMirrorTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-07T22:08:32Z"
+  "updated_at": "2026-11-07T22:08:59Z"
 }
