@@ -5,8 +5,9 @@
     "app/Jobs/MirrorQuickBooksRegisterJob.php",
     "app/Http/Controllers/BankReconciliationWorkspaceController.php",
     "resources/js/Components/TransactionsTable.jsx",
-    "app/Integrations/Providers/QuickBooks/QuickBooksDeletionWatcher.php"
+    "app/Integrations/Providers/QuickBooks/QuickBooksDeletionWatcher.php",
+    "resources/js/Pages/BankReconciliation/Index.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-07T22:06:22Z"
+  "updated_at": "2026-11-07T22:06:44Z"
 }
