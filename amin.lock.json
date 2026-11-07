@@ -1,21 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/History/QboGeneralLedgerConverter.php",
-    "app/History/QboHistoryReader.php",
-    "database/migrations/2026_11_07_000002_add_quickbooks_mirror_to_bank_reconciliation.php",
-    "app/Services/Books/QuickBooksRegisterMirror.php",
-    "app/Models/ClientBankAccount.php",
-    "app/Models/BankStatementImport.php",
-    "app/Policies/TransactionPolicy.php",
-    "routes/web.php",
-    "app/Services/Books/BankLinePresenter.php",
-    "app/Http/Controllers/BankReconciliationWorkspaceController.php",
-    "resources/js/Pages/BankReconciliation/Index.jsx",
-    "tests/Feature/AccountingV2/QuickBooksRegisterMirrorTest.php",
-    "docs/BANK-RECONCILIATION-WORKSPACE-2026-11-06.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-07T19:55:25Z"
+  "updated_at": "2026-11-07T19:55:35Z"
 }
