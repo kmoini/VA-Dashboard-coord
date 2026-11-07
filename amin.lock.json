@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/History/QboGeneralLedgerConverter.php",
-    "app/History/QboHistoryReader.php"
+    "app/History/QboHistoryReader.php",
+    "database/migrations/2026_11_07_000002_add_quickbooks_mirror_to_bank_reconciliation.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-07T19:42:52Z"
+  "updated_at": "2026-11-07T19:43:13Z"
 }
