@@ -9,8 +9,9 @@
     "app/Models/ClientBankAccount.php",
     "app/Models/BankStatementImport.php",
     "app/Policies/TransactionPolicy.php",
-    "routes/web.php"
+    "routes/web.php",
+    "app/Services/Books/BankLinePresenter.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-07T19:45:51Z"
+  "updated_at": "2026-11-07T19:46:03Z"
 }
