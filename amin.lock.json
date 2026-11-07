@@ -1,12 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Services/Books/BankLinePresenter.php",
-    "app/Http/Controllers/BankReconciliationWorkspaceController.php",
-    "resources/js/Pages/BankReconciliation/Index.jsx",
-    "docs/BANK-RECONCILIATION-WORKSPACE-2026-11-06.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-07T18:31:55Z"
+  "updated_at": "2026-11-07T18:32:18Z"
 }
