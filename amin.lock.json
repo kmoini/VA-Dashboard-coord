@@ -12,8 +12,9 @@
     "routes/web.php",
     "app/Services/Books/BankLinePresenter.php",
     "app/Http/Controllers/BankReconciliationWorkspaceController.php",
-    "resources/js/Pages/BankReconciliation/Index.jsx"
+    "resources/js/Pages/BankReconciliation/Index.jsx",
+    "tests/Feature/AccountingV2/QuickBooksRegisterMirrorTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-07T19:50:34Z"
+  "updated_at": "2026-11-07T19:51:44Z"
 }
