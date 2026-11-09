@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Services/Books/ReconciledEntryCheck.php",
-    "resources/js/Components/TransactionsTable.jsx"
+    "resources/js/Components/TransactionsTable.jsx",
+    "tests/Feature/AccountingV2/ReconciledEntryCheckTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-09T21:07:30Z"
+  "updated_at": "2026-11-09T21:10:01Z"
 }
