@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Accounting/V2/BusinessEvent.php",
-    "app/Accounting/V2/BusinessEventResolver.php"
+    "app/Accounting/V2/BusinessEventResolver.php",
+    "tests/Feature/AccountingV2/BankReconciliationWorkspaceTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-09T19:08:57Z"
+  "updated_at": "2026-11-09T19:09:46Z"
 }
