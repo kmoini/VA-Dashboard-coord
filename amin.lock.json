@@ -1,15 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Jobs/MirrorQuickBooksRegisterJob.php",
-    "app/Http/Controllers/BankReconciliationWorkspaceController.php",
-    "resources/js/Components/TransactionsTable.jsx",
-    "app/Integrations/Providers/QuickBooks/QuickBooksDeletionWatcher.php",
-    "resources/js/Pages/BankReconciliation/Index.jsx",
-    "app/Services/Books/BankLinePresenter.php",
-    "tests/Feature/AccountingV2/QuickBooksRegisterMirrorTest.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-09T15:07:46Z"
+  "updated_at": "2026-11-09T15:24:22Z"
 }
