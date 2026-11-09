@@ -69,3 +69,99 @@ Pool widened to 60 days (bill pre-authorized two weeks after its date);
 with the wide pool a 24-day-off line took a fee's entry on that bonus alone
 (StatementLinesTest identical-lines caught it). `BankLineConfirmer` is the
 one place a line becomes MATCHED (human + auto).
+
+**2026-11-07 (cp-441, 7e5a2fe6, committed locally, tag+push+deploy handed to
+Amin):** prod showed the ••3922 fee line "No entry yet" although the read
+produced the fee row: `DuplicateMatcherV2` had folded it into the ••1234
+statement's fee entry (tx 2380, three files on one row) and line 26 of
+import 11 held that entry. Rule: a "statement"-kind row is NOT a duplicate
+of a "statement" row already CLAIMED by a bank line of another file
+(checksum differs); unclaimed charges still fold; same bytes always fold.
+Ingest passes `extras.source_attachment_ids`. ⚠️ First version ("different
+bytes = different charge") broke MultiTransactionDocumentTest re-upload
+(harness gives random checksums), hence the narrower claim-based rule.
+⚠️ Local Laragon PG was DOWN mid-session; `pg_ctl` started from the Bash
+tool dies with the task, start it detached via PowerShell Start-Process.
+
+**2026-11-07 cp-441 LIVE (7e5a2fe6); cp-442 (901651ff) committed locally,
+tag+push+deploy handed to Amin:** Amin re-uploaded the ••3922 file after
+cp-441 and the fee was still folded: the same-bytes replay skipped the
+claim test (`! $identicalDocument`). Dropped that condition; the claim
+(claiming line's file checksum vs ours) already tells own statement from
+another. Test `test_re_uploading_the_statement_that_lost_its_fee_...`.
+After the deploy: upload the ••3922 file once more → fee books + auto-ticks.
+
+**2026-11-07 cp-442 LIVE (901651ff). cp-443 (f9331002) committed locally,
+tag+push+deploy handed to Amin:** the accounting team's round. Create entry
+takes the account's company (was hidden by the company filter); confirm
+clears DUPLICATE_SUSPECTED + funding flags; prompts now read the bank's
+CREDITS too (interest, fee refunds) via migration 2026_11_07_000001 + guard
+hashes re-pinned (⚠️ run `ai:extraction-check --runs=3` on the server);
+"Not in QuickBooks" badge + per-row Push / Approve and push + "Push the
+approved ones" / "Approve and push all" (POST /bank-reconciliation/{import}/push,
+approve only when asked, same PushGate/router/job as the Push button);
+"Open in QuickBooks" via QuickBooksService::entityDeepLink; opening balance
+checked against the previous statement's closing + period gap (continuity).
+NEXT (agreed order): cp-444/445 QBO mirror (source quickbooks, backfill via
+History phase 2 reader, incremental via CDC watcher, migration for the
+source CHECK); then edit/delete guard + discrepancy flag on reconciled
+entries, report snapshot at finalize, adjustment entry, card-balance payment
+offer. QB Desktop handoff lives in C:\Users\Amin\Downloads\BR QB\
+QuickBooks-Reconciliation-Handoff (reverse-engineered; behaviour only, no
+code/text copied; keep internal).
+ai:extraction-check after the 2026-11-07 prompt change (bank credits): 18/18, category 15/15, GIFI 18/18, date 6/6.
+
+**2026-11-07 cp-444 (dc189a6c) committed locally, tag+push+deploy handed to
+Amin:** "Push the approved ones does nothing" after Approve and push all
+queued 3 entries: presenter counted non-pushed as Not in QuickBooks and the
+endpoint skipped queued silently. Now `BankLinePresenter::syncsFor` reads
+the latest sync row of ANY status (pushed first); entry has sync_status +
+sync_error; queued shown "Sending to QuickBooks…", error/needs_mapping/
+skipped/conflict/deleted_remotely show the reason; counts: not_in_quickbooks
+(excl. queued), queued_for_quickbooks, pushable. ⚠️ Asked Amin for the
+transaction_integration_syncs rows of the last 6h + failed_jobs count to see
+whether the worker actually sent the 3 (PushTransactionJob) or refused.
+
+**2026-11-07 cp-445 (f2881671) committed locally, tag+push+deploy handed to
+Amin:** the QuickBooks MIRROR. `QuickBooksRegisterMirror` reads the account's
+register for the statement period from the GL report (`QboHistoryReader::lines`,
+new; converter got `lines()` + account_id/id per line) and creates read-only
+rows (source=quickbooks, approved, confirmed, qb_sync_status pushed, a pushed
+TransactionIntegrationSync with the QBO type+id → never pushed back, deep
+link works, matcher pairs them). Account pick auto by last4/name, else the
+amber bar asks once (client_bank_accounts.qbo_account_id/name). Read on open
+sitting when never read or >24h (bank_statement_imports.qbo_register_read_at/
+error), "Read QuickBooks again". TransactionPolicy::update refuses source
+quickbooks. transactionSource.js has a QuickBooks badge. "Map account for GIFI
+N and push" on needs_mapping rows → /recordkeeping/{id}/map-and-push.
+⚠️ QboAccountSnapshotService is FINAL: seed QboAccountSnapshot rows in tests
+(last_seen_at now) instead of mocking. ⚠️ CHEQUE lines vs a payee-named entry
+score 0.83 → proposed, not auto. Migration 2026_11_07_000002 widens the
+transactions.source CHECK (pgsql) → prod needs migrate --force.
+Not yet: CDC feed between sittings, backfill outside statements.
+
+**2026-11-07 cp-445 LIVE; cp-446 (5cedc3ab) committed locally, tag+push+deploy
+handed to Amin:** first prod read of the mirror worked (sandbox company CA
+f148; ••3922 auto-named "10100 · TD-Chequing 0621-5213922"), but the Bank
+Deposit Amin typed in QBO came back from the GL with 2,350 in the CREDIT
+column → mirrored as an expense to vendor "S Ahmadi" → the money-in bank line
+could not take it. Fix: `directionFor(type)` decides for Deposit/Sales
+Receipt/Payment (in) and Expense/Check/Bill Payment/Refund Receipt (out),
+sign only for Transfer/Journal/card credits; `refresh()` updates a mirrored
+row on later reads (QBO owns it). ⚠️ QBO's Canadian locale shows DD/MM/YYYY:
+Amin's "Oct 18" Canadian Tire expense was 18/09 = September, outside the
+period, hence not mirrored (not a bug).
+
+**2026-11-07 cp-446 LIVE and verified on prod** (Read QuickBooks again → the
+deposit row corrected to revenue/customer and auto-matched; Canadian Tire
+re-dated to Oct mirrored; ZOOM Map account and push → queued → QuickBooks).
+**cp-447 (13722f63) committed locally, tag+push+deploy handed to Amin:**
+"Failed to fetch" = the GL read ran inside the web request; now
+`MirrorQuickBooksRegisterJob` (default queue, ⚠️ a static named `queue()` on a
+job collides with Laravel's Dispatcher hook → named `queueRead()`), cache
+marker `bank-reconciliation:qbo-mirror:{import}`, page polls every 4s while
+`quickbooks.reading`. Record Keeping hides "Deleted there? Resend" for source
+quickbooks; `QuickBooksDeletionWatcher::markDeleted` deletes a mirrored row
+and unmatches its lines. Map picker filtered by entry type (expense-type /
+income-type accounts). Open question: "�" in QBO account names (sandbox data
+or snapshot encoding) — not investigated yet.
