@@ -11,5 +11,5 @@
     "tests/Feature/AccountingV2/QuickBooksRegisterMirrorTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-07T22:12:03Z"
+  "updated_at": "2026-11-09T15:07:35Z"
 }
