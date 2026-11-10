@@ -6,8 +6,9 @@
     "app/Models/BankReconciliationReport.php",
     "app/Services/Books/BankReconciliationReportService.php",
     "resources/views/exports/bank-reconciliation-pdf.blade.php",
-    "routes/web.php"
+    "routes/web.php",
+    "tests/Feature/AccountingV2/BankReconciliationReportTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-10T14:36:44Z"
+  "updated_at": "2026-11-10T14:38:27Z"
 }
