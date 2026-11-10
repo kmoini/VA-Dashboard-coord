@@ -165,3 +165,24 @@ quickbooks; `QuickBooksDeletionWatcher::markDeleted` deletes a mirrored row
 and unmatches its lines. Map picker filtered by entry type (expense-type /
 income-type accounts). Open question: "�" in QBO account names (sandbox data
 or snapshot encoding) — not investigated yet.
+**cp-447 LIVE 2026-11-09 (13722f63).**
+**cp-448 (4254d482) committed locally:** row "..." menu was clipped by the table's overflow-x container (only the first item showed on the last rows); now position:fixed from the button rect, opens upward near the bottom, closes on scroll/resize.
+
+**2026-11-09:** full sitting finalized on prod (12/12, R badges, 0 open). One
+entry (tx 2397, R Martin) stayed out of QBO: BANK_TRANSFER via the team's
+phase 6 rule (BusinessEventResolver ~L471: money in reading like a transfer
+from an unknown party is HELD, TRANSFER_SOURCE_UNVERIFIED) → mapper wants the
+source account. ⚠️ There was NO way to change the event in the UI (Kind =
+document_type; mapping GIFI does nothing). Rule kept; cp-449 (1e7808fd) adds
+the answer: event picker + POST /recordkeeping/{id}/event (TransactionsController
+::setEvent). ⚠️ local PG died again mid-run; restart with PowerShell
+Start-Process pg_ctl -w and poll pg_isready.
+**cp-450 (c6746156):** confirm box before an event change; '�' = U+FFFD in QBO's own raw Name (chart moved from Desktop) → display via existing AccountNameNormalizer::forDisplay (already used since BBMS 2026-10-20) wired into the new screens. Remaining: CDC feed between sittings, reconciled-entry edit guard, Finalize report PDF/CSV.
+
+- cp-452 COMMITTED 2026-11-09 (7df1d5de, not tagged yet): QuickBooks feed between sittings. `quickbooks:mirror-registers` twiceDaily(6,13); reads only clients with one QBO company and a bank account with qbo_account_id; window = start of last month..today (2 GL reads/company/run); shares QuickBooksRegisterMirror::applyRegister with the sitting; new rows call BankLineMatcher::suggestForTransaction; reconciled mirrored row changed later gets metadata.quickbooks.changed_after_reconcile. Next free 453; next = reconciled-entry edit guard + discrepancy flag on page, Finalize report PDF/CSV.
+- cp-452 LIVE 2026-11-09: server pulled with `git pull --no-tags --ff-only origin main` (webhook had not pulled); first run: Connection 12, 1 account, 0 new (2 reads).
+- cp-452 VERIFIED on prod 2026-11-09 by Amin: new (1 new), edit (1 changed), re-run (0/0), delete (row gone within minutes via watch-deletions). Feed loop CLOSED.
+- cp-453 COMMITTED 2026-11-09 (e5c43722, not tagged yet): reconciled-entry change warning. Finalize writes metadata.reconciled {import_id, amount, account_id}; ReconciledEntryCheck (computed) gives deleted/amount/account for FINALIZED statements only; R! on recon line + banner (counts.changed_since_finalized) + rail (statements[].changed); Record Keeping row prop `reconcile` + R! pill + detail banner + confirm box (resources/js/lib/reconciled.js) before amount/kind/bank account change + note in delete box. Never blocks. Next free 454; next = Finalize report PDF/CSV.
+- cp-453 LIVE 2026-11-09 (server pulled + npm build by hand); awaiting Amin prod test.
+- cp-453 VERIFIED on prod by Amin 2026-11-09 (banner, R!, confirm). cp-454 COMMITTED (c3f6742f): confirm is now ConfirmDialog tone="warning" via resources/js/lib/reconciled.jsx (promise, createRoot), inline edit guarded by confirmingRef. Next free 455.
+- cp-454 LIVE 2026-11-09 (pulled + built by hand).
