@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "database/migrations/2026_11_10_000001_create_bank_reconciliation_reports_table.php"
+    "database/migrations/2026_11_10_000001_create_bank_reconciliation_reports_table.php",
+    "app/Models/BankReconciliationReport.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-10T14:34:02Z"
+  "updated_at": "2026-11-10T14:35:19Z"
 }
