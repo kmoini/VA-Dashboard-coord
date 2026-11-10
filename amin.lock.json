@@ -6,8 +6,9 @@
     "app/Http/Controllers/BankReconciliationWorkspaceController.php",
     "routes/web.php",
     "resources/views/exports/bank-reconciliation-pdf.blade.php",
-    "resources/js/lib/saveFile.js"
+    "resources/js/lib/saveFile.js",
+    "resources/js/Pages/BankReconciliation/Index.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-10T17:54:08Z"
+  "updated_at": "2026-11-10T17:54:32Z"
 }
