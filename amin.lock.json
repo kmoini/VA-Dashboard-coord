@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Models/BankStatementImport.php",
     "app/Http/Controllers/BankReconciliationWorkspaceController.php",
-    "app/Services/Books/StatementDocumentIntake.php"
+    "app/Services/Books/StatementDocumentIntake.php",
+    "resources/js/Pages/BankReconciliation/Index.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-10T19:24:33Z"
+  "updated_at": "2026-11-10T19:25:02Z"
 }
