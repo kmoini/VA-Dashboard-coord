@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Services/Books/BankLineConfirmer.php",
-    "app/Services/Books/BankLinePresenter.php"
+    "app/Services/Books/BankLinePresenter.php",
+    "app/Observers/TransactionObserver.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-10T15:50:54Z"
+  "updated_at": "2026-11-10T15:51:08Z"
 }
