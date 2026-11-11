@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "app/Console/Commands/V2MeasureCommand.php"
+    "app/Console/Commands/V2MeasureCommand.php",
+    "tests/Feature/AccountingV2/V2MeasureTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-11T18:31:05Z"
+  "updated_at": "2026-11-11T18:31:28Z"
 }
