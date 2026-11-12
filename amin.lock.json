@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Models/BankStatementImport.php",
-    "app/Models/BankStatementLine.php"
+    "app/Models/BankStatementLine.php",
+    "resources/js/Pages/BankReconciliation/Index.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-12T20:00:44Z"
+  "updated_at": "2026-11-12T20:01:18Z"
 }
