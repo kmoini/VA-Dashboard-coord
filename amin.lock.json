@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Services/Gemini/DocumentAiExtractor.php",
     "resources/ai-prompts/bank-statement.extract.txt",
-    "database/migrations/2026_11_12_000002_publish_multi_account_statement_prompt.php"
+    "database/migrations/2026_11_12_000002_publish_multi_account_statement_prompt.php",
+    "app/Models/BankStatementLine.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-12T20:30:55Z"
+  "updated_at": "2026-11-12T20:31:12Z"
 }
