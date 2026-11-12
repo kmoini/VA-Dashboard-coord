@@ -33,3 +33,49 @@ Please do both, and reply in `inbox_kamyar.md`. Shahab has a related DNS task fo
 5. **Android status.** Still unconfirmed: is the Google Play app public, or internal testing only? (The website says iOS and Android; Kamyar asked Shahab to check the Play Console.)
 
 Note: Marketing Claude is not a lawyer. These edits are a good-faith correction of factual mismatches. A licensed lawyer should still review the privacy policy and terms before the next app store review.
+
+---
+## 2026-11-12 | From: Kamyar (via Marketing Claude) | Please take care of master plan Section 9 (website promises vs code, F26 to F42)
+
+Kamyar approved a new section of the master plan and asked that you take care of it. It is pushed on the `dev` branch of VA-Dashboard (commit 5af050ec, plus d0cd2a9d for the business-type report): `docs/PRODUCT-MASTER-PLAN.md`, **Section 9**. Please read it first. Each item has: the pain, what exists today (with file or class names), scope, data, acceptance tests, risks and a ready-to-use build prompt.
+
+**Why this exists:** a claims-versus-code audit compared what voiceaccountant.com says with what the code does. Where the site promises something the code does not do, we either build it (then the wording is true) or reword the site. Until an item ships the site must not describe it as available.
+
+### Build these first (the site names them most clearly)
+
+| # | What | Today in the code |
+|---|---|---|
+| **F26** | Auto-approve above a confidence bar, per client | One firm-wide switch (`AccountantAccount.auto_approve_transactions`, `SettingsController::toggleAutoApprove`, `TransactionService::create`) that approves everything. No threshold. Mobile `MobileAiChatService` also defaults `autoApprove` to true and runs update, trash and permanent-delete tools with no confirmation. Please make that mobile default safe in the same change. |
+| **F27** | Document due-date reminders (policy renewals, expiries) | Not found in `DocumentClassifier` or `ClassifyDocumentJob`. |
+| **F28** | Pin a conversation to a transaction | Not found in Messages Studio (`ChatController`, `ChatMessage`). Mobile can only quote a transaction. |
+
+### Then, in this order
+
+- **F29** firm logo on invoices, invite emails, join page, client app and directory sync (there is no logo field, only a user avatar).
+- **F30** invite QR code and public web join page, plus safer random invite codes (the current short code is the first 8 characters of the firm id).
+- **F31** "fix once, books the same way next time" (`LearnedPreferenceService` needs several confirmations and has no retire or decay).
+- **F32** Australian GST profile and AUD books (only a tax code exists today).
+- **F33** statement import from PDF or photo with a deterministic balance check, and optional period lock when a reconciliation finishes.
+- **F34** cash-flow report.
+- **F35** define and enforce what "verified professional" means (the badge exists but nothing sets it).
+- **F36** security proof: encryption at rest and append-only `activity_logs` at the database level (Shahab already has the audit-log part).
+
+### Plan first, do not build yet (write the memo and get Kamyar's approval)
+
+F37 Xero then Sage posting, F38 WhatsApp and Telegram customer channel, F39 US state sales tax, F40 white-label custom domain and own app, F41 custom automation rules and scheduled owner packs, F42 the AI asking when something is unclear.
+
+### Rules (same as Sections 6 and 7)
+
+1. AI proposes, a human confirms. Tenant isolation and audit trail on everything.
+2. Any new audit action needs a CHECK-constraint migration written as a superset, and `ActivityLogVocabularyTest` must stay green. SQLite tests do not catch this, so test on Postgres.
+3. Anything on the mobile or n8n side needs the mobile repo change and an n8n re-import, so write the handoff.
+4. **Build, then stop and tell Kamyar so he can test. Do not deploy.** (Your existing rule: no checkpoint or deploy before he tests.)
+5. When an item ships, tell Kamyar so the website wording and the Coming soon tags are updated in the same change. Marketing Claude does the website side.
+
+### Please also note
+
+- `docs/BUSINESS-TYPE-FIT-REPORT-2026-10-10.md` is now in the repo. It has a correction note at the top: three of its "works today" lines (due-date reminders, voice-built invoices, per-client auto-approve) are not true in the code.
+- Two other tasks for you are already in this inbox from earlier today: (A) the public community forum and (B) the Google Play and Apple privacy declarations for the app. Those come first because (B) is a compliance issue.
+- Questions still open for Shahab: the Android Play Console status and the trial length (the site now says 30 days, which is what the code gives firms).
+
+**Please reply in `inbox_kamyar.md`** with: which items you take, in what order, estimated time for the first three, and anything in the plan you disagree with. Kamyar asked to be told about every message sent.
