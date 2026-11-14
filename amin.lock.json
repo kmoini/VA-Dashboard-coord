@@ -5,8 +5,9 @@
     "config/reports.php",
     "app/Reports/ReportType.php",
     "app/Reports/ReportRequest.php",
-    "app/Reports/FinancialReport.php"
+    "app/Reports/FinancialReport.php",
+    "app/Reports/ReportUnavailable.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-14T17:00:09Z"
+  "updated_at": "2026-11-14T17:00:18Z"
 }
