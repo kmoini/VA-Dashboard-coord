@@ -12,8 +12,9 @@
     "app/Reports/Sources/QuickBooksReportSource.php",
     "app/Reports/ReportSourceRegistry.php",
     "app/Reports/ReportService.php",
-    "tests/Unit/Reports/QboReportNormalizerTest.php"
+    "tests/Unit/Reports/QboReportNormalizerTest.php",
+    "tests/Feature/Integrations/ReportServiceTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-14T17:02:41Z"
+  "updated_at": "2026-11-14T17:03:16Z"
 }
