@@ -1,13 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Reports/Contracts/ReportSource.php",
-    "app/Reports/Sources/QuickBooksReportSource.php",
-    "app/Reports/ReportService.php",
-    "app/Http/Controllers/FinancialReportsController.php",
-    "docs/financial-reports.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-14T21:18:29Z"
+  "updated_at": "2026-11-14T21:19:09Z"
 }
