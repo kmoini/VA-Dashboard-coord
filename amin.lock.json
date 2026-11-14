@@ -4,8 +4,9 @@
   "locked_files": [
     "database/migrations/2026_11_14_000001_create_report_requests_and_period_closes.php",
     "app/Models/ReportRequestLog.php",
-    "app/Models/PeriodClose.php"
+    "app/Models/PeriodClose.php",
+    "app/Reports/ReportContext.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-14T17:10:47Z"
+  "updated_at": "2026-11-14T17:10:53Z"
 }
