@@ -15,8 +15,9 @@
     "app/Http/Controllers/ReportsController.php",
     "resources/js/Pages/Reports/Index.jsx",
     "resources/js/Pages/Reports/Financial.jsx",
-    "tests/Feature/Integrations/FinancialReportsPageTest.php"
+    "tests/Feature/Integrations/FinancialReportsPageTest.php",
+    "database/migrations/2026_11_14_000002_add_locked_by_to_transactions.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-14T17:17:29Z"
+  "updated_at": "2026-11-14T17:18:31Z"
 }
