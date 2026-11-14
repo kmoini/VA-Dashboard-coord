@@ -1,20 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "config/reports.php",
-    "app/Reports/ReportType.php",
-    "app/Reports/ReportRequest.php",
-    "app/Reports/FinancialReport.php",
-    "app/Reports/ReportUnavailable.php",
-    "app/Reports/Contracts/ReportSource.php",
-    "app/Reports/Sources/QuickBooks/QboReportNormalizer.php",
-    "app/Reports/Sources/QuickBooksReportSource.php",
-    "app/Reports/ReportSourceRegistry.php",
-    "app/Reports/ReportService.php",
-    "tests/Unit/Reports/QboReportNormalizerTest.php",
-    "tests/Feature/Integrations/ReportServiceTest.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-14T17:03:16Z"
+  "updated_at": "2026-11-14T17:04:54Z"
 }
