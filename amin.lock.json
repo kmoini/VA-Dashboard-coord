@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "app/Reports/Contracts/ReportSource.php"
+    "app/Reports/Contracts/ReportSource.php",
+    "app/Reports/Sources/QuickBooksReportSource.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-14T21:15:38Z"
+  "updated_at": "2026-11-14T21:15:47Z"
 }
