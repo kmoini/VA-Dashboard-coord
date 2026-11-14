@@ -9,8 +9,9 @@
     "app/Reports/PeriodCloseService.php",
     "app/Reports/ReportReviewStatus.php",
     "app/Http/Controllers/PeriodLockController.php",
-    "app/Http/Controllers/FinancialReportsController.php"
+    "app/Http/Controllers/FinancialReportsController.php",
+    "resources/views/exports/financial-report-pdf.blade.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-14T17:13:05Z"
+  "updated_at": "2026-11-14T17:13:20Z"
 }
