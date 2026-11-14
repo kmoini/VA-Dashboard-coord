@@ -1,23 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "database/migrations/2026_11_14_000001_create_report_requests_and_period_closes.php",
-    "app/Models/ReportRequestLog.php",
-    "app/Models/PeriodClose.php",
-    "app/Reports/ReportContext.php",
-    "app/Reports/PeriodCloseService.php",
-    "app/Reports/ReportReviewStatus.php",
-    "app/Http/Controllers/PeriodLockController.php",
-    "app/Http/Controllers/FinancialReportsController.php",
-    "resources/views/exports/financial-report-pdf.blade.php",
-    "routes/web.php",
-    "app/Http/Controllers/ReportsController.php",
-    "resources/js/Pages/Reports/Index.jsx",
-    "resources/js/Pages/Reports/Financial.jsx",
-    "tests/Feature/Integrations/FinancialReportsPageTest.php",
-    "database/migrations/2026_11_14_000002_add_locked_by_to_transactions.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-14T17:18:31Z"
+  "updated_at": "2026-11-14T17:28:33Z"
 }
