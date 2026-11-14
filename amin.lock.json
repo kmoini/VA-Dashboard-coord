@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Reports/Contracts/ReportSource.php",
     "app/Reports/Sources/QuickBooksReportSource.php",
-    "app/Reports/ReportService.php"
+    "app/Reports/ReportService.php",
+    "app/Http/Controllers/FinancialReportsController.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-14T21:16:00Z"
+  "updated_at": "2026-11-14T21:16:07Z"
 }
