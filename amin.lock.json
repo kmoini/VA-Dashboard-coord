@@ -4,8 +4,9 @@
   "locked_files": [
     "resources/ai-prompts/registry-document.read.txt",
     "app/Profile/RegistryDocumentReader.php",
-    "app/Http/Controllers/ClientRegistryDocumentController.php"
+    "app/Http/Controllers/ClientRegistryDocumentController.php",
+    "routes/web.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-15T22:47:15Z"
+  "updated_at": "2026-11-15T22:47:22Z"
 }
