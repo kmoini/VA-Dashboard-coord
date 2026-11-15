@@ -1,22 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "resources/ai-prompts/registry-document.read.txt",
-    "app/Profile/RegistryDocumentReader.php",
-    "app/Http/Controllers/ClientRegistryDocumentController.php",
-    "routes/web.php",
-    "tests/Feature/Clients/RegistryDocumentTest.php",
-    "app/Services/AiPrompts/AiPromptCatalog.php",
-    "resources/js/Components/CompanyRegistryCards.jsx",
-    "resources/ai-prompts/registry-document.evidence.lines.txt",
-    "resources/ai-prompts/registry-document.evidence.scan.txt",
-    "docs/samples/registry-fill/rent-roll.csv",
-    "docs/samples/registry-fill/lease.txt",
-    "docs/samples/registry-fill/management-agreement.txt",
-    "docs/samples/registry-fill/gst-registration-letter.txt",
-    "docs/REGISTRY-FILL-FROM-DOCUMENT-2026-11-15.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-15T23:14:25Z"
+  "updated_at": "2026-11-15T23:15:44Z"
 }
