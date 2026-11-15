@@ -9,7 +9,8 @@
     "app/Services/QuickBooksService.php",
     "app/Http/Controllers/QuickBooksController.php",
     "resources/js/Pages/Integration/Index.jsx",
-    "app/History/HistoryImportService.php"
+    "app/History/HistoryImportService.php",
+    "app/Http/Controllers/HistoryImportController.php"
   ],
-  "updated_at": "2026-11-15T04:42:24Z"
+  "updated_at": "2026-11-15T04:42:39Z"
 }
