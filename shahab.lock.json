@@ -15,7 +15,8 @@
     "routes/web.php",
     "app/Http/Middleware/ResolveTenant.php",
     "resources/js/Components/Support/TicketThread.jsx",
-    "resources/js/Pages/Support/Index.jsx"
+    "resources/js/Pages/Support/Index.jsx",
+    "resources/js/Pages/Support/Show.jsx"
   ],
-  "updated_at": "2026-11-15T03:45:10Z"
+  "updated_at": "2026-11-15T03:45:17Z"
 }
