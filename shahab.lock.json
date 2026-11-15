@@ -22,7 +22,8 @@
     "resources/js/Pages/QuickBooks/Disconnected.jsx",
     "resources/js/Layouts/Components/Sidebar.jsx",
     "resources/js/Layouts/AuthenticatedLayout.jsx",
-    "tests/Feature/Support/SupportTicketsTest.php"
+    "tests/Feature/Support/SupportTicketsTest.php",
+    "docs/SUPPORT-TICKETS-AND-QUICKBOOKS-DISCONNECT-2026-11-14.md"
   ],
-  "updated_at": "2026-11-15T03:47:29Z"
+  "updated_at": "2026-11-15T03:51:09Z"
 }
