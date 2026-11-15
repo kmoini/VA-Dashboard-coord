@@ -15,5 +15,5 @@
     "routes/web.php",
     "app/Http/Middleware/ResolveTenant.php"
   ],
-  "updated_at": "2026-11-15T03:44:04Z"
+  "updated_at": "2026-11-15T03:44:11Z"
 }
