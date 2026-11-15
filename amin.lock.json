@@ -1,7 +1,9 @@
 {
   "owner": "Amin",
-  "status": "idle",
-  "locked_files": [],
+  "status": "active",
+  "locked_files": [
+    "app/Profile/RegistryDocumentReader.php"
+  ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-15T23:15:44Z"
+  "updated_at": "2026-11-15T23:23:36Z"
 }
