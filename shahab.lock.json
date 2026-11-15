@@ -13,7 +13,8 @@
     "app/Http/Controllers/SupportController.php",
     "app/Http/Controllers/Admin/SupportTicketsController.php",
     "routes/web.php",
-    "app/Http/Middleware/ResolveTenant.php"
+    "app/Http/Middleware/ResolveTenant.php",
+    "resources/js/Components/Support/TicketThread.jsx"
   ],
-  "updated_at": "2026-11-15T03:44:11Z"
+  "updated_at": "2026-11-15T03:44:49Z"
 }
