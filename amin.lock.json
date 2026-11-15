@@ -8,8 +8,9 @@
     "routes/web.php",
     "tests/Feature/Clients/RegistryDocumentTest.php",
     "app/Services/AiPrompts/AiPromptCatalog.php",
-    "resources/js/Components/CompanyRegistryCards.jsx"
+    "resources/js/Components/CompanyRegistryCards.jsx",
+    "resources/ai-prompts/registry-document.evidence.lines.txt"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-15T23:09:12Z"
+  "updated_at": "2026-11-15T23:09:30Z"
 }
