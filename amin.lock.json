@@ -13,8 +13,9 @@
     "resources/ai-prompts/registry-document.evidence.scan.txt",
     "docs/samples/registry-fill/rent-roll.csv",
     "docs/samples/registry-fill/lease.txt",
-    "docs/samples/registry-fill/management-agreement.txt"
+    "docs/samples/registry-fill/management-agreement.txt",
+    "docs/samples/registry-fill/gst-registration-letter.txt"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-15T23:14:07Z"
+  "updated_at": "2026-11-15T23:14:15Z"
 }
