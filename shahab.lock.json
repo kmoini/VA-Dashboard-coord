@@ -1,6 +1,8 @@
 {
   "owner": "Shahab",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-11-15T03:29:26Z"
+  "status": "active",
+  "locked_files": [
+    "database/migrations/2026_11_14_000003_create_support_ticket_replies_table.php"
+  ],
+  "updated_at": "2026-11-15T03:40:19Z"
 }
