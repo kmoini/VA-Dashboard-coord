@@ -17,7 +17,8 @@
     "resources/js/Components/Support/TicketThread.jsx",
     "resources/js/Pages/Support/Index.jsx",
     "resources/js/Pages/Support/Show.jsx",
-    "resources/js/Pages/Admin/Support/Index.jsx"
+    "resources/js/Pages/Admin/Support/Index.jsx",
+    "resources/js/Pages/Admin/Support/Show.jsx"
   ],
-  "updated_at": "2026-11-15T03:45:37Z"
+  "updated_at": "2026-11-15T03:45:54Z"
 }
