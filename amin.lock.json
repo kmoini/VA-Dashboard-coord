@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "resources/ai-prompts/registry-document.read.txt"
+    "resources/ai-prompts/registry-document.read.txt",
+    "app/Profile/RegistryDocumentReader.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-15T22:44:31Z"
+  "updated_at": "2026-11-15T22:46:47Z"
 }
