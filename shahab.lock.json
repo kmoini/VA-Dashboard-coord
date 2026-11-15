@@ -19,7 +19,8 @@
     "resources/js/Layouts/Components/Sidebar.jsx",
     "tests/Feature/QuickBooks/QuickBooksEnvironmentTest.php",
     "docs/QUICKBOOKS-SANDBOX-AND-PRODUCTION-2026-11-15.md",
-    "app/Http/Controllers/SupportController.php"
+    "app/Http/Controllers/SupportController.php",
+    "resources/js/Pages/Support/Show.jsx"
   ],
-  "updated_at": "2026-11-15T05:15:41Z"
+  "updated_at": "2026-11-15T05:15:59Z"
 }
