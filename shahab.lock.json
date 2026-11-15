@@ -21,7 +21,8 @@
     "resources/js/Pages/Admin/Support/Show.jsx",
     "resources/js/Pages/QuickBooks/Disconnected.jsx",
     "resources/js/Layouts/Components/Sidebar.jsx",
-    "resources/js/Layouts/AuthenticatedLayout.jsx"
+    "resources/js/Layouts/AuthenticatedLayout.jsx",
+    "tests/Feature/Support/SupportTicketsTest.php"
   ],
-  "updated_at": "2026-11-15T03:46:42Z"
+  "updated_at": "2026-11-15T03:47:29Z"
 }
