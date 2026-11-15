@@ -6,7 +6,8 @@
     "app/Models/SupportTicketReply.php",
     "app/Models/SupportTicket.php",
     "config/services.php",
-    "app/Services/TicketService.php"
+    "app/Services/TicketService.php",
+    "app/Services/NotificationService.php"
   ],
-  "updated_at": "2026-11-15T03:41:29Z"
+  "updated_at": "2026-11-15T03:41:35Z"
 }
