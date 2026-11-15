@@ -15,7 +15,8 @@
     "app/Console/Commands/QuickBooksSeedConnection.php",
     "app/Http/Controllers/Admin/QuickBooksModeController.php",
     "routes/web.php",
-    "resources/js/Pages/Admin/QuickBooksMode/Index.jsx"
+    "resources/js/Pages/Admin/QuickBooksMode/Index.jsx",
+    "resources/js/Layouts/Components/Sidebar.jsx"
   ],
-  "updated_at": "2026-11-15T04:45:01Z"
+  "updated_at": "2026-11-15T04:45:12Z"
 }
