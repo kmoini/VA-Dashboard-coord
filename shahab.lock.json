@@ -14,7 +14,8 @@
     "app/Services/Books/BankLinePresenter.php",
     "app/Console/Commands/QuickBooksSeedConnection.php",
     "app/Http/Controllers/Admin/QuickBooksModeController.php",
-    "routes/web.php"
+    "routes/web.php",
+    "resources/js/Pages/Admin/QuickBooksMode/Index.jsx"
   ],
-  "updated_at": "2026-11-15T04:44:32Z"
+  "updated_at": "2026-11-15T04:45:01Z"
 }
