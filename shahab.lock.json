@@ -12,7 +12,8 @@
     "app/History/HistoryImportService.php",
     "app/Http/Controllers/HistoryImportController.php",
     "app/Services/Books/BankLinePresenter.php",
-    "app/Console/Commands/QuickBooksSeedConnection.php"
+    "app/Console/Commands/QuickBooksSeedConnection.php",
+    "app/Http/Controllers/Admin/QuickBooksModeController.php"
   ],
-  "updated_at": "2026-11-15T04:43:19Z"
+  "updated_at": "2026-11-15T04:44:23Z"
 }
