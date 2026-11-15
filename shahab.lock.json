@@ -1,26 +1,6 @@
 {
   "owner": "Shahab",
-  "status": "active",
-  "locked_files": [
-    "database/migrations/2026_11_15_000001_add_quickbooks_environment.php",
-    "config/services.php",
-    "app/Models/AccountantAccount.php",
-    "app/Models/QuickBooksConnection.php",
-    "app/Services/QuickBooksService.php",
-    "app/Http/Controllers/QuickBooksController.php",
-    "resources/js/Pages/Integration/Index.jsx",
-    "app/History/HistoryImportService.php",
-    "app/Http/Controllers/HistoryImportController.php",
-    "app/Services/Books/BankLinePresenter.php",
-    "app/Console/Commands/QuickBooksSeedConnection.php",
-    "app/Http/Controllers/Admin/QuickBooksModeController.php",
-    "routes/web.php",
-    "resources/js/Pages/Admin/QuickBooksMode/Index.jsx",
-    "resources/js/Layouts/Components/Sidebar.jsx",
-    "tests/Feature/QuickBooks/QuickBooksEnvironmentTest.php",
-    "docs/QUICKBOOKS-SANDBOX-AND-PRODUCTION-2026-11-15.md",
-    "app/Http/Controllers/SupportController.php",
-    "resources/js/Pages/Support/Show.jsx"
-  ],
-  "updated_at": "2026-11-15T05:16:17Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-11-15T05:24:37Z"
 }
