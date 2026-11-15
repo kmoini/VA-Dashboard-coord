@@ -11,8 +11,9 @@
     "resources/js/Components/CompanyRegistryCards.jsx",
     "resources/ai-prompts/registry-document.evidence.lines.txt",
     "resources/ai-prompts/registry-document.evidence.scan.txt",
-    "docs/samples/registry-fill/rent-roll.csv"
+    "docs/samples/registry-fill/rent-roll.csv",
+    "docs/samples/registry-fill/lease.txt"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-15T23:13:19Z"
+  "updated_at": "2026-11-15T23:13:59Z"
 }
