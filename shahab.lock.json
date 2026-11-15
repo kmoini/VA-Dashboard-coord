@@ -10,7 +10,8 @@
     "app/Http/Controllers/QuickBooksController.php",
     "resources/js/Pages/Integration/Index.jsx",
     "app/History/HistoryImportService.php",
-    "app/Http/Controllers/HistoryImportController.php"
+    "app/Http/Controllers/HistoryImportController.php",
+    "app/Services/Books/BankLinePresenter.php"
   ],
-  "updated_at": "2026-11-15T04:42:39Z"
+  "updated_at": "2026-11-15T04:42:51Z"
 }
