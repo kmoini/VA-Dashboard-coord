@@ -19,7 +19,8 @@
     "resources/js/Pages/Support/Show.jsx",
     "resources/js/Pages/Admin/Support/Index.jsx",
     "resources/js/Pages/Admin/Support/Show.jsx",
-    "resources/js/Pages/QuickBooks/Disconnected.jsx"
+    "resources/js/Pages/QuickBooks/Disconnected.jsx",
+    "resources/js/Layouts/Components/Sidebar.jsx"
   ],
-  "updated_at": "2026-11-15T03:46:00Z"
+  "updated_at": "2026-11-15T03:46:13Z"
 }
