@@ -7,8 +7,9 @@
     "app/Accounting/V2/QboPartyMatcher.php",
     "app/Console/Commands/QuickBooksSnapshotVendors.php",
     "config/accounting_v2.php",
-    "routes/console.php"
+    "routes/console.php",
+    "app/Integrations/Providers/QuickBooks/QuickBooksReferenceResolver.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-16T19:50:23Z"
+  "updated_at": "2026-11-16T19:50:28Z"
 }
