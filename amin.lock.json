@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "database/migrations/2026_11_16_000004_create_qbo_vendor_snapshots.php"
+    "database/migrations/2026_11_16_000004_create_qbo_vendor_snapshots.php",
+    "app/Models/QboVendorSnapshot.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-16T19:48:48Z"
+  "updated_at": "2026-11-16T19:50:03Z"
 }
