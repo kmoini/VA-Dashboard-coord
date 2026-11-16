@@ -1,14 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "database/migrations/2026_11_16_000003_create_qbo_customer_snapshots.php",
-    "app/Models/QboCustomerSnapshot.php",
-    "app/Accounting/V2/QboCustomerSnapshotService.php",
-    "app/Console/Commands/QuickBooksSnapshotCustomers.php",
-    "resources/ai-prompts/document-extraction.context.customers.txt",
-    "tests/Feature/Clients/CustomersReachTheDocumentReaderTest.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-16T18:13:30Z"
+  "updated_at": "2026-11-16T18:37:51Z"
 }
