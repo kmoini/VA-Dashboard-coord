@@ -1,11 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "docs/REGISTRY-FILL-FROM-DOCUMENT-2026-11-15.md",
-    "docs/samples/registry-fill/live-check.php",
-    "docs/samples/registry-fill/README.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-16T00:59:37Z"
+  "updated_at": "2026-11-16T01:00:46Z"
 }
