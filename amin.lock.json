@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Reports/ReportComparison.php",
-    "tests/Unit/Reports/ReportComparisonTest.php"
+    "tests/Unit/Reports/ReportComparisonTest.php",
+    "tests/Feature/Integrations/FinancialReportsPageTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-16T21:04:24Z"
+  "updated_at": "2026-11-16T21:04:33Z"
 }
