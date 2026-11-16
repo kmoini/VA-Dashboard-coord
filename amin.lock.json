@@ -4,8 +4,9 @@
   "locked_files": [
     "database/migrations/2026_11_16_000001_create_client_property_drafts.php",
     "app/Models/ClientPropertyDraft.php",
-    "app/Http/Controllers/ClientRegistryDocumentController.php"
+    "app/Http/Controllers/ClientRegistryDocumentController.php",
+    "resources/js/Hooks/useLeaveGuard.js"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-16T00:30:11Z"
+  "updated_at": "2026-11-16T00:31:42Z"
 }
