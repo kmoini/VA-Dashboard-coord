@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "app/Http/Controllers/FinancialReportsController.php"
+    "app/Http/Controllers/FinancialReportsController.php",
+    "tests/Unit/Reports/QboReportNormalizerTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-16T21:24:34Z"
+  "updated_at": "2026-11-16T21:24:53Z"
 }
