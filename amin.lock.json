@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Reports/ReportUsage.php",
-    "resources/js/Pages/Reports/Usage.jsx"
+    "resources/js/Pages/Reports/Usage.jsx",
+    "tests/Feature/Integrations/ClientReportsTest.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-17T21:33:17Z"
+  "updated_at": "2026-11-17T21:33:34Z"
 }
