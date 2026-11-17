@@ -88,3 +88,6 @@ The team answered Q2 to Q12 of the 15 (plus P1, P6, P12 and the vocabulary A/B/C
 The full index line as it stood before the trim, kept verbatim so nothing is lost:
 
 - [V2 remaining work, PARKED 2026-10-15](v2-remaining-work-after-team-test.md) — team answers 2026-10-27 (docs/ACCOUNTING-V2-TEAM-ANSWERS-2026-10-27.md): ALL 8 items BUILT + MERGED cp-359..366 (2026-10-28/29); ALL LIVE + VERIFIED on prod 2026-10-29; owner corrections cp-367..369 (open-bill credit notes, mixed receipt = ONE entry two lines); document lines stage 1 + 2 LIVE + VERIFIED in QBO (cp-370..372: lines per entry, per-line accounts, Edit lines in the drawer); cp-373 company-on-row (own side + single-company default) LIVE. Nothing in progress; next: stage 3 sales Items (AR agent), slip retest (OCR), BBMS data cleanup. Gate: PsySH trust prompt hung tinker once; gate.sh now boots the app directly.
+
+## Index hook detail (moved out of MEMORY.md 2026-11-14)
+team answers 2026-10-27: all 8 items LIVE cp-359..366; owner corrections cp-367..369; document lines stage 1+2 cp-370..372; cp-373 company-on-row LIVE. Nothing in progress; next: sales Items (AR agent), slip retest (OCR), BBMS cleanup.

@@ -32,3 +32,6 @@ Bigcapital is deployed on Railway project **`vadash-bigcapital-rt`** (verified 2
 **Why:** `BIGCAPITAL_BASE_URL` was missing from prod `.env`, causing the Books tab to show "No Bigcapital server is configured" on `my.voiceaccountant.com/books`.
 
 **How to apply:** Set `BIGCAPITAL_BASE_URL` in prod `.env` + `php artisan config:clear`. The Books tab will then allow workspace creation.
+
+## Index hook detail (moved out of MEMORY.md 2026-11-14)
+live on Railway, image docker.io/bigcapitalhq/server:v0.16.13 (GHCR package REMOVED); 2026-10-22 Railway breach: all secrets ROTATED, verified + CLOSED 10-23; signup var is SIGNUP_DISABLED; system DB = railway, UPPERCASE tables. Railway hosts ONLY Bigcapital.

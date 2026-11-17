@@ -1,39 +1,83 @@
 ---
 name: email-integration-forwarding
-description: Dashboard inbound-email forwarding path — forward a receipt to a unique per-client address → AI draft source=email + accountant-gated match proposal. Receiving switched Resend→AWS SES (2026-06-30); sending stays Resend. READ before touching inbound email / SES / SNS / the match banner.
-metadata: 
+description: Inbound email forwarding (Resend) → Inbox → Email page → draft/merge/file; the 2026-09-25..28 build (cp-252..261), its live-test lessons, Google/Microsoft connection state and what is still owed. READ before inbound email, the Inbox → Email page, trusted senders, Gmail/Microsoft connection, or OAuth verification.
+metadata:
   node_type: memory
   type: project
   originSessionId: 8be6862e-1277-4b0a-be9e-07f85f0e80e8
-  modified: 2026-09-28T20:05:25.249Z
+  modified: 2026-11-14T00:00:00.000Z
 ---
 
-Dashboard feature (`va-dashboard2`): a firm/client forwards a receipt/invoice to a unique address on the receiving domain (`c-{token}@…` per client, `f-{token}@…` firm fallback). Domain is config-driven (`EMAIL_INBOUND_DOMAIN`, no hardcode): **Resend driver = apex `voiceaccountant.com`** (NOT a subdomain — user confirmed 2026-06-30; ⚠️ apex MX routes ALL @voiceaccountant.com mail to Resend inbound); SES driver later may use `in.voiceaccountant.com`. The AI extracts a transaction and the accountant approves. Distinct from the OAuth `EmailConnection` / `email:process-ingestion` path (Documents-only) which is the Phase-2 "connect inbox".
+**State as of checkpoint-261 (2026-09-28); later sessions changed intake again
+(Accounting V2 `IntakeDraftService` routes every intake, `320bb19c`; audit-row and
+prompt-provenance fixes). Full record: `docs/email-integration-review-queue.md`.**
 
-**Transport is PLUGGABLE** via `config services.email_inbound.driver` = `EMAIL_INBOUND_DRIVER` (default **`resend`** = ACTIVE; **`ses`** = built but PARKED — user said "use Resend now, switch to SES later", 2026-06-30). Both wired & coexist; `process()` picks the fetch path from the row's `meta` (`resend` vs `ses`). Resend is ALSO the outbound mailer. Flow: provider → controller (verify sig, light: verify+enqueue, CSRF-exempt) — Resend: `ResendInboundWebhookController` `/webhooks/resend/inbound` (Svix, `RESEND_WEBHOOK_SECRET`) + `intakeResend()` (attachments via Resend API + download_url); SES: `SesInboundController` `/webhooks/ses/inbound` (SNS via `aws/aws-php-sns-message-validator`, auto-confirm) + `intakeSes()` (raw `.eml` from `ses_inbound` S3 disk, parse MIME via `zbateson/mail-mime-parser`). Then `ProcessInboundEmail` job on the **`sqs`** connection (per-firm `RateLimited`, tries=5+backoff, `failed()`→row `failed`+DLQ) → `InboundEmailService::process()` (`fetchParts()` branches by meta) → store attachments in client S3 folder (`firms/{firm}/email/…`, guarded `store()` ghost-row-safe, `attachable_type='Transaction'`) → `DocumentAiExtractor`+`TransactionDraftValidator` → draft `source=email` pending (NOT via DocumentAiIngestService, avoids its silent auto-enrich) → `TransactionMatcher::propose()` stamps `metadata.email_match` (never applied) → activity log (`action_source=ai_worker`). Reliability: provider retains msg (Resend ~30d / SES raw in S3) + retries + `email:reconcile-inbound` (every 10 min, driver-aware: Resend API poll / SES bucket scan) → no loss. Idempotent by `provider_message_id` (renamed from `resend_email_id`).
+## How it works
+A client/firm forwards a receipt to `c-{token}@voiceaccountant.com` (per client) or
+`f-{token}@` (firm). Resend receives on the APEX domain (⚠️ MX `inbound-smtp.us-east-1.amazonaws.com`
+IS Resend's record, Resend inbound runs on SES; do not "fix" it) → `email.received`
+webhook `/webhooks/resend/inbound` (Svix, `RESEND_WEBHOOK_SECRET`) → `ProcessInboundEmail`
+(default queue) → `InboundEmailService::process()`. `email:reconcile-inbound` every 10 min
+backfills via the Resend API; Resend keeps copies ~30 days (404 after → terminal
+"Too old to fetch again"). Prod is a cPanel host (`hlrihub@node5126`,
+`~/websites/my.voiceaccountant.com`, plain `php artisan`), NOT Railway.
 
-**Serves BOTH the accountant dashboard AND the client workspace:** `SettingsController` builds `emailInbound` with `scope` — firm (dashboard: firm+per-client addresses+trusted-senders management) or `client` (client portal: the client sees/copies THEIR OWN address only, read-only; regenerate/senders stay accountant-side). `EmailForwardingCard` gates management UI on `scope !== 'client'`. (If client-workspace users are blocked from `/settings` by `role.min:3`, the card won't reach them — revisit the route gate if so.)
+Trust: the client's `email` + `metadata.additional_emails` are trusted automatically;
+`email_allowed_senders` rows live on the FIRM inbox and carry `client_id` (cp-252), so
+one list serves both addresses and attributes mail on the firm address. Unknown sender →
+`quarantined` → Inbox "Unknown sender" → **Approve and process** (trusts + requeues).
 
-Accountant review: draft shows in Record Keeping pending with 📧 badge + Source=Email filter; `EmailMatchBanner` on the transaction detail offers Confirm-match / Keep-new / Link-to-another / Ask-AI-again (`InboundEmailReviewController`, `recordkeeping/email-match/*`). Settings → Email Integration card (`EmailForwardingCard`): firm+per-client addresses, copy/regenerate, trusted senders.
+Intake (`IntakeOutcome` + `conclude()`, cp-257..261): per attachment → Gemini extract →
+`DocumentRoleDetector`; `non_financial` (signature PNG) = `markTriaged(FILED)`, other
+non-postable roles filed under the client / `autoLinkHeld`; postable drafts go through
+`sameTransaction()` (attachment checksum already on an entry, or matcher ≥ 0.85 with
+amount exact; prefers approved/override, then oldest) → `foldInto()` fills BLANK fields
+only, attaches the file unless same checksum or same name+size already on it → email
+`matched` with no created id ("Already in your books"). Otherwise a pending draft with
+the usual "duplicate?" proposal. If the files yielded nothing, the BODY (≥ 40 chars) is
+extracted (`extractFromCombinedText(..., 'email_body')`). Held/failed emails notify every
+firm accountant (`inbound_email_held`, url `/inbox/emails`).
 
-Key files: `app/Services/Email/{SesInboundClient,InboundEmailService,TransactionMatcher}.php`, `app/Http/Controllers/SesInboundController.php`, `app/Jobs/ProcessInboundEmail.php`, models `{EmailInbox,EmailAllowedSender,InboundEmail}`, `config/services.php email_inbound.*` + `config/filesystems.php ses_inbound` disk. Two new composer deps: `zbateson/mail-mime-parser` + `aws/aws-php-sns-message-validator`.
+## Surfaces
+- **Inbox → Email** `/inbox/emails` (`Inbox/InboundEmailsController`, `Pages/Inbox/Emails.jsx`,
+  routes `inbox.emails.*`): list + filters, body in `<iframe sandbox>` + CSP, attachments,
+  plain-words status via `InboundEmail::explain()`/`present()` (`open_transaction_id`),
+  Approve / Try again / Open entry. Pinned "Email" item in Messages Studio; sidebar Inbox
+  badge = shared prop `emailAttention`.
+- **Client card** (Clients): "Receipts by email" address, Copy, and **Send** which really
+  sends `App\Mail\ForwardingAddressMail` from the dashboard (connected account else system
+  mailer), records `metadata.forwarding_address_sent_at/_to` + activity log; an email-less
+  client gets the typed address saved as `email`. `regenerate()` RETIRES the old inbox
+  (`is_active=false`) so mail to it shows "Sent to an old address". No Regenerate in UI.
+- **Settings → Email Integration**: firm address + "Who may send" only (list and per-client
+  addresses moved out).
 
-**Status (2026-06-30):** ✅ committed + pushed to origin/main (milestone tag **checkpoint-191** `12c55fd`; auto-commit/DuoSync also swept it in earlier). `php -l` clean, both routes registered + app boots, deps installed, dev DB migrated. Verified on dev: `email:provision-inboxes --show` generates `c-`/`f-` addresses on `@voiceaccountant.com`. ⚠️ **pipeline has NEVER run end-to-end** (no Resend infra + Gemini stalls locally) so extraction→draft→match is unverified in practice; `npm run build` not run (UI badge/card/banner invisible until then); override-review controller not re-tested post-refactor. checkpoint-115 (56c9b49) = original Resend build; auto-commit then pushed the SES-only version as **7dd4014** (HEAD) which DELETED the Resend files — I **restored** `ResendInboundWebhookController`/`ResendInboundClient` from the `checkpoint-115` tag and made the transport pluggable. **Active driver = resend**, so Amin owes the RESEND infra (`docs/email-integration-setup.md` §3): Resend receiving domain + MX + `email.received` webhook → `/webhooks/resend/inbound` + `RESEND_WEBHOOK_SECRET`; SQS queue+DLQ+worker. SES infra is deferred (§5, flip `EMAIL_INBOUND_DRIVER=ses` later). Prod owes: `composer install` (2 deps) + `migrate --force` + `config:clear` + `.env` (EMAIL_INBOUND_DRIVER=resend, RESEND_*, SQS_*, EMAIL_INBOUND_QUEUE_CONNECTION=sqs).
+## Traps learned (all bit prod)
+- `transactions.ai_source` Postgres CHECK (`ocr_receipt, ocr_invoice, bank_feed,
+  email_parser, mobile_quickentry`): `email_body` failed every body invoice 5×; sqlite
+  cannot see it → `aiSourceFor()` whitelist + pinned test.
+- `TransactionMatcher`: `GREATEST()` is Postgres-only (matcher was untestable) and Carbon 3
+  `diffInDays()` returns a float so "same date" never scored. Both fixed cp-257.
+- Retries re-stored attachments (10× image.png) → `storeAttachments()` idempotent per
+  (inbound_email_id, checksum).
+- A "still duplicated" report at 18:50:16Z predated the commit by 3 s: check deploy time
+  before debugging.
 
-**UPDATE 2026-07-13: the dual-driver work IS NOW COMMITTED** — commit **e07478d on main, message "Document Redesign" (MISLABELED — it is this email work)**, pushed and pulled to prod alongside Document Hub checkpoints 139-141. checkpoint-139 had deliberately excluded these files via hunk-level staging; e07478d closed that debt. Code is on prod; the infra/env steps above remain whatever Amin hasn't done yet.
+## Google / Microsoft connection (Settings → Email Account Connection)
+- Callback is `/settings/email/callback` (NOT `/auth/google/callback`); registered on the
+  Google client 2026-09-26. Gmail API enabled. Scopes = `gmail.send` + userinfo only;
+  **gmail.readonly removed** (restricted → paid CASA); `EmailIngestionService::canReadInbox()`
+  skips Google. Drive import = `drive.file` (cp-256). Consent screen In production /
+  External / UNVERIFIED → "Google hasn't verified this app" (Advanced → continue), 100-user
+  cap until verification (colleague doing Search Console + demo video + submit; privacy
+  page 6.1 already has the Limited Use pledge).
+- Microsoft: `MICROSOFT_CLIENT_ID/SECRET` empty on prod when last checked; needs an Entra
+  App Registration (multitenant + personal, redirect `/settings/email/callback`, delegated
+  Mail.Send, Mail.Read, User.Read, offline_access).
 
-**UPDATE 2026-09-25: LIVE + E2E-VERIFIED ON PROD.** Resend receiving on apex `voiceaccountant.com` was already Verified (⚠️ Resend inbound itself runs on Amazon SES, so the MX `inbound-smtp.us-east-1.amazonaws.com` IS the Resend record, do not "fix" it). Missing piece was the `email.received` webhook → created in Resend that day + `RESEND_WEBHOOK_SECRET` set in prod `.env` (value never in repo/chat files). Reconcile had already been pulling mail via the API since Aug: rows 6/7 (Shahab, 2026-08-20) and 8/9 (Amin) were all silently **quarantined "Sender not on the allow-list"**. Adding Amin's email to client 50's `metadata.additional_emails` + re-queue (`status='received'` + `ProcessInboundEmail::dispatchProcessing`) produced draft transaction **1634** → full path works on prod. Prod is a cPanel host (`hlrihub@node5126`, app root `~/websites/my.voiceaccountant.com`, plain `php artisan`, NOT Railway); default-queue worker runs.
-
-✅ ROUND 4c DEPLOYED 2026-09-28 (checkpoint-260, prod ff529d8): ⚠️⚠️ `transactions.ai_source` has a Postgres CHECK (`check_transactions_ai_source`: ocr_receipt, ocr_invoice, bank_feed, email_parser, mobile_quickentry); the body path wrote 'email_body' → every body invoice failed 5× on prod, invisible to sqlite tests. `aiSourceFor()` whitelists (else 'email_parser'), pinned by test. `storeAttachments()` is now idempotent per (inbound_email_id, checksum): retries had stored the signature PNG 10×. Same trap family as [[activity-log-entity-type-trap]].
-
-✅ ROUND 4b DEPLOYED 2026-09-28 (checkpoint-259, prod 06e1fa2; 258 was taken by a colleague's GIFI tag): NON_FINANCIAL attachments (Outlook signature PNG) are `markTriaged(FILED)` not held, and the body is read whenever the files yielded nothing (`IntakeOutcome::isEmpty()`), not only when nothing was attached. ⚠️ Amin's "duplicate still created" report (tx 1639, 18:50:16Z) was 3 seconds BEFORE the round-4 commit existed → old code; not a bug.
-
-✅ ROUND 4 DEPLOYED 2026-09-28 (checkpoint-257, prod d7b3d0b): intake rewritten around `IntakeOutcome` + `conclude()`. **Same receipt never entered twice**: `sameTransaction()` (attachment checksum already on an entry, or matcher ≥ `SAME_TRANSACTION_SCORE` 0.85 with amount exact) → `foldInto()` fills BLANK fields only (never amount/date), attaches the file or discards identical bytes; email = `matched` with no created id → "Already in your books", `open_transaction_id`. **Non-postable docs** (pay stub/cheque/quote) via `DocumentRoleDetector` → filed under client, drawer, or `autoLinkHeld`; reason "Filed as a document (…)" . **Body-only** emails (≥40 chars) → `extractFromCombinedText(..., 'email_body')`. **Held email → bell**: `notifyHeld()` → `NotificationService::notifyInboundEmailHeld` (type `inbound_email_held`, url /inbox/emails). ⚠️ Two latent `TransactionMatcher` bugs fixed: `GREATEST()` was Postgres-only (untestable on sqlite) and Carbon 3 `diffInDays()` float made "same date" never score. 25 email tests. The 3 duplicate Home Depot drafts on prod were left for Amin to merge/delete; old failed rows 6/7/9 deletable via tinker.
-
-✅ ROUND 3 DEPLOYED 2026-09-26 (checkpoint-255): client-card **Send** now really sends `App\Mail\ForwardingAddressMail` from the dashboard (`clients.forwarding-address.send`, connected account else system mailer), records `metadata.forwarding_address_sent_at/_to` + activity log; an email-less client gets the typed address saved as `email`. The first cut was a mailto: and Amin could not tell if anything went out. **Google connection is SEND-ONLY**: `gmail.readonly` removed from `EmailConnection::GOOGLE_SCOPES` (restricted scope = paid CASA assessment; inbox intake superseded by forwarding), `EmailIngestionService` skips Google via `canReadInbox()`. Google Cloud (project voice-accountant, client "VA Dashboard – Document Hub") now has redirect `https://my.voiceaccountant.com/settings/email/callback` (+ localhost), Gmail API enabled, consent screen In production/External/UNVERIFIED with gmail.send + userinfo scopes → "Google hasn't verified this app" screen until verification (later task: justification + demo video + privacy link; 100-user cap meanwhile).
-
-✅ ROUND 2 DEPLOYED 2026-09-25 (checkpoint-254, prod at ee3081c): **Inbox → Email page** `/inbox/emails` (`Inbox/InboundEmailsController`, `Pages/Inbox/Emails.jsx`; approve/retry routes are now `inbox.emails.*`, NOT settings), pinned "Email" item in Messages Studio + `emailAttention` shared prop badge on the sidebar Inbox item; **body kept** (`inbound_emails.body_text/body_html` via `ResendInboundClient::getEmail`, rendered in `<iframe sandbox>` + CSP); `attachments.inbound_email_id`; **client card** shows "Receipts by email" address with Copy/Send (`InboundEmailService::clientAddresses()` creates on sight); **Regenerate removed from UI** and `regenerate()` now RETIRES the old inbox (`is_active=false`, new row) so mail to it shows as "Sent to an old address"; `firmInbox()/clientInbox()` filter `is_active=true`. ⚠️ Amin owes on prod: `migrate --force` + `optimize:clear` + `queue:restart`. Docs: `docs/email-integration-review-queue.md` Round 2.
-
-✅ DEPLOYED TO PROD 2026-09-25 (checkpoints 252 + 253, Amin asked to test on live) and ✅ VERIFIED LIVE by Amin: two forwards from his trusted address arrived in Record Keeping as pending drafts with the Email badge within a minute (Lone Wolf 792.91 CAD HST 91.22, Home Depot 5.06 HST 0.58, tax correctly INSIDE the amount). cp-253 also makes a Resend 404 (copy older than ~30 days) terminal: "Too old to fetch again, forward it again" instead of 5 retries + a useless Try again. ⚠️ Amin has TWO firms: his c-8ccea2cac7e3e9ef / f-e21e98b3ec9d63d8 addresses belong to a different firm than the account he screenshotted (f-9ff805fd62d8ac42). The work as built: `email_allowed_senders.client_id` migration; `senderAllowed()`/`matchSenderToClient()` public + firm-wide list filed by client; `InboundEmail::explain()` plain-words status; Settings `recent_emails` + `attention_count`; endpoints `settings.email-inbound.approve` (trust sender under client + requeue) and `.retry`; `EmailForwardingCard.jsx` rewritten for non-technical accountants (review queue, "Approve and process", "Who may send" with auto-trusted client emails). 12 tests in `tests/Feature/Email/InboundEmailReviewTest.php`. Doc: `docs/email-integration-review-queue.md`. ⚠️ local Postgres was down so `php artisan migrate` on the dev DB is still owed; prod owes `migrate --force` + `optimize:clear` + `queue:restart` after push. The bugs as found were: (1) "Trusted senders" UI only writes to the FIRM `f-` inbox allow-list, but a `c-` client inbox checks only ITS OWN allow-list + the client's `email`/`additional_emails`, so the UI list never unlocks a client address; (2) a trusted non-client sender writing to the `f-` address passes trust but then dies on "Could not attribute the email to a client", so the feature opens no path at all today. Only working trust = sender is the client's email or an additional_email. Also: quarantined/ignored emails have NO UI, NO notification, NO activity log, and `received_count` only counts successes, so accountants never learn a forward was dropped; non-transaction docs are not routed through DocumentRoleDetector (just stored as Client attachments + `ignored`); body-only emails (no PDF/image) are ignored. Proposed: per-client trusted senders, an Inbound emails list with "Trust sender and retry", doc-role routing, body extraction.
-
-`php artisan email:simulate-inbound <clientId> <path> --from=…` drives the whole pipeline locally WITHOUT AWS. `email:provision-inboxes --show` lists addresses. Related: [[wait-for-user-test-before-deploy]] [[deploy-process]] [[document-ai-pipeline]] [[transaction-source-origin-rules]] [[autocommit-leaks-secrets]].
+## Owed when this was written (verify before acting)
+Google verification; Microsoft registration; one live Drive-import test; prod clean-up
+(`InboundEmail` rows 6,7,9; duplicate files per email; pre-change duplicate Home Depot
+drafts). `email:simulate-inbound <clientId> <file>` drives the pipeline locally.
+Related: [[google-oauth-setup]] [[activity-log-entity-type-trap]] [[checkpoint-rule]]
+[[deploy-queue-restart]] [[document-role-triage]].

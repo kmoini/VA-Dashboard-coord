@@ -22,3 +22,6 @@ Fix shipped 2026-06-27 (branch main, commit `f6c5cbc`). Problem: the mobile `/ch
 **Mobile coordination:** filed **DQ-0015** in the union-plan-coord repo ([[union-plan-coordination]]) asking Mobile Claude to populate `attachments.file_size` at upload time + backfill legacy rows (same upload nodes they fixed for DQ-0014's key-path bug). Non-blocking — dashboard works regardless; if mobile does it we can drop the per-attachment S3 HEAD, and it fixes sizes in mobile's own app UI too.
 
 **Heads-up seen while filing DQ-0015:** Mobile Claude opened **ADR-0008** (separate topic) WAITING ON DASHBOARD — wants `/directory/upsert` to send `profile.email` at registration + surface inherited `'invited'` invites wired to `accept-invitation` (client→not-yet-registered-accountant invite flow). Not yet started on dashboard side.
+
+## Index hook detail (moved out of MEMORY.md 2026-11-14)
+S3 HEAD backfill. The temp /testfilesize + /testfilecheck routes were REMOVED (unauthenticated; confirmed 2026-10-30).

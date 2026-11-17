@@ -116,5 +116,17 @@
 - [Tentpole funnel brief PENDING](tentpole-funnel-brief-pending.md) — ⏸ 2026-10-02: Kamyar brief ON HOLD until Amin relays Kamyar's pick of 4 options.
 - [V2.1 implementation verification 2026-10-07](v21-implementation-verification-2026-10.md) — read-only audit PDF in Downloads; verdict YELLOW; P0 list inside.
 - [V2 phase 8 closure + phases 9A to 9H](v2-post-p0-audit-2026-10.md) — phase 8 LIVE cp-288, cp-290 LIVE 2026-10-09; P1-P14 ANSWERED by the team 2026-10-09 (docs/ACCOUNTING-V2-TEAM-ANSWERS.md, Persian, 14 sections) and reconciled in phase 9A; the 2026-10-27 round closed the rest. ⚠️ MOBILE_INBOUND_SECRET was EMPTY on prod. READ before V2 policy, CI or prod verification.
-- [V2 post-P0 audit 2026-10-07](v2-post-p0-audit-2026-10.md) — decision pack docs/ACCOUNTING-V2-DECISION-PACK-2026-10-07.md; 9 team decisions pending; policy-free work list.
 - [Accounting V2 phases 9I to cp-296 audit: CI gate + branches](accounting-v2-phase9-ci-gate-status.md) — ⚠️ prod = main = cp-307 = 29f40d8 LIVE 2026-10-19 (server path /home/hlrihub/websites/my.voiceaccountant.com); CI runs only on validation/** branches; tx 1711 "double payment" CLOSED 2026-10-14 (sandbox test data, realm 9341457870284884, not client books). READ before V2 branch/CI/deploy work.
+- [OCR resilience week 2026-11-04..06](ocr-resilience-2026-11.md) — ⭐ hand-off of cp-421..436 (client never waits. Detail inside.
+- [Onboarding flows + shareholder clients](onboarding-flows-and-shareholder-clients.md) — 2026-10-19 answers. Detail inside.
+- [Financial reports from QuickBooks](financial-reports-qbo.md) — /reports stages 1-4 LIVE through cp-492. Detail inside.
+- [Community public forum](community-public-forum.md) — LIVE 2026-11-13 at community.voiceaccountant.com (Railway. Detail inside.
+- [Canada/US banks only](canada-us-banks-only.md) — ⚠️ FEEDBACK 2026-11-12: statement work scoped to Canadian + US. Detail inside.
+- [Session record 2026-11-12..14](session-2026-11-12-bank-statements-record.md) — cp-469..488 + team video kit. Detail inside.
+- [AR slip retest session 2026-11-05](ar-slip-retest-session-2026-11-05.md) — six-page slip file, OCR. Detail inside.
+- [Stripe payments architecture](stripe-payments-architecture.md) — ⚠️⚠️ 2026-11-14: NO Stripe account connected. Detail inside.
+- [Registry from QuickBooks](registry-from-quickbooks.md) — LIVE cp-504..512 (bank offers, profile, customers. Detail inside.
+- [Session record 2026-11-15..16](session-2026-11-15-16-registry-record.md) — ⭐ cp-496..513 map + open list. Detail inside.
+- [Registry fill from a document](registry-fill-from-document.md) — ⭐ lease / rent roll / GST letter fills the. Detail inside.
+- [Gemini evidence by line number](gemini-evidence-by-line-number.md) — ⚠️ asking flash-lite for verbatim quotes. Detail inside.
+- [Tests step by step](tests-step-by-step.md) — ⚠️ FEEDBACK 2026-11-16: every test handed to Amin = numbered click-by-click steps with literal values.

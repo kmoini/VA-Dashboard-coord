@@ -81,3 +81,6 @@ Read this before touching n8n `chat-with-file.json`, Document AI batch upload co
 dashboard queue config. Don't re-derive the root cause from scratch — these are confirmed
 via git log + code reads, not speculation. See also [[document-ai-pipeline]] and
 [[books-phase3-production-deploy]] for related Document AI context.
+
+## Index hook detail (moved out of MEMORY.md 2026-11-14)
+$450+ bill root-caused: mobile chat-with-file FREE_LIMIT, queue retry double-billing, PDF fan-out.

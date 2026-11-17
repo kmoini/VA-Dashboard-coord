@@ -22,3 +22,6 @@ Migrating the dashboard to a new server / **Railway** surfaced a blocker (2026-0
 
 **Why:** without this, the Railway/Docker migration silently loses every uploaded file on each deploy.
 **How to apply:** confirm read-only via the route, apply the IAM policy, re-test until verdict=WRITE OK, then remove both temp routes. Full deploy steps in [[deployment-guide]].
+
+## Index hook detail (moved out of MEMORY.md 2026-11-14)
+prod S3 key read-only -> uploads fall to local disk; the temp /temp/s3-write-test route was REMOVED (routes/web.php says so; confirmed 2026-10-30).

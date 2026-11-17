@@ -20,3 +20,6 @@ metadata:
 
 **Why:** the user moved the team to a new workspace and will continue there; this chat's work must survive the move.
 **How to apply:** in the new workspace, `git pull`, read the repo handoff doc above, and verify current prod/repo state (today the repo is far ahead — see [[checkpoint-rule]] checkpoint-054 and [[attachment-file-size-fix]]) before acting on any "prod owes" step. Related: [[deploy-process]], [[mobile-attachment-binaries-missing]], [[duosync-shared-memory]].
+
+## Index hook detail (moved out of MEMORY.md 2026-11-14)
+3 fixes; the temp /temp/s3-attachment-test route was REMOVED (confirmed 2026-10-30).
