@@ -1,6 +1,8 @@
 {
   "owner": "Kamyar",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-11-17T20:28:56Z"
+  "status": "active",
+  "locked_files": [
+    "docs/PRODUCT-MASTER-PLAN.md"
+  ],
+  "updated_at": "2026-11-18T01:30:35Z"
 }
