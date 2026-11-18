@@ -25,3 +25,13 @@ On 2026-06-27 Shahab's coord clone was found 2209 commits behind origin with one
 **Guard added 2026-07-27:** `duosync_unwedge()` in all four `duosync-{start,end}.sh` (both repos) deletes a coord `.git/index.lock` untouched for 15+ minutes before pulling (15 min = no live git op can still own it), and both hooks now end with a cause-agnostic health check: `git rev-list --count origin/main..HEAD` > 0 means a push silently failed, surfaced in the session-start context / stderr. Checking the END STATE beats trusting the silenced git calls.
 
 **FIXED 2026-07-01 (recurred that day — coord was mid-rebase, 153 behind):** the hooks were hardened so this shouldn't wedge silently again. (1) All three `duosync-*.sh` (both repos) now route the coord pull through a `duosync_pull()` helper that `git rebase --abort`s on failure (clone left CLEAN, never stuck mid-rebase) and prints a `DuoSync WARNING:` to stderr; `duosync-start.sh` also surfaces the warning inside its session-start `{"context":...}` so it's visible. (2) coord `.gitattributes` sets `session_log.md` + `claude-memory/MEMORY.md` to `merge=union`, so concurrent appends auto-combine instead of conflicting (kills the #1 conflict source). Commits: dashboard hooks `7036a2c` on `dev`, coord `.gitattributes` `d075312` on main. Marketing hooks auto-commit to va-website. A failed pull now leaves the clone behind-but-clean (self-heals on next clean pull) instead of permanently wedged.
+
+**2026-11-17: a dirty tracked file blocks every hook pull.** Coord was 48 ahead / 11 behind
+because a stale uncommitted change sat on `shahab.lock.json` (someone else's lock file, older
+than origin's copy). `git pull --rebase` refuses to run on a dirty tree, the hooks silence the
+error, so nothing was pushed for a day. Fix that worked: `git checkout -- <the stale file>`,
+`git fetch origin main`, `git rebase origin/main` (session_log.md is `merge=union` in
+.gitattributes, so 48 commits replayed clean), `git push origin main`. Check `git status -sb`
+in the coord FIRST when it has diverged. Same day the memory pool had no commit since
+2026-11-12 (13 local files missing): see [[duosync-silent-push-failure]]; running
+`py -3 duosync-memory.py push` with DUOSYNC_COORD + PROJECT_ROOT set, then add/commit/push, fixed it.

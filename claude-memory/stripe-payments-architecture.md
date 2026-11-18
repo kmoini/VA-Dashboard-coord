@@ -147,3 +147,17 @@ Needs unifying. See [[multi-currency-fx]].
 | **3** | Stripe Connect Express: onboarding, client card payment, webhook -> auto-mark-paid |
 
 Keys go ONLY in the prod env, never in any repo file. See [[autocommit-leaks-secrets]].
+
+## Update 2026-11-17: production DOES have Stripe test keys
+
+Amin ran a masked check on node5126 (prefix + length only, never the value): `STRIPE_KEY` = pk_test_ (108 chars), `STRIPE_SECRET` = sk_test_ (108 chars), `STRIPE_WEBHOOK_SECRET` = whsec_ (39 chars); `STRIPE_PRICE_STARTER` / `PROFESSIONAL` / `ENTERPRISE` are still placeholders (so the three-tier subscription checkout has no price to sell). TEST mode: no real money moves. His LOCAL `.env` is still all placeholders. The masked check command is in the financial reports session; never ask for or print the values.
+
+Three Stripe code paths now exist and must not be confused: (1) `App\Services\BillingService` (subscriptions, Checkout, Billing Portal, customer on `accountant_accounts.stripe_customer_id`); (2) usage billed at month close as a Stripe invoice item, `App\Services\Marketing\OverageBilling` + `BillMarketingOverageJob` (the closest precedent for charging per report); (3) the colleague's SameBooks billing, `App\SameBooks\Billing\Stripe\StripeGateway` (SetupIntent + PaymentIntent, saved card, own webhook, `FakeStripeGateway` for tests; contract in va-dashboard2 `docs/SAMEBOOKS-BILLING-CONTRACTS.md`; its rule: every Stripe call of SameBooks goes through the gateway and BillingService stays untouched).
+
+## Direction from Amin 2026-11-17: billing model NOT decided, build the base only
+
+Amin: how the whole product charges customers is still undecided; the team is thinking about a CREDIT system. "You and I are building the base, first version now, and we complete it after the decision." So: do NOT build charging, prices, allowances, card capture or invoices for reports (or anything else) until he says the model is decided. Keep what is built neutral to the model: count every request, record who pays, show usage. Do not ask him again for a price or for invoice-versus-per-report: those wait for the model decision. He also relayed my question to the colleague (may reports use the SameBooks StripeGateway?) and will pass on the answer.
+
+## Colleague's ruling on the SameBooks gateway (2026-11-17, relayed by Amin)
+
+Same Stripe account and keys for other dashboard payments: fine. Do NOT call or edit `App\SameBooks\Billing\Stripe\*` (SameBooks' contract: on-session only, own metadata `purpose`, own webhook, nightly `samebooks:billing-reconcile`, own tests). Build new dashboard payments beside `BillingService` / `StripeWebhookController`: SetupIntent `usage=off_session` to save a card, off-session PaymentIntents with an idempotency key each, a distinct metadata purpose (e.g. `va_reports`) so SameBooks ignores them, a decline is a normal result, never log keys or card details. A shared gateway, if ever wanted, is extracted together with SameBooks' tests kept green.
