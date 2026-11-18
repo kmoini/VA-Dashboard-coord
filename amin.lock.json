@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "database/migrations/2026_11_18_000001_add_repeat_suggestion_to_bank_statement_lines.php"
+    "database/migrations/2026_11_18_000001_add_repeat_suggestion_to_bank_statement_lines.php",
+    "app/Services/Books/RepeatedEntryFinder.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-18T22:42:07Z"
+  "updated_at": "2026-11-18T22:42:27Z"
 }
