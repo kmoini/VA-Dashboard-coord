@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "app/Jobs/PayBillFromStatementJob.php"
+    "app/Jobs/PayBillFromStatementJob.php",
+    "database/migrations/2026_11_19_000001_add_returned_with_line_to_bank_statement_lines.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-19T16:32:54Z"
+  "updated_at": "2026-11-19T16:33:41Z"
 }
