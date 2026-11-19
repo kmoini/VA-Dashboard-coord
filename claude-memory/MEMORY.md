@@ -130,3 +130,4 @@
 - [Registry fill from a document](registry-fill-from-document.md) — ⭐ lease / rent roll / GST letter fills the. Detail inside.
 - [Gemini evidence by line number](gemini-evidence-by-line-number.md) — ⚠️ asking flash-lite for verbatim quotes. Detail inside.
 - [Tests step by step](tests-step-by-step.md) — ⚠️ FEEDBACK 2026-11-16: every test handed to Amin = numbered click-by-click steps with literal values.
+- [Same as last time (repeat entry)](same-as-last-time-repeat-entry.md) — cp-534 2026-11-18: a line with no document is offered the last QBO entry of its amount; loan rule + limits inside.
