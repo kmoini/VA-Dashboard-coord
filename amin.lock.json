@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Jobs/PayBillFromStatementJob.php",
     "database/migrations/2026_11_19_000001_add_returned_with_line_to_bank_statement_lines.php",
-    "app/Services/Books/ReturnedItemPairer.php"
+    "app/Services/Books/ReturnedItemPairer.php",
+    "app/Console/Commands/BankReconciliationCorrectQuickBooks.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-19T16:33:50Z"
+  "updated_at": "2026-11-19T16:34:33Z"
 }
