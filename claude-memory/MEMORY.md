@@ -131,3 +131,5 @@
 - [Gemini evidence by line number](gemini-evidence-by-line-number.md) — ⚠️ asking flash-lite for verbatim quotes. Detail inside.
 - [Tests step by step](tests-step-by-step.md) — ⚠️ FEEDBACK 2026-11-16: every test handed to Amin = numbered click-by-click steps with literal values.
 - [Same as last time (repeat entry)](same-as-last-time-repeat-entry.md) — cp-534 2026-11-18: a line with no document is offered the last QBO entry of its amount; loan rule + limits inside.
+- [Enter like the accountant](enter-like-the-accountant.md) — ⚠️ FEEDBACK 2026-11-19: every field from how the accountant treated the vendor; cp-539 tax from books + cp-540 vendor named by account number, both LIVE (prod = 5fd6761b).
+- [Statement decides the cash side](statement-decides-cash-side.md) — cp-537 2026-11-19: bank date on the cash side, bill paid from its line, returned-item pairs; from the Axle Desktop vs QBO comparison.

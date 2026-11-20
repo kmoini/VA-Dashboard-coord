@@ -27,3 +27,7 @@ How it works:
 - Open limits: exact cents only; first occurrence has nothing to copy; taxed recurring payments (rent with HST) not offered yet.
 
 Related: [[bank-reconciliation-workspace]], [[automate-dont-add-manual-steps]], [[never-overrule-the-accountant]].
+
+**cp-536 (commit 3c6115de, LIVE on prod 2026-11-19, not yet tested on a real line):** a repeat whose earlier entry was a Journal Entry is sent as a `JournalEntry` (`LedgerEntryDTO::repeatsJournal()`, `QuickBooksEntityMapper::repeatedJournalPayload`); a repeat of an Expense stays an Expense. A row already sent keeps its type (VA #2530, Sept 2026, stays an Expense).
+
+**Axle Corp. Desktop vs QBO comparison 2026-11-19 (open):** books differ before Sept (opening bank 63,752.01 Desktop vs 76,354.66 QBO); the statement has a bounced cheque (deposit +7,229.50 tx 2503, "Returned Item" -7,229.50 tx 2505): only the return reached QBO, as an Expense on the parent BANK account "Chequing" (GIFI 1002 gifi-match), Desktop has neither; the accountant keys monthly rent Invoices (income + HST) that VA never sees; accountant says HST is missing on pushed rows (waiting on a tinker dump of tx 2498..2510).
