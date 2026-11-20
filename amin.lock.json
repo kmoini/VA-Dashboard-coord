@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "resources/js/Components/PaymentWithoutBill.jsx"
+    "resources/js/Components/PaymentWithoutBill.jsx",
+    "docs/TAX-FROM-BOOKS-2026-11-19.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-20T16:26:07Z"
+  "updated_at": "2026-11-20T16:27:16Z"
 }
