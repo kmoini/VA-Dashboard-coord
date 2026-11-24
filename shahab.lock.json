@@ -8,7 +8,8 @@
     "app/Services/Ai/AiCostCalculator.php",
     "app/Http/Controllers/Api/AdminAiUsageController.php",
     "app/Services/Ai/AiUsageRecorder.php",
-    "app/Services/Documents/PaddleOcrClient.php"
+    "app/Services/Documents/PaddleOcrClient.php",
+    "config/ai_credits.php"
   ],
-  "updated_at": "2026-11-24T06:29:44Z"
+  "updated_at": "2026-11-24T06:29:50Z"
 }
