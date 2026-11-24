@@ -11,7 +11,8 @@
     "app/Models/AiUsageEvent.php",
     "app/Services/Ai/AiFeature.php",
     "app/Services/Ai/AiUsageRecorder.php",
-    "app/Services/Documents/PaddleOcrClient.php"
+    "app/Services/Documents/PaddleOcrClient.php",
+    "routes/console.php"
   ],
-  "updated_at": "2026-11-24T06:21:51Z"
+  "updated_at": "2026-11-24T06:22:02Z"
 }
