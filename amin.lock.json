@@ -4,8 +4,9 @@
   "locked_files": [
     "app/Accounting/V2/Ar/InvoiceLikeTheBooks.php",
     "app/Accounting/V2/Ar/ProvisionalInvoice.php",
-    "tests/Feature/AccountingV2/InvoiceLikeTheBooksTest.php"
+    "tests/Feature/AccountingV2/InvoiceLikeTheBooksTest.php",
+    "docs/INVOICE-LIKE-THE-BOOKS-2026-11-24.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-24T15:56:51Z"
+  "updated_at": "2026-11-24T15:57:54Z"
 }
