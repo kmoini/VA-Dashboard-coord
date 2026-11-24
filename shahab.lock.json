@@ -14,7 +14,8 @@
     "app/Services/Documents/PaddleOcrClient.php",
     "routes/console.php",
     "routes/api.php",
-    "app/Http/Controllers/Api/AdminAiUsageController.php"
+    "app/Http/Controllers/Api/AdminAiUsageController.php",
+    "tests/Feature/Admin/AiCreditsTest.php"
   ],
-  "updated_at": "2026-11-24T06:22:49Z"
+  "updated_at": "2026-11-24T06:23:23Z"
 }
