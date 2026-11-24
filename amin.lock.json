@@ -1,13 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "database/migrations/2026_11_24_000001_add_error_detail_to_transaction_integration_syncs.php",
-    "app/Integrations/PushFailure.php",
-    "app/Console/Commands/SupportPushError.php",
-    "tests/Feature/Integrations/PushFailureTest.php",
-    "docs/PUSH-FAILURES-FOR-PEOPLE-AND-SUPPORT-2026-11-24.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-24T20:41:03Z"
+  "updated_at": "2026-11-24T20:41:37Z"
 }
