@@ -15,7 +15,8 @@
     "routes/console.php",
     "routes/api.php",
     "app/Http/Controllers/Api/AdminAiUsageController.php",
-    "tests/Feature/Admin/AiCreditsTest.php"
+    "tests/Feature/Admin/AiCreditsTest.php",
+    "docs/ai-usage-monitoring.md"
   ],
-  "updated_at": "2026-11-24T06:23:23Z"
+  "updated_at": "2026-11-24T06:24:31Z"
 }
