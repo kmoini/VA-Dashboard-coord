@@ -10,5 +10,5 @@
     "app/Services/Ai/AiUsage.php",
     "app/Console/Commands/AiPricesSync.php"
   ],
-  "updated_at": "2026-11-24T05:56:11Z"
+  "updated_at": "2026-11-24T05:56:17Z"
 }
