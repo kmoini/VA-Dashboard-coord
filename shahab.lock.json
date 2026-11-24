@@ -6,7 +6,8 @@
     "app/Models/AiPrice.php",
     "app/Models/AiUsageEvent.php",
     "app/Services/Ai/AiCostCalculator.php",
-    "app/Services/Ai/AiUsageRecorder.php"
+    "app/Services/Ai/AiUsageRecorder.php",
+    "app/Services/Ai/AiUsage.php"
   ],
-  "updated_at": "2026-11-24T05:55:58Z"
+  "updated_at": "2026-11-24T05:56:05Z"
 }
