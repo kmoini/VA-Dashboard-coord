@@ -13,7 +13,8 @@
     "app/Services/Ai/AiUsageRecorder.php",
     "app/Services/Documents/PaddleOcrClient.php",
     "routes/console.php",
-    "routes/api.php"
+    "routes/api.php",
+    "app/Http/Controllers/Api/AdminAiUsageController.php"
   ],
-  "updated_at": "2026-11-24T06:22:24Z"
+  "updated_at": "2026-11-24T06:22:30Z"
 }
