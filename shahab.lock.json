@@ -1,23 +1,6 @@
 {
   "owner": "Shahab",
-  "status": "active",
-  "locked_files": [
-    "database/migrations/2026_11_24_000001_add_audio_input_rate_to_ai_usage.php",
-    "app/Models/AiPrice.php",
-    "app/Models/AiUsageEvent.php",
-    "app/Services/Ai/AiCostCalculator.php",
-    "app/Services/Ai/AiUsageRecorder.php",
-    "app/Services/Ai/AiUsage.php",
-    "app/Console/Commands/AiPricesSync.php",
-    "app/Http/Controllers/Api/AdminAiUsageController.php",
-    "app/Http/Controllers/AiAssistantController.php",
-    "app/Http/Controllers/TransactionAssistantController.php",
-    "app/Http/Controllers/VoiceEditController.php",
-    "app/Http/Controllers/BankLinesController.php",
-    "app/Http/Controllers/DocumentTriageController.php",
-    "app/Jobs/PollDocumentAiBatchesJob.php",
-    "tests/Feature/Admin/AiUsageAudioAndActorTest.php",
-    "docs/ai-usage-monitoring.md"
-  ],
-  "updated_at": "2026-11-24T06:00:18Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-11-24T06:00:47Z"
 }
