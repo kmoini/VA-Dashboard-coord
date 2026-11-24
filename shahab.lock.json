@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "database/migrations/2026_11_24_000002_create_ai_credits_and_meter_ocr.php",
-    "app/Models/AiPrice.php"
+    "app/Models/AiPrice.php",
+    "app/Models/AiUsageEvent.php"
   ],
-  "updated_at": "2026-11-24T06:28:31Z"
+  "updated_at": "2026-11-24T06:28:37Z"
 }
