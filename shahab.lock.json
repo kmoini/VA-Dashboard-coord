@@ -15,7 +15,8 @@
     "app/Http/Controllers/VoiceEditController.php",
     "app/Http/Controllers/BankLinesController.php",
     "app/Http/Controllers/DocumentTriageController.php",
-    "app/Jobs/PollDocumentAiBatchesJob.php"
+    "app/Jobs/PollDocumentAiBatchesJob.php",
+    "tests/Feature/Admin/AiUsageAudioAndActorTest.php"
   ],
-  "updated_at": "2026-11-24T05:58:14Z"
+  "updated_at": "2026-11-24T05:58:39Z"
 }
