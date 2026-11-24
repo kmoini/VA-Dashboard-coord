@@ -16,7 +16,8 @@
     "app/Services/Ai/AiCredits.php",
     "app/Http/Controllers/Admin/AiCreditSettingsController.php",
     "routes/web.php",
-    "resources/js/Layouts/Components/PlatformSwitcher.jsx"
+    "resources/js/Layouts/Components/PlatformSwitcher.jsx",
+    "resources/js/Pages/Admin/AiCredits/Index.jsx"
   ],
-  "updated_at": "2026-11-24T06:34:20Z"
+  "updated_at": "2026-11-24T06:34:26Z"
 }
