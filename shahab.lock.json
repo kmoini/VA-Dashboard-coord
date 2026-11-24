@@ -5,7 +5,8 @@
     "database/migrations/2026_11_24_000002_create_ai_credits_and_meter_ocr.php",
     "app/Models/AiPrice.php",
     "app/Models/AiUsageEvent.php",
-    "app/Services/Ai/AiCostCalculator.php"
+    "app/Services/Ai/AiCostCalculator.php",
+    "app/Http/Controllers/Api/AdminAiUsageController.php"
   ],
-  "updated_at": "2026-11-24T06:28:50Z"
+  "updated_at": "2026-11-24T06:28:56Z"
 }
