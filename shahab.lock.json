@@ -11,7 +11,8 @@
     "app/Console/Commands/AiPricesSync.php",
     "app/Http/Controllers/Api/AdminAiUsageController.php",
     "app/Http/Controllers/AiAssistantController.php",
-    "app/Http/Controllers/TransactionAssistantController.php"
+    "app/Http/Controllers/TransactionAssistantController.php",
+    "app/Http/Controllers/VoiceEditController.php"
   ],
-  "updated_at": "2026-11-24T05:57:19Z"
+  "updated_at": "2026-11-24T05:57:28Z"
 }
