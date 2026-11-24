@@ -7,5 +7,5 @@
     "app/Services/Ai/AiCredits.php",
     "app/Console/Commands/AiCreditsReconcile.php"
   ],
-  "updated_at": "2026-11-24T06:18:59Z"
+  "updated_at": "2026-11-24T06:19:09Z"
 }
