@@ -1,6 +1,8 @@
 {
   "owner": "Shahab",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-11-24T05:46:39Z"
+  "status": "active",
+  "locked_files": [
+    "database/migrations/2026_11_24_000001_add_audio_input_rate_to_ai_usage.php"
+  ],
+  "updated_at": "2026-11-24T05:54:25Z"
 }
