@@ -14,7 +14,8 @@
     "tests/Feature/Admin/AiCreditsTest.php",
     "docs/ai-usage-monitoring.md",
     "app/Services/Ai/AiCredits.php",
-    "app/Http/Controllers/Admin/AiCreditSettingsController.php"
+    "app/Http/Controllers/Admin/AiCreditSettingsController.php",
+    "routes/web.php"
   ],
-  "updated_at": "2026-11-24T06:33:32Z"
+  "updated_at": "2026-11-24T06:33:38Z"
 }
