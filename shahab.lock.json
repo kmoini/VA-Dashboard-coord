@@ -8,7 +8,8 @@
     "app/Console/Commands/AiCreditsReconcile.php",
     "app/Services/Ai/AiCostCalculator.php",
     "app/Models/AiPrice.php",
-    "app/Models/AiUsageEvent.php"
+    "app/Models/AiUsageEvent.php",
+    "app/Services/Ai/AiFeature.php"
   ],
-  "updated_at": "2026-11-24T06:19:57Z"
+  "updated_at": "2026-11-24T06:20:03Z"
 }
