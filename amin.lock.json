@@ -1,12 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Accounting/V2/Ar/InvoiceLikeTheBooks.php",
-    "app/Accounting/V2/Ar/ProvisionalInvoice.php",
-    "tests/Feature/AccountingV2/InvoiceLikeTheBooksTest.php",
-    "docs/INVOICE-LIKE-THE-BOOKS-2026-11-24.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-24T15:57:54Z"
+  "updated_at": "2026-11-24T15:58:04Z"
 }
