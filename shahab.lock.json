@@ -1,22 +1,6 @@
 {
   "owner": "Shahab",
-  "status": "active",
-  "locked_files": [
-    "database/migrations/2026_11_24_000002_create_ai_credits_and_meter_ocr.php",
-    "config/ai_credits.php",
-    "app/Services/Ai/AiCredits.php",
-    "app/Console/Commands/AiCreditsReconcile.php",
-    "app/Services/Ai/AiCostCalculator.php",
-    "app/Models/AiPrice.php",
-    "app/Models/AiUsageEvent.php",
-    "app/Services/Ai/AiFeature.php",
-    "app/Services/Ai/AiUsageRecorder.php",
-    "app/Services/Documents/PaddleOcrClient.php",
-    "routes/console.php",
-    "routes/api.php",
-    "app/Http/Controllers/Api/AdminAiUsageController.php",
-    "tests/Feature/Admin/AiCreditsTest.php",
-    "docs/ai-usage-monitoring.md"
-  ],
-  "updated_at": "2026-11-24T06:24:31Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-11-24T06:25:11Z"
 }
