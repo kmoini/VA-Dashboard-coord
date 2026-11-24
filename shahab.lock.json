@@ -5,7 +5,8 @@
     "database/migrations/2026_11_24_000001_add_audio_input_rate_to_ai_usage.php",
     "app/Models/AiPrice.php",
     "app/Models/AiUsageEvent.php",
-    "app/Services/Ai/AiCostCalculator.php"
+    "app/Services/Ai/AiCostCalculator.php",
+    "app/Services/Ai/AiUsageRecorder.php"
   ],
-  "updated_at": "2026-11-24T05:55:30Z"
+  "updated_at": "2026-11-24T05:55:37Z"
 }
