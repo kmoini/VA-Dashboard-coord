@@ -12,7 +12,8 @@
     "config/ai_credits.php",
     "app/Services/Ai/AiFeature.php",
     "tests/Feature/Admin/AiCreditsTest.php",
-    "docs/ai-usage-monitoring.md"
+    "docs/ai-usage-monitoring.md",
+    "app/Services/Ai/AiCredits.php"
   ],
-  "updated_at": "2026-11-24T06:33:14Z"
+  "updated_at": "2026-11-24T06:33:20Z"
 }
