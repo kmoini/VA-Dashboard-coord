@@ -12,7 +12,8 @@
     "app/Http/Controllers/Api/AdminAiUsageController.php",
     "app/Http/Controllers/AiAssistantController.php",
     "app/Http/Controllers/TransactionAssistantController.php",
-    "app/Http/Controllers/VoiceEditController.php"
+    "app/Http/Controllers/VoiceEditController.php",
+    "app/Http/Controllers/BankLinesController.php"
   ],
-  "updated_at": "2026-11-24T05:57:28Z"
+  "updated_at": "2026-11-24T05:57:34Z"
 }
