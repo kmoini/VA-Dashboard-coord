@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "app/Services/Ai/AiCredits.php",
-    "app/Http/Controllers/Admin/AiCreditSettingsController.php"
+    "app/Http/Controllers/Admin/AiCreditSettingsController.php",
+    "tests/Feature/Admin/AiCreditsTest.php"
   ],
-  "updated_at": "2026-11-24T19:35:28Z"
+  "updated_at": "2026-11-24T19:35:40Z"
 }
