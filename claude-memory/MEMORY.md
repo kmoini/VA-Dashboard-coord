@@ -133,3 +133,5 @@
 - [Same as last time (repeat entry)](same-as-last-time-repeat-entry.md) — cp-534 2026-11-18: a line with no document is offered the last QBO entry of its amount; loan rule + limits inside.
 - [Enter like the accountant](enter-like-the-accountant.md) — ⚠️ FEEDBACK 2026-11-19: every field from how the accountant treated the vendor; cp-539 tax from books + cp-540 vendor named by account number, both LIVE (prod = 5fd6761b).
 - [Statement decides the cash side](statement-decides-cash-side.md) — cp-537 2026-11-19: bank date on the cash side, bill paid from its line, returned-item pairs; from the Axle Desktop vs QBO comparison.
+- [Think like a QuickBooks accountant](think-like-a-quickbooks-accountant.md) — ⚠️⚠️ FEEDBACK 2026-11-23: no per-company questions to the accounting team; standard QBO practice + the client's own chart. Detail inside.
+- [QBO push tax needs a mapping](qbo-push-tax-needs-mapping.md) — ⚠️ first real pilot push 2026-11-23 dropped HST (no tax code mapping) + made a duplicate vendor; cp-559 fixes; Bill 22343 still to repair. Detail inside.

@@ -32,3 +32,9 @@ Amin's order for choosing a row's company (2026-11-21): the ACCOUNT NUMBER first
 
 ## cp-552 / cp-553 (2026-11-21, LIVE e23b956c, verified by Amin's screenshots)
 cp-552: the ONE registered account a document's number names becomes the row's bank account (no "funding account ambiguous"), and the replaced company's name leaves the row's own From/To side. cp-553: OCR returns a boxed account number ("1473-851", one digit per box) as two separate runs ("0 0 2 2 1 4 7 3" ... "8 5 1"); `HistoricalContextService::numbersIn` joins each boxed run to the next. To diagnose such a row: `business_event_modifiers.company_from_history.source` (bank_account / document_name / history) and the attachment's `ai_extract_raw.document_text`.
+
+## checkpoint-554 (2026-11-23, LIVE 55071cad, verified on prod by screenshots)
+A cheque whose payee is the row's own company and whose payer is someone else (not a client company or bank account) is money received: `ClientRegistryMatcher::chequeReceived` flips it to revenue, payer as customer, AR_COLLECTION, modifier `direction_corrected` (payer, payee). `TransactionDraftValidator`: a printed date with an unreadable year ("22C -9 01") keeps month and day, year = latest not after today, status resolved_by_window. From prod row 2559 (Illstyl3 Sammies cheque 6,107.65, 2026-09-01). Local full `tests/Feature` run does not finish (SameBooks test hangs; `artisan test` child hits 512M): run folders with `php -d memory_limit=4G -d max_execution_time=0 vendor/bin/phpunit <folder>`.
+
+## checkpoint-556 (2026-11-23, awaiting push + prod test)
+`CompanyFromBooks::writtenInShort`: a company the reading named stands when the document writes the leading words of its name ("Home Leader" for Home Leader Realty Inc), before history. Amin agreed 2026-11-23: name on the document beats the books; who paid is asked on the bank line (cp-555). cp-555 + cp-556 LIVE 54dc396a, note seen on prod 2026-11-23 (Move button click not yet confirmed).
