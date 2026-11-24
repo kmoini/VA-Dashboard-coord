@@ -7,5 +7,5 @@
     "app/Models/AiUsageEvent.php",
     "app/Services/Ai/AiCostCalculator.php"
   ],
-  "updated_at": "2026-11-24T05:55:23Z"
+  "updated_at": "2026-11-24T05:55:30Z"
 }
