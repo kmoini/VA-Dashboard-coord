@@ -16,7 +16,8 @@
     "app/Http/Controllers/BankLinesController.php",
     "app/Http/Controllers/DocumentTriageController.php",
     "app/Jobs/PollDocumentAiBatchesJob.php",
-    "tests/Feature/Admin/AiUsageAudioAndActorTest.php"
+    "tests/Feature/Admin/AiUsageAudioAndActorTest.php",
+    "docs/ai-usage-monitoring.md"
   ],
-  "updated_at": "2026-11-24T05:58:39Z"
+  "updated_at": "2026-11-24T06:00:08Z"
 }
