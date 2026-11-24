@@ -10,7 +10,8 @@
     "app/Services/Ai/AiUsageRecorder.php",
     "app/Services/Documents/PaddleOcrClient.php",
     "config/ai_credits.php",
-    "app/Services/Ai/AiFeature.php"
+    "app/Services/Ai/AiFeature.php",
+    "tests/Feature/Admin/AiCreditsTest.php"
   ],
-  "updated_at": "2026-11-24T06:30:02Z"
+  "updated_at": "2026-11-24T06:30:08Z"
 }
