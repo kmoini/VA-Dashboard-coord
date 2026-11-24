@@ -13,5 +13,5 @@
     "app/Services/Ai/AiUsageRecorder.php",
     "app/Services/Documents/PaddleOcrClient.php"
   ],
-  "updated_at": "2026-11-24T06:21:20Z"
+  "updated_at": "2026-11-24T06:21:31Z"
 }
