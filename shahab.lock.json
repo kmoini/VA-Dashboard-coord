@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "database/migrations/2026_11_24_000001_add_audio_input_rate_to_ai_usage.php",
-    "app/Models/AiPrice.php"
+    "app/Models/AiPrice.php",
+    "app/Models/AiUsageEvent.php"
   ],
-  "updated_at": "2026-11-24T05:55:04Z"
+  "updated_at": "2026-11-24T05:55:10Z"
 }
