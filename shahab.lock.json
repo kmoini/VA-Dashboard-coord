@@ -1,10 +1,6 @@
 {
   "owner": "Shahab",
-  "status": "active",
-  "locked_files": [
-    "app/Services/Ai/AiCredits.php",
-    "app/Http/Controllers/Admin/AiCreditSettingsController.php",
-    "tests/Feature/Admin/AiCreditsTest.php"
-  ],
-  "updated_at": "2026-11-24T19:36:48Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-11-24T19:38:33Z"
 }
