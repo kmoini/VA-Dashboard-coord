@@ -6,7 +6,8 @@
     "config/ai_credits.php",
     "app/Services/Ai/AiCredits.php",
     "app/Console/Commands/AiCreditsReconcile.php",
-    "app/Services/Ai/AiCostCalculator.php"
+    "app/Services/Ai/AiCostCalculator.php",
+    "app/Models/AiPrice.php"
   ],
-  "updated_at": "2026-11-24T06:19:32Z"
+  "updated_at": "2026-11-24T06:19:39Z"
 }
