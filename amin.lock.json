@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Services/Books/ReturnedCheque.php",
-    "tests/Feature/AccountingV2/StatementFollowsBankTest.php"
+    "tests/Feature/AccountingV2/StatementFollowsBankTest.php",
+    "docs/RECONCILIATION-REPORT-TRUE-UNCLEARED-2026-11-25.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-24T23:40:46Z"
+  "updated_at": "2026-11-25T00:06:03Z"
 }
