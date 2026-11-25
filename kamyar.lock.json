@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "blog/index.html",
-    "sitemap.xml"
+    "sitemap.xml",
+    "llms.txt"
   ],
-  "updated_at": "2026-11-25T17:45:56Z"
+  "updated_at": "2026-11-25T17:46:04Z"
 }
