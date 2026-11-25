@@ -2,7 +2,8 @@
   "owner": "Shahab",
   "status": "active",
   "locked_files": [
-    "app/Services/TeamsAlert.php"
+    "app/Services/TeamsAlert.php",
+    "config/services.php"
   ],
-  "updated_at": "2026-11-25T20:17:17Z"
+  "updated_at": "2026-11-25T20:17:28Z"
 }
