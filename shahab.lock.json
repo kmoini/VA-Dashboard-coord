@@ -1,6 +1,8 @@
 {
   "owner": "Shahab",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-11-25T23:07:47Z"
+  "status": "active",
+  "locked_files": [
+    "docs/ai-usage-monitoring.md"
+  ],
+  "updated_at": "2026-11-25T23:39:09Z"
 }
