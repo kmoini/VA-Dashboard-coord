@@ -1,16 +1,6 @@
 {
   "owner": "Shahab",
-  "status": "active",
-  "locked_files": [
-    "app/Services/TeamsAlert.php",
-    "config/services.php",
-    ".env.example",
-    "app/Services/Ai/GeminiPriceWatch.php",
-    "app/Services/Health/ServiceHealth.php",
-    "app/Services/Gemini/GeminiAdminNotifier.php",
-    "tests/Feature/Admin/TeamsAlertTest.php",
-    "tests/Feature/Admin/AiPriceWatchTest.php",
-    "docs/teams-admin-alerts.md"
-  ],
-  "updated_at": "2026-11-25T20:21:58Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-11-25T20:22:27Z"
 }
