@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "app/Services/TeamsAlert.php",
-    "config/services.php"
+    "config/services.php",
+    ".env.example"
   ],
-  "updated_at": "2026-11-25T20:17:28Z"
+  "updated_at": "2026-11-25T20:17:45Z"
 }
