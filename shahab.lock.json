@@ -1,6 +1,8 @@
 {
   "owner": "Shahab",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-11-25T17:03:49Z"
+  "status": "active",
+  "locked_files": [
+    "docs/ai-model-management-plan.md"
+  ],
+  "updated_at": "2026-11-25T19:40:42Z"
 }
