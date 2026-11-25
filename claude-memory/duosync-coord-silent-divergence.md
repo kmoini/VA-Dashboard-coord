@@ -35,3 +35,12 @@ error, so nothing was pushed for a day. Fix that worked: `git checkout -- <the s
 in the coord FIRST when it has diverged. Same day the memory pool had no commit since
 2026-11-12 (13 local files missing): see [[duosync-silent-push-failure]]; running
 `py -3 duosync-memory.py push` with DUOSYNC_COORD + PROJECT_ROOT set, then add/commit/push, fixed it.
+
+**2026-11-24: a stale `.git/AUTO_MERGE.lock` stops every rebase.** Coord was 15 ahead / 117
+behind. A zero-byte `.git/AUTO_MERGE.lock` dated the day before (no git process alive) made each
+`git rebase` stop at its first commit, so every hook pull failed silently for a day. The hook's
+`duosync_unwedge` only removes `index.lock`, not this one. Fix that worked: confirm no git
+process runs, `rm .git/AUTO_MERGE.lock`, `git rebase --abort`, then
+`git rebase -X ours origin/main` (in a rebase "ours" = origin, so origin's newer
+`amin.lock.json` wins; teammates' hooks auto-clear a stale Amin lock after 8h, which conflicts
+with every local session-end commit), then push. Check `ls .git/*.lock` when the coord diverges.

@@ -135,3 +135,5 @@
 - [Statement decides the cash side](statement-decides-cash-side.md) — cp-537 2026-11-19: bank date on the cash side, bill paid from its line, returned-item pairs; from the Axle Desktop vs QBO comparison.
 - [Think like a QuickBooks accountant](think-like-a-quickbooks-accountant.md) — ⚠️⚠️ FEEDBACK 2026-11-23: no per-company questions to the accounting team; standard QBO practice + the client's own chart. Detail inside.
 - [QBO push tax needs a mapping](qbo-push-tax-needs-mapping.md) — ⚠️ first real pilot push 2026-11-23 dropped HST (no tax code mapping) + made a duplicate vendor; cp-559 fixes; Bill 22343 still to repair. Detail inside.
+- [Push failures for people and support](push-failures-for-people-and-support.md) — ⚠️⚠️ FEEDBACK 2026-11-24: never a raw provider error on a screen; plain sentence + named object + reference for support (cp-569 PushFailure). Detail inside.
+- [Returned cheque: Reverse the deposit](returned-cheque-reverse-the-deposit.md) — cp-578 2026-11-25 (d43e84c1, awaiting push): journal debit A/R customer, credit bank on the bank date, from the Returned Item line; Exclude both stays.
