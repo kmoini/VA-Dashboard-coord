@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "scripts/nav/navlib.py",
-    "sitemap.xml"
+    "sitemap.xml",
+    "tests/seo/video-schema.test.js"
   ],
-  "updated_at": "2026-11-25T23:37:38Z"
+  "updated_at": "2026-11-25T23:37:52Z"
 }
