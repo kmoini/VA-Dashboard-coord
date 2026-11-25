@@ -6,7 +6,8 @@
     "app/Services/Ai/GeminiPriceWatch.php",
     "app/Services/NotificationService.php",
     "app/Mail/AiPriceWatchMail.php",
-    "resources/views/emails/ai-price-watch.blade.php"
+    "resources/views/emails/ai-price-watch.blade.php",
+    "app/Console/Commands/AiPricesWatch.php"
   ],
-  "updated_at": "2026-11-25T16:55:57Z"
+  "updated_at": "2026-11-25T16:56:07Z"
 }
