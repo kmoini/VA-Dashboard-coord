@@ -1,9 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "docs/DOCUMENT-DATE-PAID-IN-A-LATER-MONTH-2026-11-25.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-25T16:11:34Z"
+  "updated_at": "2026-11-25T16:24:00Z"
 }
