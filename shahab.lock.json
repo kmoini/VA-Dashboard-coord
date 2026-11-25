@@ -11,5 +11,5 @@
     "routes/console.php",
     "tests/Feature/Admin/AiPriceWatchTest.php"
   ],
-  "updated_at": "2026-11-25T16:57:17Z"
+  "updated_at": "2026-11-25T16:58:14Z"
 }
