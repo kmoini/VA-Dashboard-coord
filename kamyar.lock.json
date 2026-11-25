@@ -1,10 +1,6 @@
 {
   "owner": "Kamyar",
-  "status": "active",
-  "locked_files": [
-    "scripts/nav/navlib.py",
-    "sitemap.xml",
-    "tests/seo/video-schema.test.js"
-  ],
-  "updated_at": "2026-11-25T23:38:10Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-11-25T23:38:42Z"
 }
