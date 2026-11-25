@@ -10,7 +10,8 @@
     "app/Console/Commands/AiPricesWatch.php",
     "routes/console.php",
     "tests/Feature/Admin/AiPriceWatchTest.php",
-    "app/Console/Commands/AiPricesSync.php"
+    "app/Console/Commands/AiPricesSync.php",
+    "docs/ai-usage-monitoring.md"
   ],
-  "updated_at": "2026-11-25T17:01:39Z"
+  "updated_at": "2026-11-25T17:02:12Z"
 }
