@@ -1,19 +1,6 @@
 {
   "owner": "Shahab",
-  "status": "active",
-  "locked_files": [
-    "app/Services/Ai/GoogleBillingStatement.php",
-    "resources/views/exports/google-billing-statement-pdf.blade.php",
-    "app/Services/Ai/GoogleBillingReconciler.php",
-    "app/Http/Controllers/Api/AdminAiUsageController.php",
-    "routes/api.php",
-    "config/services.php",
-    ".env.example",
-    "app/Console/Commands/AiBillingReconcile.php",
-    "app/Console/Commands/AiBillingDemoSeed.php",
-    "tests/Feature/Admin/AiBillingReconcileTest.php",
-    "public/dash.html",
-    "docs/ai-usage-monitoring.md"
-  ],
-  "updated_at": "2026-11-26T02:18:41Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-11-26T02:23:12Z"
 }
