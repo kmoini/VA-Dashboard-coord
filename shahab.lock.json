@@ -8,7 +8,8 @@
     "docs/teams-admin-alerts.md",
     "docs/ai-usage-monitoring.md",
     "config/one_off.php",
-    "app/Services/Admin/OneOff.php"
+    "app/Services/Admin/OneOff.php",
+    "app/Services/Ai/OldGeminiKeyWatch.php"
   ],
-  "updated_at": "2026-11-26T06:41:21Z"
+  "updated_at": "2026-11-26T06:41:38Z"
 }
