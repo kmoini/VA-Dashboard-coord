@@ -1,24 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Support/Lang/Languages.php",
-    "app/Support/Lang/Messages.php",
-    "lang/en/assistant.json",
-    "lang/fa/assistant.json",
-    "lang/ar/assistant.json",
-    "lang/hi/assistant.json",
-    "lang/es/assistant.json",
-    "lang/fr/assistant.json",
-    "lang/de/assistant.json",
-    "lang/it/assistant.json",
-    "resources/ai-prompts/assistant.block.language.txt",
-    "resources/ai-prompts/assistant.block.language-data.txt",
-    "app/Services/AiPrompts/AiPromptCatalog.php",
-    "app/Services/AiLanguageInstructions.php",
-    "app/Services/Gemini/TransactionAssistant.php",
-    "app/Services/AiAssistantService.php"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-26T22:11:02Z"
+  "updated_at": "2026-11-26T22:16:45Z"
 }
