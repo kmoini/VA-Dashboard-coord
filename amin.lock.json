@@ -7,8 +7,9 @@
     "lang/en/assistant.json",
     "lang/fa/assistant.json",
     "lang/ar/assistant.json",
-    "lang/hi/assistant.json"
+    "lang/hi/assistant.json",
+    "lang/es/assistant.json"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-26T21:01:19Z"
+  "updated_at": "2026-11-26T21:02:10Z"
 }
