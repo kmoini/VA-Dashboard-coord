@@ -1,6 +1,8 @@
 {
   "owner": "Shahab",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-11-26T02:01:14Z"
+  "status": "active",
+  "locked_files": [
+    "app/Services/Ai/GoogleBillingStatement.php"
+  ],
+  "updated_at": "2026-11-26T02:02:11Z"
 }
