@@ -11,7 +11,8 @@
     ".env.example",
     "app/Console/Commands/AiBillingReconcile.php",
     "app/Console/Commands/AiBillingDemoSeed.php",
-    "tests/Feature/Admin/AiBillingReconcileTest.php"
+    "tests/Feature/Admin/AiBillingReconcileTest.php",
+    "public/dash.html"
   ],
-  "updated_at": "2026-11-26T02:17:03Z"
+  "updated_at": "2026-11-26T02:17:09Z"
 }
