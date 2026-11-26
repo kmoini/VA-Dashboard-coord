@@ -15,7 +15,8 @@
     "app/Services/Ai/GoogleBillingReconciler.php",
     "config/one_off.php",
     "tests/Feature/Admin/AiPriceWatchTest.php",
-    "app/Services/Admin/OneOff.php"
+    "app/Services/Admin/OneOff.php",
+    "app/Services/Ai/BigQueryClient.php"
   ],
-  "updated_at": "2026-11-26T06:21:23Z"
+  "updated_at": "2026-11-26T06:22:16Z"
 }
