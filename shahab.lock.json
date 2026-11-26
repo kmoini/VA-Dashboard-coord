@@ -15,7 +15,8 @@
     "routes/api.php",
     "app/Http/Controllers/Api/AdminAiUsageController.php",
     "tests/Feature/Admin/AiBillingReconcileTest.php",
-    "public/dash.html"
+    "public/dash.html",
+    "docs/ai-usage-monitoring.md"
   ],
-  "updated_at": "2026-11-26T00:44:27Z"
+  "updated_at": "2026-11-26T00:45:24Z"
 }
