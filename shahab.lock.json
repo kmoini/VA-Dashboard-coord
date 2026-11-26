@@ -15,5 +15,5 @@
     "routes/api.php",
     "app/Http/Controllers/Api/AdminAiUsageController.php"
   ],
-  "updated_at": "2026-11-26T00:39:36Z"
+  "updated_at": "2026-11-26T00:39:42Z"
 }
