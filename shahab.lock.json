@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "resources/js/Layouts/Components/PlatformSwitcher.jsx",
-    "resources/views/app.blade.php"
+    "resources/views/app.blade.php",
+    "resources/js/Components/BrandMark.jsx"
   ],
-  "updated_at": "2026-11-26T06:57:28Z"
+  "updated_at": "2026-11-26T06:57:34Z"
 }
