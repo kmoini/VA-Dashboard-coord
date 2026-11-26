@@ -23,7 +23,8 @@
     "app/Http/Controllers/Admin/AdminNotificationsController.php",
     "routes/web.php",
     "resources/js/Pages/Admin/Notifications/Index.jsx",
-    "resources/js/Layouts/Components/Sidebar.jsx"
+    "resources/js/Layouts/Components/Sidebar.jsx",
+    "resources/js/Components/NotificationsBell.jsx"
   ],
-  "updated_at": "2026-11-26T06:27:38Z"
+  "updated_at": "2026-11-26T06:27:44Z"
 }
