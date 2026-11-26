@@ -1,6 +1,8 @@
 {
   "owner": "Shahab",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-11-26T06:53:05Z"
+  "status": "active",
+  "locked_files": [
+    "resources/js/Layouts/Components/PlatformSwitcher.jsx"
+  ],
+  "updated_at": "2026-11-26T06:57:13Z"
 }
