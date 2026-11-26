@@ -4,7 +4,8 @@
   "locked_files": [
     "app/Services/Ai/GoogleBillingStatement.php",
     "resources/views/exports/google-billing-statement-pdf.blade.php",
-    "app/Services/Ai/GoogleBillingReconciler.php"
+    "app/Services/Ai/GoogleBillingReconciler.php",
+    "app/Http/Controllers/Api/AdminAiUsageController.php"
   ],
-  "updated_at": "2026-11-26T02:06:13Z"
+  "updated_at": "2026-11-26T02:07:08Z"
 }
