@@ -1,11 +1,6 @@
 {
   "owner": "Shahab",
-  "status": "active",
-  "locked_files": [
-    "resources/js/Layouts/Components/PlatformSwitcher.jsx",
-    "resources/views/app.blade.php",
-    "resources/js/Components/BrandMark.jsx",
-    "resources/js/Components/ApplicationLogo.jsx"
-  ],
-  "updated_at": "2026-11-26T06:58:45Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-11-26T07:00:13Z"
 }
