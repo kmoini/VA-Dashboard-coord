@@ -7,7 +7,8 @@
     "app/Services/Ai/GoogleBillingReconciler.php",
     "app/Http/Controllers/Api/AdminAiUsageController.php",
     "routes/api.php",
-    "config/services.php"
+    "config/services.php",
+    ".env.example"
   ],
-  "updated_at": "2026-11-26T02:07:39Z"
+  "updated_at": "2026-11-26T02:07:45Z"
 }
