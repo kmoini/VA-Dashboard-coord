@@ -4,7 +4,8 @@
   "locked_files": [
     "app/Services/Ai/BillingDocuments.php",
     "app/Console/Commands/AiBillingDemoSeed.php",
-    "public/dash.html"
+    "public/dash.html",
+    "tests/Feature/Admin/AiBillingReconcileTest.php"
   ],
-  "updated_at": "2026-11-26T01:27:52Z"
+  "updated_at": "2026-11-26T01:28:21Z"
 }
