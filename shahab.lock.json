@@ -2,7 +2,8 @@
   "owner": "Shahab",
   "status": "active",
   "locked_files": [
-    "tests/Feature/Admin/OneOffCheckTest.php"
+    "tests/Feature/Admin/OneOffCheckTest.php",
+    "tests/Feature/Admin/AiKeyWatchTest.php"
   ],
-  "updated_at": "2026-11-26T06:37:14Z"
+  "updated_at": "2026-11-26T06:37:21Z"
 }
