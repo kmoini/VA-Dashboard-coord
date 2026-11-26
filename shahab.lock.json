@@ -14,7 +14,8 @@
     "app/Services/Health/ServiceHealth.php",
     "app/Services/Ai/GoogleBillingReconciler.php",
     "config/one_off.php",
-    "tests/Feature/Admin/AiPriceWatchTest.php"
+    "tests/Feature/Admin/AiPriceWatchTest.php",
+    "app/Services/Admin/OneOff.php"
   ],
-  "updated_at": "2026-11-26T06:20:49Z"
+  "updated_at": "2026-11-26T06:21:23Z"
 }
