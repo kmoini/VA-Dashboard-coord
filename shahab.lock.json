@@ -21,7 +21,8 @@
     "app/Services/Ai/OldGeminiKeyWatch.php",
     "routes/console.php",
     "app/Http/Controllers/Admin/AdminNotificationsController.php",
-    "routes/web.php"
+    "routes/web.php",
+    "resources/js/Pages/Admin/Notifications/Index.jsx"
   ],
-  "updated_at": "2026-11-26T06:26:26Z"
+  "updated_at": "2026-11-26T06:27:18Z"
 }
