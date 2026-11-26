@@ -22,5 +22,5 @@
     "routes/console.php",
     "app/Http/Controllers/Admin/AdminNotificationsController.php"
   ],
-  "updated_at": "2026-11-26T06:26:08Z"
+  "updated_at": "2026-11-26T06:26:20Z"
 }
