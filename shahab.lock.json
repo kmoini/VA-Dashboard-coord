@@ -1,22 +1,6 @@
 {
   "owner": "Shahab",
-  "status": "active",
-  "locked_files": [
-    "config/services.php",
-    ".env.example",
-    "database/migrations/2026_11_25_000001_create_ai_billing_days_table.php",
-    "app/Services/Ai/BigQueryClient.php",
-    "app/Services/Ai/GoogleBillingReconciler.php",
-    "app/Services/NotificationService.php",
-    "app/Mail/AiBillingMismatchMail.php",
-    "resources/views/emails/ai-billing-mismatch.blade.php",
-    "app/Console/Commands/AiBillingReconcile.php",
-    "routes/console.php",
-    "routes/api.php",
-    "app/Http/Controllers/Api/AdminAiUsageController.php",
-    "tests/Feature/Admin/AiBillingReconcileTest.php",
-    "public/dash.html",
-    "docs/ai-usage-monitoring.md"
-  ],
-  "updated_at": "2026-11-26T00:58:40Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-11-26T00:59:05Z"
 }
