@@ -5,7 +5,8 @@
     "app/Services/Ai/BillingDocuments.php",
     "app/Console/Commands/AiBillingDemoSeed.php",
     "public/dash.html",
-    "tests/Feature/Admin/AiBillingReconcileTest.php"
+    "tests/Feature/Admin/AiBillingReconcileTest.php",
+    "docs/ai-usage-monitoring.md"
   ],
-  "updated_at": "2026-11-26T01:28:58Z"
+  "updated_at": "2026-11-26T01:32:02Z"
 }
