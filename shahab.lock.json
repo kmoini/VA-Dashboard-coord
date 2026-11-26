@@ -17,7 +17,8 @@
     "tests/Feature/Admin/AiPriceWatchTest.php",
     "app/Services/Admin/OneOff.php",
     "app/Services/Ai/BigQueryClient.php",
-    "config/gemini_key_watch.php"
+    "config/gemini_key_watch.php",
+    "app/Services/Ai/OldGeminiKeyWatch.php"
   ],
-  "updated_at": "2026-11-26T06:23:05Z"
+  "updated_at": "2026-11-26T06:24:19Z"
 }
