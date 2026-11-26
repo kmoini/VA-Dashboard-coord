@@ -4,7 +4,8 @@
   "locked_files": [
     "config/services.php",
     ".env.example",
-    "database/migrations/2026_11_25_000001_create_ai_billing_days_table.php"
+    "database/migrations/2026_11_25_000001_create_ai_billing_days_table.php",
+    "app/Services/Ai/BigQueryClient.php"
   ],
-  "updated_at": "2026-11-26T00:30:41Z"
+  "updated_at": "2026-11-26T00:34:00Z"
 }
