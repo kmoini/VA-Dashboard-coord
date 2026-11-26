@@ -1,9 +1,6 @@
 {
   "owner": "Shahab",
-  "status": "active",
-  "locked_files": [
-    "app/Services/Ai/AiModelRetirement.php",
-    "tests/Feature/Admin/AiModelRetirementTest.php"
-  ],
-  "updated_at": "2026-11-26T05:26:34Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-11-26T05:28:12Z"
 }
