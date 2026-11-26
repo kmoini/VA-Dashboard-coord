@@ -1,12 +1,6 @@
 {
   "owner": "Shahab",
-  "status": "active",
-  "locked_files": [
-    "app/Services/Ai/BillingDocuments.php",
-    "app/Console/Commands/AiBillingDemoSeed.php",
-    "public/dash.html",
-    "tests/Feature/Admin/AiBillingReconcileTest.php",
-    "docs/ai-usage-monitoring.md"
-  ],
-  "updated_at": "2026-11-26T01:32:14Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-11-26T01:33:46Z"
 }
