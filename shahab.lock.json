@@ -8,5 +8,5 @@
     "app/Services/Ai/BigQueryClient.php",
     "app/Services/Ai/GoogleBillingReconciler.php"
   ],
-  "updated_at": "2026-11-26T00:38:21Z"
+  "updated_at": "2026-11-26T00:38:27Z"
 }
