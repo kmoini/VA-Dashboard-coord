@@ -2,7 +2,8 @@
   "owner": "Shahab",
   "status": "active",
   "locked_files": [
-    "public/dash.html"
+    "public/dash.html",
+    "docs/ai-model-management-plan.md"
   ],
-  "updated_at": "2026-11-26T03:12:49Z"
+  "updated_at": "2026-11-26T03:20:20Z"
 }
