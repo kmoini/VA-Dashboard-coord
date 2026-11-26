@@ -2,8 +2,9 @@
   "owner": "Amin",
   "status": "active",
   "locked_files": [
-    "app/Support/Lang/TimeWords.php"
+    "app/Support/Lang/TimeWords.php",
+    "resources/ai-prompts/assistant.block.navigation.txt"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-26T22:23:39Z"
+  "updated_at": "2026-11-26T22:25:00Z"
 }
