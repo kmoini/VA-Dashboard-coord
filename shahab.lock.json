@@ -8,7 +8,8 @@
     "app/Http/Controllers/Api/AdminAiUsageController.php",
     "routes/api.php",
     "config/services.php",
-    ".env.example"
+    ".env.example",
+    "app/Console/Commands/AiBillingReconcile.php"
   ],
-  "updated_at": "2026-11-26T02:07:45Z"
+  "updated_at": "2026-11-26T02:07:52Z"
 }
