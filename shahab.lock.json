@@ -7,7 +7,8 @@
     "app/Services/NotificationService.php",
     "config/services.php",
     "app/Services/Admin/AdminAlerts.php",
-    "app/Services/Ai/AiAdminNotice.php"
+    "app/Services/Ai/AiAdminNotice.php",
+    "app/Services/Ai/GeminiPriceWatch.php"
   ],
-  "updated_at": "2026-11-26T06:12:50Z"
+  "updated_at": "2026-11-26T06:15:16Z"
 }
