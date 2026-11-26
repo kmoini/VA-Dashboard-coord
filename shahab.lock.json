@@ -19,7 +19,8 @@
     "app/Services/Ai/BigQueryClient.php",
     "config/gemini_key_watch.php",
     "app/Services/Ai/OldGeminiKeyWatch.php",
-    "routes/console.php"
+    "routes/console.php",
+    "app/Http/Controllers/Admin/AdminNotificationsController.php"
   ],
-  "updated_at": "2026-11-26T06:25:12Z"
+  "updated_at": "2026-11-26T06:25:31Z"
 }
