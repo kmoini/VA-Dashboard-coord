@@ -6,8 +6,9 @@
     "app/Support/Lang/Messages.php",
     "lang/en/assistant.json",
     "lang/fa/assistant.json",
-    "lang/ar/assistant.json"
+    "lang/ar/assistant.json",
+    "lang/hi/assistant.json"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-26T21:00:55Z"
+  "updated_at": "2026-11-26T21:01:02Z"
 }
