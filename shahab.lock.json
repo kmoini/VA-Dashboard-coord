@@ -2,7 +2,8 @@
   "owner": "Shahab",
   "status": "active",
   "locked_files": [
-    "app/Services/Ai/GoogleBillingStatement.php"
+    "app/Services/Ai/GoogleBillingStatement.php",
+    "resources/views/exports/google-billing-statement-pdf.blade.php"
   ],
-  "updated_at": "2026-11-26T02:02:11Z"
+  "updated_at": "2026-11-26T02:02:45Z"
 }
