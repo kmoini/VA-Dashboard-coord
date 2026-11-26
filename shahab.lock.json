@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "database/migrations/2026_11_25_000002_add_billing_periods_and_documents.php",
-    "config/services.php"
+    "config/services.php",
+    ".env.example"
   ],
-  "updated_at": "2026-11-26T01:09:36Z"
+  "updated_at": "2026-11-26T01:09:42Z"
 }
