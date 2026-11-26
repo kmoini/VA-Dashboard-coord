@@ -1,16 +1,6 @@
 {
   "owner": "Shahab",
-  "status": "active",
-  "locked_files": [
-    "database/migrations/2026_11_25_000002_add_billing_periods_and_documents.php",
-    "config/services.php",
-    ".env.example",
-    "app/Services/Ai/BillingDocuments.php",
-    "app/Services/Ai/GoogleBillingReconciler.php",
-    "app/Http/Controllers/Api/AdminAiUsageController.php",
-    "routes/api.php",
-    "app/Console/Commands/AiBillingReconcile.php",
-    "tests/Feature/Admin/AiBillingReconcileTest.php"
-  ],
-  "updated_at": "2026-11-26T01:16:37Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-11-26T01:17:08Z"
 }
