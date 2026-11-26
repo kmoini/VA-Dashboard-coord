@@ -3,7 +3,8 @@
   "status": "active",
   "locked_files": [
     "tests/Feature/Admin/OneOffCheckTest.php",
-    "tests/Feature/Admin/AiKeyWatchTest.php"
+    "tests/Feature/Admin/AiKeyWatchTest.php",
+    "docs/admin-notifications.md"
   ],
-  "updated_at": "2026-11-26T06:37:27Z"
+  "updated_at": "2026-11-26T06:38:27Z"
 }
