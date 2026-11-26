@@ -2,7 +2,8 @@
   "owner": "Shahab",
   "status": "active",
   "locked_files": [
-    "database/migrations/2026_11_26_000003_create_admin_alerts_table.php"
+    "database/migrations/2026_11_26_000003_create_admin_alerts_table.php",
+    "app/Services/Admin/AdminAlertTypes.php"
   ],
-  "updated_at": "2026-11-26T06:10:39Z"
+  "updated_at": "2026-11-26T06:11:25Z"
 }
