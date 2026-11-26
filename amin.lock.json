@@ -14,8 +14,9 @@
     "lang/it/assistant.json",
     "resources/ai-prompts/assistant.block.language.txt",
     "resources/ai-prompts/assistant.block.language-data.txt",
-    "app/Services/AiPrompts/AiPromptCatalog.php"
+    "app/Services/AiPrompts/AiPromptCatalog.php",
+    "app/Services/AiLanguageInstructions.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-26T21:03:42Z"
+  "updated_at": "2026-11-26T21:03:54Z"
 }
