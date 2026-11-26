@@ -5,7 +5,8 @@
     "database/migrations/2026_11_25_000002_add_billing_periods_and_documents.php",
     "config/services.php",
     ".env.example",
-    "app/Services/Ai/BillingDocuments.php"
+    "app/Services/Ai/BillingDocuments.php",
+    "app/Services/Ai/GoogleBillingReconciler.php"
   ],
-  "updated_at": "2026-11-26T01:10:10Z"
+  "updated_at": "2026-11-26T01:12:28Z"
 }
