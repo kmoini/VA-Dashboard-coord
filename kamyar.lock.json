@@ -1,6 +1,8 @@
 {
   "owner": "Kamyar",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-11-27T13:16:39Z"
+  "status": "active",
+  "locked_files": [
+    "outreach/family-offices/01_obelysk.md"
+  ],
+  "updated_at": "2026-11-27T13:25:53Z"
 }
