@@ -1,9 +1,6 @@
 {
   "owner": "Shahab",
-  "status": "active",
-  "locked_files": [
-    "app/Services/Gemini/GeminiClient.php",
-    "app/Services/Ai/GoogleBillingReconciler.php"
-  ],
-  "updated_at": "2026-11-27T15:54:20Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-11-27T15:57:11Z"
 }
