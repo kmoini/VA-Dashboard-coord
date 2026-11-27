@@ -3,8 +3,9 @@
   "status": "active",
   "locked_files": [
     "app/Accounting/V2/Ar/InvoiceLikeTheBooks.php",
-    "app/Accounting/V2/Ar/ProvisionalInvoice.php"
+    "app/Accounting/V2/Ar/ProvisionalInvoice.php",
+    "app/Services/Books/BankLineConfirmer.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-27T19:59:21Z"
+  "updated_at": "2026-11-27T19:59:29Z"
 }
