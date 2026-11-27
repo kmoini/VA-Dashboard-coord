@@ -1,6 +1,8 @@
 {
   "owner": "Shahab",
-  "status": "idle",
-  "locked_files": [],
-  "updated_at": "2026-11-27T15:33:57Z"
+  "status": "active",
+  "locked_files": [
+    "app/Services/Gemini/GeminiClient.php"
+  ],
+  "updated_at": "2026-11-27T15:53:48Z"
 }
