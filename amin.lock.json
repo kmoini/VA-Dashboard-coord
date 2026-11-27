@@ -11,8 +11,9 @@
     "app/Accounting/V2/V2DraftPipeline.php",
     "app/Integrations/Providers/QuickBooks/QuickBooksEntityMapper.php",
     "app/Services/Books/BankLinePresenter.php",
-    "resources/js/Pages/BankReconciliation/Index.jsx"
+    "resources/js/Pages/BankReconciliation/Index.jsx",
+    "resources/js/Components/ProvisionalInvoiceNote.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-27T20:01:54Z"
+  "updated_at": "2026-11-27T20:02:01Z"
 }
