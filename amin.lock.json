@@ -14,8 +14,9 @@
     "resources/js/Pages/BankReconciliation/Index.jsx",
     "resources/js/Components/ProvisionalInvoiceNote.jsx",
     "tests/Feature/AccountingV2/InvoiceLikeTheBooksTest.php",
-    "app/Console/Commands/RebookInQuickBooks.php"
+    "app/Console/Commands/RebookInQuickBooks.php",
+    "docs/MONEY-IN-INVOICE-BY-ITSELF-2026-11-27.md"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-27T20:09:39Z"
+  "updated_at": "2026-11-27T20:10:43Z"
 }
