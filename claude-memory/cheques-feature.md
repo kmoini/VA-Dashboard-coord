@@ -1,11 +1,11 @@
 ---
 name: cheques-feature
-description: "Cheques (va-dashboard2): a bill in QuickBooks paid by a cheque made here, PDF laid out for the client's own cheque paper. Built 2026-11-25/26, NOT committed, NOT verified on a live QuickBooks. Read docs/cheques.md first."
+description: "Cheques (va-dashboard2): a bill in QuickBooks paid by a cheque made here, PDF laid out for the client's own cheque paper. Built 2026-11-25/26, committed locally as checkpoint-586 (push pending), NOT verified on a live QuickBooks. Read docs/cheques.md first."
 metadata:
   node_type: memory
   type: project
   originSessionId: 2876e3a1-1192-4443-9ba3-fc6e0e078315
-  modified: 2026-11-26T01:40:37.122Z
+  modified: 2026-11-26T20:06:30.796Z
 ---
 
 Built 2026-11-25/26 in `va-dashboard2` at Amin's request ("the accountant tells the AI: prepare the cheque for that invoice and send it to me to print, sign and post"; nobody should open QuickBooks). Amin approved the full design in one release, no phases, and said: build everything, then hand over the commands and the test once.
@@ -25,7 +25,7 @@ Built 2026-11-25/26 in `va-dashboard2` at Amin's request ("the accountant tells 
 - Audit rows reuse entity type `Client` and existing actions, so no CHECK-constraint migration.
 
 **Open, in this order:**
-1. Not committed. Amin tags and pushes from his laptop ([[checkpoint-rule]], [[wait-for-user-test-before-deploy]]). Server needs `php artisan migrate --force` and `npm run build`.
+1. 2026-11-26: Amin committed it as checkpoint-586; the push of main was rejected (45 teammate commits), the tag went up on the old hash. Rebased onto origin/main here (one conflict, Sidebar import) and `ChequeSampleReader` moved to `AiModels::for('file')` (the team's new NoHardCodedAiModelTest). Amin then pushed it: main = 074f278c, tag checkpoint-586 moved onto it. The server was still on a6c7f9a2 ("Nothing to migrate") when he ran the post-deploy commands, so the deploy pull had not happened; he then ran `git pull --ff-only origin main` on the server by hand and it is LIVE on prod at 074f278c (cheques migration DONE, build ok, 2026-11-26), awaiting his sandbox test; test guide PDF (Persian) left in his Downloads as cheques-test-guide.pdf. Amin tags and pushes from his laptop ([[checkpoint-rule]], [[wait-for-user-test-before-deploy]]). Server needs `php artisan migrate --force` and `npm run build`.
 2. Never run against a live QuickBooks (the local Postgres was down, so no sandbox run from here). Three calls to confirm on the sandbox: BillPayment with DocNumber + NotSet keeps its number; vendor credit applied as a zero BillPayment with a VendorCredit line; a no-bill cheque with a tax code (`GlobalTaxCalculation: TaxInclusive`).
 3. Not built on purpose: warning when the cheque exceeds the book balance; a Document Hub copy of the PDF; part payments and credits inside the cheque run.
 
