@@ -1,22 +1,7 @@
 {
   "owner": "Amin",
-  "status": "active",
-  "locked_files": [
-    "app/Accounting/V2/Ar/InvoiceLikeTheBooks.php",
-    "app/Accounting/V2/Ar/ProvisionalInvoice.php",
-    "app/Services/Books/BankLineConfirmer.php",
-    "config/accounting_v2.php",
-    "app/Accounting/V2/BusinessEventResolver.php",
-    "app/Accounting/V2/CorporateTaxAccount.php",
-    "app/Accounting/V2/V2DraftPipeline.php",
-    "app/Integrations/Providers/QuickBooks/QuickBooksEntityMapper.php",
-    "app/Services/Books/BankLinePresenter.php",
-    "resources/js/Pages/BankReconciliation/Index.jsx",
-    "resources/js/Components/ProvisionalInvoiceNote.jsx",
-    "tests/Feature/AccountingV2/InvoiceLikeTheBooksTest.php",
-    "app/Console/Commands/RebookInQuickBooks.php",
-    "docs/MONEY-IN-INVOICE-BY-ITSELF-2026-11-27.md"
-  ],
+  "status": "idle",
+  "locked_files": [],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-27T20:10:43Z"
+  "updated_at": "2026-11-27T20:12:02Z"
 }
