@@ -53,8 +53,10 @@
     "resources/js/Components/PropertyRegistryCard.jsx",
     "resources/js/Components/SameBooks/Pay/loadStripe.js",
     "resources/js/Pages/Admin/Finance/CreditRequests.jsx",
-    "resources/js/Components/SameBooks/Pay/ConfirmStep.jsx"
+    "resources/js/Components/SameBooks/Pay/ConfirmStep.jsx",
+    "resources/js/Components/RecentTransactionsWidget.jsx",
+    "resources/js/Components/AdvancedFilters.jsx"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-27T00:14:53Z"
+  "updated_at": "2026-11-27T00:14:55Z"
 }
