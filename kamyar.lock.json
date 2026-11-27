@@ -1,15 +1,6 @@
 {
   "owner": "Kamyar",
-  "status": "active",
-  "locked_files": [
-    "outreach/family-offices/01_obelysk.md",
-    "outreach/family-offices/02_vanwinkle.md",
-    "outreach/family-offices/03_hedgewood.md",
-    "outreach/family-offices/04_our-family-office.md",
-    "outreach/family-offices/05_to-verify.md",
-    "outreach/family-offices/tracker.md",
-    "outreach/family-offices/one-pager.md",
-    "outreach/family-offices/follow-ups.md"
-  ],
-  "updated_at": "2026-11-27T13:27:00Z"
+  "status": "idle",
+  "locked_files": [],
+  "updated_at": "2026-11-27T13:27:14Z"
 }
