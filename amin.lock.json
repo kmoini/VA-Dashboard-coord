@@ -8,8 +8,9 @@
     "config/accounting_v2.php",
     "app/Accounting/V2/BusinessEventResolver.php",
     "app/Accounting/V2/CorporateTaxAccount.php",
-    "app/Accounting/V2/V2DraftPipeline.php"
+    "app/Accounting/V2/V2DraftPipeline.php",
+    "app/Integrations/Providers/QuickBooks/QuickBooksEntityMapper.php"
   ],
   "task": "Per-transaction AI Assistant (Phase A @064, Phase B + composer refinements @065) shipped. NOT deployed.",
-  "updated_at": "2026-11-27T20:00:47Z"
+  "updated_at": "2026-11-27T20:00:54Z"
 }
